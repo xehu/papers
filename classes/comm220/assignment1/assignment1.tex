@@ -1,0 +1,404 @@
+
+
+\documentclass[11pt]{article}
+\usepackage{balance,graphics,times,setspace}
+\usepackage{hyperref}
+% \usepackage{fontspec}
+% \usepackage{xltxtra}
+% \usepackage{xunicode}
+\usepackage[margin=1in]{geometry}
+% \usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+
+% \doublespacing
+\usepackage[tiny,compact]{titlesec}
+
+% \usepackage{xesearch}
+% \newcounter{words}
+% \newenvironment{counted}{%
+%   \setcounter{words}{0}
+%   \SearchList!{wordcount}{\stepcounter{words}}
+%     {a?,b?,c?,d?,e?,f?,g?,h?,i?,j?,k?,l?,m?,
+%     n?,o?,p?,q?,r?,s?,t?,u?,v?,w?,x?,y?,z?}
+%   \UndoBoundary{'}
+%   \SearchOrder{p;}}{%
+%   \StopSearching}
+
+
+% \usepackage[style=mla,backend=biber]{biblatex}
+% \addbibresource{references.bib} % you would use your own bib file here
+
+\setlength{\parskip}{.4em}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+  label=\arabic*),
+}
+
+
+
+\begin{document}
+  \begin{center}
+  \large{\bf Response Paper 1} --- 
+  Ali Alkhatib
+  \end{center}
+  \textit{A person's community of origin is an irrelevant factor in emerging modes of digitally enabled labor.}
+
+% \begin{counted}
+% The study of Human--Computer Interaction (HCI) has come to the realization
+% --- arguably several times ---
+% that the emergent cultures of digital communities are deeply complex
+% and substantively influential,
+% contributing largely to the way communities of people perceive and react to the world
+% \cite{dynamo,turkopticon}.
+% Having realized this,
+% substantial effort has studied the practice of designing and fostering online communities and cultures
+% in an effort to better--understand and perhaps ultimately manage this factor
+% \cite{successfulOnlineCommunities,earl2011digitally}.
+
+% The body of research inquiring into online cultures and the study of shaping digital communities continues to grow,
+% but the space describing the interplay between what we might simplistically refer to as ``offline culture'' and ``online culture'' remains relatively untrodden.
+% Some research explores the digital embodiment of offline culture
+% \cite{boellstorff2008coming},
+% while others have thought more deeply about the adoption of technology given cultural contexts
+% \cite{toyama2015geek,postcolonialComputing},
+% but few in the realm of HCI seem to pay adequate attention to the dramatic influence that one's offline identity has on online participation.
+
+% Instead, 
+
+In \textit{Geek Heresy}, Kentaro Toyama identifies three major world views describing the potential impact of technology on society:
+\begin{inlinelist}
+  \item ``utopians'',
+  \item ``skeptics'', and
+  \item ``contextualists''
+\end{inlinelist}
+\cite{toyama2015geek}.
+% The thesis of his text drives the argument that both extremes
+% --- the utopians and the skeptics ---
+% make reductive assumptions about the importance of human factors in technological interventions.
+From the perspectives of utopians, the promise goes
+that technology will universally and unwaveringly improve our lives, and thus implicitly
+assumes that people will adopt technological interventions in fundamentally the same ways that designers and engineers adopted their own creations.
+Naturally, failures of programs like these, such as One Laptop Per Child (OLPC), embolden skeptics, who point out that
+if anything, the positive outcomes of technological interventions are exceptions to the rule.
+Skeptics then argue,
+perhaps making similar assumptions that cultural and human factors are homogeneous,
+that technology will unwaveringly marginalize and disempower the very people on whose behalf technologists ostensibly intervened.
+
+Toyama argues a more cautious outlook, which he calls the ``contextualist'' perspective.
+That is, the outcomes of technological interventions depend on myriad ``human factors''.
+While Toyama's case studies very narrowly discuss humanitarian interventions
+such as providing children in under--served schools with devices such as tablet computers,
+and global access to the Internet through projects like \texttt{Internet.org},
+his underlying thesis provides an important insight into other aspects of Human--Computer Interaction (HCI) and Computer--Supported Cooperative Work (CSCW).
+Research in these fields is slowly making the realization that
+an individual's culture is deeply intertwined in that individual's participation in online communities.
+Perhaps nowhere is this more apparent than in the ways culture influences digitally enabled labor.
+
+This paper will attempt to show that
+culture deeply influences the emerging modes of digitally enabled labor that we call ``piecework'' by both enabling and challenging this kind of work.
+Indeed, I'll show that attempts to ignore and abstract these factors by market--operators are causing, or at least exacerbating,
+frustration,
+mistrust,
+and dissatisfaction
+among workers in these nascent markets.
+This discussion will consider a number of cases in some depth, namely
+\begin{inlinelist}
+  \item Amazon Mechanical Turk (AMT) and other information work markets,
+  \item Uber, Lyft, and other embodied piecework markets, and finally
+  \item we'll see that the culture of piecework effectively reflects the developing culture of transient participation
+\end{inlinelist}.
+
+A substantial body of research in the Human--Computer Interaction space has focused on information work on markets like Amazon Mechanical Turk (AMT), UpWork, and CrowdFlower
+\cite{taskSearch,turkopticon,crowdworkFuture,foundry}.
+% However, some researchers have explored embodied piecework in markets such as Uber
+% and
+% research generally in crowdsourcing might inform this inquiry as well
+% \cite{uberAlgorithm,redballoon}.
+Our discussion will start here, with information work,
+in particular looking at the turmoil ``Turkers'' endure and the challenges they face,
+made more intransigent by attempts by market--operators like Amazon to stifle open discussion of norms.
+% leading to piecework through marketplaces such as Uber, TaskRabbit, and others.
+
+Brabham discusses a number of issues which permeate digital labor such as
+ethical concerns,
+questions surrounding intellectual property,
+and difficulties managing culturally diverse groups of workers
+\cite{brabham2013crowdsourcing}.
+These all illustrate the relevancy of offline norms and culture on digitally enabled labor ---
+as legal scholars struggle to apply existing laws to emerging forms of work,
+we see the statuses of workers and even the nature of digitally enabled work itself change over time
+\cite{fedsUber}.
+But these issues illustrate that digitally enabled labor can be a setting upon which offline issues are projected.
+I would assert that these problems can be disentangled by negotiation with legal entities, and are arguably solvable given the systems that exist.
+% But these examples don't speak to the core thesis.
+% In fact, they seem to suggest that the model of projecting offline culture onto online settings is the correct one.
+
+I argue that a deeper problem affects information labor markets, most visibly evident on Amazon Mechanical Turk (AMT).
+If we look to the internal turmoil among Turkers,
+and the struggles they face as they wrestle with notions of collective identity,
+we see that the design of AMT itself stymies communication among workers, and even between workers and requesters
+\cite{crowdworkFuture,Ross}.
+These studies further illustrate a contentious and changing sense of self among Turkers,
+attempting to reconcile differing views on propriety, tolerating mistreatment, and ways of responding to egregious abuses.
+Differing views on all of these issues, and especially the perception that some workers are not as invested as others, foments a sense of mistrust among workers.
+
+It's worth taking a moment to discuss the negative repercussions that follow when a culture of mistrust forms;
+Sennett's (2007) work proves especially informative in this context.
+In particular, Sennett describes three social deficits, one of which being fundamentally related to trust.
+This issue of a lack of trust in an organizational setting can be caused in part by radically changing personnel, a characteristic of piecework often framed as a feature along the lines of the interchangeability of workers
+\cite{sennett2007culture}.
+Issues such as mistrust make it difficult for participants in these markets to rely on one another,
+as shared investment in the quality of the market isn't felt,
+precipitating a ``market for lemons'' and ultimately a depreciation of the value of labor
+\cite{akerlof1970market}.
+
+Efforts have been made to benefit workers by facilitating communication among workers internally (e.g. Turkopticon) and between workers and requesters (e.g. \texttt{WeAreDynamo.org}, or ``Dynamo''), and these efforts are worth some consideration \cite{turkopticon,dynamo}.
+For example, in the drafting of commons--written ethical guidelines for academic requesters,
+Turkers themselves note that workers from different backgrounds will bring different expectations regarding issues such as pay, communicativeness, and responsibility to worker well--being,
+and that considerate requesters should make appropriate decisions depending on the workers they solicit
+\cite{dynamo}.
+
+This finding is important for a number of reasons,
+but within the context of the overarching argument it's critical that
+the problems Turkers face are baked into AMT, seemingly by design.
+Resolving the tensions researchers found between Turkers from the U.S. and Turkers from other countries
+(where costs of living differ dramatically)
+would require a substantial redesign of the marketplace to allow workers to collectively agree on 
+guidelines,
+norms,
+and ultimately standards of practice.
+Amazon's response to these complicating factors has increasingly been to limit who may use AMT either as a requester or as a worker, at one point only allowing those with American tax records to register to use the service at all.
+
+
+So it was empirically true that
+a set of norms could be agreed upon by workers from various backgrounds with differing cultural views,
+but it was an endeavor not without its challenges.
+More troubling, the issues of differing norms and expectations from one worker to another were never unambiguously resolved;
+the guidelines recommend even now that requesters consider the unique circumstances of individual workers, and behave accordingly.
+In this way, the guidelines set in place by Dynamo corroborate the thesis of this paper
+--- that cultural factors stemming from an individual's ``community of origin'' strongly influence the individual's participation in digitally enabled labor.
+In this case, it proved too difficult a challenge to disentangle even given a system designed in part to mediate these contentious issues.
+
+
+We turn now to digitally enabled ``embodied'' piecework
+--- consisting of labor markets like Uber, TaskRabbit, etc\dots ---
+where we find yet more culturally entangled issues problematizing work.
+While the nature of these issues differs in some ways from the problems Turkers and other information workers face,
+I argue they share a similar source: failure to consider the human factors
+--- the cultures of participants ---
+in designing and later operating these markets.
+
+Shirky (2008) discusses a phenomenon in \textit{Here Comes Everybody};
+``homophily'', or the grouping of like with like,
+and how it greatly increases the likelihood of similar things being together (in this case in particular the grouping of people)
+\cite{shirky2008here}.
+Goldsmith and Wu (2006) talk of the same phenomenon without calling it by name,
+in particular describing how the Internet allows us to be \textit{more} sensitive to the contexts of those with whom we interact,
+rather than \textit{less}.
+More concretely, they illustrate the emergence of hyper--local markets enabled by the Internet
+--- the delivery of perishable goods
+and the connection of very niche local interest groups\footnote{Shirky discusses niche local groups as well (especially in Chapter 8 --- ``Solving Social Dilemmas''), however Goldsmith and Wu's discussion proves more germane to digitally enabled labor.}
+\cite{goldsmith2006controls}.
+
+Given these perspectives, it might seem obvious in retrospect that digitally enabled labor markets
+like Uber, Handy, and TaskRabbit
+would eventually emerge.
+However, even in these local marketplaces, we find friction and dissatisfaction among workers on a global scale.
+Researchers have documented worker resistance of the systems imposed on them
+\cite{uberAlgorithm}.
+In at least one case, conflict between conventional and new--style workers has led to violence \cite{uberRiots}.
+
+
+% \textit{talk about cultural differences between gig workers}
+
+
+Miller (2011) relays the promise that technologists made,
+that the Internet would abstract issues like geography away from us,
+and allow us to interact meaningfully with people around the world
+\cite{miller2011understanding}.
+Instead, we find that, at least in some cases,
+the Internet allows us to be more tightly--knit than before
+(a finding corroborated by several studies of social network graphs
+\cite{mcpherson2001birds,takhteyev2012geography}\footnote{Briefly, these papers find that many of the relationships found in social networks are geographically proximal, and not unbounded, providing yet more empirical evidence for the phenomenon of ``homophily'' that Shirky discusses.}).
+In a literal sense,
+an individual's community (in this case a geographic community) influences and perhaps even determines the networks they form socially and professionally.
+
+
+
+
+% Having considered a 
+
+Having looked at the troubling issues entangled in digitally enabled labor, especially through the lenses of piecework both offline and online, one might leave with the impression that this kind of work is diametrically at odds with the interests of those who participate.
+I would not argue that this is the case.
+In fact, I will make the claim that
+--- for all the problematizing characteristics to which researchers have pointed ---
+its redeeming qualities have gone underreported, arguably detracting from our understanding of the culture of contemporary piecework.
+
+One might observe that piecework in its contemporary instantiation is informed to some extent by the type of work done by those imagining and operating these markets.
+Computer Scientists, trained to abstract problems and decompose them into smaller parts, have similarly imagined systems that abstract the human work implicitly and sometimes explicitly as inanimate parts.
+On AMT, the portal for requesters to sign in illustrates the system of workers as a series of gears and cogs, belying the human workers under the metaphorical table.
+In this way, the individual whose community of origin arguably affects the digitally enabled labor we discuss here is not the worker \textit{per se}, but another stakeholder rarely mentioned in discussions about this nascent market.
+
+I would take this argument further, and say not only that it conforms to a familiar paradigm to system--designers, but that it also appeals to workers consciously looking to trade security (in this case, of employment) for flexibility.
+Brabham doesn't make the point that crowdsourcing be capable of particularly rapid results, but this feature seems to emerge as a central feature of the idea
+\cite{foundry}.
+This aspect of crowdsourcing, allowing workers to come and go freely, parallels Shirky's (2008) thoughts on ``flash mobs'', wherein he describes the physical embodiment of what seems online like an abrupt, almost arbitrary appearance of hundreds or thousands of people
+\cite{shirky2008here}.
+But where Shirky writes about the scale of collective action enabled by digital media,
+I find it more compelling that participants in these rapidly--formed groups can join and depart without that group suffering a substantial loss.
+
+Shirky gestures to this feature of commons--based production in his writing on Wikipedia;
+the fact that participants can come and go as needed allows them each to contribute a small part of the necessary whole
+--- perhaps by making a single timely or worthwhile post ---
+without the community relying unduly on any single contributor
+\cite{shirky2008here}.
+Brabham is careful to place Wikipedia and similar commons--based peer production systems outside of the scope of what he calls ``crowdsourcing'';
+for the purposes of this overarching discussion, I can accept that exclusion, except to say that this characteristic remains a shared feature of crowdsourcing
+--- that people can contribute as much or as little as they want without penalty for only superficial participation ---
+is a crucial, shared element of piecework
+\cite{brabham2013crowdsourcing}.
+It is this aspect of piecework
+--- a characteristic that is both increasingly familiar and amenable to people whose culture is similarly increasingly defined by their familiarity with the Internet ---
+that makes it so tempting to young adults to participate.
+
+
+This paper makes the argument that piecework is both enabled and problematized by the cultural forces at work in the marketplaces that have emerged thus far.
+Namely,
+\begin{inlinelist}
+  \item we saw that information work like Turking endures turmoil over the conflicting paradigms of the heterogeneously composed workers who make up these workforces,
+  \item we considered the conflicts that emerge in embodied piecework through markets like Uber, and
+  \item we found that the cultures of system--designers as well as users informs and even determines the outcomes both of these systems as well as users' participation in these systems
+\end{inlinelist}.
+Perhaps what remains is the question of how to wrestle with the conflicting cultural factors that affect piecework,
+and how we can enable piecework labor markets that attempt to reconcile the cultural issues complicating this kind of work without abandoning the features which appeal to workers in existing markets.
+% and how we might enable work that appeals to workers for the reasons that piecework is so appealing --- offering features such as flexibility --- without making these marketplaces as disempowering, frustrating, and otherwise marginalizing as existing markets have been shown to be.
+% Namely, while piecework challenges participants in this nascent labor market to find ways of surviving and thriving,
+
+% Indeed, the very features which define piecework appeal to younger workers by offering transient, low--barrier entries to engage in much the same ways that online services do.
+% These conflicting forces ultimately do little to affect the broader thesis --- that the community from which one originates dramatically affects one's participation in digitally enabled labor markets, whether that community is substantively informed by offline experiences or an intermingling of offline and digitally mediated experiences.
+% 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% But this argument belies a more complex issue that we will identify and with which we'll have to engage.
+% That issue being that culture is not a strictly offline artifact projecting itself online,
+% but something that shapes and changes through participation in technologically enabled communities.
+% In this way, a person's community of ``origin'' and the community that they form through digital labor
+% --- whether that labor is information work like ``Turking'', or the kind of ``gig work'' represented by Uber, Lyft, and TaskRabbit ---
+% arguably get entangled together, and certainly become relevant to each other.
+% Ultimately, this paper will attempt to demonstrate that culture is a core component of digitally enabled labor,
+% and that offline cultures have informed and continue to engage with this emerging form of labor.% digitally enabled labor.
+
+% We can explore this thesis through several examples,
+% seeing that cultural influences are not only relevant, but critical factors in emerging digital labor.
+
+
+% Various examples in e--commerce show us that technology and community can be deeply connected.
+% Goldsmith and Wu point out that
+% e--commerce sites almost immediately ask users their location
+% (or attempt to determine that information automatically)
+% to identify what unique laws, norms, and practices to acknowledge;
+% but more than this, they illustrate a unique feature of the Internet:
+
+
+% That geographic constraints affect digitally enabled commerce is arguably a given.
+% Among the various modes of exchange made possible by technology,
+% other forms of digital labor prove more surprising,
+% and certainly more vexing, to researchers.
+% To illustrate this, we turn to digitally enabled information work such as ``Turking'',
+% predominantly online labor conducted on marketplaces like Mechanical Turk by companies like Amazon.
+% Here, we arrive at the notion of crowdsourcing Brabham defines in his book on the subject
+% \cite{brabham2013crowdsourcing}.
+
+% 
+
+
+% The case of click--work is a fascinating one; Amazon describes Mechanical Turk as ``\textit{artificial} artificial intelligence'',
+% and suggests structuring ``micro--work'' in such a way that the desired output given a certain input would be unambiguous.
+% A cynical view might see this as attempting to minimize the potential influence of 
+
+
+% Just as Brabham carefully defines ``crowdsourcing''
+% to rule out things like commons--based peer production and open source project contributions,
+% we need to carefully outline what we mean by ``labor'' and even ``digitally enabled labor''
+% \cite{brabham2013crowdsourcing}.
+
+% Using our lens, scoped very narrowly to see the influence that culture has on work, we'll see that digital information labor 
+
+
+% Before we dive into these issues,
+% it will prove worthwhile to frame some of the relevant terms and ideas.
+% Specifically, since this discussion will largely focus on digital enabled labor and culture,
+% we should carefully scope what we mean by ``labor'' and ``work'',
+% and similarly frame ``culture'' accordingly.
+
+% As Turner discussed in lectures,
+% attempting to define work and labor can become a
+% labyrinthian search for characteristics that intuitively delineate what is work or labor from what is not.
+% To use his example, it's at least debatable whether a researcher's free time spent thinking represents work;
+% certainly, the product of that thought will contribute to his or her career output
+% in the form of publications,
+% but this substantively describes the ``cognitive surplus'' Shirky describes at length
+% \cite{shirky2010cognitive}.
+% What good fundamental argument is to be made to differentiate this work from that of InnoCentive
+
+
+
+
+
+
+% In the study of Human--Computer Interaction, researchers have discovered time and time again that
+% the influence of culture in digitally--enabled communities is far--reaching
+% \cite{postcolonialComputing,toyama2015geek}.
+% This realization has been corroborated by researchers in the social sciences and humanities
+% \cite{boellstorff2008coming,ito2005technosocial}. % ito2010mobilizing,ito2009hanging,boellstorff2012ethnography}.
+
+% In \textit{Geek Heresy}, Kentaro Toyama identifies three major world views describing the potential impact of technology on society:
+% \begin{inlinelist}
+%   \item ``utopians'',
+%   \item ``skeptics'', and
+%   \item ``contextualists''
+% \end{inlinelist}
+% \cite{toyama2015geek}.
+% Toyama's thesis, that technological intervention can benefit communities,
+% but that this intervention must be conscious of human factors,
+% carefully dismantles the unbridled optimism widely held and implicitly spread by ``utopians'',
+% who advocate strongly for free access to the Internet and more ubiquitous computing devices
+% (see: \texttt{Internet.org}, One Laptop Per Child).
+% Without addressing the underlying 
+
+% In his book, Toyama seems to avoid an underlying insight:
+% that these idealists hope that technology can be applied with similar effects across cultures.
+
+
+
+% % Toyama avoids discussing the sources of what one might call a ``utopian'' world view,
+% % but in doing so he may have overlooked a crucial insight:
+
+
+% the cultures we bring with us as we build and engage with technologically--mediated systems vastly informs our participation in those systems.
+% Nowhere is this clearer than in the culturally interwoven fabric of economies,
+% as we will see in the microcosm of digitally enabled labor.
+
+
+
+% \end{counted}
+% \footnotesize{word count: \thewords}
+\bibliographystyle{acm}
+\bibliography{../../references.bib}
+\end{document}

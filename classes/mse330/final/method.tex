@@ -1,0 +1,174 @@
+%!TEX root = final.tex
+In order to analyze our two research questions,
+we first quantify bail burden and preprocess the data,
+and subsequently perform statistical analyses on the data.
+The methods used in these steps are detailed below.
+
+
+\subsection{Bail Burden}
+We conceive of the possible burden placed on a defendant by bail as fitting into one of
+\nextitemizecount{} categories:
+\begin{inlinelist}
+  \item When a defendant is Released on his or her Own Recognizance (ROR),
+  the burden is negligible.
+  Defendants are required neither to put up money nor to spend time incarcerated; 
+  \item when bail is set and a defendant is able to pay it immediately,
+  the defendant is lightly burdened; 
+  \item when bail is set and a defendant is able to pay it but with a delay,
+    the defendant is significantly burdened both
+    financially and by
+    needing to spend time incarcerated prior to meeting bail; 
+  \item when a defendant either has no option to be released on bail,
+  or is unable to meet bail,
+    he or she is \textit{severely} burdened,
+    having to spend the entire time until trial incarcerated.
+\end{inlinelist}
+
+\subsection{Preprocessing}
+Several preprocessing steps were taken to ensure the validity of our analyses.
+Due to some inconsistencies in volume of cases prior to 2013,
+only cases from after (and including) 2013 were analyzed.
+Additionally,
+cases involving violent offenses were removed since
+there are extra considerations and complexities in bail--setting for violent offenders,
+who may be considered safety risks to the community and evaluated differently for bail.
+We also only consider cases that made it past arraignment,
+since cases where charges were dropped at arraignment are ineligible for the analyses we perform.
+Finally,
+for most analyses we consider Quality of Life (QoL) and non--Quality of Life (non--QoL) offenses separately.
+Quality of life offenses make up a category of illegal activity which is connected with the broken windows theory of policing
+--- these are misdemeanor offenses such as
+  disorderly conduct,
+  vagrancy,
+  or
+  loitering.
+QoL and non--QoL offenses may differ substantially in the populations being charged and in their handling in the justice system,
+so we perform the same analyses in parallel across these two types of data.
+
+
+
+\subsection{Analyzing the Effect of Bail on the Probability to Plea}
+We analyze the effect of bail burden on the probability of pleading through
+two main techniques and
+using both random forest models and GLM.
+First,
+we train models to predict the probability of pleading using all case characteristics through arraignment,
+including the burden level set.
+Then we create test sets composed of different burden levels
+(through two different techniques,
+described next),
+and analyze the test set probability of pleading conditional on each burden level.
+We present the results both as a CDF of the test sets' probability of pleading and as means of the distribution.
+
+To verify the effectiveness of our models,
+we produce calibration plots and include them in the appendix.
+For each row in the original test set,
+we predict the probability of pleading and ROR,
+respectively,
+for our two models.
+We bin these probabilities and observe the true probability of observing the dependent variable for each of the bins.
+
+
+\subsubsection{``All Else Equal''}
+For our preliminary analysis,
+we create the test sets for each burden level through an ``all else equal'' assumption
+--- that we can change the burden level of a given case while holding all other case characteristics the same.
+We duplicate the test set into four sets.
+In each data set,
+we set the burden level to
+  ``ROR'',
+  ``Trivial'',
+  ``Trivial with Delay'',
+  and
+  ``Jail'',
+respectively.
+We then send these test sets to the model and view the resulting predicted probability of pleading.
+We note that the ``all else equal'' assumption is not true in general.
+In a murder case,
+for example,
+it would not make sense to change the burden level from ``Jail'' to ``ROR''.
+However,
+because we analyze only non--violent cases,
+the assumption holds approximately.
+
+
+
+\subsubsection{Propensity Score Matching}
+To further support our analysis,
+we relax the assumption through initial propensity score matching.
+For this method,
+we split the burden into only two levels: ROR and Non--ROR.
+We train a model to predict the probability of ROR.
+Two test sets are then matched on the probability of ROR through \texttt{matchit}
+\citep{matchit},
+and the burden bits are set to ROR and Non--ROR,
+respectively.
+They are then sent to the probability of pleading models.
+To do true propensity score matching and make sure our assumption holds,
+we should have filtered out cases with either very low or very high probability of ROR.
+Otherwise,
+we are still using cases where it would not make sense to change the ROR value.
+
+
+\subsection{Analyzing the Effect of Judge on Bail}
+\subsubsection{Analysis --- Random Forest}
+For an initial analysis to observe judge effects,
+we predict the Probability of ROR being granted for each case,
+without using \texttt{JudgeID} in our prediction model.
+This analysis uses the same Random Forest ROR model trained in the Propensity Matching analysis.
+This model gives a baseline for judge independent granting of ROR.
+For each judge with over 100 cases in the test set,
+we determine the judge's mean predicted probability of ROR using the model.
+This value is the percentage of a given judge's cases that the ``average'' judge would ROR.
+We compare this value to the true percentage of cases in which each judge actually granted ROR.
+
+\subsubsection{Analysis --- Generalized Linear Model}
+An ``all else equal'' approach was taken in the GLM analysis
+--- the general strategy was to create a copy of the data with a test variable set to a given value,
+input these modified datasets into the model for each value the test variable can assume,
+and then obtain summary statistics for each possible value
+to then compare with the summary statistics associated with the other values;
+by doing this,
+any predictive power this model might have can be used
+to check for the relative influences of certain factors on the outcome that this model predicts.
+
+The ROR model was used to check if certain arraignment judges differed substantially in how they treated ROR.
+The plea model was used to check if certain levels of burden had a higher predicted rate reaching a plea disposition.
+As a cursory additional check,
+matching edge cases were identified using a software package
+(i.e. cases that can be considered similar on model inputs but differed on observed outcomes),
+and in each case,
+the same analysis was performed on a reduced dataset of these edge cases to similar results.
+
+Within this reduced set of edge cases,
+the assumption of ``all else equal'' has greater validity,
+as the matching software is trusted to compute a quantitative measure of this
+``equality'' between cases and identify precisely those which are ``sufficiently equal''.
+The effects of judge on ROR are summarized in
+figures~\ref{fig:ROR_QoL_GLM} and
+        \ref{fig:ROR_non--QoL_GLM}.
+For non--QoL cases,
+judges seem to have more similar ROR rates compared to QoL cases
+(one of the most prolific judges is also an outlier in the QoL dataset).
+The effects of burden on the rate of plea dispositions are summarized in
+figures~\ref{fig:QoL_plead_GLM} and
+        \ref{fig:non--QoL_plead_GLM}.
+
+For both QoL and non--QoL cases,
+the lower levels of burden had close distributions,
+but the distribution for ``nontrivial'',
+the highest level of burden had its mass shifted noticeably toward higher plea rates.
+Additionally,
+the predicted plea distributions on the QoL dataset had mass shifted more to the right compared to the non--QoL distributions.
+Analogous plots for the same analysis performed with the ROR model on the matched non--QoL dataset are found in
+figures~\ref{fig:mean_ROR_non--QoL_GLM} and
+        \ref{fig:mean_ROR_QoL_GLM};
+the other combinations of QoL or non--QoL and ROR or plea model yielded matched datasets that were too small
+(i.e. on the order of tens of cases) to use.
+
+
+
+
+
+
+

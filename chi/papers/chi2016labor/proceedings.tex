@@ -1,0 +1,166 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+% \toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is      granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+% Load basic packages
+
+% \usepackage{titlesec}
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+\usepackage{txfonts}
+\usepackage{mathptmx} % Comment if you want LaTeX's default font
+\usepackage[pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+% Some optional stuff you might like/need.
+\usepackage{microtype}  % Improved Tracking and Kerning
+\usepackage{ccicons}
+% \setcounter{secnumdepth}{3}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Laying Groundwork For a Worker--Centric Peer Economy}
+\def\plainauthor{Ali Alkhatib, Justin Cranshaw, Andrés Monroy-Hernandez}
+\def\emptyauthor{Anonymous}
+\def\plainkeywords{Peer economy; Collaborative markets}
+\def\plaingeneralterms{Documentation, Standardization}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+% \titleformat{\section}%
+%   [hang]% <shape>
+%   {\normalfont\bfseries\Large}% <format>
+%   {}% <label>
+%   {0pt}% <sep>
+%   {}% <before code>
+% \renewcommand{\thesection}{}% Remove section references...
+% \renewcommand{\thesubsection}{\arabic{subsection}}%... from subsections
+
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{1}
+\author{
+  \alignauthor{Anonymized For Review}
+}
+% \numberofauthors{3}
+% \author{%
+%   \alignauthor{Ali Alkhatib\\
+%     \affaddr{Stanford University}\\
+%     \affaddr{Stanford, USA}\\
+%     \email{ali.alkhatib@cs.stanford.edu}}\\
+%   \alignauthor{Justin Cranshaw\\
+%     \affaddr{Microsoft Research}\\
+%     \affaddr{Redmond, WA, USA}\\
+%     \email{justincr@microsoft.com}}\\
+%   \alignauthor{Andrés Monroy-Hernandez\\
+%     \affaddr{Microsoft Research}\\
+%     \affaddr{Redmond, WA, USA}\\
+%     \email{amh@microsoft.com}}\\
+% }
+
+\maketitle
+
+\begin{abstract}
+The ``gig economy'' has transformed the ways in which people work,
+but in many ways these markets stifle the growth of workers and the autonomy
+and protections that workers have grown to expect.
+We explored the viability of a ``worker-centric peer economy''
+--- a system wherein workers benefit as well as consumers ---
+and conducted ethnographic field work across fields ranging from domestic labor to home health care.
+
+We discovered seven facets that system designers ought to consider when designing a labor market
+for ``gig workers'', consisting principally of the following:
+  constructive feedback,
+  assigning work fairly,
+  managing customer expectations,
+  protecting vulnerable workers,
+  reconciling worker identities,
+  assessing worker qualifications, \&
+  communicating worker quality.
+We discuss these considerations and provide guidance toward the design of a mutually beneficial market for gig workers.
+\end{abstract}
+
+\category{H.5.m.}{Information Interfaces and Presentation
+  (e.g. HCI)}{Miscellaneous} \category{See
+  \url{http://acm.org/about/class/1998/} for the full list of ACM
+  classifiers. This section is required.}{}{}
+
+\keywords{\plainkeywords}
+
+\input{intro.tex}
+\input{background.tex}
+\input{fieldwork_advice.tex}
+\input{design_guidance.tex}
+\input{discussion.tex}
+
+% % REFERENCES FORMAT
+% % References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{../references}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

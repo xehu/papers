@@ -1,0 +1,387 @@
+%!TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{balance,graphics,setspace,parskip,times}
+\usepackage{hyperref}
+% \usepackage{fontspec}
+% \usepackage{xltxtra}
+% \usepackage{xunicode}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+
+% \doublespacing
+\usepackage[tiny,compact]{titlesec}
+
+\usepackage{xesearch}
+\newcounter{words}
+\newenvironment{counted}{%
+  \setcounter{words}{0}
+  \SearchList!{wordcount}{\stepcounter{words}}
+    {a?,b?,c?,d?,e?,f?,g?,h?,i?,j?,k?,l?,m?,
+    n?,o?,p?,q?,r?,s?,t?,u?,v?,w?,x?,y?,z?}
+  \UndoBoundary{'}
+  \SearchOrder{p;}}{%
+  \StopSearching}
+
+\setlength{\parskip}{.4em}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
+\def\labelitemi{\ }
+\newcommand*\elide{\textup{[\,\dots]}}
+\newcommand{\sectitle}[1]{\textbf{#1}\\}
+
+
+\begin{document}
+
+  \begin{center}
+  \large{\bf Response Paper 2} --- 
+  Ali Alkhatib
+  \end{center}
+
+\textit{Software has more power than law to shape the use of digital media.}
+
+
+\begin{counted}
+
+\sectitle{Introduction}
+In 1996, John Perry Barlow published ``A Declaration of the Independence of Cyberspace'',
+drawing a line between what he described as two worlds:
+one, predicated on property, identity, and context;
+and the other, predicated on ethics, thoughts, and egalitarianism
+\cite{barlow2009declaration}.
+Barlow's missive reflects a cultural sense deeply ingrained in cyber culture
+--- both then and now ---
+that people on the Internet are free from the shackles of offline social, legal, and cultural institutions.
+% Barlow's emphatic claim that his is a culture disentangled from the hooks of physical embodiment is somewhat undermined by the geographic reference that his letter was written in Davos, Switzerland.
+Indeed, his claim has resonated on the Internet, but it remains relatively untested;
+are the patterns of use of digital media shaped primarily by software as Barlow seems to suggest,
+or are they in fact primarily influenced by laws like the ones from which he so emphatically attempts to distance himself?
+% do laws substantively influence and shape the use of digital media or are they, as Barlow hopes to 
+
+In this paper, I argue that the roles of software and legal institutions in shaping the use of digital media are more nuanced than a simple ranking of one over the other.
+I will attempt to show that software potently articulates potential uses of digital media;
+the law, in turn, outlines the constraints on how people may use digital media.
+While these forces appear inherently to compete with one another,
+I will posit that the bottom--up influence of software
+and the top--down influence of law
+help provide important guidance in shaping the ways people adopt and use digital media.
+
+
+To substantiate this thesis,
+we will look to three points:
+\begin{inlinelist}
+\item We will consider a handful of cases illustrating the enabling potential of software systems, including digitally--enabled work and the emergence of ``big data'' as a way of approaching previously overwhelming problems;
+\item we will look to legal cases demonstrating the state's ability to restrict behavior on these systems, such as the application of existing and new laws to enforce laws prohibiting stalking, harassment, and abuse;
+\item finally, we will attempt to reconcile these opposing forces with an analytic framework.
+\end{inlinelist}
+% To substantiate this thesis, we will see cases exercising the extremes of
+% software enabling use,
+% law limiting it,
+% and finally we will consider a case of law and software in use together to control use absolutely.
+% Specifically,
+% This relationship is strongly evidenced in a number of domains:
+% \begin{inlinelist}
+% \item in digitally--enabled labor markets and the conflicts we see between these nascent systems and protections guaranteed by legal institutions; and
+% \item in the tension between system--users and system--designers over privacy and the use of users' data.
+% Given these discouraging examples of the potential interactions between legal systems and software, we will finally conclude with a look at
+% % as revelations related to privacy break mental models informed largely by cultural (including legal) worldviews;
+% \item open--source, ``free'', software development and specifically
+% how these cases prove that software and the law can operate in a collaborative, rather than an adversarial, nature.
+% \end{inlinelist}
+
+\sectitle{The empowering force of software}
+Digitally--enabled labor markets,
+in particular those articulating ``crowdsourcing'' as described by Jeff Howe and others
+\cite{brabham2013crowdsourcing,howe2008crowdsourcing},
+have enabled such radical change in the formulations of labor that one might think it calls for Dalton's comparisons of primitive economies and market industrialism, which he points out are
+``different\dots\ not in degree but in kind''
+\cite{dalton1961economic}.
+In other words, ``crowdsourcing''
+--- at least as Brabham and Howe define it ---
+is not just the scaling of work in one dimension, but changing the axis of work itself.
+Brabham attempts to distance crowdsourcing from conventional labor
+--- and even from other digitally--enabled labor such as ``production of the commons'' (e.g. Wikipedia) ---
+though deeper consideration of Riis's turn--of--the--century exposition on piecework suggests important parallels 
+\cite{brabham2013crowdsourcing,riis2004other}.
+
+Nevertheless, the changes to labor seem more reminiscent of a ``great transformation'', 
+on a scale of which Polanyi had written decades prior
+\cite{polanyi1944great}.
+In fact, through this lens, an argument can be made that some form of substantive transformation
+--- the commoditization of labor as discrete,
+modular pieces and the emergence of jobs rather than the notion of a ``career'' as such ---
+is taking place after what might be regarded as a ``false start''
+documented by Riis and later fought by early labor unions
+\cite{ebbinghaus1999institutions,riis2004other}.
+
+We can think about the emergence of piecework,
+at the turn of the twentieth century and then again in the last decade,
+as the introduction of systems
+--- social in the first case, but predicated on software in the contemporary case.
+Both advocate, in a bottom--up fashion,
+unconventional paradigms of work. %, hoping for norms to emerge slowly over time.
+In the first case,
+the number of worker--advocacy groups in the United States skyrocketed between the late nineteenth and early twentieth centuries 
+(until reaching what Hannan and Freemon hypothesized was a ``carrying capacity'' of labor unions)
+and pressure from these unions pressed legal institutions to formalize many of the protections for which many of these organizations had originally fought
+\cite{hannan1987ecology}.
+
+% In this sense, the law formalized a norm advocated by collective--action groups,
+% a phenomenon I argue parallels the events we are seeing today;
+Systems make it possible for workers to communicate, rally, and coordinate to improve their circumstances
+\cite{turkopticon,dynamo,uberAlgorithm}.
+We see that software allows people to communicate and coordinate in ways that were previously unheard--of and otherwise considered impossible
+\cite{shirky2008here,miller2011understanding,costanza2014out}.
+
+The enabling influence of software is not limited to labor markets.
+In \textit{Numbersense}, Fung (2013) makes an argument for the potential to use massive amounts of data
+--- about the self and the other ---
+to make crucial insights informing decisions
+\cite{fung2013numbersense}.
+His perspective and optimism is not unique;
+Mayer-Sch{\"o}nberger \& Cukier (2013) describe countless uses of ``Big Data'' to inform and improve the lives of those who participate in the collection of data at scale
+\cite{mayer2013big}.
+While Lanier (2014) claims that ``no one in science thinks of big data as a \ldots\ silver bullet''
+\cite{lanier2014owns},
+the overwhelming narrative among scientists suggests an attempt to find almost god--like applications of ``big data''
+\cite{carrel2012quantified,li2011understanding,wolf2010data,bell2009total}.
+% In this sense,
+Indeed, data is widely regarded as capable of solving any problem,
+limited only by the talent of those who wield it\footnote{
+Big data is not universally perceived as a cure for all problems;
+Bowker (2000) takes a critical look at the limitations of categorization
+% data as such,
+and the quantification, measurement,
+and logging of everything that the aforementioned research advocates,
+and how this over--reliance may problematize our understanding of the world
+\cite{bowker2000sorting}.}.
+
+I argue that this is an inherent affordance of software,
+to empower and enable those with access to these systems and tools to behave in new ways,
+and that software has a potentially significant role in influencing people's use of digital media.
+
+% I would assert that we should expect robust bottom--up efforts to protect and empower workers,
+% and that the cultural shift among ``gig workers'' will precipitate laws codifying many of the protections workers ensured via these mechanisms.
+% With that being said,
+% for the bottom--up efforts I predict to be successful,
+% they must provide workers with alternatives to existing markets,
+% or at the very least the means to coordinate and effect change on those markets,
+% in order to influence how markets operate.
+% In this
+
+
+\sectitle{The constraining influence of law}
+While legal systems don't yet adequately protect workers in contemporary piecework markets,
+colloquially known as the ``gig economy'',
+recent events suggest that their institutions are beginning to act to formalize protections determined to be necessary by workers in these new markets
+\cite{fedsUber,uberSuit}.
+Further paralleling the historical example,
+the argument has been made that more rigorous government involvement is necessary to protect workers
+by articulating limits on how people may use digital media in the context of crowdsourcing and this mode of labor
+\cite{fixingChaos}.
+This line of advocacy fundamentally assumes that the role of law is to rein in potentially dangerous forces, such as digitally--enabled labor markets predicated on software.
+
+
+% Mismatches in users' expectations regarding privacy proves a fertile ground for exploring how software enables certain uses, while law often limits it.
+
+It should also come as little surprise that
+laws have emerged outlining reasonable uses of data
+and limiting how data can be used to harm users.
+As Zittrain (2008) points out, privacy policies and content licenses
+--- legally binding terms describing the relationships between parties of various natures ---
+establish limits on the behavior of all parties involved
+\cite{zittrain2008future}.
+It is worth noting that these limitations thus constitute guarantees upon which others can rely,
+which Zittrain argues is an important feature of the Internet,
+especially well--illustrated in his discussion of Net Neutrality.
+
+% Lanier (2014) more overtly argues for limitations on the ways technology and ``Big Data'' about people can be used
+% \cite{lanier2014owns}.
+% While some of the propositions he makes are novel\footnote{Lanier's suggestion that people be compensated by system--builders for the value of their data is particularly inventive},
+% Lanier's arguments fundamentally rest on the principle that
+% legal institutions ought to limit how users
+% (e.g. advertisers and government intelligence agencies)
+% use data.
+% While in some sense this argument is prescriptive rather than descriptive,
+% --- Lanier is advocating for policies that are not the status quo ---
+Lanier (2014) and Bowker (2000) take a critical stance of the empowering nature of personal data at scale,
+but these critiques crystallize the \textit{geist}
+of the sense of empowerment that is widely felt in software.
+Lanier's assumption appears to be that this is the default role of laws
+--- to outline how people can behave
+(in this case in the context of using digital media)
+by drawing boundaries beyond which represent social and legal transgressions ---
+and that the nature of any debate regarding
+legislative intervention is fundamentally about whether it should draw an otherwise
+artificial boundary on people's behavior with regard to digital media.
+% In some sense, Lanier contributes to the thesis of this paper by operating according to the otherwise--invisible influence that is culture itself.
+
+Privacy is but one narrow facet exposing law's influence of the use of digital media.
+Laws regarding behavior on the Internet expose the attempts to limit the ways people use digital media,
+as Citron (2014) and Anderson (2013) show.
+Technology and software affords people the ability to run a website or service over the Internet;
+Anderson (2013) describes the awkward attempts of ``offline police'' to become ``Internet police''
+as they attempt to follow spammers, child pornographers, and drug dealers online;
+in particular,
+Anderson points to the applications of offline laws
+which codify the limitations on acceptable behavior online
+\cite{anderson2013internet}.
+
+Citron presents a more focused persuasive case that the law should %later argues law should
+--- and increasingly does ---
+outline limits on the behavior that occurs on websites and through online systems;
+transgressions such as cyber stalking and ``revenge porn'' \cite{citron2014hate}.
+While, as Citron points out in his examples of cyber harassment,
+there is ample need and motivation to revise and update laws,
+% there is ample room to improve and revise laws to better--reflect 
+% In cases like these,
+it's hard to downplay the role of law in shaping peoples' use of digital media.
+Moreover, here we see again that the primary force defining the boundaries on people's behavior
+stems not from the affordances and influences of software, but the directives of law.
+
+Law further shapes the use of digital media in increasingly challenging ways.
+Mayer-Sch{\"o}nberger points out that ``policy makers are compelling \ldots\ data collectors to perfect the digital memory of all of us''
+\cite{mayer2011delete},
+but this isn't the whole story;
+the ``right to be forgotten'' articulated by the European Union illustrates a seemingly conflicting force,
+prompting legal scholars to attempt to reconcile the push to exploit the affordances of software systems 
+while concurrently addressing ``an urgent problem in the digital age''
+\cite{rosen2012right}.
+Even in cases as contradictory as this one,
+it's clear that law carries with it an inherent power to limit and bound behavior
+--- in this case, the behavior of system--designers ---
+thus overwhelmingly shaping the use of digital media.
+
+
+% Here, we see a more contentious relationship between software
+% --- which arguably enables analysis and insights previously unavailable ---
+% and law
+% --- which draws strict boundaries on the uses of data and software--systems ---
+
+
+
+
+
+% We can see law and software influencing behavior in other aspects of our lives as well;
+% the mismatch of users' expectations regarding privacy compared to
+% the reality they experience illustrates how systems can afford for certain interactions
+% which are intuitively predicated on cultural norms such as laws.
+% More concisely, people's use of digital media is informed
+% --- sometimes erroneously --- by expectations codified 
+
+% In this case, I'll show that people use systems according primarily to their expectations of privacy
+% --- largely informed and affirmed by conventional systems such as laws ---
+% and that those expectations are routinely violated by software--based systems.
+% It is the mismatch between expectation and reality that surprises and frustrates users of systems.
+
+
+
+
+
+
+% \textit{Insert section about privacy revelations; argument that problems exist because software is at odds with culture, formalized by law.}
+
+
+\sectitle{Reconciling conflicting powers} % --- the good, the bad, and the ugly}
+% It can be difficult to reconcile the power of software and the power of law as determining factors in the use of digital media, but 
+This imposing power of governments and laws may be conceptually related to ``bio--power'', a term which Foucault uses to reference to how ``the human species became the object of a political strategy''
+\cite{foucault2009security}.
+I suggest that the power laws employ, to threaten to restrict human bodies, describes the paradigm on which all laws operate
+--- and that this paradigm is fundamentally the reason that laws curtail and limit.
+
+Foucault's insight arguably emerges when we look critically at the myriad censorship tools employed in China in the forms of ``The Great Firewall'', preventing access to certain sites and services, and the hundreds of thousands of censors who tirelessly flag and remove content deemed inappropriate.
+King, Pan, \& Roberts (2013) illustrate this confluence of law and software, and how the Chinese government effectively ``clips'' the social ties of collective action efforts to stifle organizers' efforts
+\cite{king2014reverse}.
+By tightly constraining the enabling force of software systems,
+and invoking the ethos of the police and law through references to ``Chacha'' --- the Internet police,
+China expertly shapes its citizens' use of digital media
+\cite{king2013censorship}.
+
+
+\sectitle{Conclusion}
+We've explored the ways that software and law influence and shape the use of digital media,
+coming away with a complex and conflicted understanding of the relationship that these two forces have
+with one another.
+We saw that software and digital systems have the power to enable behavior of various qualities
+--- both to empower and to disenfranchise people.
+We also dove into myriad ways that laws curtail and limit behavior and the use of digital media
+--- again to empower and, sometimes, to disenfranchise people.
+From these cases, we can reasonably conclude that software, ``cyberspace'', the embodied world, and law are far more entangled and interrelated than Barlow (1996) would have liked to admit in his ``declaration of independence''.
+
+It may be tempting to ascribe greater value to law or software over the other
+as we weigh the potency of these forces to influence digital media use,
+but this would be a mistake.
+I would argue that it would be more accurate to say that both factors must interact,
+and that the ways in which people use digital media are enabled and determined by software and constrained by laws.
+
+% It may be more accurate to describe the relationships between law, software, and the ways in which people use the myriad digital media that emerge as a confluence of necessary and sufficient conditions.
+% In the same way that a certain predicates may be necessary for a certain conclusion to emerge
+% Zittrain discusses another issue which highlights the potential for law to limit uses,
+% in this case pointing to ``patent [and copyright] thickets'' \cite{zittrain2008future}.
+% Examples like these typify a conflict between software and 
+% Here we see the counter--example to the risk of software being too powerful
+% --- as we saw in the case of digitally--enabled labor markets ---
+% in that laws governing patents, copyrights, and other intellectual property
+% potentially stymie the use of digital media.
+% The aforementioned cases might lead one to think
+% --- and argue, as Gray does \cite{fixingChaos} ---
+% a narrative that generally places software in an adversarial position with relation to law.
+% That is, that technology and government are inherently at odds with one another,
+% and that such is the natural relationship in which users of digital media find themselves participating.
+
+% I hope to illustrate instead that law and software sometimes cooperate,
+% more persuasively influencing people's behavior
+% by working together than either force could have accomplished alone. This will be evident 
+
+% Arguably the most salient case of law and technology working together can be found in China,
+% where ``The Great Firewall of China'' prevents Internet--users from accessing various services,
+% and countless censors work endlessly to flag and remove certain data \cite{king2013censorship}.
+
+% We will find,
+% independent of the morality of the policies and systems themselves,
+% that this synergy of technology and law overwhelmingly influences how people use digital media.
+
+% I argue instead that law and software must interact constructively,
+% fostering the formation of norms via affordances made available in software
+% and affirmed by legal systems codifying those norms.
+% We can see examples of positive relationships in a number of settings,
+% but perhaps the best--documented example is that of open--source software development.
+% In this space, we will find robust 
+% \textit{Insert awesome optimistic case here: Maybe something about how FSF uses legal frameworks to make it possible to formalize a grassroots movement for free software. Gonna be supes awesome.}
+
+% In both cases,
+% conflicts with the law, a top--down power , % s (such as legal frameworks)
+% make the importance of collaboration between software and the law crucial.
+
+% \begin{inlinelist}
+% \item worker--advocacy groups such as labor unions,
+% \item laws designed to protect workers, and
+% \item blorp
+% \end{inlinelist}
+
+
+
+% \begin{inlinelist}
+%   \item the conflicts between digitally--enabled labor markets and legal frameworks protecting workers illustrate the turmoil we should expect to see when worldviews represented by systems built from software and those expressed by laws are not in alignment;
+%   \item privacy of individuals in the landscape of digitally--mediated environments has become a contentious topic, due in part to the difficulties in reconciling how we perceive privacy with existing laws, both in the contexts of the \textit{spirit} and the \textit{letter} of laws;
+%   \item final
+%   \end{inlinelist}
+
+
+
+
+
+
+
+
+
+
+
+\end{counted}
+\footnotesize{word count: \thewords}
+
+\bibliographystyle{acm} % this will cause an error if there are no citations
+\bibliography{../../references.bib}
+\end{document}

@@ -1,0 +1,201 @@
+\documentclass[12pt]{article}
+% Load basic packages
+\usepackage{balance,graphics,times,parskip,setspace}
+\usepackage[pdftex]{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+\singlespacing
+\usepackage[tiny,compact]{titlesec}
+\setlength{\parskip}{.4em}
+
+\newcommand{\sectitle}[1]{\textbf{\MakeUppercase{#1}}}
+
+% \setlist[enumerate,1]{%
+%   label=\arabic*.,
+% }
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+  label=\arabic*),
+}
+
+\begin{document}
+  \begin{center}
+  \large{\bf Worker--Managed Crowdsource Labor Markets}
+  % Ali Alkhatib
+  \end{center}
+
+
+\sectitle{introduction}\\
+In the past several years, researchers have watched new forms of labor
+--- exemplified by labor markets like Amazon Mechanical Turk (AMT), Uber, and TaskRabbit ---
+emerge and balloon into billion--dollar industries.
+%
+While these markets allow people to engage in the workforce in novel ways,
+this ``gig economy'' has been criticized for commoditizing
+and marginalizing workers
+\cite{uberAlgorithm}.
+
+On Turkopticon \cite{turkopticon} and in my prior work on Dynamo \cite{dynamo},
+we attempted to make these markets more rewarding for workers,
+but no labor markets to date place workers first;
+existing markets trade one manager for another, maintaining an adversarial role between laborers and their managers.
+
+Workers have faced issues like these for more than a century,
+but they bear relevance to the HCI community broadly for two major reasons:
+\begin{inlinelist}
+  \item the features of digital systems allow researchers to have an outsize impacts on workers,
+  whereas historically markets have been fractured \& untenable,
+  and
+  % --- or emulate their characteristics ---
+  \item as researchers of technical systems and social interactions,
+  researchers have a prerogative to attempt to steer systems toward more beneficial outcomes,
+  especially given the growth of this form of labor and the potential implications for the future of work.
+\end{inlinelist}
+
+\sectitle{hypothesis}\\
+I propose to investigate the viability of a technologically--mediated,
+worker--run market as an alternative to existing systems.
+I hypothesize that
+such a market can compete effectively,
+and that workers and consumers would benefit more, % than under the status quo,
+for a number of reasons.
+% as a result of community--determined norms and rules.
+% and that it would benefit workers \& consumers due to the equitable relationships that it inherently fosters.
+For workers,
+\begin{inlinelist} % \itemsep 0pt \parskip 0pt
+  \item communally determined rules and norms are perceived as, and perhaps are, fairer, and
+  \item a protocol for labor markets would allow markets to communicate things like worker reputation.
+\end{inlinelist}
+Customers, for their parts, would be able
+to leverage market competition, minimizing predatory pricing models.
+
+
+\sectitle{background}\\
+The most immediate question is why technologically--mediated
+worker--run markets are so rare.
+One may have predicted that worker--run markets would emerge inevitably
+as online systems parallel (and sometimes model) offline settings.
+Furthermore, the structure of the Internet
+--- a ``rhizome'', as Miller and numerous others describe \cite{miller2011understanding} ---
+suggests that communities should be able to form naturally,
+unencumbered by barriers like geography.
+Futurists predicted that the Internet would democratize communication,
+enabling grassroots organization at unprecedented scales.
+
+The empirical research suggests that the reality of this promise is more qualified
+\cite{dynamo,toyama2015geek}.
+Indeed, the factors which stymie community--run digital markets are not technical.
+Researchers have built on existing markets to experiment with the organization of work;
+others have implemented labor markets entirely from scratch
+\cite{Alek2011,foundry}.
+The components of gig labor market
+--- such as scheduling, dispatch, \& payments ---
+are sufficiently explored that we should consider them ``solved problems''.
+
+No; we're finding that the challenges to worker--centric markets are social.
+Research has shown that crowds can be directed
+and can make tactical decisions on an ad hoc basis,
+but collective governance and policy--making,
+especially in competitive economic settings, remains an open question.
+% The emergence, communication, and enforcement of norms
+The coalescence of culture
+adds a dimension of complexity to the individual cases of collective action represented by the study of individual events.
+Engineering instances of collective action is a qualitatively different challenge from
+fostering a community of ongoing collective action
+\cite{russell1982collective}.
+% (e.g. \cite{catalyst,dynamo}).
+
+\sectitle{Methodology}\\
+I intend to develop a worker--run labor market,
+which the National Domestic Workers Alliance (NDWA)
+will operate through their innovation arm, the Fair Care Labs.
+I hope to demonstrate that cooperatively operated
+digital labor markets can be successful, and that technologically--mediated
+cooperative labor markets are viable alternatives to markets operated as firms.
+
+
+My immediate task is to create a labor market which illustrates the characteristics described
+--- technical features like scheduling, dispatch, \& payments, as well as
+the necessary affordances for collective governance:
+% The most immediate goal is to implement a system consisting of
+% the technical requirements of gig labor markets described before
+% (factors such as scheduling, dispatch, \& payments).
+% I will develop a mobile application,
+% similar in appearance to existing labor platforms,
+% but importantly differentiated by affordances for community governance:
+% \begin{inlinelist}
+  % \item
+  forums for discourse,
+  % \item
+  voting systems for referendums, and
+  % \item
+  communally written bylaws. %  written and approved by the community.
+% \end{inlinelist}
+These tools will be the starting point for a worker--run crowd labor market,
+upon which more affordances will be designed and implemented as needed.
+
+The Fair Care Labs plans to continue the relationship that began over the summer while I was affiliated with Microsoft Research,
+deploying this system in the San Francisco Bay Area and the Seattle area
+in order to allow me to provide high--level guidance
+and to make any necessary course--corrections.
+This should ameliorate concerns both about funding the system
+and sourcing workers;
+my involvement is the extent to which I will be able to contribute as a researcher.
+
+% Past the instantiation of the marketplace and the recruitment of workers,
+% the questions that remain relate to
+% the ongoing relationships that form,
+% the norms that emerge, and the methods and practices Computer Scientists might employ to foster productive relationships,
+% informed in large parts by insights made through Anthropological inquiry.
+
+% As early as 1982 it had been argued that
+Using Hardin's perspective of collective action,
+distinguishing between ``one--shot'' and ``ongoing'' campaigns,
+we realize it's necessary to consider how groups sustain collective action over time.
+% \cite{russell1982collective}.
+Thus, designing ongoing collective action requires skills in 
+system--building,
+as well as a ``nearly anthropological investigation'' to engage in the sociocultural questions herein
+\cite{russell1982collective}.
+This describes the type of evaluation involved:
+a reflection on the ways in which people work and relate with one another,
+and the techniques we can use as engineers of social systems to guide relationships.
+
+
+% In this area, I am relatively uniquely qualified.
+The ethnographic and design work I've done with various labor advocacy groups,
+my prior work on Dynamo
+\cite{dynamo},
+and my background and training as an Anthropologist
+make me ideally skilled to pursue this line of research.
+I have demonstrated that I can build systems,
+and crucially I have proven experience in the qualitative,
+sometimes nebulous fieldwork necessary for this research.
+
+% With the NDWA funding and operating this market,
+% Continuing the work I began with the NDWA while working with MSR,
+% and having secured their commitment to fund and operate this market,
+% I'm confident that a functionally viable labor market will be given a real chance to succeed.
+% While the NDWA are committed to more worker--centric labor markets,
+% my ability to contribute depends in part on my ability to continue my career.
+
+% \dots
+% boom microphone drop give money please
+
+\renewcommand\refname{\sectitle{references}}
+% % REFERENCES FORMAT
+% % References must be the same font size as other body text.
+% \bibliographystyle{SIGCHI-Reference-Format}
+\bibliographystyle{acm}
+{\footnotesize
+\bibliography{../references.bib}
+}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

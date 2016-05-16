@@ -1,0 +1,108 @@
+\documentclass{sigchi}
+\usepackage{graphics,balance,txfonts,mathptmx,color,booktabs,color,booktabs,textcomp,microtype,ccicons}
+\usepackage[pdftex]{hyperref}
+\usepackage[utf8]{inputenc}
+\def\plaintitle{Laying Groundwork For a Worker--Centric Peer Economy}
+\def\plainauthor{Ali Alkhatib, Justin Cranshaw, Andrés Monroy-Hernandez}
+\def\emptyauthor{Anonymous for Review}
+\def\plainkeywords{Peer economy; Collaborative markets}
+\def\plaingeneralterms{Documentation, Standardization}
+
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},       pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords}, bookmarksnumbered,
+  pdfstartview={FitH},          colorlinks,
+  citecolor=black,              filecolor=black,          linkcolor=black,
+  urlcolor=linkColor,           breaklinks=true,
+}
+
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{4}
+\author{
+  \alignauthor{Ali Alkhatib                 \affaddr{Stanford University}   \affaddr{Stanford, USA}
+        \email{ali.alkhatib@cs.stanford.edu}}
+  \alignauthor{Justin Cranshaw              \affaddr{Microsoft Research}    \affaddr{Redmond, WA, USA}
+        \email{justincr@microsoft.com}}
+  \alignauthor{Andrés Monroy-Hernandez      \affaddr{Microsoft Research}    \affaddr{Redmond, WA, USA}
+        \email{amh@microsoft.com}}
+  \alignauthor{Michael Bernstein      \affaddr{Stanford University}    \affaddr{Stanford, USA}
+        \email{msb@cs.stanford.edu}}
+}
+\numberofauthors{1} \author{ \alignauthor{\emptyauthor} }
+\maketitle
+
+\begin{abstract}
+The ``gig economy''
+--- where work is measured through discrete tasks rather than through interconnected (and often long--running) careers ---
+has become a site of significant frustration among workers who have come to rely on these systems and this form of work.
+This paper explores some of the sources of that stress,
+and attempts to relate this seemingly nascent work style to more familiar forms of labor
+--- namely, ``piece work'',
+a form of work which emerged at the dawn of the 20th century.
+While we find and identify parallels between ``gig work'' and the more theoretically familiar ``piece work'',
+we emphasize divergences which make the conflation of these ideas problematic.
+
+We further explore opportunities and tactics to empower workers,
+informed by ethnographic fieldwork including participant--observation,
+semi--structured interviews,
+and participatory design.
+Our observation and interviews lead us to conclude that the most intuitive mechanisms for empowering workers
+--- namely, labor unions advocating collectively and counter--balancing the manager's outsize leverage ---
+may both structurally and culturally fail to capture the needs of ``gig workers''.
+We argue that design interventions to empower ``gig workers'' must build on the theoretically familiar,
+much as ``gig work'' itself draws inspiration from ``piece work'',
+but that it is crucial that interventions are designed to support,
+rather than reject,
+the unique cultural and system qualities of gig workers.
+\end{abstract}
+
+\category{H.5.m.}{Information Interfaces and Presentation
+  (e.g. HCI)}{Miscellaneous} \category{See
+  \url{http://acm.org/about/class/1998/} for the full list of ACM
+  classifiers. This section is required.}{}{}
+
+\keywords{\plainkeywords}
+
+\section*{Dealing with Monopsonies}
+\section*{Collective Bargaining}
+
+
+% \input{intro.tex}
+% \input{background.tex}
+% \input{fieldwork_advice.tex}
+% \input{design_guidance.tex}
+% \input{discussion.tex}
+
+% % REFERENCES FORMAT
+% % References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{../references}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

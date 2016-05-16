@@ -1,0 +1,39 @@
+%!TEX root = ../proceedings.tex
+% \subsection{Worker Qualifications}
+\textit{Workers in variably regulated markets similarly seek to prove their qualification;
+they accomplish this in different ways.}
+
+In interviewing workers across industries we found that workers with formalized qualifications wished to emphasize the value of the formalized qualifications that they offer;
+in the case of electrical workers, strictly regulated by the state in which we were conducting research, workers feared that unlicensed, unregulated workers potentially tarnished the reputations of workers with legitimate credentials.
+
+In the driver-for-hire market, we generally trust that drivers for Uber, Lyft, and even yellow cab companies are legally qualified to drive a car.
+While passengers rarely ask to see proof of license and it is rarely shown (except, sometimes, in the cases of yellow cabs), it is widely assumed that a worker given access to the market and its consumers has sufficiently proven to the market operators (Uber, Lyft, etc\dots) that the driver is qualified.
+The perceived risk of being caught without a valid driver's license seems sufficiently discouraging that fears of abuse and deception are not widely held in the United States, where this research was conducted.
+
+As we interviewed members of organization A, we discovered a complex web of laws describing the ratios of variously qualified workers and other workers on construction and other work sites.
+In short, a work site would be deemed in violation of construction regulations if too many inexperienced workers are working without sufficient more senior workers are not on the premises to oversee the work.
+This requirement proves challenging to follow under the status quo as an worker calling in sick abruptly one morning may cause the work site to fall out of regulation.
+
+Computer Scientists may observe that this problem simple enough to identify, at least to augment a human-driven process of finding another worker with sufficient credentials to take the absent worker's place for the duration of the absence.
+We consider this one of the more formalized qualifications processes, and is roughly in line with the qualifications concerns we encountered when interviewing home health care workers through organization B.
+
+We found less formally regulated, often homegrown, modes of qualifying workers at other organizations.
+At organization E and through organization C, we found that organizations would determine worker qualifications using highly specialized criteria.
+For instance, at organization E, we found that day laborers kept track not just of things like whether they were proficient English speakers, but also kept track of a wide array of qualifications describing whether they were eligible to take jobs involving yard work, heavy lifting, painting in various forms (e.g.
+with a brush versus with a spray canister), and numerous other factors.
+
+This system generally worked, with a notable exception.
+One day, while volunteering for the phone dispatch system at organization E, we received a call asking for someone who could paint with a spray canister.
+We correctly matched a worker to that call, but when the worker arrived to pick the worker up (the cheapest of three options for getting the worker to the work site), it came to light that the worker did not want to work for a contractor
+--- which this customer was.
+Our solution was to hastily find another worker who would be able to paint, which we managed to do expeditiously.
+Later, we discovered that we had neglected to verify that the worker was able to paint with a spray canister, which he was not.
+Ultimately, the worker was sent home and the work was not completed that day.
+
+It should go without saying that this was a failure in attempting to match a worker and a customer.
+The individual points of failure, however, can inform the design of an automated system to match workers and customers.
+The first in the series of otherwise avoidable mistakes occurred as a result of the worker not being able to make an informed decision about the customer requesting him.
+When the problem emerged, we sourced a worker according to a different procedure from the method used during the rest of the day
+--- specifically, hastily ---
+and as a result we overlooked details that otherwise would have prevented the second worker from claiming (or even wanting to claim) the work for which he was not qualified.
+These considerations would be simple, but not necessarily intuitive, to implement in a system.

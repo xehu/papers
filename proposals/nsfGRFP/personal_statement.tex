@@ -1,0 +1,333 @@
+\documentclass[12pt]{article}
+% Load basic packages
+\usepackage{balance,graphics,times,parskip,setspace}
+\usepackage[pdftex]{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+\singlespacing
+\usepackage[tiny,compact]{titlesec}
+\setlength{\parskip}{.4em}
+
+\newcommand{\sectitle}[1]{\textbf{\MakeUppercase{#1}}}
+
+% \setlist[enumerate,1]{%
+%   label=\arabic*.,
+% }
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+  label=\arabic*),
+}
+\begin{document}
+
+\begin{center}
+\textsc{\MakeUppercase{Peer--managed Crowdsource Labor Markets}} --- Ali Alkhatib
+\end{center}
+
+% \textit{Roadmap:}
+% \begin{itemize} \itemsep0pt \parskip0pt
+%   \item Worked on Dynamo; learned about collective action
+%   \item Continued thinking about issues, driven to explore technologically enabled work in general
+%   \item Found myriad issues, began thinking more deeply about this subject:
+%   \begin{itemize}
+%     \item What are the common problems?
+%     \item Who are the actors in these problems?
+%     \item How can these actors contribute to solutions?
+%   \end{itemize}
+%   \item Went to MSR to study ``gig workers'' and design a worker-centric system
+%   \begin{itemize}
+%     \item Learned about cooperative labor groups
+%     \item Designed interactions that place the benefits of workers first
+%     \item Formed alliances with key stakeholders
+%   \end{itemize}
+%   \item We discovered characteristics that allow for the emergence of cooperative groups
+%   \begin{itemize}
+%     \item Some barriers prevent these approaches from scaling:
+%     \begin{itemize}
+%       \item Trusting members when membership is enormous
+%       \item Sense of stakeholder status at vanishingly small individual stake
+%       \item ???
+%     \end{itemize}
+%   \end{itemize}
+%   \item Finding solutions to these problems is critical.
+%   \begin{itemize}
+%     \item Work is increasingly trending toward ``gig work''
+%     \item The law is catching up, but markets continue to emerge finding new ways to shirk laws
+%     \item Fundamentally, the best way to guarantee healthy market is to prove one can exist
+%   \end{itemize}
+%   \item I'm the best person to do this research:
+%   \begin{itemize}
+%     \item I come from a background in Anthropology; enables deep ethnographic research
+%     \item I understand the technical domain better than any standard Anthropologist would
+%     \item I have research experience in this space \& existing goodwill and trust with workers
+%   \end{itemize}
+% \end{itemize}
+
+% Last year while working on Dynamo,
+% a platform for collective action among workers on Amazon Mechanical Turk (AMT),
+% I noticed a trend.
+% It was subtle, but workers in the relatively nascent ``gig economy'' were beginning
+% to speak out against the working conditions and treatment they were enduring until now.
+% Among other things, workers began to demand fairer, more transparent treatment,
+% more rigorous vetting of malicious requesters,
+% and in some cases, liaisons between workers and the managers who operate these markets.
+
+
+% In particular, they were airing their complaints to the operators of these markets,
+% exposing a complicated legal maneuver these operators had contrived to minimize their legal exposure.
+
+% Turkopticon and Dynamo empowered information workers in the gig market, but
+% as I soon discovered, these platforms were stopgap solutions to deeply flawed social arrangements.
+% To be specific, these markets assume an antagonistic role with relation to workers.
+% In balanced markets, the deleterious effects of antagonism are mitigated by the competing forces.
+% On markets like AMT and other ``gig work'' markets, however, 
+
+
+% Last year I began collaborating with workers on Amazon Mechanical Turk (AMT),
+% known amongst one another as ``Turkers'',
+% to study technologically enabled collective action.
+% Together we built ``Dynamo'',
+% a platform for organizing collective action which enabled workers to coordinate their joint protest of mistreatment;
+% since its founding, Dynamo has fostered numerous campaigns designed to elevate these workers' statuses in the eyes of job requesters and market operators.
+
+% I continued thinking about the issues that emerged while we worked on Dynamo,
+% and eventually I found myself studying technologically enabled work in general,
+% looking for undercurrents between these fields.
+% I found parallels 
+
+
+% In these last 5 years I've gone from archaeological digs in Belize to designing crowd labor markets at Microsoft Research.
+% In the time between then and now, I've 
+
+
+Relatively few Anthropologists can comfortably code in R or Python,
+and similarly few Computer Scientists readily engage with Foucault's writing on biopower and biopolitics.
+This type of dichotomy tends to prevent Computer Scientists from using their tools to explore socio--cultural topics deeply,
+and social scientists from making use of powerful quantitative methods and techniques.
+Vanishingly few researchers can claim to have engaged deeply in both fields.
+As an Anthropologist, I have helped run archaeological field schools and led ethnographic research in field sites including Central and South America;
+as a Computer Scientist, I have designed and helped build online systems such as platforms for collective action and labor markets for gig workers.
+
+ % Microsoft Research.
+% In this statement,
+% I hope to illustrate that I have precisely the skill--set and motivation necessary to 
+
+% I have engaged so deeply in Anthropology and Archeology as staffing field schools in Central and South America,
+% and demonstrated my competence as a Computer Scientist in my design and implementation of crowd labor markets at Microsoft Research.
+
+
+% With my background in Anthropology and my skills as a Computer Scientist,
+% I am uniquely capable of exploring deeply interdisciplinary, socio--technical questions.
+
+
+
+% To be sure, the path I took to get to where I am was far from direct;
+% I spent years at a community college with little idea of what I wanted to do with my life.
+% My academic performance reflected my lack of motivation, and even after several quarters
+
+I began my academic career at a community college with no idea of what I wanted to do with my life.
+This ennui had plagued me through high school,
+and my performance suffered so greatly that I nearly didn't graduate;
+I completed several courses at a community college,
+applying those credits to high school courses I hadn't successfully completed during my high school career,
+and earned my diploma months later than intended.
+When I arrived at community college,
+I knew that it was a patch for a much deeper problem:
+I didn't know what I cared enough about to pursue with earnest.
+
+I had a vague sense that I wanted to study people and I was interested in technology,
+but I had neither the motivation nor awareness of a field such as Human--Computer Interaction (HCI) to spark and focus that motivation.
+I took courses in countless subjects, and
+while all of these subjects interested me,
+the passion that I saw in others was absent for me,
+so I continued to search.
+
+It was an Archeology course which sparked my passion for learning.
+My then--professor extolled Anthropology's myriad uses,
+and as I learned about archaeological sites and the material records they left,
+I realized that the methodologies described in Archeology were the ones I wanted to learn and apply to living cultures.
+I later discovered Cultural Anthropology
+and found that while, methodologically, the quantitative methods of Archeology were at odds with contemporary Cultural Anthropology,
+I could nevertheless find a niche and safely pursue my passion there.
+
+Over the next 4 years I pursued anthropological and archaeological research,
+pursuing ethnographic fieldwork in Belize and leading field school exercises in Ecuador between integrating and managing a database of tens of thousands of artifact finds from over a decade of past excavations.
+In Belize and later in Ecuador,
+I studied lithic shards and ceramic bits,
+finding parallels in the silicon bits and array shards of digital cultures.
+I not only developed skills that would enable me to study living cultures in novel ways,
+but I acquired a passion and ambition for the role and status of the social sciences in an increasingly data--oriented world.
+
+After transferring to UC Irvine I pursued an intensive curriculum of up to twice as many units per quarter as are typically allowed,
+engaging in student government and multiple research initiatives through the Undergraduate Research Opportunities Program (UROP).
+While engaged in the Multidisciplinary Design Program (MDP),
+sponsored by UROP and advised by Dr.
+Geoffrey Bowker and Dr.
+Judith Gregory,
+I found that Informatics offered the technical background I would need to pursue graduate--level research of digital communities and cultures.
+In its diverse research area utilizing qualitative and quantitative methods I saw an opportunity to round myself out;
+I consequently decided to pursue a degree in Informatics,
+with an emphasis in Human--Computer Interaction,
+in concurrence with my degree in Anthropology.
+To accomplish this,
+I enrolled in as many as 33 units per quarter while working and pursuing independent research.
+
+Eager to gain knowledge,
+tools,
+and skills I had thus far been lacking,
+I found myself taking so many more courses
+--- and so many of which without many of the prerequisites associated ---
+that my academic performance suffered.
+That point is evidenced by several of the grades on my transcripts,
+when I took advanced engineering courses in the implementation of programming languages,
+emphasizing non-imperative languages like Prolog and Haskell,
+for which I was woefully unprepared.
+Keen to learn these languages,
+and perhaps headstrong,
+I enrolled in the course anyway and earned the lowest grade I received as an undergraduate.
+Still,
+the experience illuminated new modes of thought,
+illustrated through the logic of these programming languages,
+which I maintain I would not have had the opportunity to experience had I not taken the course at that time.
+
+% That decisive point in my academic career
+% --- the course in Archeology ---
+% opened a door to a career in research that I had never realized existed,
+% let alone that I could be a part of.
+% More than that,
+% when I realized that I could carve a path for myself,
+% I found the internal drive I needed to make it possible;
+% the goal I needed.
+% My two years at UC Irvine
+% --- in which I earned two separate degrees in disparate subjects,
+% earned membership in the Phi Beta Kappa honors society,
+% engaged in numerous research projects (one of which resulted in an undergraduate thesis),
+% and managed to maintain a job ---
+% illustrate that once I have identified and placed the full weight of my energy and focus on my goals,
+% achieving them becomes easy.
+
+My experience as a researcher while affiliated with a community college,
+in Belize and Ecuador,
+taught me both flexibility and perseverance.
+In the highlands of Ecuador
+--- with low oxygen from high altitudes, near--freezing climate,
+and scorching sun owing to the reduced atmospheric coverage ---
+we had to be both patient and determined in our fieldwork.
+In Belize,
+the grueling heat,
+swarms of potentially malarial mosquitos,
+and the frustrating opposition we experienced from locals suspicious of our intentions drove many to give up.
+Those of us that pushed onward gained an appreciation for the rigor that goes into personally directed,
+previously unexplored research questions.
+Research as an archaeologist and in my fieldwork in other countries instilled in me a work ethic that has benefited me in every endeavor I have approached since then.
+
+My research experience at UC Irvine further emphasizes both the interdisciplinary nature of my background as well as my ability to pursue research of the scale and ambition described in my research proposal.
+In my first year at UC Irvine,
+I pursued thoroughly interdisciplinary research through the previously mentioned MDP crossing the Donald Bren School of Information and Computer Science with the School of Social Ecology.
+In this research,
+I leveraged observational and ethnographic fieldwork I had learned over the years of fieldwork I had done as a pure anthropologist in Ecuador and Belize.
+I also tapped into design skills I was beginning to learn as a student in Informatics and Human--Computer Interaction,
+weaving my skills into a single skillset that spans disciplines.
+Here,
+I honed the crucial skill of incorporating and synthesizing wisdom from disparate fields,
+a skill I have since found to be profoundly valuable.
+
+In my second and final year at UC Irvine,
+I engaged in independent research for my honors thesis on Quantified Self,
+advised by Dr.
+Tom Boellstorff and supported by the Undergraduate Research Opportunities Program at UC Irvine.
+Every aspect,
+from navigating ethical considerations with the Institutional Review Board,
+to balancing the quantitative and qualitative research methods I had learned and was continuing to learn,
+was both enormously difficult and profoundly rewarding.
+Studying quantitative data, as well as critiquing the process of reflecting on my automatically--logged data,
+% and digital paradigms alongside perhaps more conventional socio--cultural theories and frameworks,
+helped concretize my sense of the intellectual space that I wanted to explore further.
+
+After graduating from UCI,
+I moved to Stanford to begin work as an independent researcher under Michael Bernstein, where
+I studied collective action and how crowd workers deal with marginalizing, frustrating, and sometimes antagonistic labor markets.
+Through that research,
+I gained a deeper appreciation for the needs gig workers faced,
+and the inherent challenges they encountered trying to mitigate these issues.
+Our research led to ``Dynamo'',
+a platform used by hundreds of Turkers to coordinate collective action to improve their circumstances and relationships between themselves and requesters.
+Our research has produced a peer--reviewed publication,
+a still--operating platform for Turkers,
+and a set of ethical guidelines for academic requesters
+\cite{dynamo}.
+
+
+As successful as it was, Dynamo's launch
+left me with a pervading sense that
+our ability to positively affect worker outcomes in this emerging type of labor was fundamentally limited as long as we dealt in tools to \textit{ameliorate} the grievances of existing systems.
+I felt increasingly that the most outsize impact we could have on markets like AMT, Uber, and the like would be to mitigate their exploitation and marginalization of workers;
+the only way that we could illustrate a gig labor market that benefits workers and customers would be to articulate the system ourselves.
+% It became increasingly apparent that solutions to the problems gig workers faced would come not from patches to existing systems,
+% but from systems designed at the outset to empower and benefit workers.
+
+I began working with Microsoft Research and the FUSE Labs last summer to explore the viability of worker--centric labor markets.
+Working with the Service Employees International Union (SEIU), the International Brotherhood of Electrical Workers (IBEW), and the National Domestic Workers Alliance (NDWA) and their innovation arm the Fair Care Labs,
+I conducted ethnographic fieldwork of day--laborers in and around Seattle, designed, and ultimately implemented a front--end system illustrating the interactions and affordances that a worker--centric labor market would offer.
+
+My body of research has given me a strong background of research ranging myriad fields,
+each leaving an indelible mark on the way and the rigor with which I pursue research.
+I believe that these experiences,
+and those that I will acquire over the next several years at Stanford,
+will help me establish myself as a leading thinker, bridging the social sciences and computer science.
+
+Robert A.
+Heinlein coined a term well known today in programming culture: ``grok''.
+It means to understand an idea so personally that it becomes a part of who you are.
+Anthropology has a similar term for something that is understood personally and intuitively
+--- ``emic'' knowledge.
+Two distinct,
+almost fundamentally different fields of study share a notion of the intimate familiarity of an idea,
+demonstrating the potential to bridge these two areas that has yet to be explored more fully.
+At its core,
+this notion describes the artificial distinction and the incredible convergent evolution of hypotheses,
+theories,
+and models that the giants of our respective fields have invented.
+These mirrored ideas,
+and others like them,
+may represent decades of research that might have been able to benefit from and synthesize with the findings of other fields,
+if only someone adept enough in both fields could retrieve them and communicate them back.
+
+With my ability to code--switch between computer science and the social sciences,
+I believe that I am in a unique position to accomplish research that few others are properly equipped to do
+--- the kind of research that deftly wields complex ideas from across the intellectual landscape.
+Ultimately,
+I hope to champion the view that conventional social sciences and what we call computational social sciences can
+--- and indeed must ---
+greatly influence one another;
+that the social sciences can inform Human--Computer Interaction,
+and that HCI and CSCW can inform the social sciences as well.
+To do so will require the most adept translators of concepts and theories that we can train,
+but to fail in this endeavor would be to separate
+--- artificially and unnecessarily ---
+two groups of thinkers who otherwise would benefit profoundly from one another's wisdom.
+
+
+\renewcommand\refname{\sectitle{references}}
+% % REFERENCES FORMAT
+% % References must be the same font size as other body text.
+% \bibliographystyle{SIGCHI-Reference-Format}
+\bibliographystyle{acm}
+{\footnotesize
+\bibliography{../references.bib}
+}
+
+
+
+\end{document}
+
+% TEMPLATE CREATED BY ANDREW FOR 2015 NSF GRFP APPLICATION. IN 
+% NO WAY DOES HE GUARANTEE THIS TEMPLATE COMPLIES WITH
+% FORMATTING RESTRICTIONS FOUND IN THE GRFP SOLICITATION. YOU
+% SHOULD CHECK THE FORMATTING YOURSELF.
+%
+% ANDREW MAY BE CONTACTED VIA:
+%      HIS WEBSITE: www.math.uga.edu/~amaurer
+%      EMAIL:       andrew.b.maurer@gmail.com
+

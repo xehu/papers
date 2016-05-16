@@ -1,0 +1,504 @@
+% % !TEX program = xelatex
+\documentclass[11pt,titlepage]{article}
+\usepackage{balance,graphics,setspace,parskip,times}
+% \usepackage{fontspec}
+% \usepackage{xltxtra}
+% \usepackage{xunicode}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+
+\doublespacing
+\usepackage[tiny,compact]{titlesec}
+
+% \usepackage{xesearch}
+% \newcounter{words}
+% \newenvironment{counted}{%
+%   \setcounter{words}{0}
+%   \SearchList!{wordcount}{\stepcounter{words}}
+%     {a?,b?,c?,d?,e?,f?,g?,h?,i?,j?,k?,l?,m?,
+%     n?,o?,p?,q?,r?,s?,t?,u?,v?,w?,x?,y?,z?}
+%   \UndoBoundary{'}
+%   \SearchOrder{p;}}{%
+%   \StopSearching}
+
+\setlength{\parskip}{.4em}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
+\def\labelitemi{\ }
+\newcommand*\elide{\textup{[\,\dots]}}
+\newcommand{\sectitle}[1]{\textbf{#1}\\}
+
+\author{
+  Ali Alkhatib\\
+  ali.alkhatib@cs.stanford.edu\\
+  \textit{Couldn't find an envelope; will coordinate to meet next quarter (if acceptable)}
+}
+
+\title{Final Paper\\
+\normalsize{
+  \textit{Digital media are an egalitarian force in American society}\\
+  Communication 220
+  }
+}
+
+\begin{document}
+\maketitle
+
+\sectitle{Introduction}
+Since --- and indeed before ---
+the 90s, digital media have promised to unburden participants of the baggage of conventional cultural mores
+\cite{barlow2009declaration};
+Barlow in particular describes a very crystallized notion of
+``cyberspace'' and its ``independence of the tyrannies \dots impose[d] on'' its denizens,
+independence from conflicts inherent to embodied existence,
+and finally a space to form a culture of universal human equality ---
+to foster an egalitarian culture that transcends geographic space,
+as well as the holdovers of culture from which he and others like him wished to break.
+
+But the track records of digital media have been mixed, at best;
+even in cases where we see what appears,
+at first glance,
+to be the emergent characteristics of egalitarianism,
+closer inspection reveals sexist, racist, and variously exclusive
+communities that are ultimately prohibitively difficult for outsiders to penetrate.
+More troubling,
+deeper consideration reveals worrying parallels with the counterculture movement of the 60s,
+namely the trend of experimenting of with nominally egalitarian communes,
+which ultimately proved to be sites of intense sexually \& racially charged practices of exclusion.
+% with some facets of the broader counterculture movement 
+% and generally informed the sensibilities and milieu of the Internet.
+
+At another level, we see that digitally--mediated sites of emergent culture
+are being substantively designed and shaped by certain groups of people and,
+importantly,
+occupied and used by other groups of people, leading to a worrying stark hierarchy ---
+% a homogeneous group of people
+% --- whereas these sites are largely occupied by others ---
+% leading to hierarchical structure almost reminiscent of pre--industrialism ---
+that is, people largely divided according to whether
+they control digital media or are controlled by them.
+
+I will attempt to argue that
+digital media and the sites that emerge therein are
+at least potentially
+similar to the communes of the counterculture era,
+and that the evidence suggests that
+many of these sites have similarly paralleled the egalitarian communities from decades past.
+I will go further, however, to offer a more optimistic outlook:
+that the sites of interaction mediated by digital media can more easily be informed by one another,
+and that the failures of one community to empower its members equally
+need not necessarily repeat themselves across communities,
+as so many communes often did.
+
+
+
+
+To make this argument,
+we need first to make the case that
+digital media have been egalitarian forces in at least some facets of society,
+which we will attempt to illustrate through
+\begin{inlinelist}
+  % \item the WELL, a community whose values precipitated the broader ethos of the Web, which later emerged,
+  \item peer production work
+      such as the Free Open Source Software (FOSS) movement \& Wikis, and
+  \item efforts toward collective action and solidarity in online communities
+\end{inlinelist}.
+These cases will make a very simple argument at face value
+--- that digital media are monotonically egalitarian forces ---
+but we will explore these cases in depth and identify problems these systems have faced,
+and sometimes caused, for participants.
+
+
+We will also explore the much broader case of
+systems themselves as tools used to separate users from builders.
+Namely, we will look to
+\begin{inlinelist}
+  \item the oppressive nature of ``crowdwork'' and the broader ``gig labor''
+  --- novel names for a well--established practice of
+  speculative work which started at least as early as the turn of the 20th century
+  (but which has found new purchase in the last 10 years), and
+  \item the use of ``big data'' to track and analyze users, and
+  the power system designers wield over their users by tracking people as data
+  % \item the cultural, gendered, and other factors which emerge even among developers and engineers
+\end{inlinelist}.
+
+
+
+
+
+\sectitle{Peer Production: FOSS and Wikipedia}
+Numerous examples come to mind in making the case that
+digital media generate egalitarian communities;
+perhaps the most compelling examples are those of peer production and
+in particular
+the decentralized organization that typifies many Free Open Source (FOSS) projects
+as well as the ethos of Wikipedia and the many ``Wikis'' which have emerged since.
+
+Suffice it to say that many have pointed to Linux and other open source projects,
+in Raymond's case
+identifying these as illustrative of an alternative to the ``cathedral'' organizational paradigm by
+offering access to a sometimes hectic, ad--hoc ``bazaar'' instead
+\cite{raymond1999cathedral,weber2004success,crowston2006core}.
+The influence of open source software has been well--documented,
+and certainly it represents a compelling counter--argument to
+the proprietary ownership paradigm which has otherwise dominated software
+\cite{kelty2008two,weber2004success}.
+
+It seems, however, that open source projects often have complicated levels of involvement
+--- if not explicitly named, then certainly implied by varying levels of engagement and interaction
+\cite{crowston2006core,mockus2002two}.
+Kelty points out that, in the community of developers he studied,
+most developers were male, into heavy metal, and culturally relatively homogeneous
+--- an issue that will resurface later in our analysis of big data,
+but is worth pointing to here in our consideration of whether and to what extent FOSS is in fact egalitarian
+\cite{kelty2008two}.
+Another issue, that many of these open--source projects are so sparsely engaged that
+it may be difficult to assess whether these \textit{would} be sites of egalitarianism,
+is difficult to speak to, but worth noting
+\cite{barcellini2006users}.
+
+Wikipedia, by contrast, deliberately affords participants varying levels of commitment to take on,
+and importantly almost any person with access to the Internet and an ability and willingness to write
+can participate in the community.
+This peer production model,
+described by Howe and others as similar but subtly different from crowdsourcing,
+theoretically allows all to come,
+make edits and suggestions,
+and debate edits on their merits rather than the status of the proponent
+\cite{howe2008crowdsourcing,atlee2008collective,benkler2013peer}.
+Here then we see at least a somewhat viable argument that
+digital media facilitate the formation of egalitarian communities.
+
+Shirky makes a similar point toward crowdsourcing in his discussion on the observation that
+``everyone is a media outlet'' in this new setting
+\cite{shirky2008here}.
+His outlook is less optimistic
+--- that the \textit{professions} involved in journalism and media have changed
+in their mixing with ``amateurs'' ---
+but if nothing else this contributes to a broader argument that
+digital media have democratized the ability to publish content%
+\footnote{%
+Mackinnon (2012) discusses this effect to some extent through her analysis of WordPress as well,
+but her discussion is largely set in China; while her findings are arguably still relevant
+to American society, Shirky's general discussion above suffices
+\cite{mackinnon2012consent}.}.
+
+Unfortunately, again we find that reality differs from the promise;
+researchers have discovered over the years that significant,
+often implicit barriers to participation exist
+without sufficient explanation for potential new editors
+\cite{halfaker2012rise,zittrain2008future}.
+Keegan \& Gergle in particular highlight the hypocrisy of
+Wikipedia's stated ``egalitarianism'' in contrast to the reality that new editors experience
+\cite{keegan2010egalitarians}.
+This backlash that users often face has been documented and,
+used to conclude that ``Wikipedians are \textbf{born}, not made'' (emphasis added)
+\cite{wikipediansBornNotMade}.
+
+
+
+
+
+
+
+
+\sectitle{Collective action}
+Given the problematic nature of FOSS projects
+and Wikipedia's enduring challenges to encourage new users to participate as editors,
+one might conclude that
+digital media unequivocally results in these problematized instances of egalitarianism.
+Instead, I suggest we look further for evidence that
+digital media represent forces toward egalitarianism, if not egalitarianism itself.
+
+Collective action coordinated by digital media has,
+Shirky and others argue,
+at least the potential for democratized organization and planning
+\cite{shirky2008here,costanza2014out}.
+Here then, in some limited (and even stretched) sense,
+digital media as democratized tools to facilitate collective action become
+egalitarian influences in their own rights.
+Miller in particular illustrates this notion through the use of the ``rhizome''
+as a way of describing networked societies
+\cite{miller2011understanding}.
+
+Further, the tools needed to expose mistreatment of pieceworkers at the turn of the 20th century
+--- namely, the camera Jacob Riis brought into the homes of workers ---
+were made more accessible through the propagation of digital media and the tools needed to make them,
+to say nothing of distributing that media,
+made dramatically easier by blogging such as WordPress and other systems like it
+\cite{riis2004other,facesOfMechanicalTurk}.
+Further,
+communities like Turkopticon \& Dynamo afford members some sense of equality among one another,
+structured by guidelines on behavior to ensure equal opportunity to present views and
+% some sense of anonymity and
+separation from risk of controversial or contentious views affecting them
+outside of the context of that forum
+\cite{turkopticon,dynamo}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\sectitle{Crowdwork, gig labor, and ties to piecework}
+Having briefly mentioned communities of crowdworkers,
+% (``Turkopticon'' itself is a play on the words ``panopticon'' and ``[Amazon Mechanical] Turk''),
+we should acknowledge the unique role that crowdwork and gig labor play in this argument,
+and in particular use this to segue from the notion of digitally--situated communities of egalitarianism
+(or, as I have argued, \textit{not}) toward a much more general critique of
+these communities as the boundary itself between the user and the builder.
+
+Nominally, the gigwork enabled by Amazon's Mechanical Turk platform
+(and other systems such as Upwork, Elance, etc\dots) make it possible for workers
+--- who otherwise could not participate in the economy ---
+to engage meaningfully, even earning a living.
+In practice, however, these workers struggle to make ends meet
+\cite{Ross}.
+These markets for ``information work'' are, it turns out, far from unique;
+markets for drivers for hire, cleaners, movers, and other various tasks
+prove stifling and challenging for workers to benefit from.
+
+Cynically,
+one might argue that
+the case for egalitarianism is still being made within the context of this workforce;
+that is, everyone is struggling roughly equally compared to one another\footnote{This,
+it turns out, is not true;
+Irani et al. found that payment stratification benefits more senior Turkers,
+a finding that has been corroborated incidentally by others
+\cite{turkopticon}.
+Still, we could cede this argument entirely in favor of the larger one to be made,
+that egalitarianism must take into account the steep inequalities between various stakeholders.}.
+This argument is specious, but it might be pernicious enough to merit addressing;
+simply, the notion of a community achieving egalitarian ideals must be met entirely.
+Amazon Mechanical Turk
+--- and indeed \textit{all} of the marketplaces which promote piecework ---
+relies on gross information asymmetry between the worker and the employer.
+\cite{turkopticon,silberman2010ethics}.
+That information asymmetry prevents participants from interacting as equals,
+fundamentally preventing this and any market like it from being a site of egalitarianism.
+Indeed, even communities \textit{connected to} these markets potentially suffer the hazards of
+preferential statuses in these markets, especially illustrated by heterarchical relationships,
+such as seeking support in one context given high status in another
+\cite{dynamo}.
+
+
+Further, the challenges these workers face sometimes come from the system itself,
+but crucially from the finite designs of engineers,
+causing its own form of oppression that differs from the kinds of coercive forces that offline markets
+--- often the results of innumerable influencing factors ---
+in that we can trace and even design responses to these issues
+\cite{uberAlgorithm,turkopticon}.
+
+
+
+
+
+
+
+
+
+
+
+
+\sectitle{Big Data}
+In the previous section, we considered the effect that human--made systems such as
+Uber, Lyft, etc\dots
+have on workers, and the potential to track the design choices of system--engineers compared to the
+confluence of broader marketplaces.
+In this section,
+we'll explore another aspect of human--engineered systems that separates and devalues
+some classes of people from others --- the use of ``big data'' as a lens to consider the implications of
+how imbalanced the power is between users of a digitally mediated system and the designers of that system.
+
+Two issues come to light in this discussion prompted by big data.
+The first is the general issue that system--designers have control over
+the architecture of a digitally--mediated environment in only vaguely similar ways to
+a conventional architect's control over a physical, embodied space.
+Lessig (2006) describes a useful mental model %for conceptualizing the ways various forces influence a body
+wherein four forces act on a body:
+\begin{inlinelist}
+  \item architecture,
+  \item market,
+  \item norms, and finally
+  \item laws
+\end{inlinelist}
+\cite{lessig2006code}.
+As we will soon come to realize,
+these forces are largely consolidated into the agendas of system--builders.
+
+It's important to acknowledge that
+developers of digital systems have enormous control over the \textbf{architecture} of that system
+(e.g. designing a user's interaction with a space
+in such a way that it encourages or discourages certain behavior,
+going as far as influencing ``emotional contagion'' \cite{kramer2014experimental}).
+Additionally, markets such as Uber, Lyft, Amazon, and others
+demonstrably have almost --- and perhaps effectively ---
+unilateral, complete control over the \textbf{markets} which they expose through tools such as
+data lock--in and threats of banishment for violating their own terms.
+Norms, it would seem, are more difficult for a system--designer to influence;
+deeper consideration reveals, however, that system--designers take insights from myriad fields such as
+psychology, anthropology, and sociology, to inform the architecture of their system and 
+encourage the emergence of \textbf{norms} preferred by \textit{them}
+\cite{anderson2013steering,successfulOnlineCommunities}.
+
+
+We return to Kelty's observation that developers have been a relatively homogeneous community of people;
+notable exceptions aside, most developers in contemporary Silicon Valley have been,
+and continue to be, male and relatively culturally homogeneous
+\cite{ullman2012close,kelty2008two}.
+It would be challenging even for culturally--minded people to appreciate the differing world--views
+expressed around the world; for people whose fields of study range engineering and computer science
+--- and especially those with minimal to no training in the study of, or exposure to various cultures ---
+deep,
+\textit{emic} understanding of the cultures of the people who use their systems
+may be impossible for the engineers who build these major sites of social interaction.
+
+Given that cold reality,
+to say nothing of the interpersonal relationships that take place on digital media,
+it's perhaps unreasonable to claim that the designers of systems and the users of systems are ever
+part of a single egalitarian society.
+Those that build systems are fundamentally more empowered than those that use them,
+and with little to no understanding, and limited interaction between these two groups,
+it seems unlikely that the characteristics of egalitarianism
+--- for instance, mutual respect and understanding ---
+will emerge.
+I will continue to argue that this power imbalance is further skewed
+in favor of those that design, implement, and control systems,
+due to their necessary access to (and \textit{de facto} ownership of) users' data.
+
+The second issue that emerges is the core topic of ``big data''
+--- that users' collections data often become hostage to system--designers,
+and that this fundamentally disrupts any endeavor toward an egalitarian society,
+especially in the case to which Barlow attempts to speak (that of cyberspace)
+\cite{barlow2009declaration}.
+While Bush (1945) predicts a future where
+the transmission of information might be reduced to a triviality in cost,
+he seemed not to consider the circumstances in which we find ourselves ---
+that the information itself might be worth too much to trivialize its free transmission
+\cite{bush1979we}.
+
+Indeed,
+information has become a cornerstone of many of the companies which drive digital media spaces
+\cite{sennett2007culture,mayer2013big}.
+It should not, then, be surprising that companies as diverse as
+driver--for--hire companies like Uber \& Lyft,
+social networking sites such as Facebook \& Twitter,
+and providers of services throughout (Google, Apple, \& Microsoft)
+all generally maintain as secretly as possible both
+the nature and content of what they track, even from the subjects of said tracking.
+Lanier (2014) argues interestingly that perhaps
+companies should be obligated to compensate people for the value extracted from data collected on them,
+but this proposition
+--- while interesting ---
+is both economically infeasible and technically challenging
+\cite{lanier2014owns}.
+
+
+
+
+
+
+% \sectitle{Gender, race, \& developers}
+
+
+
+
+
+
+
+
+
+
+
+\sectitle{Potential to be different}
+Thus far, I've described an almost dystopian outlook on
+the prospects of digital media being egalitarian forces in society at all,
+let alone American society%
+  \footnote{I've avoided discussing this issue until now,
+  except here to say that efforts toward global egalitarianism are qualitatively
+  --- not quantitatively ---
+  more complicated.
+  That is, the myriad political regimes attempting to moderate and legislate the use of technology
+  (discussed to varying degrees by Goldsmith \& Wu, King et al., and others)
+  are in themselves challenges similar in complexity to those we discuss here
+  \cite{goldsmith2006controls,king2013censorship,king2014reverse}.
+  Finding ways to relate these political and cultural contexts holistically,
+  emerging with a comprehensive world--view on digital media's ability to affect egalitarian influence
+  on various cultures and global culture as a whole, therefore,
+  would fall far outside the scope of this paper.}.
+%
+There is however, reason to be hopeful, if not optimistic.
+To say nothing of the efforts described earlier to enable discussion among people as equals
+\cite{turkopticon,dynamo},
+the broader field of Human--Computer Interaction benefits from insights both in design
+--- leading realizations of the benefits of ``participatory design'',
+wherein users and builders of systems work collaboratively ---
+as well various fields of social and cultural inquiry
+\cite{bodker1991cooperative,successfulOnlineCommunities}.
+
+Where Turner points out how the counterculture revolution
+and communes in particular
+invariably became sites of implicitly defined prejudices,
+I argue that our ability to learn from other communities rapidly and freely makes it possible
+to avoid sliding into the same causes of failure which almost invariably struck communes
+\cite{turner2005counterculture}.
+Dynamo learned from Turkopticon and Wikipedia
+\cite{dynamo,turkopticon};
+bodies of literature are largely informed by existing communities,
+the results of this literature often becoming the basis for new endeavors
+\cite{bernstein20114chan,horowitz2010anatomy,Nov:2007:MW:1297797.1297798,wikipediansBornNotMade}.
+
+All of this is to say that,
+when we
+--- in particular, researchers, but also system--designers and \textit{people} in general ---
+recognize subtle, pervasive barriers discouraging people from participating in editing Wikipedia,
+we can leverage mountains of research into encouraging participation,
+leading to design interventions that precipitate and facilitate more inclusive environments.
+Indeed, we can point to research on various fronts which corroborates this potential,
+the most salient of which being the efforts to change Wikipedia's administrative practices
+--- as well as the design of the system itself ---
+to ``steer'' more constructive moderation of edits
+\cite{ciampaglia2015moodbar,kraut2010dealing,pal2011early}.
+
+\sectitle{Closing thoughts}
+I've attempted to articulate a complicated perspective on,
+and in fact relationship with,
+digital media through their ability to be an egalitarian influence on American society.
+Ultimately, my arguments attempted to illustrate that
+numerous examples ostensibly settling this debate exist,
+but that each of those examples is problematized by deeper,
+underlying complications to the relationships between stakeholders.
+
+I chose to end, however, with a call toward optimism to suggest that
+it is not built \textit{into} digital media that egalitarianism is,
+at best,
+a false promise; that instead,
+it may be possible to achieve the egalitarianism Barlow wishes to see in his declaration,
+but that it will
+--- as always ---
+take our best efforts to avoid making the same mistakes we've made in the past,
+marginalizing people and imposing our own world--views in an attempt to
+homogenize cyber--culture as it forms.
+I believe, with care and consideration of the past
+--- a skill admittedly all too rare among those who need it most ---
+system--designers can help construct a cyberspace that welcomes all as Barlow wrote in 1996.
+
+% \end{counted}
+% \footnotesize{word count: \thewords}
+
+\bibliographystyle{acm} % this will cause an error if there are no citations!
+\bibliography{../../../references.bib}
+\end{document}

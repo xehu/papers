@@ -1,0 +1,68 @@
+%!TEX root = final.tex
+Maintaining an efficient justice system is in the interest of both the professionals managing and the citizens interacting with it.
+Computational methods including large--scale data analysis and machine learning excel at quantitatively identifying points of inefficiency.
+We propose to use these techniques to build models predicting points of inefficiency in the pretrial processes,
+in order to provide recommendations for improving efficiency to judges and other court officials.
+
+Notably,
+a large majority of cases are never sent to trial; rather,
+charges are dropped or settled out of court.
+Pretrial procedures,
+then,
+such as the setting of bail or decision to pursue a case,
+are especially fruitful sites for consideration with regards to efficiency.
+A more insightful understanding of how to approach these pretrial procedures will benefit court officials in the time and money spent processing cases needlessly.
+For defendants,
+these insights could lead them to spend less time in prison awaiting trial if they are unable to pay bail,
+and fewer resources towards a case that will never be brought to trial.
+
+
+With this potential for intervention in mind,
+we propose to examine the Gotham dataset,
+using case features available to the judge,
+and in particular bail,
+which is set by the judge,
+to predict whether a defendant will plead or not later in court proceedings.
+The goal of this procedure is to analyze one attribute of a defendant's process through the justice system from the perspective of a judge,
+including information the judge knows about the case and,
+most importantly,
+the decision a judge can make: setting bail.
+
+
+Specifically,
+we conceive of bail setting as imposing a type of (intentional) burden upon a defendant.
+This burden can occur at several different levels,
+from release on a defendant's own recognizance (ROR) --- a nonexistent burden,
+to refusal to set bail at all in order to keep a defendant in custody --- a very high burden.
+In between these two levels are bails set which the defendant is able to pay (or find a bondsman to put up bond),
+and bails which the defendant is not able to pay.
+These two categories are irrespective of the bail amount,
+and instead are specific to the means of the defendant who is either able or not to pay bail.
+Similarly,
+it is worth considering whether different judges set bail in substantially different ways given similar cases,
+as a starting point for different analyses.
+
+
+We make \nextitemizecount{} hypotheses:
+\begin{enumerate}
+\item Effect of burden on pleading:
+      that placing a larger bail burden on a defendant will correlate with a
+      higher likelihood to plead later in the case.
+      We posit a causal psychological mechanism by which
+      defendants who have been required to put up substantial financial assets or,
+      even further,
+      had to spend time in jail awaiting trial are placed in a vulnerable position
+      by the justice system and
+      therefore are less likely to prolong their case defend themselves forcefully against charges
+      --- in other words, more likely to plead guilty.
+\item Our secondary hypothesis predicts that
+      different judges will set substantially different bail on similar cases,
+      since we anticipate that there is significant room for human error or
+      difference this aspect of the justice system.
+\end{enumerate}
+
+The underlying goal of this work is
+to provide predictions which aid judges in setting effective but
+not excessive bail by
+better understanding one way in which the process of setting bail influences
+defendant experiences with and attitudes toward the justice system.
