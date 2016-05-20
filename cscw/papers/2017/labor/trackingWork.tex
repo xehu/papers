@@ -50,6 +50,8 @@ what a student missed in lecture.}
 \setlength{\pdfpagewidth}{\pprw}
 \setlength{\pdfpageheight}{\pprh}
 
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+
 % Make sure hyperref comes last of your loaded packages, to give it a
 % fighting chance of not being over-written, since its job is to
 % redefine many LaTeX commands.
@@ -161,6 +163,7 @@ grow to occupy the fascination of both academic circles and our culture as a who
 \cite{Ross,CrowdsourcingUserStudies,scholz2012digital}.
 The research community has identified myriad connections between this emergent form of work
 and the historically situated ``piecework'',
+\msb{Did the research community really do this? Or is \textbf{your} contribution? I want to understand whether the literature threw around the word as a metaphor, or if they really meant it in the full historical context of the term.}
 as well as a number of observations relating to
 the frustration workers feel stemming from the management of this work
 \cite{turkopticon,dynamo,uberAlgorithm}.
@@ -173,9 +176,10 @@ This paper will attempt to do so by arguing that
 the topics social computing researchers have investigated are
 not just parallel to historical piecework and
 the process of factorization that took place in the early \nth{20} century;
-indeed, these phenomena are directly related, and that they precipitate
+indeed, these phenomena are directly related \msb{how? what's the difference between parallel and directly related?}, and that they \msb{`they' means `the topics social computing researchers have investigated'? I'm not sure I understand which topics these are, or how they precipitate outcomes} precipitate
 the social outcomes we have observed,
 especially with regard to worker frustration, coordination, and resistance.
+\msb{At this point I'm not sure what the argument is. I see several possible arguments being made: 1) People already talked about piecework, and I'm going to talk about it more and argue its `direct' relation as opposed to `parallel' relation. 2) People have talked about the \textit{effects} of gig work, and I'm going to tie them all together under one \textit{cause}---piecework---and show how that cause led to them historically and will now too. 3) There are topics that social computing researchers investigated (not sure which) and they are directly related to these outcomes. I sort of assumed it was going to be number two, but that's not what I understood here.}
 
 % This section should outline the trend of contemporary gig work in the last 10 years,
 % in particular tracking the changes since
@@ -198,7 +202,7 @@ we notice a broader trend describing the change in work that's being done
 % we look at the emergent phenomena in piecework both as interconnected
 \cite{crowdworkFuture}.
 Crowd--powered work is not just distributed across homes,
-but dispersed among drivers, cleaners and other on--demand workers.
+but dispersed among drivers, cleaners and other on--demand workers \msb{I don't understand the distinction. Was Kittur et al's vision about homes somehow? Or are you saying that it was about information work but in fact is occuring elsewhere?}.
 By looking at the movements toward
 distributing work,
 routinizing and breaking down tasks,
@@ -211,6 +215,7 @@ we give ourselves a framing of contemporary piecework that explains,
 and arguably predicts,
 what we have seen thus far
 --- and perhaps what we should expect to see going forward.
+\msb{this paragraph sounded like half review of previous literature, and then the second half switched into ``my contribution'' mode. Either a clearer transition or a more singular purpose would help.}
 
 
 % The work involved often meant sewing together pieces of denim,
@@ -226,10 +231,11 @@ whether the future of
 (crowd, but arguably all discretized)
 work might be one in which they wish their children to participate someday;
 it seems strikingly like one that might have been asked
-as patches of denim were first being delivered to the homes of early pieceworkers.
+as patches of denim were first being delivered to the homes of early pieceworkers. \msb{this seems speculative---I'm not sure whether they knew what was coming. and wasn't income distribution different then? Who was the `they' in this case? Industrialists?}
 
 This paper will argue that the familiarity is more than passing;
-it was an inevitable milestone in the maturation of the type of work that is reemerging today.
+it \msb{what is `it'?} was an inevitable milestone in the maturation of the type of work that is reemerging today.
+\msb{I'd like the argue to summarize the argument as to \textbf{why} it was inevitable. Why was it inevitable then, and why is it inevitable now? What is it about piecework that generates this outcome? In two sentences or less...}
 ``But'',
 as \citeauthor{scholz2012digital} points out,
 ``it would be wrong to conclude that
@@ -240,6 +246,8 @@ the discretization of work toward scientific management and future steps;
 we will attempt to make sense of how the modern processes in digital labor,
 in particular the use of the Internet as a medium to manage as well as \textit{do} work,
 affect these unfolding events.
+\msb{That felt like a bit of a calorie-free sentence --- I'm not sure what it was trying to say. I think it needs to connect the dots more visibly for the reader. Is it that we're using histories and theories of piecework to reason about that progression as it applies to today?}
+\msb{I'd like to see a 1--2 sentence summary of what the takeaways from this part of the exploration are. What is new under the sun?}
 
 
 % we engaged in ethnographic fieldwork
@@ -261,7 +269,8 @@ affect these unfolding events.
 \citeauthor{crowdworkFuture}
 investigate the future of crowd work by
 situating and interrogating it through ``piecework'',
-a term almost lost to history, but which for a time described
+\msb{I would not say that piecework was exactly the centerpiece of that paper. It was used as a point of contrast.}
+a term almost lost to history \msb{a bit exaggerated}, but which for a time described
 work done in the home,
 in manageable tasks,
 often involving clear instructions
@@ -269,22 +278,23 @@ and payment only for work completed, not work done
 (the differentiation, here, being that
 one would be paid for the \textit{output} of the work,
 not the \textit{duration})
-\cite{crowdworkFuture}.
+\cite{crowdworkFuture} \msb{is that true? by that definition, design is piecework too, right, because I get paid for the job, not for hours worked. But design doesn't seem like piecework.}.
 This work was largely in textiles and was predominantly done by women,
-which by itself is a topic worthy of unpacking
+which by itself is a topic worthy of unpacking \msb{instead of gesticulating, can we indicate what the punchline of unpacking it was?}
 \cite{scott1975women}.
 Given the scope, 
 we'll leave this topic with the superficial takeaway that
 piecework and microtasks share some structural similarities:
+\msb{may be just me, but that felt like it was belittling the reader, like their puny brains wouldn't be able to understand more than a superficial takeaway}
 \begin{inlinelist}
-\item the work is done in the home;
+\item the work is done in the home \msb{true? isn't it still piecework if it's in a factory?};
 \item the worker is paid for each discrete piece of work done, regardless of time or effort; and
 \item the worker's status
 (not only socially, but also economically)
-is ambiguous, or at least the subject of some controversy.
+is ambiguous, or at least the subject of some controversy \msb{my first reaction was ``this isn't definitional''. But now I look back and see that you're just saying there are similarities. It would be helpful if the sentence made it clearer that the similarities were in not just what the work was but also in the environment around it.}
 \end{inlinelist}
 It may be said that
-on--demand work shares, if not inspiration, then many of the same outcomes as piecework.
+on--demand work shares, if not inspiration \msb{I doubt it was inspiration --- `hey, let's create something like factory floors but for information work!'}, then many of the same outcomes as piecework. \msb{what are outcomes?}
 
 
 \subsection{Context}
@@ -292,14 +302,14 @@ Importantly, since the reemergence of piecework we've seen substantial frustrati
 and resistance among the workers in this area
 \cite{uberAlgorithm,turkopticon,dynamo}.
 This paper attempts to make sense of the broader research on this piecework,
-or ``gig work'', by framing this as one of several steps in the marginalization of workers,
+or ``gig work'', by framing this as one of several steps in the marginalization of workers, \msb{this feels out of order to me. I don't think resistance is a step in the marginalization of workers, isn't it a reaction to the marginalization of researchers?}
 starting with the discretization of tasks,
 followed by routinization and the rise of workflows,
 and finally the external management of workers.
 All of this is to say that these milestones follow sequentially,
 not coincidentally but necessarily,
 and that by tracing this path using the corpus of scholarship on labor and workers
-we can both make sense of past events and perhaps reasonably predict next steps.
+we can both make sense of past events and perhaps reasonably predict next steps. \msb{I don't think we've offered much proof that this is the case yet. Why must they follow necessarily? Can you offer a cause and effect relationship?}
 
 We explore each topic
 --- discretization, routinization, \& management ---
@@ -337,6 +347,7 @@ that describes a call for scientific solutions/designs to solve some problem
 that the requesters have.
 Honestly it's killing me that I can't remember the name,
 and I need to find this before I do anything productive ever again.}
+\msb{netflix prize?}
 
 The HCI community is perhaps most familiar with examples such as
 99designs,
@@ -359,7 +370,7 @@ The insight here seems to have been that
 a substantial amount of work does not necessarily need to be done in collocated space,
 but can be done from one's own home or other space arranged by the worker.
 Moreover, by shifting the workplace into the worker's domain,
-the cost of capital involved in that work can more easily be placed on workers' backs.
+the cost of capital involved in that work can more easily be placed on workers' backs \msb{I don't think that was the original motivation for AMT or Uber --- it was about reaching people who could not otherwise join the labor force for Amazon's data cleaning or for taxi-ing.}.
 While yellow--cab organizations often manage drivers in similar ways to platforms such as Uber and Lyft
 (inasmuch as drivers are often considered contractors, or otherwise exempt from the formal status of ``employee''),
 these new systems go further,
@@ -499,7 +510,7 @@ as well as ``selfsourcing''
 The parallels between this kind of work and
 historical piecework of the turn of the \nth{20} century
 is by no means new
-[\textit{citation needed --- who said this first? most notably? Turner?}].
+[\textit{citation needed --- who said this first? most notably? Turner?}] \msb{not familiar with it, but google scholar suggests this was an early one to talk about it \url{http://scholarship.law.berkeley.edu/cgi/viewcontent.cgi?article=1433&context=bjell}}.
 \textit{Elaborate on gig work, piecework, etc\dots}
 
 % \subsection{routinization}
