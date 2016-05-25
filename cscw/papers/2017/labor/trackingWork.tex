@@ -325,10 +325,84 @@ development of contemporary piecework.
 % all of the research that has gone into work--flows and
 % all the things we can do with crowd work.
 
-In this section, we'll consider several components of contemporary piecework
-that relate to its historical parallel.
-In particular, we'll look at the ``decomposition'' of complex skill--intensive tasks
-into smaller, more abstracted work, as well as the routinization that this allows.
+This section will largely discuss the processes at work that make distributed,
+digitally managed work both possible and indeed preferable for ``requesters''
+(in other words, the employers who solicit workers).
+This body of research spans a broad field
+within the CSCW and broader HCI community.
+In this context,
+we'll look at the body of research through the lens of
+highlighting contributions which expand what we
+(as ``requesters'' of work) can do by managing workers in novel ways.
+This work broadly consists of three areas:
+\begin{inlinelist}
+\item \nameref{sec:decomposition},
+\item \nameref{sec:workAbstraction}, and
+\item \nameref{sec:flexibility}.
+\end{inlinelist}
+
+
+\subsubsection{Decomposition}\label{sec:decomposition}
+Scholarship describing and exploring
+the decomposition of tasks is perhaps the most established of the above areas among HCI researchers;
+\citeauthor{bernsteinSoylent} made early contributions to this area with \textit{Soylent}
+(by coining and employing the ``find--fix--verify'' approach)
+\cite{bernsteinSoylent}.
+% \citeauthor{horowitz2010anatomy} found that optimally directing questions to relevant answerers
+% on various domains could yield relevant answers at enormous scales
+% \cite{horowitz2010anatomy}.
+\citeauthor{cheng2015break} found that microtasks
+--- though not necessarily \textit{faster} than ``macrotasks'' ---
+yield higher quality work,
+particularly when that work might be readily interrupted
+% (we will, however, discuss the implications of these findings in further depth later)
+\cite{cheng2015break}.
+\citeauthor{selfsourcingTeevan2014} further push the boundaries of decomposed work
+by exploring ``selfsourcing'', and further this work with \citeauthor{selfsourcingTeevan2016}
+\cite{selfsourcingTeevan2014,selfsourcingTeevan2016}.
+
+\subsubsection{Work Abstraction}\label{sec:workAbstraction}
+Decomposition allows requesters to assign work tasks without concern for the broader context.
+\citeauthor{chilton2013cascade} perhaps best illustrates this,
+demonstrating with \textit{Cascade} that it's possible to
+break certain classes of tasks apart
+% (recursively, if necessary)
+in such a way that they yield hierarchical categories
+previously thought to be safely within the domain of expert workers
+with top--down awareness of the context of the work as a whole
+\cite{chilton2013cascade}.
+
+Much of the research in the space of designing crowd work
+sought to illustrate the potential to take highly creative or skilled work
+and generate high--quality work.
+Perhaps the most salient case study here can be found in
+\citeauthor{foundry}'s \textit{Foundry}, which employed
+``flash teams'' to achieve expert--level outcomes via thoughtful
+decomposition of work as ``modular tasks''
+\cite{foundry}.
+
+\subsubsection{Flexibility}\label{sec:flexibility}
+Earlier we discussed \citeauthor{cheng2015break}'s work
+identifying the impact that interruption has on worker performance.
+This work both points to and embodies a broader sentiment in
+both the study and practice
+of crowd work that microtasks should be designed flexibly,
+fully exploiting the abstracted nature of each piece of work
+\cite{interruptionIqbal,delayAndOrderLasecki,vaish2014low}.
+While \citeauthor{cheng2015break} identified costs with breaking tasks into smaller components
+in the form of higher cumulative time to complete
+(albeit much shorter real time to complete, owing to parallelization),
+\citeauthor{delayAndOrderLasecki} found that at least \textit{some} performance can be recouped by stringing 
+similar tasks together.
+
+
+% This work on decomposition is not strictly new;
+``Decomposition'' generally illustrates the same concepts of work that ``Taylorism''
+and scientific management sought to embody
+---
+\citeauthor{silberman2010ethics} in particular foresaw this danger and warned of it in
+\citeyear{silberman2010ethics}
+\cite{crowdworkFuture,silberman2010ethics,nickerson2013crowd}.
 
 In both the historical and contemporary cases,
 distributed, speculative work
@@ -391,7 +465,7 @@ but were generally expected to use their own sewing materials and work in their 
 
 
 % \subsection{Discretization and Routinization}
-
+% \subsubsection{Decomposition}\label{sec:decomposition}
 Distributing work in method described above may be thought of as vertically slicing work such that 
 each person is responsible for the whole task
 --- making a whole garment or being responsible for driving in a single neighborhood.
@@ -470,12 +544,12 @@ the breaking down of work into tasks has made it more practical to evaluate work
 Opening the door to more discrete modules of work known as tasks 
 % Work has become discretized in the last 10 years, particularly in the information work sector.
 Contributions such as
-``find--fix--verify'' % (described in \citetitle{bernstein2015soylent})
+``find--fix--verify'' % (described in \citetitle{bernsteinSoylent})
 and
 ``Cascade'' % (described in \citetitle{chilton2013cascade})
 make it easier to assign smaller components of work to myriad workers and
 recompose the constituent parts into something more complex
-\cite{bernstein2015soylent,chilton2013cascade}.
+\cite{bernsteinSoylent,chilton2013cascade}.
 Some work has taken special interest in the process of breaking tasks down into more manageable parts
 % Some work has even turned to break it down'',
 inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
@@ -486,10 +560,7 @@ as well as ``selfsourcing''
 The parallels between this kind of work and
 historical piecework of the turn of the \nth{20} century
 is by no means new.
-% [\textit{citation needed --- who said this first? most notably? Turner?}] \msb{not familiar with it, but google scholar suggests this was an early one to talk about it \url{http://scholarship.law.berkeley.edu/cgi/viewcontent.cgi?article=1433&context=bjell}}.
-% \textit{Elaborate on gig work, piecework, etc\dots}
 
-% \subsection{routinization}
 The \textbf{discretization} and decomposition of work certainly facilitates
 breaking tasks down,
 parallelizing work,
@@ -503,7 +574,7 @@ and the instructions thereof
 useful for virtually anyone with shared cultural or intellectual background.
 
 routinization can be seen in the contemporary in work--flows
-\cite{foundry,bernstein2015soylent}.
+\cite{foundry,bernsteinSoylent}.
 % [\textit{There are various papers that talk about creating a work--flow;
 % maybe this is where FFV belongs? Foundry?}].
 
@@ -530,13 +601,11 @@ sections here should include:
 \begin{enumerate}
 \item ``flexibility'' \cite{friedman2014workers,DesigningForLabourUber}
 \item leads to ``low pay'' \cite{turkopticon,dynamo}
-\item leads to ``variable quality work''
+\item leads to ``variable quality work'' \cite{MaliciousCrowdworkersGadiraju,AccuracyTradeoffsLasecki}.
 \end{enumerate}
-
-
 \upshape
 
-\subsection{Factories}
+\subsection{Factories}\label{sec:Factorization}
 
 
 
@@ -597,12 +666,12 @@ sections here should include:
 
 % Opening the door to more discrete modules of work known as tasks 
 % Contributions such as
-% ``find--fix--verify'' % (described in \citetitle{bernstein2015soylent})
+% ``find--fix--verify'' % (described in \citetitle{bernsteinSoylent})
 % and
 % ``Cascade'' % (described in \citetitle{chilton2013cascade})
 % make it easier to assign smaller components of work to myriad workers and
 % recompose the constituent parts into something more complex
-% \cite{bernstein2015soylent,chilton2013cascade}.
+% \cite{bernsteinSoylent,chilton2013cascade}.
 % Some work has taken special interest in the process of breaking tasks down into more manageable parts
 % inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
 % both for the purposes of crowd--sourcing in the sense of out--sourcing work
@@ -628,7 +697,7 @@ sections here should include:
 % useful for virtually anyone with shared cultural or intellectual background.
 
 % routinization can be seen in the contemporary in work--flows
-% \cite{foundry,bernstein2015soylent}
+% \cite{foundry,bernsteinSoylent}
 % [\textit{There are various papers that talk about creating a work--flow;
 % maybe this is where FFV belongs? Foundry?}].
 
