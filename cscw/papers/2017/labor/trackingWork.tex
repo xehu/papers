@@ -1,13 +1,14 @@
 \documentclass{sigchi}
 
-\usepackage{todonotes,txfonts,balance,graphics,color}
+\usepackage{todonotes,txfonts,balance,graphics,color,alphalph}
 \usepackage{booktabs,textcomp,microtype,ccicons}
 % \usepackage{babel}
 % \usepackage{csquotes}
 \usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
 \usepackage{enumitem}
+\usepackage{moreenum}
 \usepackage[T1]{fontenc}
-\usepackage[super]{nth}
+\usepackage{nth}
 \usepackage[pdftex,pdfpagelabels=false]{hyperref}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
@@ -313,7 +314,7 @@ in ``\nameref{sec:MakingGigsWork}'';
 in ``\nameref{sec:Fallout}'';
 and finally
 \item the results of these forces; namely the turning of work toward \textbf{factories},
-which we will discuss in ``\dots''.
+which we will discuss in ``\nameref{sec:Factorization}''.
 \end{enumerate}
 
 We will follow these topics, using them as prompts for case studies in
@@ -338,8 +339,15 @@ This work broadly consists of three areas:
 \begin{inlinelist}
 \item \nameref{sec:decomposition},
 \item \nameref{sec:workAbstraction}, and
-\item \nameref{sec:flexibility}.
-\end{inlinelist}
+\item \nameref{sec:flexibility}
+\end{inlinelist}.
+As we explore this work, we'll
+attempt to relate the advances in the design of crowd work to
+the research contributions made in the research of assembly line manufacturing,
+Taylorism, and
+scientific management 
+during the \nth{20} century
+\cite{hu1961parallel}.
 
 
 \subsubsection{Decomposition}\label{sec:decomposition}
@@ -348,42 +356,95 @@ the decomposition of tasks is perhaps the most established of the above areas am
 \citeauthor{bernsteinSoylent} made early contributions to this area with \textit{Soylent}
 (by coining and employing the ``find--fix--verify'' approach)
 \cite{bernsteinSoylent}.
-% \citeauthor{horowitz2010anatomy} found that optimally directing questions to relevant answerers
-% on various domains could yield relevant answers at enormous scales
-% \cite{horowitz2010anatomy}.
 \citeauthor{cheng2015break} found that microtasks
 --- though not necessarily \textit{faster} than ``macrotasks'' ---
 yield higher quality work,
 particularly when that work might be readily interrupted
-% (we will, however, discuss the implications of these findings in further depth later)
 \cite{cheng2015break}.
 \citeauthor{selfsourcingTeevan2014} further push the boundaries of decomposed work
 by exploring ``selfsourcing'', and further this work with \citeauthor{selfsourcingTeevan2016}
 \cite{selfsourcingTeevan2014,selfsourcingTeevan2016}.
+While this work doesn't strictly fall under ``crowdsourcing'',
+the major contributions here
+seem uncontroversially to be inspired by the design of crowd work.
 
-\subsubsection{Work Abstraction}\label{sec:workAbstraction}
-Decomposition allows requesters to assign work tasks without concern for the broader context.
-\citeauthor{chilton2013cascade} perhaps best illustrates this,
-demonstrating with \textit{Cascade} that it's possible to
-break certain classes of tasks apart
-% (recursively, if necessary)
-in such a way that they yield hierarchical categories
-previously thought to be safely within the domain of expert workers
-with top--down awareness of the context of the work as a whole
-\cite{chilton2013cascade}.
-
-Much of the research in the space of designing crowd work
+Much of the research in the space of designing crowd work has
 sought to illustrate the potential to take highly creative or skilled work
-and generate high--quality work.
-Perhaps the most salient case study here can be found in
+and generate high--quality results.
+Perhaps the most notable case study here can be found in
 \citeauthor{foundry}'s \textit{Foundry}, which employed
 ``flash teams'' to achieve expert--level outcomes via thoughtful
 decomposition of work as ``modular tasks''
 \cite{foundry}.
 
+Work decomposition is far from new;
+``decomposition'' generally illustrates the same concepts of work that ``Taylorism''
+and scientific management sought to embody
+---
+\citeauthor{silberman2010ethics} in particular foresaw this danger and warned of it in
+\citeyear{silberman2010ethics}
+\cite{crowdworkFuture,silberman2010ethics,nickerson2013crowd}.
+In both the historical and contemporary cases of decomposed work,
+work was,
+at least initially,
+distributed in the form of tasks to the homes of workers;
+\citeauthor{riisOtherSideLives} captured this in his documentary work
+\citetitle{riisOtherSideLives}
+in \citeyear{riisOtherSideLives}
+\cite{riisOtherSideLives}.
+
+% In both the historical and contemporary cases,
+% distributed, speculative work
+% has promised
+% to diffuse the costs of capital--intensive resources
+% (whether they were sewing machines or laboratory equipment).
+
+
+\subsubsection{Work Abstraction}\label{sec:workAbstraction}
+Decomposition allows requesters to assign tasks without concern for the broader context.
+While we'll discuss this aspect of crowd work more critically later,
+it's worth pointing out that discrete blocks of work containing all the relevant context for a worker
+allows workers to engage with virtually any component of work without worrying that their lack of 
+higher--level awareness of the goals of the requester might negatively affect their work.
+
+\citeauthor{chilton2013cascade} perhaps best illustrated this with
+\textit{Cascade} by demonstrating that it's possible to
+break certain classes of tasks apart
+in such a way that they yield taxonomies of various subjects,
+a task previously thought to be safely within the domain of expert workers
+with top--down awareness of the context of the work as a whole
+\cite{chilton2013cascade}.
+\citeauthor{verroios2014context} further illustrate this potential by
+forming a task one might consider highly contextually dependent
+--- summarizing the contents of a movie ---
+in such a way that crowd workers could contribute small pieces of work without
+needing to know the content of the rest of the project
+\cite{verroios2014context}.
+
+Here, \citeauthor{hu1961parallel}'s work,
+saying of assembly line work that
+``It is assumed that men are of equal ability and every man can do any of the $n$ jobs'',
+parallels the approach that dominated early research into crowd work
+--- namely, using non--expert crowds for complex work
+\cite{hu1961parallel}.
+This mindset in \citeauthor{hu1961parallel}'s analysis,
+and indeed the study of factory and mass manufacturing labor through the \nth{20} century,
+substantively owes its existence to scientific management
+and the rigorous decomposition of work into tasks, discussed earlier,
+and persists to this day as it colors
+researchers' goals and objectives in the study and design of crowd work.
+
+Piecework's influence on the abstraction of work into tasks,
+described above, is more than just caused by the decomposition of work;
+work abstraction itself makes it possible for workers to come and go flexibly,
+prompting work requesters to consider ways to design these now discrete tasks in ways that
+maximize flexibility, both by allowing (and even anticipating) some inconsistency in worker availability
+\textit{and} allowing and anticipating some inconsistency in the quality of the work output itself.
+It's to this area that we now turn our attention.
+
 \subsubsection{Flexibility}\label{sec:flexibility}
 Earlier we discussed \citeauthor{cheng2015break}'s work
-identifying the impact that interruption has on worker performance.
+measuring the impact that interruption has on worker performance.
 This work both points to and embodies a broader sentiment in
 both the study and practice
 of crowd work that microtasks should be designed flexibly,
@@ -396,19 +457,166 @@ in the form of higher cumulative time to complete
 similar tasks together.
 
 
-% This work on decomposition is not strictly new;
-``Decomposition'' generally illustrates the same concepts of work that ``Taylorism''
-and scientific management sought to embody
----
-\citeauthor{silberman2010ethics} in particular foresaw this danger and warned of it in
-\citeyear{silberman2010ethics}
-\cite{crowdworkFuture,silberman2010ethics,nickerson2013crowd}.
+Given the importance of consistent work results, one might intuit that
+requesters would prefer high--quality workers who can be relied upon to be available
+(even for contextually independent tasks),
+which would appear to contradict the benefits of flexibility already discussed;
+requesters have thus made significant headway toward
+``embracing error'' to allow requesters to maximize the benefits of a flexible,
+even transient,
+workforce.
 
-In both the historical and contemporary cases,
-distributed, speculative work
-has promised
-to diffuse the costs of capital--intensive resources
-(whether they were sewing machines or laboratory equipment).
+\citeauthor{embracingErrorKrishna} offer orders--of--magnitude improvements
+in various binary classification tasks
+% --- a typical application crowd work ---
+on the principle that myriad diverse workers complete these tasks
+in order to accurately inform the model.
+And rather than building tasks to \textit{tolerate} worker drop--off and attrition,
+some researchers have designed work predicated on the expectation of this phenomenon:
+\citeauthor{sensitiveTasks} describe ways of assigning tasks in such a way that
+crowd workers would never be given enough information to piece together sensitive information about
+any single topic
+\cite{sensitiveTasks}.
+
+
+
+\subsection{The Fallout of Crowd Work}\label{sec:Fallout}
+% If the research exploring and documenting how we can exploit crowd \textit{work} can be described as wide--ranging,
+% the scholarship discussing the ways crowd \textit{workers} have been exploited is more focused;
+\citeauthor{turkopticon} point out the disillusion that companies such as Amazon foster on platforms for work like AMT
+(see also \citeauthor{dynamo}'s work
+continuing in the spirit of this observation to generate collective action to improve worker conditions)
+\cite{turkopticon,dynamo}.
+\citeauthor{uberAlgorithm}
+find similarly that workers on gig work platforms are frustrated by the systems on which they work,
+to say little of the policies which these systems enforce
+\cite{uberAlgorithm}.
+
+We discussed the benefits of flexibility
+(both in the sense of having arbitrary workers perform tasks and
+in the sense that we can design tasks to be more resilient to poor work)
+in the previous section.
+It's from that point in the literature that we turn our attention to
+the perhaps unintended effects of crowd work
+and the affordances for transience that we build into this mode of work.
+We'll address two major areas of work under this subject:
+\begin{inlinelist}
+\item \nameref{sec:lowPay}; and
+\item \nameref{sec:varQualWork}.
+\end{inlinelist}
+
+\subsubsection{Low Pay}\label{sec:lowPay}
+\citeauthor{laborEconomicsOfCrowdsourcingHorton}
+identified problems with crowd work wages relatively early on,
+attempting to address this imbalance from a behavioral economic perspective ---
+that is, identifying and presenting a model that describes a worker's
+``\textit{reservation wage}''
+\cite{laborEconomicsOfCrowdsourcingHorton}.
+This work has largely informed much of the research into and practice of estimating crowd work compensation
+\cite{incentivesShaw,paolacci2010running}.
+More cynically,
+we would describe this work as identifying optimal levels to activate race conditions among piece workers.
+
+But we turn to \citeauthor{turkopticon}'s discussion of ``\textit{Turkopticon}'',
+a system they designed to interrogate worker invisibility and to promote better wages across several dimensions
+\cite{turkopticon}.
+Of particular relevance here,
+\citeauthor{turkopticon} call to attention that ``Turkers'' are ultimately vulnerable to
+wage theft and
+pay rates that translate to well under minimum wage.
+Returning to \citeauthor{laborEconomicsOfCrowdsourcingHorton},
+we find that the median ``reservation wage'' in \citeyear{laborEconomicsOfCrowdsourcingHorton}
+was \$1.38, while the mean was \$3.63
+\cite{laborEconomicsOfCrowdsourcingHorton}.
+
+Understanding workers' motivations given these conditions has thus become a goal for some researchers
+\cite{whyWouldAnyoneBrewer}.
+\citeauthor{Sun20111033} conclude that
+``\dots~solvers participate in online tasks
+not only for money
+but also for enjoyment
+or the sense of self--worth''
+\cite{Sun20111033}.
+This might have rung true in \citeyear{Sun20111033},
+and certainly corroborates \citeauthor{Ross}'s findings after investigating
+``who are the crowdworkers'',
+but as \citeauthor{whoareNOTtheTurkers} points out
+``we [have since] learned that most tasks on AMT are done by a small group of professional Turkers\dots''
+\cite{Ross,whoareNOTtheTurkers}.
+
+Now, \citeauthor{turkopticon}
+and later
+\citeauthor{dynamo} cite insufficient pay as a central point of frustration among workers,
+via \citeauthor{irani2015cultural} and \citeauthor{dawnDigitalSweatshopCushing}'s work
+\cite{dynamo,irani2015cultural,dawnDigitalSweatshopCushing,turkopticon}.
+
+
+\subsubsection{Variable quality work}\label{sec:varQualWork}
+Meanwhile,
+researchers have struggled with what we might call ``variable quality work''
+along two dimensions:
+First, to use the characterization of one of these contributions,
+``understanding malicious behavior''
+\cite{MaliciousCrowdworkersGadiraju}.
+While some work has cast workers as ``malicious'' agents,
+the evidence thus far suggests that
+workers behave in unexpected ways as they attempt to assert some control over their interaction with the system
+(a topic of discussion to which we'll return later)
+\cite{uberAlgorithm}.
+The second dimension of research in this space generally attempts
+to eke out the highest quality work possible from workers
+given the apparent difficulty in predicting work outcomes
+
+
+
+% Low pay yields variable quality work for a number of reasons,
+% but before we discuss the causes of this effect, we should discuss the
+
+% Variance in the quali
+
+The effect that poor wages have had on piece work and factory workers is hardly unknown or novel;
+\citeauthor{gantt1913work} discuss this exact mechanism in his book on
+\citetitle{gantt1913work}, pointing out that
+``\dots~where there is no union,
+the class wage is practically gauged by the wages the poor workman will accept,
+and the good workman soon becomes discouraged and \textit{sets his pace by that of his less efficient neighbor},
+with the result that the general tone of the shop is lowered'' (emphasis added)
+\cite{gantt1913work}.
+\ali{Do I need to follow up or does this basically speak for itself?}
+
+This research is similar to, but subtly different from, the notion of the ``market for `lemons'''
+which \citeauthor{fort2011amazon} discuss;
+specifically, \citeauthor{akerlof1970market}'s writing of a ``market for `lemons'''
+describes a marketplace where the quality of the product or service is unknown to the buyer
+\cite{fort2011amazon,akerlof1970market}.
+The effect of this \textit{perceived} uncertainty is that
+the \textit{actual} trustworthiness drops precipitously
+as all of the consistent, reliable, high--quality workers capable of leaving these markets do so,
+leaving only the ones who cannot or will not establish their trustworthiness.
+
+Suffice it to say, then, that poor pay and poor work are linked,
+and that we should not be surprised to find this relationship play out online as strongly as it does offline.
+Indeed, 
+
+
+
+% \itshape
+% sections here should include:
+% \begin{enumerate}
+% \item ``flexibility'' \cite{friedman2014workers,DesigningForLabourUber}
+% \item leads to ``low pay'' \cite{turkopticon,dynamo}
+% \item leads to ``variable quality work'' \cite{MaliciousCrowdworkersGadiraju,AccuracyTradeoffsLasecki}.
+% \end{enumerate}
+% \upshape
+
+\subsection{Factories}\label{sec:Factorization}
+
+
+
+
+\rule{\linewidth}{1pt}
+
+
 
 % \textit{There's a reference to something that's \textbf{not} 99designs,
 % that describes a call for scientific solutions/designs to solve some problem
@@ -555,7 +763,7 @@ Some work has taken special interest in the process of breaking tasks down into 
 inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
 both for the purposes of crowd--sourcing in the sense of out--sourcing work
 as well as ``selfsourcing''
-\cite{cheng2015break,teevan2014selfsourcing}.
+\cite{cheng2015break,selfsourcingTeevan2014}.
 
 The parallels between this kind of work and
 historical piecework of the turn of the \nth{20} century
@@ -584,28 +792,7 @@ routinization can be seen in the contemporary in work--flows
 
 
 
-\subsection{The Fallout of Gig Work}\label{sec:Fallout}
-If the research exploring and documenting how we can exploit crowd \textit{work} can be described as wide--ranging,
-the scholarship discussing the ways crowd \textit{workers} have been exploited is more focused;
-\citeauthor{turkopticon} point out the disillusion that companies such as Amazon foster on platforms for work like AMT
-(see also \citeauthor{dynamo}'s work
-continuing in the spirit of this observation to generate collective action to improve worker conditions)
-\cite{turkopticon,dynamo}.
-\citeauthor{uberAlgorithm}
-find similarly that workers on gig work platforms are frustrated by the systems on which they work,
-to say little of the policies which these systems enforce
-\cite{uberAlgorithm}.
 
-\itshape
-sections here should include:
-\begin{enumerate}
-\item ``flexibility'' \cite{friedman2014workers,DesigningForLabourUber}
-\item leads to ``low pay'' \cite{turkopticon,dynamo}
-\item leads to ``variable quality work'' \cite{MaliciousCrowdworkersGadiraju,AccuracyTradeoffsLasecki}.
-\end{enumerate}
-\upshape
-
-\subsection{Factories}\label{sec:Factorization}
 
 
 
@@ -676,7 +863,7 @@ sections here should include:
 % inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
 % both for the purposes of crowd--sourcing in the sense of out--sourcing work
 % as well as ``selfsourcing''
-% \cite{cheng2015break,teevan2014selfsourcing}.
+% \cite{cheng2015break,selfsourcingTeevan2014}.
 
 % The parallels between this kind of work and
 % historical piecework of the turn of the \nth{20} century
