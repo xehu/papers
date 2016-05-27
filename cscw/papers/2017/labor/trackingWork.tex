@@ -2,6 +2,7 @@
 
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph}
 \usepackage{booktabs,textcomp,microtype,ccicons}
+\usepackage[normalem]{ulem}
 % \usepackage{babel}
 % \usepackage{csquotes}
 \usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
@@ -53,7 +54,7 @@ what a student missed in lecture.}
 \definecolor{PineGreen}{HTML}{008800}
 \definecolor{BrickRed}{HTML}{FF0000}
 \newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
-\newcommand{\ali}[1]{{\color{BrickRed}[\textit{al2: #1}]}}
+\newcommand{\ali}[1]{{\color{BrickRed}[\itshape al2: #1\upshape]}}
 
 % Make sure hyperref comes last of your loaded packages, to give it a
 % fighting chance of not being over-written, since its job is to
@@ -309,17 +310,19 @@ and revealed a number of topics that,
 through our framing, are clearly situated together.
 Those topics are, at a high level, as follows:
 \begin{enumerate}
-\item the processes involved in making work into tasks, or \textbf{discretization};
-\item the outcomes of that discretization, both on the work itself as well as the workers;
+\item the \textbf{processes} involved in making work into tasks, or discretization;
+\item the outcomes (and indeed the \textbf{fallout}) of that discretization,
+both on the work itself as well as the workers;
 and finally
-\item the results of these forces; namely the turning of work toward \textbf{factories}.
+\item the \textbf{relationships} between workers and requesters of the work
+--- both \textit{cooperative} and \textit{adversarial} cases.
 \end{enumerate}
 
 % We will follow these topics, using them as prompts for case studies in
 % the emergence and
 % development of contemporary piecework.
 
-\subsection{Making Gig(s) Work}\label{sec:MakingGigsWork}
+\subsection{The Processes of Making Gig(s) Work}\label{sec:MakingGigsWork}
 % this is phase 1: the decomposition & abstraction of work;
 % all of the research that has gone into work--flows and
 % all the things we can do with crowd work.
@@ -530,6 +533,8 @@ any single topic
 
 
 
+
+
 \subsection{The Fallout of Crowd Work}\label{sec:Fallout}
 % If the research exploring and documenting how we can exploit crowd \textit{work} can be described as wide--ranging,
 % the scholarship discussing the ways crowd \textit{workers} have been exploited is more focused;
@@ -650,110 +655,29 @@ Indeed,
 
 
 
-% \itshape
-% sections here should include:
-% \begin{enumerate}
-% \item ``flexibility'' \cite{friedman2014workers,DesigningForLabourUber}
-% \item leads to ``low pay'' \cite{turkopticon,dynamo}
-% \item leads to ``variable quality work'' \cite{MaliciousCrowdworkersGadiraju,AccuracyTradeoffsLasecki}.
-% \end{enumerate}
-% \upshape
 
-\subsection{Factories}\label{sec:Factorization}
 
+\subsection{Relationships Between Workers and Managers}\label{sec:relationships}
+
+
+\subsubsection{External Management}
 \itshape
-So work output is variable, and that's bad. What are we doing about it?
-Historically, this is what led to factories; you would pay some experts who understood what they needed to do
-and they would form a cohort into which you invest more.
 
-Some research already looks at stuff like investing in workers
-\cite{shepherdingDow}.
-What else is there that kind of goes in this direction?
-Informally, we know that this happens a lot
-\cite{jonBrelig}.
-In fact, the formalization of factories 
-% But \citeauthor{shepherdingDow}'s contribution operates at an individual scale;
-% giving feedback --- even automated --- to individual workers replicates many of the same features
-% (and limitations) of conventional offline work
+Scientific management in other words; should I just call it that and get right into it?
+I kind of want the focus to be on the adversarial nature of the management,
+and ``external'' seems to connote that more strongly than ``scientific'',
+which has a tone of being more\dots~Measured? Objective? Better?
+
+There's a fair amount to say here, and lots to cite, so I'm not super concerned.
+I do want to bring up \citeauthor{storiesIraniSilberman}'s
+\citetitle{storiesIraniSilberman} \cite{storiesIraniSilberman}
+as a way of pointing out that even in our effort to study piecework ethnographically,
+and despite our attempts to be reflexive and conscientious of
+the power dynamics that we bring into any discussion
+(as engineers, as people with megaphones, etc\dots)
+we still manage to influence and perhaps steer.
+
 \upshape
-
-
-
-
-
-
-
-
-
-\section{Bleak Futures}
-We've traced a path from piecework itself through
-the processes that describe the design and implementation of piece work and crowd work as part of the same thread;
-from there, we followed the trail from decomposition to work abstraction,
-and the potential to break work away from workers themselves,
-which in turn facilitates flexibility for requesters as well as workers.
-\ali{oh, forgot to mention that
-I want to cite something from CHI 2016 that mentioned
-the flexibility that Uber/Lyft give drivers}
-
-
-
-
-\section{Implications for Design}
-cooperatives?
-(literally) codify the safety net and other missing things
-transferable reputation (or at least not necessarily seniority)
-
-
-
-
-
-
-\rule{\linewidth}{1pt}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% The insight here seems to have been that
-% a substantial amount of work does not necessarily need to be done in collocated space,
-% but can be done from one's own home or other space arranged by the worker.
-% Moreover, by shifting the workplace into the worker's domain,
-% the cost of capital involved in that work can more easily be placed on workers' backs
-% \msb{I don't think that was the original motivation for AMT or Uber --- it was about reaching people who could not otherwise join the labor force for Amazon's data cleaning or for taxi-ing.}.
-% I didn't mean that this was some insight that Uber or Lyft had, but that this was some part of what makes Uber work;
-% i would argue categorically that these companies wouldn't functionally work if they weren't able to obviate the 
-% maintenance costs that a factory owner would associate with their capital (e.g. auto costs)
-
-
-% While yellow--cab organizations often manage drivers in similar ways to platforms such as Uber and Lyft
-% (inasmuch as drivers are often considered contractors, or otherwise exempt from the formal status of ``employee''),
-% these new systems go further
-% by framing ownership and responsibility for costs
-% (e.g. automotive maintenance)
-% on drivers.
-% In our fieldwork, we discovered many longtime ``on--demand'' drivers
-% (affiliated with platforms such as Uber and Lyft)
-% who readily voiced frustration with the costs of
-% frequent oil changes and the unexpected replacement of expensive parts.
-% Distributing labor had similar effects on pieceworkers at the turn of the \nth{20} century;
-% textile workers were given the source material with which to work,
-% but were generally expected to use their own sewing materials and work in their own homes
-% \cite{hapke2004sweatshop}.
-
-
-% \subsection{Discretization and Routinization}
-% \subsubsection{Decomposition}\label{sec:decomposition}
-
 
 % Taylorism enabled
 % --- and would later become synonymous with --- 
@@ -762,215 +686,30 @@ transferable reputation (or at least not necessarily seniority)
 % The compelling solution that emerged in piecework became what we now know as Taylorism;
 % rather than
 
-% I never talk about factorization it's too soon ahhhh
-% With piecework and factorization making mass manufacturing more viable,
-% businesses could produce at scales that were previously unimaginable.
-% Nevertheless, this approach to labor and the production capacity it offered was not without its hurdles.
-% One of the issues that challenged mass production at the turn of the \nth{20} century,
-% as well as today in crowd work and elsewhere,
-% has been that of ensuring that the quality of the work is sufficiently good.
+
+\subsubsection{Alienated Workers}
+\itshape
+
+Marx's big entrance. Lily has lots of work pointing to this, and
+lots of that work points to yet more work gesturing in this direction.
+I want to bring a lot of that work
+that hasn't made it into the discussion yet
+into the conversation here.
+
+Note to self: examples of citations would help make it clearer for MSB which ones I'm overlooking,
+if nothing else
+
+\upshape
 
 
-% hey so i need to bring in citations on piecework for this stuff because I didn't exactly live through this time
+\subsubsection{Resistance}
 
-% is ANY of this good?
+\citeauthor{uberAlgorithm}'s paper on Uber drivers
+\cite{uberAlgorithm}.
 
-% The approach to piecework described above hinged in some sense on
-% the shared understanding of the work to be done;
-% workers generally understood what was required of sewing together pieces of fabric.
-% Still, the work was speculative in that inadequately sewn clothing would not earn payment.
-% This represented a risk for pieceworkers,
-% who might spend time working on 10 garments only to be paid for 2 or 3.
-% It also represented a potential cost for management,
-% who would need to salvage the material
-% (if it was even possible),
-% and give that material to another pieceworker to do it correctly.
-
-% i need to find the source for this, because it's honestly only a vague quote in my head,
-% so... maybe i imagined it?
-
-% One of the solutions that 
-
-
-% Broadly speaking, the solution to this problem is to make instructions clearer and easier to follow.
-% Further, by establishing a shared understanding
-% --- a ``collective conscious'' or even a corporate culture regarding work ---
-
-
-% \textit{I want to argue that modern gig work is discretized,
-% and that this parallels some of the piecework that we're historically familiar with}
-
-% Opening the door to more discrete modules of work known as tasks 
-% % Work has become discretized in the last 10 years, particularly in the information work sector.
-% Contributions such as
-% ``find--fix--verify'' % (described in \citetitle{bernsteinSoylent})
-% and
-% ``Cascade'' % (described in \citetitle{chilton2013cascade})
-% make it easier to assign smaller components of work to myriad workers and
-% recompose the constituent parts into something more complex
-% \cite{bernsteinSoylent,chilton2013cascade}.
-% Some work has taken special interest in the process of breaking tasks down into more manageable parts
-% % Some work has even turned to break it down'',
-% inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
-% both for the purposes of crowd--sourcing in the sense of out--sourcing work
-% as well as ``selfsourcing''
-% \cite{cheng2015break,selfsourcingTeevan2014}.
-
-% The parallels between this kind of work and
-% historical piecework of the turn of the \nth{20} century
-% is by no means new.
-% 
-% The \textbf{discretization} and decomposition of work certainly facilitates
-% breaking tasks down,
-% parallelizing work,
-% and getting more done across a broader array of people;
-% but the key advantage in turning macro tasks 
-% into many micro tasks is that we can make that work \textit{routine}.
-
-% By making larger bodies of work less contextually situated,
-% we can define processes that make that work
-% and the instructions thereof
-% useful for virtually anyone with shared cultural or intellectual background.
-
-% routinization can be seen in the contemporary in work--flows
-% \cite{foundry,bernsteinSoylent}.
-% [\textit{There are various papers that talk about creating a work--flow;
-% maybe this is where FFV belongs? Foundry?}].
-
-% \textit{Harken back to piecework
-% and the instructions that denim workers had to make clothing;
-% the instructions were clear and scoped enough that you could repeat the task ad infinitum.}
-
-
-
-
-
-
-
-% I commented everything going forward out not because it's all trash (it's not!)
-% but because we pretty significantly reframed the cases to be studying and
-% i didn't want the structure from before to influence the rewrite;
-% we should be bringing content from below back above. just, judiciously...
-
-
-% \subsection{Discretization and Routinization}
-
-% Distributing work in method described above may be thought of as vertically slicing work such that 
-% each person is responsible for the whole task
-% --- making a whole garment or being responsible for driving in a single neighborhood.
-% Broken down in this way, work could grow to unprecedented scales,
-% but the quality of the work would remain relatively variable.
-% Textile work being a salient example,
-% some seamstresses might be better than others at the same task,
-% making this framing of the work initially problematic.
-
-% A compelling solution emerged in the early \nth{20} century to break tasks down into discrete,
-% manageable routines that could be taught relatively easily,
-% and whose work output could be evaluated in abstraction from the rest of the work.
-% In Ford's assembly line, this meant that workers were not responsible for building a whole car,
-% but a single very narrowly defined action that needed to be done on every car.
-
-% This approach paralleled what would be known as ``Taylorism'',
-% and its influences can be seen today in crowd work and micro--tasks.
-% \textit{talk about breaking tasks down both in general (Cheng) and even for the self (Teevan);
-% horizontal cuts instead of vertical}
-% \cite{cheng2015break,writingMicroTasks}.
-% By decomposing and recomposing tasks,
-% and in particular by assigning similarly natured work to the same workers,
-% workers could become ``experts'' in a small aspect of the work that they did,
-% speeding their work dramatically
-% \cite{delayAndOrderLasecki}.
-% Perhaps more important, however, was that
-% the breaking down of work into tasks has made it more practical to evaluate work at each stage
-% [\textit{citation needed}].
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% Opening the door to more discrete modules of work known as tasks 
-% Contributions such as
-% ``find--fix--verify'' % (described in \citetitle{bernsteinSoylent})
-% and
-% ``Cascade'' % (described in \citetitle{chilton2013cascade})
-% make it easier to assign smaller components of work to myriad workers and
-% recompose the constituent parts into something more complex
-% \cite{bernsteinSoylent,chilton2013cascade}.
-% Some work has taken special interest in the process of breaking tasks down into more manageable parts
-% inasmuch as decomposing what we might call ``macro'' tasks into microtasks,
-% both for the purposes of crowd--sourcing in the sense of out--sourcing work
-% as well as ``selfsourcing''
-% \cite{cheng2015break,selfsourcingTeevan2014}.
-
-% The parallels between this kind of work and
-% historical piecework of the turn of the \nth{20} century
-% is by no means new
-% [\textit{citation needed --- who said this first? most notably? Turner?}] \msb{not familiar with it, but google scholar suggests this was an early one to talk about it \url{http://scholarship.law.berkeley.edu/cgi/viewcontent.cgi?article=1433&context=bjell}}.
-% \textit{Elaborate on gig work, piecework, etc\dots}
-
-% The \textbf{discretization} and decomposition of work certainly facilitates
-% breaking tasks down,
-% parallelizing work,
-% and getting more done across a broader array of people;
-% but the key advantage in turning macro tasks 
-% into many micro tasks is that we can make that work \textit{routine}.
-
-% By making larger bodies of work less contextually situated,
-% we can define processes that make that work
-% and the instructions thereof
-% useful for virtually anyone with shared cultural or intellectual background.
-
-% routinization can be seen in the contemporary in work--flows
-% \cite{foundry,bernsteinSoylent}
-% [\textit{There are various papers that talk about creating a work--flow;
-% maybe this is where FFV belongs? Foundry?}].
-
-
-
-% \subsection{External Management}
-% \textbf{Discretization}, enabling \textbf{routinization}, thus allows us to
-% manage work more meaningfully.
-% Routinization in particular made it possible
-% (and indeed preferable) to assume that people
-% ``\dots are of equal ability and \dots can do any of the $n$ jobs''
-% \cite{hu1961parallel}.
-% \citeauthor{storiesIraniSilberman}
-% find similarly that
-% this work is only made to seem new by framing the units of work as the output of ``task--completion APIs''
-% \cite{storiesIraniSilberman}.
-
-% Crucially,
-% \citeauthor{hu1961parallel}'s case study assumed that workers were similarly trained and capable,
-% which in \citeyear{hu1961parallel}
-% meant that workers would at least have to be trained in person, if not instructed as well.
-% Throughout the industrial revolution, workers flocked to centralized locales of production,
-% and physically situated factories made it both
-% difficult to ignore the general pattern of mistreatment and
-% relatively easy to organize.
-
-% \citeauthor{storiesIraniSilberman} describe is that the ``APIs'' in the latter case
-
-
-
-% \textit{I want to cite Justin's work on crowdsourcing effort to highlight that
-% we can evaluate workers for the work they do with increasingly finite amounts of time;
-% also, Ranjay's work that embraces failure because
-% we can essentially algorithmically make sense of failure (let's call it noise)
-% and re--capture signal.}
+\citeauthor{dynamo} on \textit{Dynamo};
+\citeauthor{turkopticon} on \textit{Turkopticon}
+\cite{turkopticon,dynamo}.
 
 
 % \subsection{Resistance}
@@ -993,186 +732,247 @@ transferable reputation (or at least not necessarily seniority)
 
 
 
-\subsection{Looking forward}
-If we agree that
-discretization,
-routinization,
-management,
-and even resistance
-necessarily follow one another according to this theoretical lens,
-then we have to use it to attempt to envision
-what comes next.
+
+\section{Bleak Futures}
+We've traced a path from piecework itself through
+the processes that describe the design and implementation of piece work and crowd work as part of the same thread;
+from there, we followed the trail from decomposition to work abstraction,
+and the potential to break work away from workers themselves,
+which in turn facilitates flexibility for requesters as well as workers
 
 
 
-\textit{I've been going back and forth regarding how to frame this paper;
-the approach that tries to look at
-things that are similar vs things that are different
-doesn't seem to work, but
-I've left the thoughts here because it's not all completely bad.}
+\subsection{Factories}\label{sec:Factorization}
 
-\section{Things stay the same}
-How is gig work the same as it's been historically?
+\itshape
+So work output is variable, and that's bad. What are we doing about it?
+Historically, this is what led to factories; you would pay some experts who understood what they needed to do
+and they would form a cohort into which you invest more.
 
-I think this section would be compelling to draw parallels between
-the narratives drivers gave about the flexibility, autonomy, etc\dots
-and that which we might have seen among pieceworkers
-(predominantly women, who benefited from being able to work from home).
-
-\subsection{Flexibility}
-Are there cultural differences between the people that did piecework and
-the people that do gig work now?
-I'm not sure there are significant differences that have affected the outcomes so far.
-
-Many of the workers to whom piecework appealed were mothers, wives, etc\dots
-who mostly stayed at home for various reasons
-(certainly largely it was cultural
---- women weren't afforded equal access to labor opportunities,
-making in--home job opportunities not only compelling, but also one of few available options).
-
-Gig workers are in some senses similarly constrained:
-workers on Amazon Mechanical Turk
---- those that use it as a primary source of income, at least ---
-report being homebound for various reasons (e.g. medical, parenting, etc\dots).
-Society and circumstance have made it difficult
-or impossible
-to join the contemporary, conventional workforce;
-gig work re--opens that door.
-
-But there are differences; during our research over the summer,
-we spoke to drivers on Uber and Lyft, cleaners, and other gig workers.
-Many of them told us about their home lives
---- about children, spouses, and other commitments ---
-to which they wanted to dedicate more time.
-One driver
-(let's call him Ra\'{u}l)
-told me about how he drove for Lyft
-after working as an inventory manager at a hospital for more than nine years.
-
-I asked him why he quit that job and forewent
-the benefits,
-predictability,
-and career growth opportunity
-that his old job offered.
-He told me that when his daughter was born,
-he was overcome with a desire to spend more time with her.
-No longer satisfied with work
-where he often left before his daughter would wake up and return after she fell asleep,
-Ra\'{u}l decided to start driving for Lyft,
-because he could drive in the evenings when his daughter was asleep.
-
-Other drivers reported similar benefits;
-gig work affords its workers flexibility that conventional careers don't allow.
-
-\subsection{routinization of work}
-This leads into the next section, but I want to bring up the process of
-making work about mass--manufacturing, at least inasmuch as
-the instructions are the same for everyone.
-
-The Internet arguably has made it much easier to broadcast those instructions,
-but it's had this deeper effect of enabling some amount of back--and--forth
-between the worker and the (algorithmic) manager.
-
-\subsection{Taylorism}
-The routinization of work makes it possible to measure that process,
-optimize it for certain characteristics, and ultimately
-lead to Taylorism and scientific management.
-This is not new;
-researchers have studied and written about the slow creep of
-algorithmic management and 
-discretization \& routinization of work tasks.
-
-\textit{We hope to take a step back from the context in which this work is often applied, and
-look for its place in the larger trends and theories
-to make sense of the trends of gig work at large.}
-
-Industrialization and the automobile assembly line makes this famous,
-but piecework functioned on the principle that everyone was making similar
-or identical
-garments and other products.
-
-Now, we see Turkers being evaluated on the outcome of their work conforming to norms,
-sometimes bootstrapped,
-as in Ranjay's talk on 
-``Embracing Error to Enable Rapid Crowdsourcing'',
-but more conventionally in work flows like ``Find--Fix--Verify''.
-
-\textit{This might be an opportunity to reflect on
-how pieceworkers internalized the work they were doing,
-responded to the stress of the uncertainty of potentially rejected work,
-etc\dots but I'm not familiar with research in that space.}
-
-\subsection{The emergence of decentralized workplaces}
-The practice of in--home piecework was consumed by
-the centralization of factories
-(the effect of which we'll talk about later, since
-we can talk about how this made unions more practical),
-but for a time many pieceworkers
-at the turn of the \nth{20} century
-worked out of their homes.
-Strikingly, many of the gig workers
-\citeauthor{crowdworkFuture}
-discussed in
-\citeyear{crowdworkFuture},
-and indeed many more continue to do what we might call ``information work''
---- that is, work that predominantly demands human computation ---
-but increasingly we're seeing the movement toward transient work that largely requires embodied presence
-\cite{uberAlgorithm} (and others).
-
-\subsection{What was this about?}
-I was going to check in quickly and take a photo of your whiteboard
-(hoping that you'd kept our conversation notes around)
-but your room was \textit{literally} full of people lol.
+Some research already looks at stuff like investing in workers
+\cite{shepherdingDow}.
+What else is there that kind of goes in this direction?
+Informally, we know that this happens a lot
+\cite{jonBrelig}.
+AMT, meanwhile, offers requesters the ability to create tasks which are
+not just hidden from unqualified workers by default, but completely.
+Requesters have taken to using lists of worker IDs which reference
+workers who have proven their reliability,
+representing a sort of proto--organization of loosely connected workers.
+\upshape
 
 
-\section{Things are changing}
-The medium on which this work is being done
---- and to an extent the medium used to manage workers ---
-has dramatically changed things as well, however;
-workers are distributed around the world,
-working out of their cars in the cases of livery services
-(notably, never returning to a base of operations)
-across and between cities as well as nations,
-or in their homes
-(paralleling the trend of piecework even more closely).
 
-Trying to understand how gig work has differed from piecework should at least
-start with looking at the different characteristics of the work involved.
-After that, we should think about how
-the demography and culture of the people engaging in this kind of work
-have changed versus that of the pieceworkers.
+\section{Implications for Design}
+If it's agreed that
+the major topics we've discussed thus far are related and
+--- at least to \textit{some} extent ---
+precipitated in the fashion we argue,
+then we have a rare opportunity as researchers,
+and as agents of change in the communities we study,
+to affect change on the dynamics of crowd and on--demand work
+as they continue to develop.
 
-\subsection{Differences in the work itself}
-Gig work has all of the above similarities with piecework,
-but there are key differences.
-
-% Piecework emerged at the turn of the \nth{20} century,
-% right at the time that telecommunications began to boom in the United States. % too far a reach?
-% \textit{Did telecom enable remote management?}
-
-Gig work in its contemporary formation is largely mediated by
-ubiquitously accessible digital media
-(the Internet, telephony, etc\dots)
-and importantly has relied on this technology to facilitate the remote management of workers
-\cite{uberAlgorithm}.
-
-\textit{Has the work fundamentally changed,
-or are we just being managed remotely in different ways?
-I'm not entirely sure.}
-
-How does this work differ from the experience of being ``on--call'' that is so familiar to retail employees?
-How does this work differ from the work in which truckers, taxi drivers, and other
-independent contractors have been participating for decades?
-We argue that the substantive difference in these markets is the speed of the market itself,
-motivated by the technology which mediates it.
-Because workers can be sourced and dispatched virtually instantly,
-businesses that engage in this kind of work
-(e.g. Uber, Amazon Mechanical Turk, etc\dots)
-have taken to removing other bottlenecks,
-like vetting workers upfront
+Without claiming to have easy, cut--and--dry solutions to these problems,
+we can nevertheless bring to attention a number of critical opportunities to
+learn from historical parallels in piecework and factory labor,
+and make informed decisions regarding whether
+(or indeed how)
+we may want to influence outcomes.
+The challenges we bring to attention here are as follows:
+\begin{inlinelist}
+  \item codifying investment toward collective goods into the designs of systems;
+  \item (re--)decentralizing the internet (hey, it's lowercase now!); and
+  \item enabling reputation transferral.
+\end{inlinelist}
 
 
-\section{More deliberate work}
+\subsection{Codify the common good}
+\subsection{Decentralize the internet (again)}
+\subsection{Deal with reputation}
+
+
+
+
+
+
+
+\rule{\linewidth}{1pt}
+
+
+% \citeauthor{storiesIraniSilberman} describe is that the ``APIs'' in the latter case
+
+
+
+
+% \textit{I've been going back and forth regarding how to frame this paper;
+% the approach that tries to look at
+% things that are similar vs things that are different
+% doesn't seem to work, but
+% I've left the thoughts here because it's not all completely bad.}
+
+% \section{Things stay the same}
+% How is gig work the same as it's been historically?
+
+% I think this section would be compelling to draw parallels between
+% the narratives drivers gave about the flexibility, autonomy, etc\dots
+% and that which we might have seen among pieceworkers
+% (predominantly women, who benefited from being able to work from home).
+
+% \subsection{Flexibility}
+% Are there cultural differences between the people that did piecework and
+% the people that do gig work now?
+% I'm not sure there are significant differences that have affected the outcomes so far.
+
+% Many of the workers to whom piecework appealed were mothers, wives, etc\dots
+% who mostly stayed at home for various reasons
+% (certainly largely it was cultural
+% --- women weren't afforded equal access to labor opportunities,
+% making in--home job opportunities not only compelling, but also one of few available options).
+
+% Gig workers are in some senses similarly constrained:
+% workers on Amazon Mechanical Turk
+% --- those that use it as a primary source of income, at least ---
+% report being homebound for various reasons (e.g. medical, parenting, etc\dots).
+% Society and circumstance have made it difficult
+% or impossible
+% to join the contemporary, conventional workforce;
+% gig work re--opens that door.
+
+% But there are differences; during our research over the summer,
+% we spoke to drivers on Uber and Lyft, cleaners, and other gig workers.
+% Many of them told us about their home lives
+% --- about children, spouses, and other commitments ---
+% to which they wanted to dedicate more time.
+% One driver
+% (let's call him Ra\'{u}l)
+% told me about how he drove for Lyft
+% after working as an inventory manager at a hospital for more than nine years.
+
+% I asked him why he quit that job and forewent
+% the benefits,
+% predictability,
+% and career growth opportunity
+% that his old job offered.
+% He told me that when his daughter was born,
+% he was overcome with a desire to spend more time with her.
+% No longer satisfied with work
+% where he often left before his daughter would wake up and return after she fell asleep,
+% Ra\'{u}l decided to start driving for Lyft,
+% because he could drive in the evenings when his daughter was asleep.
+
+% Other drivers reported similar benefits;
+% gig work affords its workers flexibility that conventional careers don't allow.
+
+% \subsection{routinization of work}
+% This leads into the next section, but I want to bring up the process of
+% making work about mass--manufacturing, at least inasmuch as
+% the instructions are the same for everyone.
+
+% The Internet arguably has made it much easier to broadcast those instructions,
+% but it's had this deeper effect of enabling some amount of back--and--forth
+% between the worker and the (algorithmic) manager.
+
+% \subsection{Taylorism}
+% The routinization of work makes it possible to measure that process,
+% optimize it for certain characteristics, and ultimately
+% lead to Taylorism and scientific management.
+% This is not new;
+% researchers have studied and written about the slow creep of
+% algorithmic management and 
+% discretization \& routinization of work tasks.
+
+% \textit{We hope to take a step back from the context in which this work is often applied, and
+% look for its place in the larger trends and theories
+% to make sense of the trends of gig work at large.}
+
+% Industrialization and the automobile assembly line makes this famous,
+% but piecework functioned on the principle that everyone was making similar
+% or identical
+% garments and other products.
+
+% Now, we see Turkers being evaluated on the outcome of their work conforming to norms,
+% sometimes bootstrapped,
+% as in Ranjay's talk on 
+% ``Embracing Error to Enable Rapid Crowdsourcing'',
+% but more conventionally in work flows like ``Find--Fix--Verify''.
+
+% \textit{This might be an opportunity to reflect on
+% how pieceworkers internalized the work they were doing,
+% responded to the stress of the uncertainty of potentially rejected work,
+% etc\dots but I'm not familiar with research in that space.}
+
+% \subsection{The emergence of decentralized workplaces}
+% The practice of in--home piecework was consumed by
+% the centralization of factories
+% (the effect of which we'll talk about later, since
+% we can talk about how this made unions more practical),
+% but for a time many pieceworkers
+% at the turn of the \nth{20} century
+% worked out of their homes.
+% Strikingly, many of the gig workers
+% \citeauthor{crowdworkFuture}
+% discussed in
+% \citeyear{crowdworkFuture},
+% and indeed many more continue to do what we might call ``information work''
+% --- that is, work that predominantly demands human computation ---
+% but increasingly we're seeing the movement toward transient work that largely requires embodied presence
+% \cite{uberAlgorithm} (and others).
+
+% \subsection{What was this about?}
+% I was going to check in quickly and take a photo of your whiteboard
+% (hoping that you'd kept our conversation notes around)
+% but your room was \textit{literally} full of people lol.
+
+
+% \section{Things are changing}
+% The medium on which this work is being done
+% --- and to an extent the medium used to manage workers ---
+% has dramatically changed things as well, however;
+% workers are distributed around the world,
+% working out of their cars in the cases of livery services
+% (notably, never returning to a base of operations)
+% across and between cities as well as nations,
+% or in their homes
+% (paralleling the trend of piecework even more closely).
+
+% Trying to understand how gig work has differed from piecework should at least
+% start with looking at the different characteristics of the work involved.
+% After that, we should think about how
+% the demography and culture of the people engaging in this kind of work
+% have changed versus that of the pieceworkers.
+
+% \subsection{Differences in the work itself}
+% Gig work has all of the above similarities with piecework,
+% but there are key differences.
+
+% % Piecework emerged at the turn of the \nth{20} century,
+% % right at the time that telecommunications began to boom in the United States. % too far a reach?
+% % \textit{Did telecom enable remote management?}
+
+% Gig work in its contemporary formation is largely mediated by
+% ubiquitously accessible digital media
+% (the Internet, telephony, etc\dots)
+% and importantly has relied on this technology to facilitate the remote management of workers
+% \cite{uberAlgorithm}.
+
+% \textit{Has the work fundamentally changed,
+% or are we just being managed remotely in different ways?
+% I'm not entirely sure.}
+
+% How does this work differ from the experience of being ``on--call'' that is so familiar to retail employees?
+% How does this work differ from the work in which truckers, taxi drivers, and other
+% independent contractors have been participating for decades?
+% We argue that the substantive difference in these markets is the speed of the market itself,
+% motivated by the technology which mediates it.
+% Because workers can be sourced and dispatched virtually instantly,
+% businesses that engage in this kind of work
+% (e.g. Uber, Amazon Mechanical Turk, etc\dots)
+% have taken to removing other bottlenecks,
+% like vetting workers upfront
+
+
+% \section{More deliberate work}
 % \subsection{Differences in the people that do the work}
 % ???
 
