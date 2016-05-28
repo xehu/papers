@@ -24,12 +24,10 @@
 }
 
 
-\def\plaintitle{Naming Things is Hard: Real Title Following Colon}
+\def\plaintitle{Reexamining Crowd Work: A Historical Framing of On--Demand Labor as Piecework}
 \def\plainauthor{All the people (Ali, Margaret, MSB, who else?)}
 \def\emptyauthor{}
-\def\plainkeywords{Please don't make me pick keywords.
-This is like asking a teacher to give the bullet points of
-what a student missed in lecture.}
+\def\plainkeywords{Crowdsourcing}
 \def\plaingeneralterms{Documentation, Standardization}
 
 % llt: Define a global style for URLs, rather that the default one
@@ -104,26 +102,26 @@ what a student missed in lecture.}
 \maketitle
 
 \begin{abstract}
-  With growing attention on gig work
-  --- ranging from the ``sharing economy'' to microtasks ---
+  With growing attention in on--demand labor
+  --- ranging from the ``sharing economy'' to information work ---
   scholars have made connections to frameworks like Taylorism,
   and mechanisms such as worker advocacy and empowerment,
   to make sense of our observations of
   on--demand work and the workers that power this movement.
   We argue that our the underlying trend towards ``piecework''
-  --- driven in part by the discretization,
-  routinization,
-  and external management of said work ---
-  not only suggests, but in fact generates what we have observed:
-  members of this transient workforce increasingly feeling
-  disempowered,
-  marginalized,
-  and frustrated by the systems and platforms on which they work.
+  predicts and indeed precipitates both the contributions
+  that have been made toward the development of on--demand labor and crowd work
+  as well as the fallout among workers and researchers with regard to the disillusionment and alienation of work.
+  % not only suggests, but in fact generates what we have observed:
+  % members of this transient workforce increasingly feeling
+  % disempowered,
+  % marginalized,
+  % and frustrated by the systems and platforms on which they work.
   
   After evaluating this framing
-  through a series of case studies
-  in various industries falling broadly under the ``gig work'' category,
-  we turn our theoretical lens to look to the future,
+  through a series of case studies,
+  % in various on--demand industries,
+  we turn our lens to look to the future,
   to identify worthwhile questions and
   points of inquiry that researchers in social computing should consider
   as we attempt to anticipate and perhaps shape the future of work.
@@ -687,67 +685,118 @@ the \textit{actual} trustworthiness drops precipitously
 as all of the consistent, reliable, high--quality workers capable of leaving these markets do so,
 leaving only the ones who cannot or will not establish their trustworthiness.
 
-Suffice it to say, then, that poor pay and poor work are linked,
-and that we should not be surprised to find this relationship play out online as strongly as it does offline.
-
-
-
-
-
-
 \subsection{Relationships Between Workers and Managers}\label{sec:relationships}
+Suffice it to say that poor pay and poor work are linked,
+and that we should not be surprised to find this relationship play out online as strongly as it does offline.
+But the poor treatment of workers by managers
+--- both human and algorithmic ---
+do more than affect the economic relationships between workers and employers.
+Here, then, we turn to examine this facet of on--demand work
+and how these dynamics strikingly replicate the relationships
+researchers in labor advocacy encountered in the study of piecework and factory work.
 
+This topic can be condensed into three major areas:
+\begin{inlinelist}
+\item external (scientific) management, and the evaluation of workers as functional modules; and
+% \item the alienation of workers under this form of evaluation; and
+\item the consequential resistance workers express due to their perceived alienation and distance from managing forces.
+\end{inlinelist}
 
 \subsubsection{External Management}
-\itshape
+We discussed Fordism and Taylorism earlier in our discussions of
+\nameref{sec:decomposition} and \nameref{sec:flexibility},
+but here the core of these paradigmatic views
+--- the scientific management of work ---
+becomes relevant.
+We use ``external'' here instead of ``scientific'', however,
+to more broadly capture the disconnect between managers and workers.
+By describing it as thus,
+we can touch on the relationship that workers have with \textit{researchers}, as well,
+even though that work is not strictly
+--- or just not exclusively ---
+of the same nature as the management and experience as when interacting with requesters.
 
-Scientific management in other words; should I just call it that and get right into it?
-I kind of want the focus to be on the adversarial nature of the management,
-and ``external'' seems to connote that more strongly than ``scientific'',
-which has a tone of being more\dots~Measured? Objective? Better?
-
-There's a fair amount to say here, and lots to cite, so I'm not super concerned.
-I do want to bring up \citeauthor{storiesIraniSilberman}'s
-\citetitle{storiesIraniSilberman} \cite{storiesIraniSilberman}
-as a way of pointing out that even in our effort to study piecework ethnographically,
-and despite our attempts to be reflexive and conscientious of
-the power dynamics that we bring into any discussion
-(as engineers, as people with megaphones, etc\dots)
-we still manage to influence and perhaps steer.
-
-\upshape
-
-% Taylorism enabled
-% --- and would later become synonymous with --- 
-% scientific management, which we will discuss later
-% and might generally be regarded collectively as ``scientific management''
-% The compelling solution that emerged in piecework became what we now know as Taylorism;
-% rather than
+First, intuitively, the variable--quality work we discussed previously has led to
+a large and growing body of research attempting to evaluate workers' performance and error rates
+across numerous dimensions;
+for example, \citeauthor{measuringCrowdsourcingCheng} explore the error rates of workers by
+operating on a sliding scale giving workers varying amounts of time to accomplish micro--tasks
+\cite{measuringCrowdsourcingCheng}.
+\citeauthor{storiesIraniSilberman} describe the treatment of workers
+as sorts of ``human APIs'' that can, importantly, be rigorously evaluated
+\cite{storiesIraniSilberman}.
+\citeauthor{gevins2003neurophysiological} began to explore the neurophysiological effects of
+cognitively demanding tasks on workers,
+informing crowdsourcing research by suggesting the use of cognitive load assessments such as
+NASA Task Load Index surveys to evaluate workers pre and post--tasks
+\cite{embracingErrorKrishna,measuringCrowdsourcingCheng}.
 
 
-\subsubsection{Alienated Workers}
-\itshape
+External management comes in other forms than scientific, as previously mentioned.
+Researchers in particular have noticed that their relationships with on--demand workers are,
+at the least, complex.
+\citeauthor{storiesIraniSilberman} point out that their relationships with Turkers are highly complex;
+specifically, their interactions with field sites in which they work
+as designers and mediators of change influence the relationships they have with Turkers
+\cite{storiesIraniSilberman}.
 
-Marx's big entrance. Lily has lots of work pointing to this, and
-lots of that work points to yet more work gesturing in this direction.
-I want to bring a lot of that work
-that hasn't made it into the discussion yet
-into the conversation here.
+The scientific management of pieceworkers has been well--studied under the umbrella of assembly line research,
+and even physiological study of pieceworkers closely resembles the
+research into cognitive loads and stress levels that we discussed among on--demand crowd workers
+\cite{pieceworkBiologicalHarm,hu1961parallel}.
+Even the complicated relationships between observers and workers themselves are not necessarily new
+\cite{riisOtherSideLives}.
+\citeauthor{riisOtherSideLives}'s photodocumentary of pieceworkers has even been re--examined among Turkers
+\cite{facesOfMechanicalTurk}.
+We argue that these investigations naturally follow the flourishing and fallout of what is,
+fundamentally, piecework mediated in new ways.
 
-Note to self: examples of citations would help make it clearer for MSB which ones I'm overlooking,
-if nothing else
 
-\upshape
+
+
+
+% \subsubsection{Alienated Workers}
+% Unsurprisingly, workers have expressed a disassociation from the platforms on which they work and the work they do;
+% T
+
+% \itshape
+
+% Marx's big entrance. Lily has lots of work pointing to this, and
+% lots of that work points to yet more work gesturing in this direction.
+% I want to bring a lot of that work
+% that hasn't made it into the discussion yet
+% into the conversation here.
+
+% Note to self: examples of citations would help make it clearer for MSB which ones I'm overlooking,
+% if nothing else
+
+% \upshape
 
 
 \subsubsection{Resistance}
-
-\citeauthor{uberAlgorithm}'s paper on Uber drivers
+It shouldn't surprise us, then, that workers have resisted the management imposed on them both by people and by systems,
+often without recourse or room for feedback.
+Indeed, \citeauthor{uberAlgorithm} discover of Uber drivers that 
+many toggle their availability to avoid being dispatched to more distant locations,
+resisting the intent of the designers of the systems and their ``algorithmic and data--driven management''
 \cite{uberAlgorithm}.
 
-\citeauthor{dynamo} on \textit{Dynamo};
-\citeauthor{turkopticon} on \textit{Turkopticon}
+Resistance has sometimes been more coordinated, as well;
+we see this in \citeauthor{turkopticon}'s coverage on \textit{Turkopticon} as workers collectively accumulated information about requesters, and
+in \citeauthor{dynamo}'s work on \textit{Dynamo}, which generated ``Guidelines for Academic Requesters'' written by crowd workers
 \cite{turkopticon,dynamo}.
+
+Resistance against managers in piecework and factory labor settings are deeply well--explored,
+but perhaps the most relevant case study to draw on here is to be found in
+\citeauthor{waldinger1996helots}'s case study of ``Justice for Janitors'',
+where marginalized workers managed to raise awareness for their plight and secure support for badly needed reforms
+\cite{waldinger1996helots}.
+The achievements of labor advocacy groups such as labor unions as resistant,
+even adversarial organizations counter--balancing the management
+is somewhat well--understood
+\cite{russell1982collective,craig1992behavior}.
+We argue that these threads of resistance against management in various forms
+are in fact one.
 
 
 % \subsection{Resistance}
@@ -769,37 +818,78 @@ if nothing else
 % Do that here.}
 
 
-
-
-\section{Bleak Futures}
+\section{The Bleak Future of Crowd Work}
 We've traced a path from piecework itself through
 the processes that describe the design and implementation of piece work and crowd work as part of the same thread;
-from there, we followed the trail from decomposition to work abstraction,
-and the potential to break work away from workers themselves,
-which in turn facilitates flexibility for requesters as well as workers
+in tracing this process, we touched on the relationships between decomposition,
+work \& worker abstraction,
+flexibility, and followed through both the general fallout of crowd work in the research community
+as well as the fallout between workers and the managers and other external parties
+--- including researchers.
+
+Throughout these case studies, we have pointed out the parallels between
+the contemporary research in on--demand labor and
+the much larger body of research constituting our understanding of topics such as
+piecework, factory work, and laborer relations.
+If we agree that this framing is useful and informative, then
+several topics emerge as relatively open questions in the study of crowd work and on--demand labor.
+Two of the most pressing questions are
+\begin{inlinelist}
+\item the beginnings of factories, and 
+\item the decline of relevance of worker advocacy organizations.
+\end{inlinelist}
+We will discuss those questions here.
 
 
 
-\subsection{Factories}\label{sec:Factorization}
+\subsection{The beginnings of factories}\label{sec:Factorization}
+We established earlier that abstracted work and low wages tend to result in variable outcomes,
+which presents problems for employers.
+% So work output is variable, and that's bad. What are we doing about it?
+Historically, this is what led to factories; by employing a cohort of known workers,
+we can be reasonably assured that the quality of the work will be better than random.
+Furthermore, we can invest more resources in training workers and
+get workers to do more complex work with more context.
+% you would pay some experts who understood what they needed to do
+% and they would form a cohort into which you invest more.
 
-\itshape
-So work output is variable, and that's bad. What are we doing about it?
-Historically, this is what led to factories; you would pay some experts who understood what they needed to do
-and they would form a cohort into which you invest more.
-
-Some research already looks at stuff like investing in workers
-\cite{shepherdingDow}.
-What else is there that kind of goes in this direction?
-Informally, we know that this happens a lot
-\cite{jonBrelig}.
+Some research already looks at research such as investing in workers, and
+informally, we know that this happens among industry requesters
+\cite{jonBrelig,shepherdingDow}.
 AMT, meanwhile, offers requesters the ability to create tasks which are
 not just hidden from unqualified workers by default, but completely.
 Requesters have taken to using lists of worker IDs which reference
 workers who have proven their reliability,
 representing a sort of proto--organization of loosely connected workers.
-\upshape
 
+This, then, suggests that the beginning of the regularization of workforces
+--- a sort of coalescence of factories ---
+is already happening.
+If our framing of on--demand labor is accurately describing an underlying relationship with piecework,
+then we should watch for the emergence and popularization of persistent teams of workers.
+% While this field site will likely prove exceedingly difficult to 
+% Social computing researchers should seek to understand this process more
+% fully, as we a
 
+\subsection{The decline of advocacy organizations}
+The rise of labor unions in the \nth{20} century seems to have been precipitated by
+severely unjust conditions imposed on workers in factories and elsewhere
+\cite{ebbinghaus1999institutions}.
+Incidents broadly describing this dynamic can be found in research on AMT
+\cite{turkopticon,dynamo}.
+If these are prototypical labor advocacy organizations of contemporary on--demand work,
+the next question we should look to is if
+--- and indeed \textit{how} ---
+these institutions might face challenges in the future.
+
+For insight on this, we return to \citeauthor{levi2009union}'s study of labor unions,
+and identify that
+``Scholars who evaluate union governance by procedural criteria generally find that oligarchy tends to arise and persist even when democratic procedures are in place''
+\cite{levi2009union}.
+This perception already appears to be emerging in digitally mediated peer--governed organizations
+\cite{beschastnikh2008wikipedian,keegan2010egalitarians}.
+If these organizations and others are to avoid the same fate that labor unions faced,
+they should take care to study this phenomenon and attempt to avoid it.
 
 \section{Implications for Design}
 If it's agreed that
@@ -840,17 +930,42 @@ record taxable income, or
 myriad other generally administrative tasks automatically.
 
 
-\subsection{Decentralize the internet (again)}
+\subsection{Decentralize the internet --- again}
 Digitally mediated on--demand labor markets have historically been insular and incompatible with one another,
 forcing workers either to choose one or juggle participation in these markets with great difficulty.
-Drivers 
+An ``API'' for on--demand labor markets could make it possible for any person
+or organization to instantiate their own marketplace and inter--operate with.
+This can be changed, and indeed must, if we are to realize the hopes of early researchers who advocated the
+democratizing nature and power of the internet
+\cite{barlow2009declaration,lanier2014owns}.
 
 \subsection{Deal with reputation}
+Reputation systems in on--demand labor markets are fundamentally broken.
+To say nothing of the fact that information workers (such as those on AMT) can't transfer their reputations to qualitatively different forms of labor
+like driving--for--hire (e.g. Uber), even within the same industry
+it's currently not feasible for workers to transfer their reputations or other information from one place to another.
+This affects more than the reputation and trustworthiness of workers;
+accounting for things such as taxes, benefits, etc\dots is all but left to the individual workers, who struggle with myriad bureaucratic obstacles.
+We can design systems that facilitate the aggregation and, more importantly, the transferral of reputation, income, and other features of work.
 
 
 
+\section{Discussion}
+We've discussed a number of aspects of on--demand work that
+offer parallels with historical piecework.
+Perhaps more importantly, we've hopefully demonstrated that the dynamics we observe in on--demand work
+are interrelated and follow from one another just as necessarily as they did in
+the development and maturation of piecework and factory work through the \nth{20} century.
+This framing on on--demand work should, we hope, provide us with the necessary historical context
+to make better--informed design decisions about how we want ``the future of crowd work'' to look.
 
-
+\section{Conclusion}
+\citeauthor{crowdworkFuture} discussed many of the challenges and problems in crowd work in \citeyear{crowdworkFuture},
+but didn't necessarily situate the notion of crowd work in a broader context.
+This paper attempts to fill that gap, and in doing so hopes
+to give the research community theoretical grounding to work with and within on--demand labor more successfully.
+But more than that, we hope to have addressed important questions to inform how we actually might make crowd work
+a career in which we want our children to work.
 
 
 % \rule{\linewidth}{1pt}
