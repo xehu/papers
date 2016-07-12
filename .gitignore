@@ -29,5 +29,5 @@
 *.fls
 *.pygtex
 *.pygstyle
-# *.run.xml
-# *-blx.bib
+*.run.xml
+*-blx.bib
