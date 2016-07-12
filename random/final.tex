@@ -1,0 +1,178 @@
+% % !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{balance,graphics,setspace,parskip,times}
+% \usepackage{fontspec}
+% \usepackage{xltxtra}
+% \usepackage{xunicode}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+
+\usepackage[tiny,compact]{titlesec}
+
+% \usepackage{xesearch}
+% \newcounter{words}
+% \newenvironment{counted}{%
+%   \setcounter{words}{0}
+%   \SearchList!{wordcount}{\stepcounter{words}}
+%     {a?,b?,c?,d?,e?,f?,g?,h?,i?,j?,k?,l?,m?,
+%     n?,o?,p?,q?,r?,s?,t?,u?,v?,w?,x?,y?,z?}
+%   \UndoBoundary{'}
+%   \SearchOrder{p;}}{%
+%   \StopSearching}
+
+\setlength{\parskip}{.4em}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
+\def\labelitemi{\ }
+\newcommand*\elide{\textup{[\,\dots]}}
+\newcommand{\sectitle}[1]{\textbf{#1}\\}
+
+% \author{
+%   Ali Alkhatib\\
+%   ali.alkhatib@cs.stanford.edu\\
+%   \textit{Couldn't find an envelope; will coordinate to meet next quarter (if acceptable)}
+% }
+
+% \title{Final Paper\\
+% \normalsize{
+%   \textit{Digital media are an egalitarian force in American society}\\
+%   }
+% }
+
+\begin{document}
+The future of work may resemble a hunter--gatherer mode of work;
+foraging for work throughout the day to sustain ourselves
+rather than allowing us the stability of careers that we know today.
+
+Alex wakes up in the morning to his alarm and
+checks his phone for notifications of non--urgent tasks for which he's qualified
+--- for instance, doing a second or third round of revisions for an essay for which he's already given feedback ---
+while eating breakfast.
+He flips from microtask to microtask over cereal and juice,
+indicating whether the people in the pictures he's flipping through are having an argument or not.
+He has a vague sense that he's providing training data to some artificial intelligence project, but the details escape him.
+Or he never sought after them.
+He doesn't care.
+
+Occasionally Alex gets a prompt asking if he can set aside time later in the week to do some tasks
+--- in this case, committing to training someone to do better in technical interviews by doing mock interviews over Skype ---
+adding a few more blocks of appointments to his week.
+His calendar is mostly empty, but
+he tries to consolidate appointments as much as possible so he doesn't have to wake up at all hours of the day.
+% After agreeing to some of those tasks, populating more of his calendar over the next several days,
+% he packs up his laptop and phone and heads out.
+
+Alex finishes his breakfast, wraps up his last task, and starts packing his messenger bag for the day.
+As he starts to head out, he taps through an app interface to see if he can get a cleaner to come by his place today.
+
+Michelle? No, she's never on time\dots~\\
+Eric? No, seemed a little shady\dots~\\
+\textbf{Lupe} is available, and she was reliable.
+
+Alex pings Lupe to see if she can swing by today and do the laundry that's been piling up in the hamper.
+
+Alex's phone steadily buzzes every few seconds with notifications that people are looking for workers.
+Some are looking for a ride to the coffee shop he's already heading to;
+others are looking for a ride downtown;
+still others are looking for a ride to the airport.
+% Knowing that his intent is to go to Philz Coffee every morning and seeing that Alex has recently woken up,
+% Uber starts suggesting to him people in his building or neighborhood who are interested in going in the same direction.
+Today Alex wants to get some work and later meet with some friends, so he declines them all.
+He doesn't like driving people around anyway;
+passengers are rude and the pay isn't very good.
+
+He makes his way to Philz ignoring the now streaming solicitations on his phone:
+Pick up someone's medicine;
+tutor someone's kid in math;
+babysit someone's kid for a few hours on an abrupt need
+(for \textit{4 times} the normal value because of the urgency of the task request);
+eventually Alex gets frustrated, stops, and toggles his availability to ``off''.
+The phone rests quietly for the rest of the drive.
+
+As Alex parks his car, Lupe's response comes in:
+she'll be by in 30 minutes to start the laundry and will do wash \& dry.
+Alex asks if Lupe can fold the clothing and, in the meantime while the laundry is running,
+clean up his apartment. She'll later agree for an added fee.
+
+Alex gets to Philz, opens his laptop, and navigates to his work site.
+He's just received a notification: he's been granted the qualification to squash Google bugs,
+so his eligible work list has expanded from around 10,000 tasks to 30,000.
+This is excellent; most of the new tasks Alex has seeing lately were either too far out of his wheelhouse
+or it was too unclear what the problem was; he's wary of taking on work where the input might be unclear;
+once he worked on an issue that ended up taking almost a week to sort out and only paid \$10.
+
+If Alex puts more time into squashing bugs on Facebook,
+he might be promoted to a higher role that can take on more interesting,
+lucrative tasks,
+but the low--hanging fruit at Google and Apple are more plentiful,
+so Alex opts to continue ``playing the field'' where the tasks are easier,
+and more importantly more likely to pay off.
+
+A few hours pass, and Alex has closed 40 bugs, making \$60;
+he messages his friends to see where they are:
+
+\begin{itemize}
+\item Stephen is on his way, just dropping someone off before going off the clock
+(\textit{Stephen drives for a living,
+usually working nights and weekends in the city but occasionally picking up airport runs, like now}).
+He should be by in around 15 minutes.
+\item Erin messages that she has to cancel.
+She's been getting jobs rejected lately
+(\textit{Erin is a designer for more firms than she can count});
+she needs to pick up some more gigs to make up the money she's lost from those rejections
+(and, if possible, to recoup her reputation after a string of rejections).
+\end{itemize}
+
+Stephen catches up with Alex at Philz;
+like Erin, Stephen has been having trouble with customers lately, but his work
+requires him to go out and drive, putting himself ``in harm's way,'' as it were,
+% Stephen's been having a rough go of things just as Erin has, but his work
+% means that he has to get out there to do work,
+whereas Erin's work is all at home.
+In that sense, her work is a little more desirable;
+Erin \textit{could}, she jokes, do all her work from Bermuda.
+She's never been, but she's saving for it. Maybe next year.
+
+Stephen tells Alex about some of the terrible passengers he had over the weekend:
+two were absolutely trashed, both making a mess in his car;
+a third passenger seemed to make it his mission to harass Stephen the whole way,
+interrogating him for the route he took (even though his app navigates for him),
+and generally treating him terribly.
+
+Alex sighs and tells Stephen to just keep at it; 
+Stephen sighs and says that he can put up with it as long as he doesn't get ``fat--fingered''
+--- a term referencing when passengers accidentally (or deliberately) give their drivers one--star reviews.
+Another of those, and Stephen might get suspended from the platform.
+And it changes every day; today Palo Alto's threshold is 4.6; yesterday it was 4.3; tomorrow it might be 4.7
+--- and if you wake up one morning and your rating is too low for the are you live in,
+then you'll just have to do work somewhere else or stop working.
+
+Alex glances at his phone.
+The screen keeps flashing subtly as new jobs stream in.
+One from Twitter.
+Another, this time from Apple.
+This one from Microsoft pays (almost suspiciously) well.
+These are all well--paying jobs
+--- a few dollars for closing a simple ticket, up to as much as a C--note for something more involved.
+There are other problems associated with this work,
+like maintaining confidentiality and keeping everything mentally sandboxed, 
+but none of it puts him in physical danger the way on--demand driving does with Stephen;
+and his work is more cut--and--dry than Erin's,
+so he generally knows when he submits work whether it'll be approved or rejected.
+
+Stephen's phone buzzes this time;
+someone's looking for an SUV driver for a long trip to SoCal.
+It's too good an offer to pass up.
+Stephen bids farewell to Alex and quickly makes his way to the door.
+Alex pulls his laptop back out and gets back to work.
+
+% \end{counted}
+% \footnotesize{word count: \thewords}
+
+\bibliographystyle{acm} % this will cause an error if there are no citations!
+\bibliography{../../../references.bib}
+\end{document}

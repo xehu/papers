@@ -1,0 +1,49 @@
+% % !TEX program = xelatex
+\documentclass[10pt]{article}
+\usepackage{balance,graphics,setspace,parskip,times,hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[tiny,compact]{titlesec}
+
+\setlength{\parskip}{.4em}
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
+
+\def\labelitemi{\ }
+\newcommand*\elide{\textup{[\,\dots]}}
+\newcommand{\sectitle}[1]{\textbf{#1}\\}
+
+
+
+
+\begin{document}
+\section*{propositions of trust}
+\begin{enumerate}
+\item In the initial relationship, to the extent the situation is novel and ambiguous, faith in humanity will lead to trusting beliefs.
+
+\textit{not sure how to discuss this except maybe to engage with the general worldview about humanity perhaps shared among drug users/sellers, but idk}
+
+\item In the initial relationship, trusting stance will lead to trusting intention. The effects of trusting stance on trusting intention will not be mediated by trusting beliefs.
+
+
+\item In the initial relationship, situational normality belief will lead to trusting intention.
+\item In the initial relationship, structural assurance belief will lead to trusting intention.
+\item In the initial relationship, the trusting beliefs will be a function of structural assurance belief and situational normality belief.
+\item In the initial relationship, trusting intention will be a function of benevolence belief, competence belief, honesty belief, and predictability belief.
+\item In the initial relationship, faith in humanity and trusting stance will lead to structural assurance belief.
+\item In the initial relationship, categorization processes that place the other person in a positive grouping will tend to produce high levels of trusting beliefs.
+\item In the initial relationship, token control efforts will strengthen the tendency of categorization processes, faith in humanity, and structural assurance belief to produce high levels of trusting beliefs.
+\item In the initial relationship, high trusting intention is likely to be very fragile when it is supported
+by only one or two antecedents, when it relies almost exclusively on assumptions, and when perceived risk is high.
+\item In the initial relationship, high trusting intention is likely to be robust when (1) a combination of several of its antecedents encourages the trustor to ignore, rationalize, or absorb the negative actions of the other and (2) continued success or low perceived risk of failure consequences cause little critical attention to be paid to the other's behavior. Subjects with high disposition to trust or institution-based trust levels are likely to pay even less critical attention.
+\item In the initial relationship, high trusting intention is likely to be robust when (1) the parties interact face to face, frequently in positive ways, or (2) the trusted party has built a widely known good reputation. Social interaction affects trusting intention by its positive effects on trusting beliefs and institution-based trust.
+
+\end{enumerate}
+\cite{mcknight1998initial}
+
+\balance{}
+\bibliographystyle{acm}
+\bibliography{../references}
+\end{document}

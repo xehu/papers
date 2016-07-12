@@ -1,18 +1,18 @@
 \documentclass{sigchi}
 
-\usepackage{todonotes,txfonts,balance,graphics,color,alphalph}
-\usepackage{booktabs,textcomp,microtype,ccicons}
+\usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles}
+\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth}
 \usepackage[normalem]{ulem}
-% \usepackage{babel}
-% \usepackage{csquotes}
 \usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
-\usepackage{enumitem}
-\usepackage{moreenum}
 \usepackage[T1]{fontenc}
-\usepackage{nth}
 \usepackage[pdftex,pdfpagelabels=false]{hyperref}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
 
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review
@@ -79,8 +79,11 @@
 % \newcommand\tabhead[1]{\small\textbf{#1}}
 \bibliography{../../../../references}
 
-% End of preamble. Here it comes the document.
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
 \begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
 \title{\plaintitle}
 
 \numberofauthors{3}
@@ -129,176 +132,7 @@
   classifiers. This section is required.}{}{}
 
 \keywords{\plainkeywords}
-
-\section{Introduction}
-% \itshape 
-\begin{itemize}
-  \item on--demand labor has consumed an increasing proportion of the labor market in the past ten years [\textit{Pew research on on--demand labor}]
-  \item the work surrounding this topic has ranged from Turk work processes to resisting Uber \& other gig labor platforms \cite{bernsteinSoylent,uberAlgorithm}
-  \item some researchers have tackled understanding this new instantiation of work, but come up short.
-  \item we offer a framing on this topic that situates the research so far on a timeline of the maturation of another form of work that emerged approximately 150 years ago
-  --- that is, piecework --- which convincingly suggests that on--demand labor in the form of Turking, driving for Uber, etc\dots are in fact little more than piecework re--surging today.
-  \item this paper will trace the body of research describing microwork --- and later gig work --- and place it in the context of historical piecework and the industrial revolution as a whole.
-  \item informed by this new lens, we'll then turn our attention to the future of this re--emergent form of work, and suggest ways that researchers and users of on--demand labor might influence the outcomes we predict in this paper.
-\end{itemize}
-
-% \upshape
-
-% The past decade has seen
-% paid microtasking, the ``sharing economy'', and other instantiations of on--demand contract work
-% grow to occupy the fascination of both academic circles and our culture as a whole
-% \cite{Ross,CrowdsourcingUserStudies,scholz2012digital}.
-% The research community has made connections between this emergent form of work
-% and the historically situated ``piecework'',
-% as well as a number of observations relating to
-% the frustration workers feel stemming from the management of this work,
-% but situating the causes of these frustrations either in the larger body of scholarship on crowd work,
-% or crowd work itself,
-% has proven difficult;
-% the connection between crowd work and a historical parallel contextualizing its ongoing developments 
-% hasn't been deeply made yet
-% \cite{turkopticon,dynamo,uberAlgorithm}.
-
-% While much of this work appears to gesture toward
-% the parallels between contemporary on--demand work and piecework,
-% it's proven difficult to bring the totality of these observations into focus using one theoretical lens.
-% This paper will attempt to do so by arguing that
-% the topics social computing researchers have investigated are
-% not just parallel to historical piecework and
-% the process of factorization that took place in the early \nth{20} century;
-% indeed, these phenomena \textit{precipitate and reinforce each other}.
-
-% In the reflection on the literature published in the last 5 years since
-% \citeauthor{crowdworkFuture}'s 
-% \citetitle{crowdworkFuture},
-% we notice a broader trend describing the change in work that's being done
-% \cite{crowdworkFuture}.
-% Following the improvements in
-% breaking down tasks,
-% delegating work, and
-% managing workers more broadly,
-% crowd--powered work has continued to parallel historical piecework's trajectory
-% by outgrowing ad--hoc worker groups and coalescing into more formal working groups,
-% for example through the use of a ``white list'' of familiar workers.
-% We might call this the regularization of factory work.
-
-% Making sense of the broader field of crowd work
-% by looking at the movements toward
-% distributing work,
-% routinizing and breaking down tasks,
-% and externally managing workers
-% as linked to one another, 
-% we give ourselves a framing of contemporary piecework that explains,
-% and arguably predicts,
-% what we have seen thus far
-% --- and perhaps what we should expect to see going forward.
-
-% This paper will attempt to demonstrate that the familiarity
-% that we incidentally observe between what we generally call crowd work \& gig work
-% and the historical practice of piecework and subsequent factory work
-% is more than passing;
-% that the phenomena researchers have observed in on--demand digitally mediated labor markets
-% were inevitable milestones in the birth and life of piecework.
-% We will set out to show that this perspective of crowd work as an embodiment of piecework
-% predicts the myriad outcomes of contemporary crowd work, including
-% our developments of work--flows further abstracting work,
-% the troubling effects of those developments on factors such as pay and work quality, and
-% many if not all of the frustrations researchers have discovered among workers
-% in the study of crowd and gig work.
-
-% ``But'',
-% as \citeauthor{scholz2012digital} points out,
-% ``it would be wrong to conclude that
-% in the realm of digital labor there is nothing new under the sun''
-% \cite{scholz2012digital}.
-% For one, information work
-% (e.g. Amazon Mechanical Turk (AMT) \& Upwork)
-% and digitally managed work in general make it substantially easier
-% to keep workers geographically dispersed
-% compared to the factory workers that followed home--based piecework.
-% This aspect of work renders workers virtually invisible to the task solicitors
-% --- or ``requesters'' ---
-% despite being significantly more connected than historical pieceworkers were % this is a weak point...
-% \cite{turkopticon}.
-% Secondly, while
-% factory foremen and other middle--men
-% traditionally mediated the relationships between workers and managers,
-% today the visible agents are \textit{systems};
-% rather than employing individuals who ``personified the functions of management''
-% and can thus negotiate workers' needs,
-% socio--technical systems mediate these interactions % often with unrewarding outcomes
-% \cite{wray1949marginal}.
-% % \cite{storiesIraniSilberman}.
-% Finally, this characteristic of modern piecework makes
-% worker coordination for collective advocacy and action significantly more difficult,
-% necessitating special consideration to maintain the inertia of collective will
-% while focusing that energy productively
-% \cite{dynamo}.
-% % \ali{I really don't like this paragraph\dots}
-% % here are undoubtedly more examples of differences.
-% % How do I not stake a claim that this is comprehensive?
-% % Or should I really flesh this out and make it (comprehensive)?
-
-
-\subsection{Piecework as a lens to understand gig work}
-
-\citeauthor{crowdworkFuture}
-write of the future of crowd work in an effort to investigate
-whether crowd work will be a worthwhile form of work or another instantiation of ``piecework''
-\cite{crowdworkFuture}.
-``Piecework'' here makes use of
-a term historically used to describe work done in the home,
-in manageable tasks,
-often involving clear instructions
-and payment only for work completed, not work done
-(the differentiation, here, being that
-one would be paid for the \textit{output} of the work,
-not the \textit{duration}).
-% \msb{split up that sentence. One is the def'n of piecework, the other is the comparison you're drawing}
-Given the scope,
-we can frame piecework and on--demand labor
-% \msb{
-% \sout{wait, are you using gig work as the umbrella term? I think you need a category term that covers all of them}
-% \ali{let's use ``on--demand labor'', since
-% that seems general enough without accidentally including historical piecework}}
-as sharing these important similarities:
-\begin{inlinelist}
-\item this form of work began in the home
-\item the worker is paid for each discrete piece of work done, regardless of time or effort; and
-\item the worker's status
-(not only socially, but also economically)
-is ambiguous, or at least the subject of some controversy.
-\end{inlinelist}. 
-
-% \subsection{Context}
-In the past decade, researchers have observed frustration
-grow among on--demand workers,
-with expression of this frustration spanning a wide range of tactics
-\cite{uberAlgorithm,turkopticon,dynamo}.
-Attempting to make sense of these case studies has been challenging
-in part because
-a wholly encompassing framework for understanding this form of work
-has thus proven difficult to capture.
-
-
-This paper attempts to make sense of the broader research on this new form of work,
-\textit{on--demand labor}, by evaluating this work through a more familiar lens: piecework.
-More concretely, by looking at task--based or ``gig'' work as
-an instantiation and continuation of piecework,
-and by looking for patterns of behavior that the corresponding literature predicts
-on this basis, we can do the following:
-\begin{inlinelist}
-  \item we can make sense of the phenomena so far as part of a much larger series of interrelated events;
-  \item we can bring into focus the ongoing work among workers, system--designers, and researchers in this space; and finally,
-  \item we can offer predictions of what social computing researchers, and workers themselves, should expect to see on the horizon of on--demand work.
-\end{inlinelist}
-
-We'll look at a broad range of cases under a number of major themes
-we propose as broadly describing the types of research being done in crowd work
-and more generally in what we argue is contemporary piecework.
-After validating this lens as a way of reasoning about on--demand labor,
-we'll attempt to use this perspective to suggest areas of research worth anticipating,
-and developments we should expect to see in the maturation of digitally mediated work.
+\subfile{introduction.tex}
 
 \section{Case Studies}
 The existing body of research has shed light on on--demand labor from various perspectives,
