@@ -3,7 +3,8 @@
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles}
 \usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth}
 \usepackage[normalem]{ulem}
-\usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
+% \usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
+\usepackage{biblatex}
 \usepackage[T1]{fontenc}
 \usepackage[pdftex,pdfpagelabels=false]{hyperref}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
@@ -77,7 +78,7 @@
 
 % create a shortcut to typeset table headings
 % \newcommand\tabhead[1]{\small\textbf{#1}}
-\bibliography{../../../../references}
+\bibliography{references}
 
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
@@ -157,6 +158,7 @@ and finally
 % all of the research that has gone into work--flows and
 % all the things we can do with crowd work.
 
+\cite{olson2014ways}
 The HCI community is perhaps most familiar with examples of task--based work such as
 99designs,
 Amazon Mechanical Turk (AMT),
