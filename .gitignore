@@ -32,4 +32,5 @@
 *.run.xml
 *-blx.bib
 *.swp
+*.bcf
 /secret/*
