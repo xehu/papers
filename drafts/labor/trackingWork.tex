@@ -1,14 +1,21 @@
 \documentclass{sigchi}
 
+
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles}
 \usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth}
 \usepackage[normalem]{ulem}
-% \usepackage[citestyle=numeric,backend=bibtex,bibencoding=ascii]{biblatex}
-\usepackage{biblatex}
+% \usepackage{url}
+% \def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}%
+% \usepackage{multibib}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+% \usepackage{biblatex}
+% \usepackage[square,numbers]{jnatbib}
 \usepackage[T1]{fontenc}
-\usepackage[pdftex,pdfpagelabels=false]{hyperref}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+% \bibliographystyle{SIGCHI-Reference-Format}
 
 \makeatletter
 \def\blx@maxline{77}
@@ -81,6 +88,7 @@
 % create a shortcut to typeset table headings
 % \newcommand\tabhead[1]{\small\textbf{#1}}
 \bibliography{references}
+% \addbibresource{references}
 
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
@@ -115,7 +123,7 @@
   to make sense of our observations of
   on--demand work and the workers that power this movement.
   We argue that the literature surrounding ``piecework''
-  informs and even predicts both the contributions \cite{}
+  informs and even predicts both the contributions
   that have been made toward the development of on--demand labor and crowd work
   as well as the fallout among workers and researchers
   with regard to the disillusionment and alienation of work.
@@ -202,11 +210,11 @@ the next question we should look to is if
 --- and indeed \textit{how} ---
 these institutions might face challenges in the future.
 
-For insight on this, we return to \citeauthor{levi2009union}'s study of labor unions,
+For insight on this, we return to \citeyear{levi2009union}'s study of labor unions,
 and identify that
 ``Scholars who evaluate union governance by procedural criteria generally find that oligarchy tends to arise and persist even when democratic procedures are in place''
 \cite{levi2009union}.
-% Indeed, \citeauthor{levi2009union} writes about the general perception that labor unions were either
+Indeed, \citeauthor{levi2009union} writes about the general perception that labor unions were either
 % unable to satisfy their needs or otherwise more invested in the 
 This perception already appears to be emerging in digitally mediated peer--governed organizations,
 as \citeauthor{keegan2010egalitarians} and others have illustratively documented

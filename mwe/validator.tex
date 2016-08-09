@@ -1,0 +1,12 @@
+\documentclass{article}
+
+\usepackage[citestyle=numeric,backend=biber]{biblatex}% bibliography style
+\usepackage[colorlinks]{hyperref}    % better urls in bibliography
+
+\bibliography{references}
+\begin{document}
+Test the complete \texttt{.bib} file: \nocite{turner2010counterculture}.
+
+% \bibliographystyle{plainnat}  % needs package natbib
+\printbibliography
+\end{document}

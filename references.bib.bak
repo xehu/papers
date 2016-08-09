@@ -1,9 +1,8 @@
-% Encoding: UTF-8
 @book{olson2014ways,
   title               = {Ways of Knowing in HCI},
   author              = {Olson, Judith S and Kellogg, Wendy A},
   year                = {2014},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @inproceedings{uberAlgorithm,
   author              = {Lee, Min Kyung and Kusbit, Daniel and Metsky, Evan and Dabbish, Laura},
@@ -12,6 +11,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1603--1612},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702548},
@@ -19,7 +19,7 @@
   acmid               = {2702548},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {algorithm, algorithmic management, cscw, data-driven metrics, dynamic pricing, human-centered algorithms, intelligent systems, on-demand work, performance evaluation, sensemaking, sharing economies, work assignment}
+  keywords            = {algorithm, algorithmic management, cscw, data-driven metrics, dynamic pricing, human-centered algorithms, intelligent systems, on-demand work, performance evaluation, sensemaking, sharing economies, work assignment},
 }
 @inproceedings{DillahuntPromise,
   author              = {Dillahunt, Tawanna R. and Malone, Amelia R.},
@@ -28,6 +28,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {2285--2294},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702189},
@@ -35,7 +36,7 @@
   acmid               = {2702189},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {airbnb, lyft, marginalized populations, neighborgoods, sharing economy, sustainability, taskrabbit, unemployment}
+  keywords            = {airbnb, lyft, marginalized populations, neighborgoods, sharing economy, sustainability, taskrabbit, unemployment},
 }
 @inproceedings{turkopticon,
   author              = {Irani, Lilly C. and Silberman, M. Six},
@@ -44,6 +45,7 @@
   series              = {CHI '13},
   year                = {2013},
   isbn                = {978-1-4503-1899-0},
+  location            = {Paris, France},
   pages               = {611--620},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2470654.2470742},
@@ -51,7 +53,7 @@
   acmid               = {2470742},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {activism, amazon mechanical turk, design, ethics, human computation, infrastructure}
+  keywords            = {activism, amazon mechanical turk, design, ethics, human computation, infrastructure},
 }
 @inproceedings{dynamo,
   author              = {Salehi, Niloufar and Irani, Lilly C. and Bernstein, Michael S. and Alkhatib, Ali and Ogbe, Eva and Milland, Kristy and Clickhappier},
@@ -60,6 +62,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1621--1630},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702508},
@@ -67,25 +70,25 @@
   acmid               = {2702508},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {activism, amazon mechanical turk, collective action, design, human computation, infrastructure}
+  keywords            = {activism, amazon mechanical turk, collective action, design, human computation, infrastructure},
 }
 @article{GreatTransformation,
   title               = {The great transformation},
   author              = {Polyani, Karl},
   journal             = {New York: Rinehart},
-  year                = {1944}
+  year                = {1944},
 }
 @book{geertz1988works,
   title               = {Works and lives: The anthropologist as author},
   author              = {Geertz, Clifford},
   year                = {1988},
-  publisher           = {Stanford University Press}
+  publisher           = {Stanford University Press},
 }
 @book{marcus1999anthropology,
   title               = {Anthropology as cultural critique: An experimental moment in the human sciences},
   author              = {Marcus, George E and Fischer, Michael MJ},
   year                = {1999},
-  publisher           = {University of Chicago Press}
+  publisher           = {University of Chicago Press},
 }
 @article{ackerman2000intellectual,
   title               = {The intellectual challenge of CSCW: the gap between social requirements and technical feasibility},
@@ -95,7 +98,7 @@
   number              = {2-3},
   pages               = {179--203},
   year                = {2000},
-  publisher           = {Taylor \& Francis}
+  publisher           = {Taylor \& Francis},
 }
 @inproceedings{Ross,
   author              = {Ross, Joel and Irani, Lilly and Silberman, M. Six and Zaldivar, Andrew and Tomlinson, Bill},
@@ -104,6 +107,7 @@
   series              = {CHI EA '10},
   year                = {2010},
   isbn                = {978-1-60558-930-5},
+  location            = {Atlanta, Georgia, USA},
   pages               = {2863--2872},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1753846.1753873},
@@ -111,35 +115,35 @@
   acmid               = {1753873},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, demographics, human computation, mechanical turk, user surveys}
+  keywords            = {crowdsourcing, demographics, human computation, mechanical turk, user surveys},
 }
 @article{Alek2011,
-  jstorarticletype    = {research-article},
+  jstor_articletype   = {research-article},
   title               = {Working the Crowd: Employment and Labor Law in the Crowdsourcing Industry},
   author              = {Felstiner, Alek},
   journal             = {Berkeley Journal of Employment and Labor Law},
-  jstorissuetitle     = {},
+  jstor_issuetitle    = {},
   volume              = {32},
   number              = {1},
-  jstorformatteddate  = {2011},
+  jstor_formatteddate = {2011},
   pages               = {pp. 143-203},
   url                 = {http://www.jstor.org/stable/24052509},
   ISSN                = {10677666},
   language            = {English},
   year                = {2011},
   publisher           = {University of California, Berkeley, School of Law},
-  copyright           = {Copyright © 2011 University of California, Berkeley}
+  copyright           = {Copyright © 2011 University of California, Berkeley},
 }
 @book{russell1982collective,
   title               = {Collective action},
   author              = {Russell Hardin},
   year                = {1982},
-  publisher           = {Resources for the Future}
+  publisher           = {Resources for the Future},
 }
 @book{olsonlogic,
   title               = {Logic of collective action public goods and the theory of groups Rev. ed..},
   author              = {Olson, Mancur},
-  year                = {1965}
+  year                = {1965},
 }
 @inproceedings{catalyst,
   author              = {Cheng, Justin and Bernstein, Michael},
@@ -148,6 +152,7 @@
   series              = {CSCW '14},
   year                = {2014},
   isbn                = {978-1-4503-2540-0},
+  location            = {Baltimore, Maryland, USA},
   pages               = {1211--1221},
   numpages            = {11},
   url                 = {http://doi.acm.org/10.1145/2531602.2531635},
@@ -155,7 +160,7 @@
   acmid               = {2531635},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {activation thresholds, collective action, critical mass}
+  keywords            = {activation thresholds, collective action, critical mass},
 }
 @inproceedings{foundry,
   author              = {Retelny, Daniela and Robaszkiewicz, S{\'e}bastien and To, Alexandra and Lasecki, Walter S. and Patel, Jay and Rahmati, Negar and Doshi, Tulsee and Valentine, Melissa and Bernstein, Michael S.},
@@ -164,6 +169,7 @@
   series              = {UIST '14},
   year                = {2014},
   isbn                = {978-1-4503-3069-5},
+  location            = {Honolulu, Hawaii, USA},
   pages               = {75--85},
   numpages            = {11},
   url                 = {http://doi.acm.org/10.1145/2642918.2647409},
@@ -171,13 +177,13 @@
   acmid               = {2647409},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, expert crowd work, flash teams}
+  keywords            = {crowdsourcing, expert crowd work, flash teams},
 }
 @article{Hirsch:2009:FLA:1516016.1516024,
   author              = {Hirsch, Tad},
   title               = {FEATURE: Learning from Activists: Lessons for Designers},
   journal             = {interactions},
-  issuedate           = {May + June 2009},
+  issue_date          = {May + June 2009},
   volume              = {16},
   number              = {3},
   month               = {May},
@@ -189,13 +195,13 @@
   doi                 = {10.1145/1516016.1516024},
   acmid               = {1516024},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @article{Nov:2007:MW:1297797.1297798,
   author              = {Nov, Oded},
   title               = {What Motivates Wikipedians?},
   journal             = {Commun. ACM},
-  issuedate           = {November 2007},
+  issue_date          = {November 2007},
   volume              = {50},
   number              = {11},
   month               = {November},
@@ -207,7 +213,7 @@
   doi                 = {10.1145/1297797.1297798},
   acmid               = {1297798},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @article{whyWikipedians,
   author              = { Joachim   Schroer  and  Guido   Hertel },
@@ -217,7 +223,7 @@
   number              = {1},
   pages               = {96-120},
   year                = {2009},
-  doi                 = {10.1080/15213260802669466}
+  doi                 = {10.1080/15213260802669466},
 }
 @inproceedings{wikipediansBornNotMade,
   author              = {Panciera, Katherine and Halfaker, Aaron and Terveen, Loren},
@@ -226,6 +232,7 @@
   series              = {GROUP '09},
   year                = {2009},
   isbn                = {978-1-60558-500-0},
+  location            = {Sanibel Island, Florida, USA},
   pages               = {51--60},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1531674.1531682},
@@ -233,19 +240,19 @@
   acmid               = {1531682},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Wikipedia, collaboration, contribution, power editors, wiki}
+  keywords            = {Wikipedia, collaboration, contribution, power editors, wiki},
 }
 @book{boellstorff2008coming,
   title               = {Coming of age in Second Life: An anthropologist explores the virtually human},
   author              = {Boellstorff, Tom},
   year                = {2008},
-  publisher           = {Princeton University Press}
+  publisher           = {Princeton University Press},
 }
 @book{boellstorff2012ethnography,
   title               = {Ethnography and virtual worlds: A handbook of method},
   author              = {Boellstorff, Tom and Nardi, Bonnie and Pearce, Celia},
   year                = {2012},
-  publisher           = {Princeton University Press}
+  publisher           = {Princeton University Press},
 }
 @inproceedings{Bellotti:2014:TCS:2611247.2557061,
   author              = {Bellotti, Victoria M.E. and Cambridge, Sara and Hoy, Karen and Shih, Patrick C. and Handalian, Lisa Renery and Han, Kyungsik and Carroll, John M.},
@@ -254,6 +261,7 @@
   series              = {CHI '14},
   year                = {2014},
   isbn                = {978-1-4503-2473-1},
+  location            = {Toronto, Ontario, Canada},
   pages               = {2975--2984},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2556288.2557061},
@@ -261,7 +269,7 @@
   acmid               = {2557061},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {field study, timebanking, user experience design}
+  keywords            = {field study, timebanking, user experience design},
 }
 @inproceedings{Goecks:2008:CTO:1460563.1460669,
   author              = {Goecks, Jeremy and Voida, Amy and Voida, Stephen and Mynatt, Elizabeth D.},
@@ -270,6 +278,7 @@
   series              = {CSCW '08},
   year                = {2008},
   isbn                = {978-1-60558-007-4},
+  location            = {San Diego, CA, USA},
   pages               = {689--698},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1460563.1460669},
@@ -277,7 +286,7 @@
   acmid               = {1460669},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {charitable technologies, charity, fundraising, nonprofit}
+  keywords            = {charitable technologies, charity, fundraising, nonprofit},
 }
 @inproceedings{Althoff:2015:DRO:2736277.2741120,
   author              = {Althoff, Tim and Leskovec, Jure},
@@ -286,13 +295,14 @@
   series              = {WWW '15},
   year                = {2015},
   isbn                = {978-1-4503-3469-3},
+  location            = {Florence, Italy},
   pages               = {34--44},
   numpages            = {11},
   url                 = {http://dl.acm.org/citation.cfm?id=2736277.2741120},
   acmid               = {2741120},
   publisher           = {International World Wide Web Conferences Steering Committee},
   address             = {Republic and Canton of Geneva, Switzerland},
-  keywords            = {crowdfunding., donor retention, user retention}
+  keywords            = {crowdfunding., donor retention, user retention},
 }
 @inproceedings{Thebault-Spieker:2015:ASS:2675133.2675278,
   author              = {Thebault-Spieker, Jacob and Terveen, Loren G. and Hecht, Brent},
@@ -301,6 +311,7 @@
   series              = {CSCW '15},
   year                = {2015},
   isbn                = {978-1-4503-2922-4},
+  location            = {Vancouver, BC, Canada},
   pages               = {265--275},
   numpages            = {11},
   url                 = {http://doi.acm.org/10.1145/2675133.2675278},
@@ -308,21 +319,24 @@
   acmid               = {2675278},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {mobile crowdsourcing, volunteered geographic information}
+  keywords            = {mobile crowdsourcing, volunteered geographic information},
 }
 @inproceedings{Alt:2010:LCE:1868914.1868921,
   author              = {Alt, Florian and Shirazi, Alireza Sahami and Schmidt, Albrecht and Kramer, Urs and Nawaz, Zahid},
+  title               = {Location--based Crowdsourcing: Extending Crowdsourcing to the Real World},
   booktitle           = {Proceedings of the 6th Nordic Conference on Human--Computer Interaction: Extending Boundaries},
   series              = {NordiCHI '10},
   year                = {2010},
   isbn                = {978-1-60558-934-3},
+  location            = {Reykjavik, Iceland},
   pages               = {13--22},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1868914.1868921},
   doi                 = {10.1145/1868914.1868921},
   acmid               = {1868921},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
+  keywords            = {context, crowdsourcing, location, mobile phone},
 }
 @inproceedings{crowdworkFuture,
   author              = {Kittur, Aniket and Nickerson, Jeffrey V. and Bernstein, Michael and Gerber, Elizabeth and Shaw, Aaron and Zimmerman, John and Lease, Matt and Horton, John},
@@ -331,6 +345,7 @@
   series              = {CSCW '13},
   year                = {2013},
   isbn                = {978-1-4503-1331-5},
+  location            = {San Antonio, Texas, USA},
   pages               = {1301--1318},
   numpages            = {18},
   url                 = {http://doi.acm.org/10.1145/2441776.2441923},
@@ -338,7 +353,7 @@
   acmid               = {2441923},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowd work, crowdsourcing, organization design, research vision}
+  keywords            = {crowd work, crowdsourcing, organization design, research vision},
 }
 @inproceedings{numericCritique,
   author              = {Hicks, Catherine M. and Fraser, C. Ailie and Desai, Purvi and Klemmer, Scott},
@@ -347,6 +362,7 @@
   series              = {L@S '15},
   year                = {2015},
   isbn                = {978-1-4503-3411-2},
+  location            = {Vancouver, BC, Canada},
   pages               = {359--362},
   numpages            = {4},
   url                 = {http://doi.acm.org/10.1145/2724660.2728693},
@@ -354,7 +370,7 @@
   acmid               = {2728693},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {online learning, peer assessment, peer review, writing}
+  keywords            = {online learning, peer assessment, peer review, writing},
 }
 @article{ebayRatings,
   title               = {Reputation and e--commerce: eBay auctions and the asymmetrical impact of positive and negative ratings},
@@ -364,14 +380,14 @@
   number              = {3},
   pages               = {279--295},
   year                = {2001},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @MISC{whoareNOTtheTurkers,
   author              = {Silberman, Six},
   title               = {Stop citing Ross et al. 2010, ``Who are the crowdworkers?"},
-  month               = {March},
+  month               = {3},
   year                = {2015},
-  url                 = {https://medium.com/@silberman/stop-citing-ross-et-al-2010-who-are-the-crowdworkers-b3b9b1e8d300}
+  url                 = {https://medium.com/@silberman/stop-citing-ross-et-al-2010-who-are-the-crowdworkers-b3b9b1e8d300},
 }
 @MISC{leakedUber,
   author              = {Cook, James},
@@ -379,64 +395,64 @@
   editor              = {Business Insider},
   month               = {February},
   year                = {2015},
-  url                 = {http://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2}
+  url                 = {http://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2},
 }
 @misc{uberOfficial,
   title               = {Uber},
   url                 = {https://www.uber.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @misc{lyftOfficial,
   title               = {A ride whenever you need one ---- Lyft},
   url                 = {https://www.lyft.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @misc{airbnbOfficial,
   title               = {Vacation Rentals, Homes, Apartments \& Rooms for Rent ---- Airbnb},
   url                 = {https://www.airbnb.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @misc{couchsurfingOfficial,
   title               = {Stay With Locals \& Make Travel Friends ---- Couchsurfing},
   url                 = {https://www.couchsurfing.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @misc{taskrabbitOfficial,
   title               = {TaskRabbit connects you to safe and reliable help in your neighborhood},
   url                 = {https://www.taskrabbit.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @misc{zaarlyOfficial,
   title               = {House Cleaning, Handyman, Lawn Care Services in Austin, Denver, Kansas City, Minneapolis and San Francisco ---- Zaarly},
   url                 = {https://www.zaarly.com/},
   month               = {September},
-  year                = {2015}
+  year                = {2015},
 }
 @MISC{fedsUber,
   author              = {Farivar, Cyrus},
   title               = {Watch out sharing economy, the feds are watching this whole contractor thing},
   month               = {July},
   year                = {2015},
-  url                 = {http://arstechnica.com/tech-policy/2015/07/watch-out-sharing-economy-the-feds-are-watching-this-whole-contractor-thing/}
+  url                 = {http://arstechnica.com/tech-policy/2015/07/watch-out-sharing-economy-the-feds-are-watching-this-whole-contractor-thing/},
 }
 @MISC{homejoySuit,
   author              = {Huet, Ellen},
   title               = {Homejoy Shuts Down, Citing Worker Misclassification Lawsuits},
   month               = {July},
   year                = {2015},
-  url                 = {http://www.forbes.com/sites/ellenhuet/2015/07/17/cleaning-startup-homejoy-shuts-down-citing-worker-misclassification-lawsuits/}
+  url                 = {http://www.forbes.com/sites/ellenhuet/2015/07/17/cleaning-startup-homejoy-shuts-down-citing-worker-misclassification-lawsuits/},
 }
 @MISC{uberSuit,
   author              = {Geuss, Megan},
   title               = {Uber drivers are employees, California Labor Commission ruling suggests},
   month               = {June},
   year                = {2015},
-  url                 = {http://arstechnica.com/business/2015/06/uber-drivers-are-employees-california-labor-commission-rules/}
+  url                 = {http://arstechnica.com/business/2015/06/uber-drivers-are-employees-california-labor-commission-rules/},
 }
 @inproceedings{taskSearch,
   author              = {Chilton, Lydia B. and Horton, John J. and Miller, Robert C. and Azenkot, Shiri},
@@ -445,6 +461,7 @@
   series              = {HCOMP '10},
   year                = {2010},
   isbn                = {978-1-4503-0222-7},
+  location            = {Washington DC},
   pages               = {1--9},
   numpages            = {9},
   url                 = {http://doi.acm.org/10.1145/1837885.1837889},
@@ -452,14 +469,14 @@
   acmid               = {1837889},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Amazon Mechanical Turk, crowdsourcing, experimentation, human computation, search}
+  keywords            = {Amazon Mechanical Turk, crowdsourcing, experimentation, human computation, search},
 }
 @book{successfulOnlineCommunities,
   author              = {Kraut, Robert E. and Resnick, Paul and Kiesler, Sara and Ren, Yuqing and Chen, Yan and Burke, Moira and Kittur, Niki and Riedl, John and Konstan, Joseph},
   title               = {Building Successful Online Communities: Evidence--Based Social Design},
   year                = {2012},
   isbn                = {0262016575, 9780262016575},
-  publisher           = {The MIT Press}
+  publisher           = {The MIT Press},
 }
 @article{lave1998communities,
   title               = {Communities of practice},
@@ -467,7 +484,7 @@
   journal             = {Retrieved June},
   volume              = {9},
   pages               = {2008},
-  year                = {1998}
+  year                = {1998},
 }
 @article{socialloafing,
   title               = {Social loafing in technology--supported teams},
@@ -477,31 +494,31 @@
   number              = {4},
   pages               = {291--309},
   year                = {2008},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @book{miller2011understanding,
   title               = {Understanding digital culture},
   author              = {Miller, Vincent},
   year                = {2011},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @book{deleuze1988thousand,
   title               = {A thousand plateaus: Capitalism and schizophrenia},
   author              = {Deleuze, Gilles and Guattari, F{\'e}lix},
   year                = {1988},
-  publisher           = {Bloomsbury Publishing}
+  publisher           = {Bloomsbury Publishing},
 }
 @book{bell2006introduction,
   title               = {An introduction to cybercultures},
   author              = {Bell, David},
   year                = {2006},
-  publisher           = {Routledge}
+  publisher           = {Routledge},
 }
 @article{buchanan2007deleuze,
   title               = {Deleuze and the internet},
   author              = {Buchanan, Ian},
   year                = {2007},
-  publisher           = {Australian Humanities Review}
+  publisher           = {Australian Humanities Review},
 }
 @article{hamman1996rhizome,
   title               = {Rhizome@ Internet: using the Internet as an example of Deleuze and Guattari's ``Rhizome"},
@@ -509,32 +526,32 @@
   journal             = {Retrieved May},
   volume              = {24},
   pages               = {2007},
-  year                = {1996}
+  year                = {1996},
 }
 @book{hess2008reconsidering,
   title               = {Reconsidering the rhizome: A textual analysis of web search engines as gatekeepers of the internet},
   author              = {Hess, Aaron},
   year                = {2008},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @book{stivale1998two,
   title               = {The two--fold thought of Deleuze and Guattari: Intersections and animations},
   author              = {Stivale, Charles J},
   year                = {1998},
-  publisher           = {Guilford Press}
+  publisher           = {Guilford Press},
 }
 @book{wise1997exploring,
   title               = {Exploring technology and social space},
   author              = {Wise, John MacGregor},
   volume              = {1},
   year                = {1997},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @book{toyama2015geek,
   title               = {Geek Heresy: Rescuing Social Change from the Cult of Technology},
   author              = {Toyama, Kentaro},
   year                = {2015},
-  publisher           = {PublicAffairs}
+  publisher           = {PublicAffairs},
 }
 @article{olson2000distance,
   title               = {Distance matters},
@@ -544,14 +561,14 @@
   number              = {2},
   pages               = {139--178},
   year                = {2000},
-  publisher           = {L. Erlbaum Associates Inc.}
+  publisher           = {L. Erlbaum Associates Inc.},
 }
 @MISC{internetORG,
   author              = {Facebook},
   title               = {Internet.org},
   month               = {October},
   year                = {2015},
-  url                 = {http://internet.org}
+  url                 = {http://internet.org},
 }
 @inproceedings{postcolonialComputing,
   author              = {Irani, Lilly and Vertesi, Janet and Dourish, Paul and Philip, Kavita and Grinter, Rebecca E.},
@@ -560,6 +577,7 @@
   series              = {CHI '10},
   year                = {2010},
   isbn                = {978-1-60558-929-9},
+  location            = {Atlanta, Georgia, USA},
   pages               = {1311--1320},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1753326.1753522},
@@ -567,13 +585,13 @@
   acmid               = {1753522},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {culture, design methods, ict4d, postcolonial theory, sts}
+  keywords            = {culture, design methods, ict4d, postcolonial theory, sts},
 }
 @book{ito2009hanging,
   title               = {Hanging out, messing around, and geeking out: Kids living and learning with new media},
   author              = {Ito, Mizuko and Antin, Judd and Finn, Megan and Law, Arthur and Manion, Annie and Mitnick, Sarai and Schlossberg, David and Yardi, Sarita and Horst, Heather A},
   year                = {2009},
-  publisher           = {MIT press}
+  publisher           = {MIT press},
 }
 @article{ito2005technosocial,
   title               = {Technosocial situations: Emergent structurings of mobile email use},
@@ -581,7 +599,7 @@
   journal             = {Personal, portable, pedestrian: Mobile phones in Japanese life},
   pages               = {257--273},
   year                = {2005},
-  publisher           = {Cambridge: MIT Press}
+  publisher           = {Cambridge: MIT Press},
 }
 @article{ito2010mobilizing,
   title               = {Mobilizing the imagination in everyday play: The case of Japanese media mixes},
@@ -589,25 +607,25 @@
   journal             = {Mashup cultures},
   pages               = {79--97},
   year                = {2010},
-  publisher           = {Springer Vienna}
+  publisher           = {Springer Vienna},
 }
 @book{earl2011digitally,
   title               = {Digitally enabled social change: Activism in the internet age},
   author              = {Earl, Jennifer and Kimport, Katrina},
   year                = {2011},
-  publisher           = {Mit Press}
+  publisher           = {Mit Press},
 }
 @book{shirky2010cognitive,
   title               = {Cognitive surplus: Creativity and generosity in a connected age},
   author              = {Shirky, Clay},
   year                = {2010},
-  publisher           = {Penguin UK}
+  publisher           = {Penguin UK},
 }
 @article{redballoon,
   author              = {Tang, John C. and Cebrian, Manuel and Giacobe, Nicklaus A. and Kim, Hyun-Woo and Kim, Taemie and Wickert, Douglas ``Beaker"},
   title               = {Reflecting on the DARPA Red Balloon Challenge},
   journal             = {Commun. ACM},
-  issuedate           = {April 2011},
+  issue_date          = {April 2011},
   volume              = {54},
   number              = {4},
   month = apr,
@@ -619,20 +637,20 @@
   doi                 = {10.1145/1924421.1924441},
   acmid               = {1924441},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @book{brabham2013crowdsourcing,
   title               = {Crowdsourcing},
   author              = {Brabham, Daren C},
   year                = {2013},
-  publisher           = {Mit Press}
+  publisher           = {Mit Press},
 }
 @book{goldsmith2006controls,
   title               = {Who controls the Internet?: illusions of a borderless world},
   author              = {Goldsmith, Jack L and Wu, Tim},
   volume              = {89},
   year                = {2006},
-  publisher           = {Oxford University Press New York}
+  publisher           = {Oxford University Press New York},
 }
 @article{mcpherson2001birds,
   title               = {Birds of a feather: Homophily in social networks},
@@ -640,7 +658,7 @@
   journal             = {Annual review of sociology},
   pages               = {415--444},
   year                = {2001},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{takhteyev2012geography,
   title               = {Geography of Twitter networks},
@@ -650,41 +668,44 @@
   number              = {1},
   pages               = {73--81},
   year                = {2012},
-  publisher           = {Elsevier}
+  publisher           = {Elsevier},
 }
 @inproceedings{londonbus,
   author              = {Pritchard, Gary and Vines, John and Briggs, Pam and Thomas, Lisa and Olivier, Patrick},
+  title               = {Digitally Driven: How Location Based Services Impact the Work Practices of London Bus Drivers},
   booktitle           = {Proceedings of the 32Nd Annual ACM Conference on Human Factors in Computing Systems},
   series              = {CHI '14},
   year                = {2014},
   isbn                = {978-1-4503-2473-1},
+  location            = {Toronto, Ontario, Canada},
   pages               = {3617--3626},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2556288.2557156},
   doi                 = {10.1145/2556288.2557156},
   acmid               = {2557156},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
+  keywords            = {auto ethnography, ethnography, lbd, lbs, location based devices, location based services, public transport},
 }
 @MISC{uberRiots,
   author              = {Romain Dillet},
   title               = {French Anti--Uber Protest Turns To Guerrilla Warfare As Cabbies Burn Cars, Attack Uber Drivers},
   month               = {June},
   year                = {2015},
-  url                 = {http://techcrunch.com/2015/06/25/french-anti-uber-protest-turns-to-guerrilla-warfare-as-cabbies-burn-cars-attack-uber-drivers/}
+  url                 = {http://techcrunch.com/2015/06/25/french-anti-uber-protest-turns-to-guerrilla-warfare-as-cabbies-burn-cars-attack-uber-drivers/},
 }
 @MISC{fixingChaos,
   author              = {Mary Gray},
   title               = {Fixing the Chaotic Crowdworker Economy},
   month               = {August},
   year                = {2015},
-  url                 = {http://www.bloombergview.com/articles/2015-08-12/fixing-the-chaotic-crowdworker-economy}
+  url                 = {http://www.bloombergview.com/articles/2015-08-12/fixing-the-chaotic-crowdworker-economy},
 }
 @book{shirky2008here,
   title               = {Here comes everybody: The power of organizing without organizations},
   author              = {Shirky, Clay},
   year                = {2008},
-  publisher           = {Penguin}
+  publisher           = {Penguin},
 }
 @article{akerlof1970market,
   title               = {The market for" lemons": Quality uncertainty and the market mechanism},
@@ -692,13 +713,13 @@
   journal             = {The quarterly journal of economics},
   pages               = {488--500},
   year                = {1970},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @book{sennett2007culture,
   title               = {The culture of the new capitalism},
   author              = {Sennett, Richard},
   year                = {2007},
-  publisher           = {Yale University Press}
+  publisher           = {Yale University Press},
 }
 @article{r2013regulation,
   title               = {Regulation Room: Getting “more, better” civic participation in complex government policymaking},
@@ -708,13 +729,13 @@
   number              = {4},
   pages               = {501--516},
   year                = {2013},
-  publisher           = {Emerald Group Publishing Limited}
+  publisher           = {Emerald Group Publishing Limited},
 }
 @book{howe2008crowdsourcing,
   title               = {Crowdsourcing: How the power of the crowd is driving the future of business},
   author              = {Howe, Jeff},
   year                = {2008},
-  publisher           = {Random House}
+  publisher           = {Random House},
 }
 @article{dalton1961economic,
   title               = {Economic theory and primitive society},
@@ -722,19 +743,19 @@
   journal             = {American Anthropologist},
   pages               = {1--25},
   year                = {1961},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @book{riisOtherSideLives,
   title               = {How the other half lives: Studies among the tenements of New York},
   author              = {Riis, Jacob August},
   year                = {1901},
-  publisher           = {Penguin}
+  publisher           = {Penguin},
 }
 @book{polanyi1944great,
   title               = {The great transformation: The political and economic origins of our time},
   author              = {Polanyi, Karl},
   year                = {1944},
-  publisher           = {Beacon Press}
+  publisher           = {Beacon Press},
 }
 @article{ebbinghaus1999institutions,
   title               = {When institutions matter: Union growth and decline in Western Europe, 1950---1995},
@@ -744,7 +765,7 @@
   number              = {2},
   pages               = {135--158},
   year                = {1999},
-  publisher           = {Oxford Univ Press}
+  publisher           = {Oxford Univ Press},
 }
 @article{hannan1987ecology,
   title               = {The ecology of organizational founding: American labor unions, 1836--1985},
@@ -752,7 +773,7 @@
   journal             = {American Journal of Sociology},
   pages               = {910--943},
   year                = {1987},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{king2014reverse,
   title               = {Reverse--engineering censorship in China: Randomized experimentation and participant observation},
@@ -762,7 +783,7 @@
   number              = {6199},
   pages               = {1251722},
   year                = {2014},
-  publisher           = {American Association for the Advancement of Science}
+  publisher           = {American Association for the Advancement of Science},
 }
 @article{king2013censorship,
   title               = {How censorship in China allows government criticism but silences collective expression},
@@ -772,7 +793,7 @@
   number              = {02},
   pages               = {326--343},
   year                = {2013},
-  publisher           = {Cambridge Univ Press}
+  publisher           = {Cambridge Univ Press},
 }
 @book{fung2013numbersense,
   title               = {Numbersense: How to Use Big Data to Your Advantage},
@@ -781,24 +802,24 @@
   lccn                = {2013010961},
   url                 = {https://books.google.com/books?id=h0Gls7TZe4wC},
   year                = {2013},
-  publisher           = {McGraw-Hill Education}
+  publisher           = {McGraw-Hill Education},
 }
 @book{mayer2013big,
   title               = {Big data: A revolution that will transform how we live, work, and think},
   author              = {Mayer-Sch{\"o}nberger, Viktor and Cukier, Kenneth},
   year                = {2013},
-  publisher           = {Houghton Mifflin Harcourt}
+  publisher           = {Houghton Mifflin Harcourt},
 }
 @misc{carrel2012quantified,
   title               = {The Quantified Traveler: Changing transport behavior with personalized travel data feedback},
   author              = {Carrel, Andre and Ekambaram, Venkatesan and Gaker, David and Sengupta, Raja and Walker, Joan L},
-  year                = {2012}
+  year                = {2012},
 }
 @book{bowker2000sorting,
   title               = {Sorting things out: Classification and its consequences},
   author              = {Bowker, Geoffrey C and Star, Susan Leigh},
   year                = {2000},
-  publisher           = {MIT press}
+  publisher           = {MIT press},
 }
 @inproceedings{li2011understanding,
   title               = {Understanding my data, myself: supporting self--reflection with ubicomp technologies},
@@ -806,7 +827,7 @@
   booktitle           = {Proceedings of the 13th international conference on Ubiquitous computing},
   pages               = {405--414},
   year                = {2011},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @article{wolf2010data,
   title               = {The data--driven life},
@@ -814,31 +835,31 @@
   journal             = {The New York Times},
   volume              = {28},
   pages               = {2010},
-  year                = {2010}
+  year                = {2010},
 }
 @book{zittrain2008future,
   title               = {The future of the internet---and how to stop it},
   author              = {Zittrain, Jonathan},
   year                = {2008},
-  publisher           = {Yale University Press}
+  publisher           = {Yale University Press},
 }
 @book{bell2009total,
   title               = {Total recall: How the e--memory revolution will change everything},
   author              = {Bell, C Gordon and Gemmell, Jim},
   year                = {2009},
-  publisher           = {Dutton}
+  publisher           = {Dutton},
 }
 @book{lanier2014owns,
   title               = {Who owns the future?},
   author              = {Lanier, Jaron},
   year                = {2014},
-  publisher           = {Simon and Schuster}
+  publisher           = {Simon and Schuster},
 }
 @book{citron2014hate,
   title               = {Hate crimes in cyberspace},
   author              = {Citron, Danielle Keats},
   year                = {2014},
-  publisher           = {Harvard University Press}
+  publisher           = {Harvard University Press},
 }
 @book{anderson2013internet,
   title               = {The Internet Police: How Crime Went Online, and the Cops Followed},
@@ -846,7 +867,7 @@
   isbn                = {9780393240542},
   url                 = {https://books.google.com/books?id=hkiaw7-qiu8C},
   year                = {2013},
-  publisher           = {W. W. Norton}
+  publisher           = {W. W. Norton},
 }
 @book{costanza2014out,
   title               = {Out of the Shadows, Into the Streets!: Transmedia Organizing and the Immigrant Rights Movement},
@@ -854,13 +875,13 @@
   isbn                = {9780262322812},
   url                 = {https://books.google.com/books?id=PTgbBQAAQBAJ},
   year                = {2014},
-  publisher           = {MIT Press}
+  publisher           = {MIT Press},
 }
 @book{mayer2011delete,
   title               = {Delete: the virtue of forgetting in the digital age},
   author              = {Mayer-Sch{\"o}nberger, Viktor},
   year                = {2011},
-  publisher           = {Princeton University Press}
+  publisher           = {Princeton University Press},
 }
 @article{rosen2012right,
   title               = {The right to be forgotten},
@@ -868,7 +889,7 @@
   journal             = {Stanford law review online},
   volume              = {64},
   pages               = {88},
-  year                = {2012}
+  year                = {2012},
 }
 @article{bennett2012right,
   title               = {Right to be forgotten: Reconciling eu and us perspectives, the},
@@ -877,27 +898,27 @@
   volume              = {30},
   pages               = {161},
   year                = {2012},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @book{foucault2009security,
   title               = {Security, Territory, Population: Lectures at the Coll{\`e}ge de France 1977---1978},
   author              = {Foucault, Michel and Senellart, Michel and Burchell, Graham and Ewald, Fran{\c{c}}ois and Fontana, Alessandro},
   volume              = {4},
   year                = {2009},
-  publisher           = {Macmillan}
+  publisher           = {Macmillan},
 }
 @MISC{belgians,
   url                 = {http://arstechnica.com/tech-policy/2015/11/facebook-must-stop-tracking-belgian-users-within-48-hours-or-be-fined-e250k-per-day/},
-  title               = {Facebook must stop tracking Belgian users in two days or be fined {~\$267K} daily},
-  month               = {November},
-  year                = {2015}
+  title               = {Facebook must stop tracking Belgian users in two days or be fined ~$267K daily},
+  month               = {11},
+  year                = {2015},
 }
 @MISC{barlow2009declaration,
   url                 = {https://projects.eff.org/~barlow/Declaration-Final.html},
   title               = {A Declaration of the Independence of Cyberspace},
   author              = {Barlow, John Perry},
   year                = {1996},
-  month               = {February}
+  month               = {2},
 }
 @article{bodker1991cooperative,
   title               = {Cooperative prototyping: users and designers in mutual activity},
@@ -907,13 +928,13 @@
   number              = {3},
   pages               = {453--478},
   year                = {1991},
-  publisher           = {Elsevier}
+  publisher           = {Elsevier},
 }
 @article{polletta2002freedom,
   title               = {Freedom is an endless meeting},
   author              = {Polletta, Francesca},
   journal             = {Democracy in American Social Movements, Chicago/London},
-  year                = {2002}
+  year                = {2002},
 }
 @article{turner2005counterculture,
   title               = {Where the counterculture met the new economy: The WELL and the origins of virtual community},
@@ -923,7 +944,7 @@
   number              = {3},
   pages               = {485--512},
   year                = {2005},
-  publisher           = {The Johns Hopkins University Press}
+  publisher           = {The Johns Hopkins University Press},
 }
 @article{raymond1999cathedral,
   title               = {The cathedral and the bazaar},
@@ -933,7 +954,7 @@
   number              = {3},
   pages               = {23--49},
   year                = {1999},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @inproceedings{horowitz2010anatomy,
   author              = {Horowitz, Damon and Kamvar, Sepandar D.},
@@ -942,6 +963,7 @@
   series              = {WWW '10},
   year                = {2010},
   isbn                = {978-1-60558-799-8},
+  location            = {Raleigh, North Carolina, USA},
   pages               = {431--440},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1772690.1772735},
@@ -949,13 +971,13 @@
   acmid               = {1772735},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {social search}
+  keywords            = {social search},
 }
 @inproceedings{bernstein20114chan,
   title               = {4chan and/b: An Analysis of Anonymity and Ephemerality in a Large Online Community.},
   author              = {Bernstein, Michael S and Monroy-Hern{\'a}ndez, Andr{\'e}s and Harry, Drew and Andr{\'e}, Paul and Panovich, Katrina and Vargas, Gregory G},
   booktitle           = {ICWSM},
-  year                = {2011}
+  year                = {2011},
 }
 @inproceedings{bryant2005becoming,
   title               = {Becoming Wikipedian: transformation of participation in a collaborative online encyclopedia},
@@ -963,13 +985,13 @@
   booktitle           = {Proceedings of the 2005 international ACM SIGGROUP conference on Supporting group work},
   pages               = {1--10},
   year                = {2005},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{beschastnikh2008wikipedian,
   title               = {Wikipedian Self--Governance in Action: Motivating the Policy Lens.},
   author              = {Beschastnikh, Ivan and Kriplean, Travis and McDonald, David W},
   booktitle           = {ICWSM},
-  year                = {2008}
+  year                = {2008},
 }
 @article{halfaker2012rise,
   title               = {The rise and decline of an open collaboration system: How Wikipedia’s reaction to popularity is causing its decline},
@@ -977,7 +999,7 @@
   journal             = {American Behavioral Scientist},
   pages               = {0002764212469365},
   year                = {2012},
-  publisher           = {SAGE Publications}
+  publisher           = {SAGE Publications},
 }
 @inproceedings{dabbish2012fresh,
   title               = {Fresh faces in the crowd: turnover, identity, and commitment in online groups},
@@ -985,7 +1007,7 @@
   booktitle           = {Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work},
   pages               = {245--248},
   year                = {2012},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{anderson2013steering,
   title               = {Steering user behavior with badges},
@@ -993,7 +1015,7 @@
   booktitle           = {Proceedings of the 22nd international conference on World Wide Web},
   pages               = {95--106},
   year                = {2013},
-  organization        = {International World Wide Web Conferences Steering Committee}
+  organization        = {International World Wide Web Conferences Steering Committee},
 }
 @inproceedings{ciampaglia2015moodbar,
   title               = {MoodBar: Increasing new user retention in Wikipedia through lightweight socialization},
@@ -1001,7 +1023,7 @@
   booktitle           = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \& Social Computing},
   pages               = {734--742},
   year                = {2015},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @article{kraut2010dealing,
   title               = {Dealing with newcomers},
@@ -1010,7 +1032,7 @@
   volume              = {1},
   pages               = {42},
   year                = {2010},
-  publisher           = {Citeseer}
+  publisher           = {Citeseer},
 }
 @incollection{pal2011early,
   title               = {Early detection of potential experts in question answering communities},
@@ -1018,7 +1040,7 @@
   booktitle           = {User Modeling, Adaption and Personalization},
   pages               = {231--242},
   year                = {2011},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @article{mockus2002two,
   title               = {Two case studies of open source software development: Apache and Mozilla},
@@ -1028,7 +1050,7 @@
   number              = {3},
   pages               = {309--346},
   year                = {2002},
-  publisher           = {ACM}
+  publisher           = {ACM},
 }
 @inproceedings{crowston2006core,
   title               = {Core and periphery in Free/Libre and Open Source software team communications},
@@ -1037,25 +1059,25 @@
   volume              = {6},
   pages               = {118a--118a},
   year                = {2006},
-  organization        = {IEEE}
+  organization        = {IEEE},
 }
 @article{barcellini2006users,
   title               = {Users' participation to the design process in an Open Source Software online community},
   author              = {Barcellini, Flore and D{\'e}tienne, Fran{\c{c}}oise and Burkhardt, Jean-Marie},
   journal             = {arXiv preprint cs/0612009},
-  year                = {2006}
+  year                = {2006},
 }
 @article{atlee2008collective,
   title               = {Collective Intelligence: Creating a Prosperous World at Peace},
   author              = {Atlee, Tom and Benkler, Yochai and Homer-Dixon, Thomas and Levy, Pierre and Malone, Thomas and Martin, Paul and Masum, Hassan and Steele, Robert},
   year                = {2008},
-  publisher           = {Earth Intelligence Network}
+  publisher           = {Earth Intelligence Network},
 }
 @article{benkler2013peer,
   title               = {Peer production: a modality of collective intelligence},
   author              = {Benkler, Yochai and Shaw, Aaron and Hill, Benjamin Mako},
   journal             = {Collective Intelligence},
-  year                = {2013}
+  year                = {2013},
 }
 @inproceedings{keegan2010egalitarians,
   title               = {Egalitarians at the gate: One--sided gatekeeping practices in social media},
@@ -1063,27 +1085,27 @@
   booktitle           = {Proceedings of the 2010 ACM conference on Computer supported cooperative work},
   pages               = {131--134},
   year                = {2010},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @MISC{facesOfMechanicalTurk,
   author              = {Andy Baio},
   title               = {The Faces of Mechanical Turk},
-  month               = {November},
+  month               = {11},
   year                = {2008},
-  url                 = {http://waxy.org/2008/11/the_faces_of_mechanical_turk/}
+  url                 = {http://waxy.org/2008/11/the_faces_of_mechanical_turk/},
 }
 @book{kelty2008two,
   title               = {Two bits: The cultural significance of free software},
   author              = {Kelty, Christopher M},
   year                = {2008},
-  publisher           = {Duke University Press}
+  publisher           = {Duke University Press},
 }
 @book{weber2004success,
   title               = {The success of open source},
   author              = {Weber, Steven},
   volume              = {897},
   year                = {2004},
-  publisher           = {Cambridge Univ Press}
+  publisher           = {Cambridge Univ Press},
 }
 @article{mackinnon2012consent,
   title               = {Consent of the networked: The worldwide struggle for Internet freedom},
@@ -1091,13 +1113,13 @@
   journal             = {Politique {\'e}trang{\`e}re},
   volume              = {50},
   number              = {2},
-  year                = {2012}
+  year                = {2012},
 }
 @book{lessig2006code,
   title               = {Code},
   author              = {Lessig, Lawrence},
   year                = {2006},
-  publisher           = {Lawrence Lessig}
+  publisher           = {Lawrence Lessig},
 }
 @article{kramer2014experimental,
   title               = {Experimental evidence of massive--scale emotional contagion through social networks},
@@ -1107,7 +1129,7 @@
   number              = {24},
   pages               = {8788--8790},
   year                = {2014},
-  publisher           = {National Acad Sciences}
+  publisher           = {National Acad Sciences},
 }
 @article{bush1979we,
   title               = {As we may think},
@@ -1117,13 +1139,13 @@
   number              = {4},
   pages               = {36--44},
   year                = {1979},
-  publisher           = {ACM}
+  publisher           = {ACM},
 }
 @book{ullman2012close,
   title               = {Close to the Machine: Technophilia and its Discontents},
   author              = {Ullman, Ellen},
   year                = {2012},
-  publisher           = {Macmillan}
+  publisher           = {Macmillan},
 }
 @inproceedings{CrowdsourcingUserStudies,
   author              = {Kittur, Aniket and Chi, Ed H. and Suh, Bongwon},
@@ -1132,6 +1154,7 @@
   series              = {CHI '08},
   year                = {2008},
   isbn                = {978-1-60558-011-1},
+  location            = {Florence, Italy},
   pages               = {453--456},
   numpages            = {4},
   url                 = {http://doi.acm.org/10.1145/1357054.1357127},
@@ -1139,13 +1162,13 @@
   acmid               = {1357127},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Mechanical Turk, Wikipedia, micro task, remote user study}
+  keywords            = {Mechanical Turk, Wikipedia, micro task, remote user study},
 }
 @book{mellor1988worker,
   title               = {Worker cooperatives in theory and practice},
   author              = {Mellor, Mary and Hannah, Janet and Stirling, John},
   year                = {1988},
-  publisher           = {Open Univ Pr}
+  publisher           = {Open Univ Pr},
 }
 @article{craig1992behavior,
   title               = {The behavior of worker cooperatives: The plywood companies of the Pacific Northwest},
@@ -1153,7 +1176,7 @@
   journal             = {The American Economic Review},
   pages               = {1083--1105},
   year                = {1992},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{estrin1987productivity,
   title               = {The productivity effects of worker participation: Producer cooperatives in Western economies},
@@ -1163,25 +1186,25 @@
   number              = {1},
   pages               = {40--61},
   year                = {1987},
-  publisher           = {Elsevier}
+  publisher           = {Elsevier},
 }
 @book{wright2014worker,
   title               = {Worker Cooperatives and Revolution: History and Possibilities in the United States},
   author              = {Wright, Chris},
   year                = {2014},
-  publisher           = {Booklocker}
+  publisher           = {Booklocker},
 }
 @book{ostrom1990governing,
   title               = {Governing the commons: The evolution of institutions for collective action},
   author              = {Ostrom, Elinor},
   year                = {1990},
-  publisher           = {Cambridge university press}
+  publisher           = {Cambridge university press},
 }
 @misc{hall2015analysis,
   title               = {An Analysis of the Labor Market for Uber’s Driver--Partners in the United States},
   author              = {Hall, Jonathan V and Krueger, Alan B},
   year                = {2015},
-  publisher           = {mimeo}
+  publisher           = {mimeo},
 }
 @inproceedings{martin2014being,
   title               = {Being a turker},
@@ -1189,18 +1212,18 @@
   booktitle           = {Proceedings of the 17th ACM conference on Computer supported cooperative work \& social computing},
   pages               = {224--235},
   year                = {2014},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @misc{kollock2005managing,
   title               = {Managing the virtual commons: cooperation and conflict in computer communities. 1996},
   author              = {Kollock, Peter and Smith, Marc},
-  year                = {2005}
+  year                = {2005},
 }
 @book{cook2005cooperation,
   title               = {Cooperation without trust?},
   author              = {Cook, Karen S and Hardin, Russell and Levi, Margaret},
   year                = {2005},
-  publisher           = {Russell Sage Foundation}
+  publisher           = {Russell Sage Foundation},
 }
 @book{hirschman1970exit,
   title               = {Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States},
@@ -1210,20 +1233,20 @@
   series              = {ACLS Humanities E-Book},
   url                 = {https://books.google.com/books?id=vYO6sDvjvcgC},
   year                = {1970},
-  publisher           = {Harvard University Press}
+  publisher           = {Harvard University Press},
 }
 @MISC{waterCooler,
   author              = {Mario L. Small},
   title               = {The Future of Work: The Water Cooler and the Fridge},
   month               = {August},
   year                = {2015},
-  url                 = {http://www.psmag.com/business-economics/the-future-of-work-the-water-cooler-and-the-fridge}
+  url                 = {http://www.psmag.com/business-economics/the-future-of-work-the-water-cooler-and-the-fridge},
 }
 @article{sterling2005shaping,
   title               = {Shaping things},
   author              = {Sterling, Bruce},
   year                = {2005},
-  publisher           = {MIT press}
+  publisher           = {MIT press},
 }
 @inproceedings{yang2015experiences,
   title               = {Experiences developing socially acceptable interactions for a robotic trash barrel},
@@ -1231,7 +1254,7 @@
   booktitle           = {Robot and Human Interactive Communication (RO--MAN), 2015 24th IEEE International Symposium on},
   pages               = {277--284},
   year                = {2015},
-  organization        = {IEEE}
+  organization        = {IEEE},
 }
 @article{zacharias1997justice,
   title               = {Justice in Plea bargaining},
@@ -1240,7 +1263,7 @@
   volume              = {39},
   pages               = {1121},
   year                = {1997},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @article{kellough2002remand,
   title               = {Remand for plea. Bail decisions and plea bargaining as commensurate decisions},
@@ -1250,7 +1273,7 @@
   number              = {1},
   pages               = {186--210},
   year                = {2002},
-  publisher           = {CCJS}
+  publisher           = {CCJS},
 }
 @article{bar2009prisoners,
   title               = {The Prisoners'(Plea Bargain) Dilemma},
@@ -1260,7 +1283,7 @@
   number              = {2},
   pages               = {737--773},
   year                = {2009},
-  publisher           = {Oxford University Press}
+  publisher           = {Oxford University Press},
 }
 @article{grossman1983plea,
   title               = {Plea bargaining and social welfare},
@@ -1270,13 +1293,13 @@
   number              = {4},
   pages               = {749--757},
   year                = {1983},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @book{scholz2012digital,
   title               = {Digital labor: The Internet as playground and factory},
   author              = {Scholz, Trebor},
   year                = {2012},
-  publisher           = {Routledge}
+  publisher           = {Routledge},
 }
 @article{bernsteinSoylent,
   author              = {Bernstein, Michael S. and Little, Greg and Miller, Robert C. and Hartmann, Bj\"{o}rn and Ackerman, Mark S. and Karger, David R. and Crowell, David and Panovich, Katrina},
@@ -1285,6 +1308,7 @@
   series              = {UIST '10},
   year                = {2010},
   isbn                = {978-1-4503-0271-5},
+  location            = {New York, New York, USA},
   pages               = {313--322},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1866029.1866078},
@@ -1292,14 +1316,14 @@
   acmid               = {1866078},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, mechanical turk, outsourcing}
+  keywords            = {crowdsourcing, mechanical turk, outsourcing},
 }
 @MISC{futureUnions,
   author              = {Kessler, Sarah},
   title               = {What Does A Union Look Like In The Gig Economy?},
   month               = {February},
   year                = {2015},
-  url                 = {http://www.fastcompany.com/3042081/what-does-a-union-look-like-in-the-gig-economy}
+  url                 = {http://www.fastcompany.com/3042081/what-does-a-union-look-like-in-the-gig-economy},
 }
 @article{alschuler1981changing,
   title               = {The changing plea bargaining debate},
@@ -1309,7 +1333,7 @@
   number              = {3},
   pages               = {652--730},
   year                = {1981},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{kipnis1976criminal,
   title               = {Criminal justice and the negotiated plea},
@@ -1319,14 +1343,14 @@
   number              = {2},
   pages               = {93--106},
   year                = {1976},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @MISC{nytbail,
   author              = {Dewan, Shaila},
   title               = {When Bail Is Out of Defendant’s Reach, Other Costs Mount},
-  month               = {June},
+  month               = {6},
   year                = {2015},
-  url                 = {http://www.nytimes.com/2015/06/11/us/when-bail-is-out-of-defendants-reach-other-costs-mount.html?smid=pl-share&r =0}
+  url                 = {http://www.nytimes.com/2015/06/11/us/when-bail-is-out-of-defendants-reach-other-costs-mount.html?smid=pl-share&_r=0},
 }
 @inproceedings{dillahunt2016does,
   title               = {Does the Sharing Economy do any Good?},
@@ -1334,7 +1358,7 @@
   booktitle           = {Proceedings of the 19th ACM Conference on Computer Supported Cooperative Work and Social Computing Companion},
   pages               = {197--200},
   year                = {2016},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{crowdcollab,
   author              = {Gray, Mary L. and Suri, Siddharth and Ali, Syed Shoaib and Kulkarni, Deepti},
@@ -1343,6 +1367,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {134--147},
   numpages            = {14},
   url                 = {http://doi.acm.org/10.1145/2818048.2819942},
@@ -1350,13 +1375,13 @@
   acmid               = {2819942},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {collaboration, crowdsourcing, online labor, social networks}
+  keywords            = {collaboration, crowdsourcing, online labor, social networks},
 }
 @book{kottak1996mirror,
   title               = {Mirror for humanity: A concise introduction to cultural anthropology},
   author              = {Kottak, Conrad Phillip},
   year                = {1996},
-  publisher           = {McGraw-Hill New York}
+  publisher           = {McGraw-Hill New York},
 }
 @article{jones2011does,
   title               = {Does Machinima Really Democratize?},
@@ -1366,7 +1391,7 @@
   number              = {1},
   pages               = {59--65},
   year                = {2011},
-  publisher           = {SAGE Publications}
+  publisher           = {SAGE Publications},
 }
 @book{EboCybertopia,
   author              = {Ebo, Bosah L.},
@@ -1379,39 +1404,39 @@
 @MISC{sharingEconomyPoll,
   author              = {Steinmetz,Katy},
   title               = {Exclusive: See How Big the Gig Economy Really Is},
-  month               = {January},
+  month               = {1},
   year                = {2016},
-  url                 = {http://time.com/4169532/sharing-economy-poll/}
+  url                 = {http://time.com/4169532/sharing-economy-poll/},
 }
 @book{marx2012economic,
   title               = {Economic and philosophic manuscripts of 1844},
   author              = {Marx, Karl},
   year                = {2012},
-  publisher           = {Courier Corporation}
+  publisher           = {Courier Corporation},
 }
 @book{shaheed1983invisible,
   title               = {Invisible workers: piecework labour amongst women in Lahore},
   author              = {Shaheed, Farida and Mumtaz, Khawar},
   year                = {1983},
-  publisher           = {Women's Division, Govt. of Pakistan}
+  publisher           = {Women's Division, Govt. of Pakistan},
 }
 @article{hahn1996feminization,
   title               = {Feminization through flexible labor. The political economy of home--based work in India.},
   author              = {Hahn, Jeanne},
   year                = {1996},
-  publisher           = {New York New York Routledge 1996.}
+  publisher           = {New York New York Routledge 1996.},
 }
 @book{gringeri1994getting,
   title               = {Getting by: women homeworkers and rural economic development.},
   author              = {Gringeri, Christina E and others},
   year                = {1994},
-  publisher           = {University Press of Kansas}
+  publisher           = {University Press of Kansas},
 }
 @book{herzog1980hand,
   title               = {From hand to mouth: women and piecework},
   author              = {Herzog, Marianne},
   year                = {1980},
-  publisher           = {Penguin Books Ltd}
+  publisher           = {Penguin Books Ltd},
 }
 @article{blinder2006offshoring,
   title               = {Offshoring: the next industrial revolution?},
@@ -1421,7 +1446,7 @@
   number              = {2},
   pages               = {113},
   year                = {2006},
-  publisher           = {Council on Foreign Relations}
+  publisher           = {Council on Foreign Relations},
 }
 @article{rains2007impact,
   title               = {The impact of anonymity on perceptions of source credibility and influence in computer-mediated group communication: A test of two competing hypotheses},
@@ -1431,7 +1456,7 @@
   number              = {1},
   pages               = {100--125},
   year                = {2007},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @article{ellison2007benefits,
   title               = {The benefits of Facebook ``friends'': Social capital and college students’ use of online social network sites},
@@ -1441,19 +1466,20 @@
   number              = {4},
   pages               = {1143--1168},
   year                = {2007},
-  publisher           = {Wiley Online Library}
+  publisher           = {Wiley Online Library},
 }
 @inproceedings{QuantifiedSelf,
   title        ="{Quantified Self: Ethnography of a Digital Culture}",
   author              = {{\bf Ali Alkhatib} and Tom Boellstorff},
   year                = {2014},
   publisher           = {University of California, Irvine},
-  booktitle           = {UC Irvine Undergraduate Research Symposium}
+  location            = {Irvine, California},
+  booktitle           = {UC Irvine Undergraduate Research Symposium},
 }
 @INPROCEEDINGS{ValuesInDesign,
   author              = {Erin Costino and {\bf Ali Alkhatib} and Fady Barsoum and Ian Brown and Wendy Yang and Geoffrey Bowker and Judith Gregory and Sanjay Mazumdar},
   title = "{Values in Design: Designing for Hesitation and Presence}",
-  year                = {2013}
+  year                = {2013},
 }
 @article{foote1959bail,
   title               = {Bail System and Equal Justice, The},
@@ -1462,7 +1488,7 @@
   volume              = {23},
   pages               = {43},
   year                = {1959},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @article{berg1985bail,
   title               = {Bail Reform Act of 1984, The},
@@ -1471,7 +1497,7 @@
   volume              = {34},
   pages               = {685},
   year                = {1985},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @article{ewing1985schall,
   title               = {Schall v. Martin: Preventive detention and dangerousness through the looking glass},
@@ -1480,7 +1506,7 @@
   volume              = {34},
   pages               = {173},
   year                = {1985},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @Literal{1984schall,
   Text                = {Schall v. Martin},
@@ -1491,7 +1517,7 @@
   pages               = {253},
   number              = {No. 82-1248},
   year                = {1984},
-  publisher           = {Supreme Court}
+  publisher           = {Supreme Court},
 }
 @Literal{1987united,
   title               = {United States v. Salerno},
@@ -1502,13 +1528,13 @@
   pages               = {739},
   number              = {No. 86-87},
   year                = {1987},
-  publisher           = {Supreme Court}
+  publisher           = {Supreme Court},
 }
 @book{newman1966conviction,
   title               = {Conviction: The determination of guilt or innocence without trial},
   author              = {Newman, Donald J and Remington, Frank J},
   year                = {1966},
-  publisher           = {Little, Brown Boston}
+  publisher           = {Little, Brown Boston},
 }
 @article{kaplan1977american,
   title               = {American Merchandising and the Guilty Plea: Replacing the Bazaar with the Department Store},
@@ -1517,7 +1543,7 @@
   volume              = {5},
   pages               = {215},
   year                = {1977},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @article{mccoy1980plea,
   title               = {Plea Bargaining as Due Process in Determining Guilt},
@@ -1525,7 +1551,7 @@
   journal             = {Stanford Law Review},
   pages               = {887--941},
   year                = {1980},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @Article{matchit,
   title = {{MatchIt}: Nonparametric Preprocessing for Parametric
@@ -1537,7 +1563,7 @@
   volume              = {42},
   number              = {8},
   pages               = {1--28},
-  url                 = {http://www.jstatsoft.org/v42/i08/}
+  url                 = {http://www.jstatsoft.org/v42/i08/},
 }
 @inproceedings{mcinnis2016one,
   title               = {One and Done: Factors affecting one-time contributors to ad-hoc online communities},
@@ -1545,31 +1571,32 @@
   booktitle           = {Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work \& Social Computing},
   pages               = {609--623},
   year                = {2016},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{andrew2013using,
+  title               = {Using location lifelogs to make meaning of food and physical activity behaviors},
   author              = {Andrew, Adrienne H and Eustice, Kevin and Hickl, Andy},
   booktitle           = {Proceedings of the 7th International Conference on Pervasive Computing Technologies for Healthcare},
   pages               = {408--411},
   year                = {2013},
-  organization        = {ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)}
+  organization        = {ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)},
 }
 @phdthesis{almalkiuse,
   title               = {The Use of Self-tracking Devices: Big Data Prospects and Challenges},
   author              = {Almalki, Manal},
-  school              = {University of Melbourne}
+  school              = {University of Melbourne},
 }
 @phdthesis{butterfield2012ethnographic,
   title               = {Ethnographic assessment of quantified self meetup groups},
   author              = {Butterfield, Adam D},
   year                = {2012},
-  school              = {San Jos{\'e} State University}
+  school              = {San Jos{\'e} State University},
 }
 @book{coulter2003european,
   title               = {The European patient of the future},
   author              = {Coulter, Angela and Magee, Helen},
   year                = {2003},
-  publisher           = {McGraw-Hill Education (UK)}
+  publisher           = {McGraw-Hill Education (UK)},
 }
 @inproceedings{dabbish2012social,
   title               = {Social coding in GitHub: transparency and collaboration in an open software repository},
@@ -1577,7 +1604,7 @@
   booktitle           = {Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work},
   pages               = {1277--1286},
   year                = {2012},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{duval2011attention,
   title               = {Attention please!: learning analytics for visualization and recommendation},
@@ -1585,7 +1612,7 @@
   booktitle           = {Proceedings of the 1st International Conference on Learning Analytics and Knowledge},
   pages               = {9--17},
   year                = {2011},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @article{fajans2014art,
   title               = {The Art of Personal Science},
@@ -1594,13 +1621,13 @@
   volume              = {1},
   number              = {2},
   pages               = {30},
-  year                = {2014}
+  year                = {2014},
 }
 @book{heidegger1994hegel,
   title               = {Hegel's phenomenology of spirit},
   author              = {Heidegger, Martin and Emad, Parvis and Maly, Kenneth},
   year                = {1994},
-  publisher           = {Indiana University Press}
+  publisher           = {Indiana University Press},
 }
 @article{halavais2013home,
   title               = {Home made big data‽ Challenges and opportunities for participatory social research},
@@ -1608,37 +1635,37 @@
   journal             = {First Monday},
   volume              = {18},
   number              = {10},
-  year                = {2013}
+  year                = {2013},
 }
 @article{jariyasunant2011quantified,
   title               = {The Quantified Traveler: Using personal travel data to promote sustainable transport behavior},
   author              = {Jariyasunant, Jerald and Carrel, Andre and Ekambaram, Venkatesan and Gaker, DJ and Kote, Thejovardhana and Sengupta, Raja and Walker, Joan L},
   journal             = {University of California Transportation Center},
-  year                = {2011}
+  year                = {2011},
 }
 @MISC{whatisQS,
   author              = {Wolf, Gary},
   title               = {What is The Quantified Self?},
-  month               = {March},
+  month               = {3},
   year                = {2011},
-  url                 = {http://quantifiedself.com/2011/03/what-is-the-quantified-self/}
+  url                 = {http://quantifiedself.com/2011/03/what-is-the-quantified-self/},
 }
 @inproceedings{kido2012self,
   title               = {Self-Tracking Mindfulness Incorporating a Personal Genome},
   author              = {Kido, Takashi},
   booktitle           = {2012 AAAI Spring Symposium Series},
-  year                = {2012}
+  year                = {2012},
 }
 @article{kido2014know,
   title               = {Know thyself: Data driven self-awareness for understanding our unconscious behaviors-Citizen Science Genetics for sleep and wellness research},
   author              = {Kido, Takashi and Swan, Melanie},
-  year                = {2014}
+  year                = {2014},
 }
 @book{dey2003qualitative,
   title               = {Qualitative data analysis: A user friendly guide for social scientists},
   author              = {Dey, Ian},
   year                = {2003},
-  publisher           = {Routledge}
+  publisher           = {Routledge},
 }
 @article{lazar2012big,
   title               = {The big picture: big data hits the big time},
@@ -1648,14 +1675,14 @@
   number              = {3},
   pages               = {47--49},
   year                = {2012},
-  publisher           = {Taylor \& Francis}
+  publisher           = {Taylor \& Francis},
 }
 @MISC{becomingCyborgs,
   author              = {Leavitt, Lydia},
   title               = {Becoming Cyborgs: Wearable Tech Disrupts Healthcare},
-  month               = {March},
+  month               = {3},
   year                = {2014},
-  url                 = {http://www.forbes.com/sites/ptc/2014/03/28/becoming-cyborgs-ear-based-wearable-tech-disrupts-healthcare/#21ce48bc386a}
+  url                 = {http://www.forbes.com/sites/ptc/2014/03/28/becoming-cyborgs-ear-based-wearable-tech-disrupts-healthcare/#21ce48bc386a},
 }
 @article{baltar2012social,
   title               = {Social research 2.0: virtual snowball sampling method using Facebook},
@@ -1665,12 +1692,12 @@
   number              = {1},
   pages               = {57--74},
   year                = {2012},
-  publisher           = {Emerald Group Publishing Limited}
+  publisher           = {Emerald Group Publishing Limited},
 }
 @article{li2011personal,
   title               = {Personal informatics and context: using context to reveal factors that affect behavior},
   author              = {Li, Ian Anthony Rosas},
-  year                = {2011}
+  year                = {2011},
 }
 @article{linder2007life,
   title               = {Life as art, and seeing the promise of big bodies},
@@ -1680,7 +1707,7 @@
   number              = {3},
   pages               = {451--472},
   year                = {2007},
-  publisher           = {Wiley Online Library}
+  publisher           = {Wiley Online Library},
 }
 @article{love2014cover,
   title               = {The Cover-The Quantified Self},
@@ -1689,7 +1716,7 @@
   volume              = {1},
   number              = {2},
   pages               = {34},
-  year                = {2014}
+  year                = {2014},
 }
 @article{mcfedries2013tracking,
   title               = {Tracking the quantified self [Technically speaking]},
@@ -1699,33 +1726,33 @@
   number              = {8},
   pages               = {24--24},
   year                = {2013},
-  publisher           = {IEEE}
+  publisher           = {IEEE},
 }
 @inproceedings{meyer2014beyond,
   title               = {Beyond Quantified Self},
   author              = {Meyer, Jochen and Simske, Steven and Siek, Katie and Gurrin, Cathal and Hermens, Hermie},
   booktitle           = {the extended abstracts of the 32nd annual ACM conference},
   pages               = {95--98},
-  year                = {2014}
+  year                = {2014},
 }
 @MISC{nestGivesGoogle,
   author              = {Olson, Parmy},
-  month               = {January},
+  month               = {1},
   year                = {2014},
   title               = {Nest Gives Google Its Next Big Data Play: Energy},
-  url                 = {http://www.forbes.com/sites/parmyolson/2014/01/13/nest-gives-google-its-next-big-data-play-energy/#4e12eb264b61}
+  url                 = {http://www.forbes.com/sites/parmyolson/2014/01/13/nest-gives-google-its-next-big-data-play-energy/#4e12eb264b61},
 }
 @article{o2014body,
   title               = {Body Monitoring: On the Need to put Culture into the Quantifying Equation.},
   author              = {O'Dell, Thomas and Fors, Vaike},
   journal             = {Culture Unbound},
-  year                = {2014}
+  year                = {2014},
 }
 @book{nandy1998return,
   title               = {Return from exile},
   author              = {Nandy, Ashis},
   year                = {1998},
-  publisher           = {Oxford University Press, USA}
+  publisher           = {Oxford University Press, USA},
 }
 @article{nafus2014big,
   title               = {Big Data, Big Questions| This One Does Not Go Up To 11: The Quantified Self Movement as an Alternative Big Data Practice},
@@ -1733,7 +1760,7 @@
   journal             = {International Journal of Communication},
   volume              = {8},
   pages               = {11},
-  year                = {2014}
+  year                = {2014},
 }
 @inproceedings{packer2014editable,
   title               = {The editable self: a workbench for personal activity data},
@@ -1741,14 +1768,14 @@
   booktitle           = {CHI'14 Extended Abstracts on Human Factors in Computing Systems},
   pages               = {2185--2190},
   year                = {2014},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @MISC{quantifiedOther,
   title               = {The Quantified Other: Nest And Fitbit Chase A Lucrative Side Business},
   url                 = {http://www.forbes.com/sites/parmyolson/2014/04/17/the-quantified-other-nest-and-fitbit-chase-a-lucrative-side-business/#794541355403},
-  month               = {April},
+  month               = {4},
   year                = {2014},
-  author              = {Olson, Parmy}
+  author              = {Olson, Parmy},
 }
 @article{schull2005digital,
   title               = {Digital gambling: The coincidence of desire and design},
@@ -1758,11 +1785,11 @@
   number              = {1},
   pages               = {65--81},
   year                = {2005},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @article{sharifaactivis,
   title               = {ActiVis, an R Package for the Visualization of Functional Actigraphy Data (and Beyond)},
-  author              = {Sharifa, Abbass and Symanzik, J{\"u}rgen}
+  author              = {Sharifa, Abbass and Symanzik, J{\"u}rgen},
 }
 @article{sheth2013physical,
   title               = {Physical-Cyber-Social Computing},
@@ -1771,7 +1798,7 @@
   volume              = {13402},
   pages               = {245--263},
   year                = {2013},
-  publisher           = {Citeseer}
+  publisher           = {Citeseer},
 }
 @article{swan2012health,
   title               = {Health 2050: The realization of personalized medicine through crowdsourcing, the quantified self, and the participatory biocitizen},
@@ -1781,7 +1808,7 @@
   number              = {3},
   pages               = {93--118},
   year                = {2012},
-  publisher           = {Molecular Diversity Preservation International}
+  publisher           = {Molecular Diversity Preservation International},
 }
 @article{swan2013quantified,
   title               = {The quantified self: Fundamental disruption in big data science and biological discovery},
@@ -1791,7 +1818,7 @@
   number              = {2},
   pages               = {85--99},
   year                = {2013},
-  publisher           = {Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}
+  publisher           = {Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA},
 }
 @article{waltz2012quantified,
   title               = {How I quantified myself},
@@ -1801,19 +1828,19 @@
   number              = {9},
   pages               = {42--47},
   year                = {2012},
-  publisher           = {IEEE}
+  publisher           = {IEEE},
 }
 @book{weber2002protestant,
   title               = {The Protestant Ethic and the Spirit of Capitalism: and other writings},
   author              = {Weber, Max},
   year                = {2002},
-  publisher           = {Penguin}
+  publisher           = {Penguin},
 }
 @book{weschler1996mr,
   title               = {Mr. Wilson's cabinet of wonder},
   author              = {Weschler, Lawrence},
   year                = {1996},
-  publisher           = {Vintage}
+  publisher           = {Vintage},
 }
 @article{whitson2013gaming,
   title               = {Gaming the quantified self},
@@ -1823,22 +1850,21 @@
   number              = {1/2},
   pages               = {163},
   year                = {2013},
-  publisher           = {Surveillance Studies Network}
+  publisher           = {Surveillance Studies Network},
 }
 @phdthesis{willis2013interpreting,
   title               = {Interpreting “Big Data”: Self-Quantifiers, Data Distance, and Rock Star Analysts},
   author              = {Willis, Margaret},
   year                = {2013},
-  school              = {Dissertation Proposal. Boston College. Retrieved from http://www. sarkisian. net/sc781/willis\_proposal. pdf}
+  school              = {Dissertation Proposal. Boston College. Retrieved from http://www. sarkisian. net/sc781/willis\_proposal. pdf},
 }
-
-@Article{Wolf2010,
-  author  = {Wolf, Gary},
-  title   = {The data-driven life},
-  journal = {The New York Times},
-  year    = {2010},
-  volume  = {28},
-  pages   = {2010}
+@article{wolf2010data,
+  title               = {The data-driven life},
+  author              = {Wolf, Gary},
+  journal             = {The New York Times},
+  volume              = {28},
+  pages               = {2010},
+  year                = {2010},
 }
 @inproceedings{yang2013personal,
   title               = {Personal lifelog visualization},
@@ -1846,7 +1872,7 @@
   booktitle           = {Proceedings of the 4th International SenseCam \& Pervasive Imaging Conference},
   pages               = {82--83},
   year                = {2013},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{yang2013visualizing,
   title               = {Visualizing lifelog data for different interaction platforms},
@@ -1854,13 +1880,13 @@
   booktitle           = {CHI'13 Extended Abstracts on Human Factors in Computing Systems},
   pages               = {1785--1790},
   year                = {2013},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @book{coleman2013coding,
   title               = {Coding freedom: The ethics and aesthetics of hacking},
   author              = {Coleman, E Gabriella},
   year                = {2013},
-  publisher           = {Princeton University Press}
+  publisher           = {Princeton University Press},
 }
 @inproceedings{chilton2013cascade,
   title               = {Cascade: Crowdsourcing taxonomy creation},
@@ -1868,7 +1894,7 @@
   booktitle           = {Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
   pages               = {1999--2008},
   year                = {2013},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @inproceedings{cheng2015break,
   title               = {Break it down: A comparison of macro-and microtasks},
@@ -1876,7 +1902,7 @@
   booktitle           = {Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems},
   pages               = {4061--4064},
   year                = {2015},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @article{scott1975women,
   title               = {Women's work and the family in nineteenth-century Europe},
@@ -1886,7 +1912,7 @@
   number              = {01},
   pages               = {36--64},
   year                = {1975},
-  publisher           = {Cambridge Univ Press}
+  publisher           = {Cambridge Univ Press},
 }
 @article{wathen2002believe,
   title               = {Believe it or not: Factors influencing credibility on the Web},
@@ -1896,7 +1922,7 @@
   number              = {2},
   pages               = {134--144},
   year                = {2002},
-  publisher           = {Wiley Online Library}
+  publisher           = {Wiley Online Library},
 }
 @Article{Brownlow1992,
   author        ="Brownlow, Sheila",
@@ -1919,7 +1945,7 @@
   url                 = {http://dx.doi.org/10.1080/00207590444000014},
   doi                 = {10.1080/00207590444000014},
   pages               = {276--289},
-  year                = {2004}
+  year                = {2004},
 }
 @Article{Brownlow1990,
   author        ="Brownlow, Sheila
@@ -1941,7 +1967,7 @@
   number              = {3},
   pages               = {28--34},
   year                = {1991},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @incollection{malone1999dawn,
   title               = {The dawn of the e-lance economy},
@@ -1949,13 +1975,13 @@
   booktitle           = {Electronic Business Engineering},
   pages               = {13--24},
   year                = {1999},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @article{professionalCrowdworkEthics,
   author              = {Silberman, M. Six and Irani, Lilly and Ross, Joel},
   title               = {Ethics and Tactics of Professional Crowdwork},
   journal             = {XRDS},
-  issuedate           = {Winter 2010},
+  issue_date          = {Winter 2010},
   volume              = {17},
   number              = {2},
   month = dec,
@@ -1967,7 +1993,7 @@
   doi                 = {10.1145/1869086.1869100},
   acmid               = {1869100},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @inproceedings{selfsourcingTeevan2014,
   author              = {Teevan, Jaime and Liebling, Daniel J. and Lasecki, Walter S.},
@@ -1976,6 +2002,7 @@
   series              = {CHI EA '14},
   year                = {2014},
   isbn                = {978-1-4503-2474-8},
+  location            = {Toronto, Ontario, Canada},
   pages               = {2527--2532},
   numpages            = {6},
   url                 = {http://doi.acm.org/10.1145/2559206.2581181},
@@ -1983,7 +2010,7 @@
   acmid               = {2581181},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, interruption, microtasks, selfsourcing}
+  keywords            = {crowdsourcing, interruption, microtasks, selfsourcing},
 }
 @inproceedings{selfsourcingTeevan2016,
   author              = {Teevan, Jaime and Iqbal, Shamsi T. and Cai, Carrie J. and Bigham, Jeffrey P. and Bernstein, Michael S. and Gerber, Elizabeth M.},
@@ -1992,6 +2019,7 @@
   series              = {CHI EA '16},
   year                = {2016},
   isbn                = {978-1-4503-4082-3},
+  location            = {Santa Clara, California, USA},
   pages               = {3500--3507},
   numpages            = {8},
   url                 = {http://doi.acm.org/10.1145/2851581.2856480},
@@ -1999,13 +2027,13 @@
   acmid               = {2856480},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, microtasking, microwork, productivity, selfsourcing, wait-learning}
+  keywords            = {crowdsourcing, microtasking, microwork, productivity, selfsourcing, wait-learning},
 }
 @inproceedings{araujo201399designs,
   title               = {99designs: An analysis of creative competition in crowdsourced design},
   author              = {Araujo, Ricardo Matsumura},
   booktitle           = {First AAAI conference on Human computation and crowdsourcing},
-  year                = {2013}
+  year                = {2013},
 }
 @article{bannerman2013crowdfunding,
   title               = {Crowdfunding culture},
@@ -2013,13 +2041,13 @@
   journal             = {Wi Journal of Mobile Media},
   volume              = {7},
   number              = {1},
-  year                = {2013}
+  year                = {2013},
 }
 @MISC{99designs,
   url                 = {https://99designs.com/},
   title               = {Logos, Web, Graphic Design \& More. | 99designs},
-  month               = {May},
-  year                = {2016}
+  month               = {5},
+  year                = {2016},
 }
 @inproceedings{storiesIraniSilberman,
   author              = {Irani, Lilly C. and Silberman, M. Six},
@@ -2028,6 +2056,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {4573--4586},
   numpages            = {14},
   url                 = {http://doi.acm.org/10.1145/2858036.2858592},
@@ -2035,7 +2064,7 @@
   acmid               = {2858592},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {activism, amazon mechanical turk, critical design, design, economics, ethics, human computation, social theory}
+  keywords            = {activism, amazon mechanical turk, critical design, design, economics, ethics, human computation, social theory},
 }
 @inproceedings{sensitiveTasks,
   author              = {Celis, L. Elisa and Reddy, Sai Praneeth and Singh, Ishaan Preet and Vaya, Shailesh},
@@ -2044,6 +2073,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {836--847},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2818048.2835202},
@@ -2051,13 +2081,13 @@
   acmid               = {2835202},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Crowdsourcing, Microtasks, Privacy, Social Networks}
+  keywords            = {Crowdsourcing, Microtasks, Privacy, Social Networks},
 }
 @book{hapke2004sweatshop,
   title               = {Sweatshop: the history of an American idea},
   author              = {Hapke, Laura},
   year                = {2004},
-  publisher           = {Rutgers University Press}
+  publisher           = {Rutgers University Press},
 }
 @article{hu1961parallel,
   title               = {Parallel Sequencing and Assembly Line Problems},
@@ -2069,7 +2099,7 @@
   year                = {1961},
   doi                 = {10.1287/opre.9.6.841},
   URL                 = { http://dx.doi.org/10.1287/opre.9.6.841},
-  eprint              = {http://dx.doi.org/10.1287/opre.9.6.841}
+  eprint              = {http://dx.doi.org/10.1287/opre.9.6.841},
 }
 @inproceedings{writingMicroTasks,
   author              = {Teevan, Jaime and Iqbal, Shamsi T. and von Veh, Curtis},
@@ -2078,6 +2108,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {2657--2668},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858108},
@@ -2085,7 +2116,7 @@
   acmid               = {2858108},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {collaborative writing, microtasking, social computing}
+  keywords            = {collaborative writing, microtasking, social computing},
 }
 @inproceedings{delayAndOrderLasecki,
   author              = {Lasecki, Walter S. and Rzeszotarski, Jeffrey M. and Marcus, Adam and Bigham, Jeffrey P.},
@@ -2094,6 +2125,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1375--1378},
   numpages            = {4},
   url                 = {http://doi.acm.org/10.1145/2702123.2702594},
@@ -2101,7 +2133,7 @@
   acmid               = {2702594},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {continuity, crowdsourcing, efficiency, human computation, interruptions, workflows}
+  keywords            = {continuity, crowdsourcing, efficiency, human computation, interruptions, workflows},
 }
 @article{howe2006rise,
   title               = {The rise of crowdsourcing},
@@ -2110,7 +2142,7 @@
   volume              = {14},
   number              = {6},
   pages               = {1--4},
-  year                = {2006}
+  year                = {2006},
 }
 @inproceedings{embracingErrorKrishna,
   author              = {Krishna, Ranjay A. and Hata, Kenji and Chen, Stephanie and Kravitz, Joshua and Shamma, David A. and Fei-Fei, Li and Bernstein, Michael S.},
@@ -2119,6 +2151,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {3167--3179},
   numpages            = {13},
   url                 = {http://doi.acm.org/10.1145/2858036.2858115},
@@ -2126,7 +2159,7 @@
   acmid               = {2858115},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {RSVP, crowdsourcing, human computation}
+  keywords            = {RSVP, crowdsourcing, human computation},
 }
 @article{wray1949marginal,
   title               = {Marginal men of industry: The foremen},
@@ -2134,7 +2167,7 @@
   journal             = {American Journal of Sociology},
   pages               = {298--301},
   year                = {1949},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{van1976determinants,
   title               = {Determinants of coordination modes within organizations},
@@ -2142,7 +2175,7 @@
   journal             = {American sociological review},
   pages               = {322--338},
   year                = {1976},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{friedman2014workers,
   title               = {Workers without employers: shadow corporations and the rise of the gig economy},
@@ -2151,7 +2184,7 @@
   number              = {2},
   pages               = {171--188},
   year                = {2014},
-  publisher           = {Edward Elgar Publishing Ltd}
+  publisher           = {Edward Elgar Publishing Ltd},
 }
 @inproceedings{DesigningForLabourUber,
   author              = {Gl\"{o}ss, Mareike and McGregor, Moira and Brown, Barry},
@@ -2160,6 +2193,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {1632--1643},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858476},
@@ -2167,7 +2201,7 @@
   acmid               = {2858476},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {labour issues, on demand labour, ridesharing, on-demand labour, sharing economy, transport, uber}
+  keywords            = {labour issues, on demand labour, ridesharing, on-demand labour, sharing economy, transport, uber},
 }
 @inproceedings{MaliciousCrowdworkersGadiraju,
   author              = {Gadiraju, Ujwal and Kawase, Ricardo and Dietze, Stefan and Demartini, Gianluca},
@@ -2176,6 +2210,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1631--1640},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702443},
@@ -2183,7 +2218,7 @@
   acmid               = {2702443},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, malicious intent, microtasks, online surveys, user behavior}
+  keywords            = {crowdsourcing, malicious intent, microtasks, online surveys, user behavior},
 }
 @inproceedings{AccuracyTradeoffsLasecki,
   author              = {Lasecki, Walter S. and Gordon, Mitchell and Leung, Winnie and Lim, Ellen and Bigham, Jeffrey P. and Dow, Steven P.},
@@ -2192,6 +2227,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1945--1954},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702605},
@@ -2199,13 +2235,13 @@
   acmid               = {2702605},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, data analysis, subjective coding, video}
+  keywords            = {crowdsourcing, data analysis, subjective coding, video},
 }
 @article{nickerson2013crowd,
   title               = {Crowd work and collective learning},
   author              = {Nickerson, Jeffrey V},
   journal             = {Technology-Enhanced Professional Learning: Routledge, Forthcoming},
-  year                = {2013}
+  year                = {2013},
 }
 @inproceedings{interruptionIqbal,
   author              = {Iqbal, Shamsi T. and Bailey, Brian P.},
@@ -2214,6 +2250,7 @@
   series              = {CHI '08},
   year                = {2008},
   isbn                = {978-1-60558-011-1},
+  location            = {Florence, Italy},
   pages               = {93--102},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1357054.1357070},
@@ -2221,13 +2258,13 @@
   acmid               = {1357070},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {breakpoint, interruption, notification, statistical models}
+  keywords            = {breakpoint, interruption, notification, statistical models},
 }
 @inproceedings{vaish2014low,
   title               = {Low Effort Crowdsourcing: Leveraging Peripheral Attention for Crowd Work},
   author              = {Vaish, Rajan and Organisciak, Peter and Hara, Kotaro and Bigham, Jeffrey P and Zhang, Haoqi},
   booktitle           = {Second AAAI Conference on Human Computation and Crowdsourcing},
-  year                = {2014}
+  year                = {2014},
 }
 @inproceedings{movieSummarizationWu,
   author              = {Wu, Shao-Yu and Thawonmas, Ruck and Chen, Kuan-Ta},
@@ -2236,6 +2273,7 @@
   series              = {CHI EA '11},
   year                = {2011},
   isbn                = {978-1-4503-0268-5},
+  location            = {Vancouver, BC, Canada},
   pages               = {1531--1536},
   numpages            = {6},
   url                 = {http://doi.acm.org/10.1145/1979742.1979803},
@@ -2243,13 +2281,13 @@
   acmid               = {1979803},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, human computation, video skimming, video summarization}
+  keywords            = {crowdsourcing, human computation, video skimming, video summarization},
 }
 @inproceedings{verroios2014context,
   title               = {Context trees: Crowdsourcing global understanding from local views},
   author              = {Verroios, Vasilis and Bernstein, Michael S},
   booktitle           = {Second AAAI Conference on Human Computation and Crowdsourcing},
-  year                = {2014}
+  year                = {2014},
 }
 @article{fort2011amazon,
   title               = {Amazon mechanical turk: Gold mine or coal mine?},
@@ -2259,7 +2297,7 @@
   number              = {2},
   pages               = {413--420},
   year                = {2011},
-  publisher           = {MIT Press}
+  publisher           = {MIT Press},
 }
 @inproceedings{laborEconomicsOfCrowdsourcingHorton,
   author              = {Horton, John Joseph and Chilton, Lydia B.},
@@ -2268,6 +2306,7 @@
   series              = {EC '10},
   year                = {2010},
   isbn                = {978-1-60558-822-3},
+  location            = {Cambridge, Massachusetts, USA},
   pages               = {209--218},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1807342.1807376},
@@ -2275,7 +2314,7 @@
   acmid               = {1807376},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {amazon's mechanical turk, crowdsourcing, human computation}
+  keywords            = {amazon's mechanical turk, crowdsourcing, human computation},
 }
 @inproceedings{incentivesShaw,
   author              = {Shaw, Aaron D. and Horton, John J. and Chen, Daniel L.},
@@ -2284,6 +2323,7 @@
   series              = {CSCW '11},
   year                = {2011},
   isbn                = {978-1-4503-0556-3},
+  location            = {Hangzhou, China},
   pages               = {275--284},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1958824.1958865},
@@ -2291,7 +2331,7 @@
   acmid               = {1958865},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {amazon mechanical turk, content analysis, crowdsourcing, experimentation, human computation, search, sociology}
+  keywords            = {amazon mechanical turk, content analysis, crowdsourcing, experimentation, human computation, search, sociology},
 }
 @article{paolacci2010running,
   title               = {Running experiments on amazon mechanical turk},
@@ -2300,13 +2340,13 @@
   volume              = {5},
   number              = {5},
   pages               = {411--419},
-  year                = {2010}
+  year                = {2010},
 }
 @book{gantt1913work,
   title               = {Work, wages, and profits},
   author              = {Gantt, Henry Laurence},
   year                = {1913},
-  publisher           = {Engineering Magazine Co.}
+  publisher           = {Engineering Magazine Co.},
 }
 @inproceedings{whyWouldAnyoneBrewer,
   author              = {Brewer, Robin and Morris, Meredith Ringel and Piper, Anne Marie},
@@ -2315,6 +2355,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {2246--2257},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858198},
@@ -2322,7 +2363,7 @@
   acmid               = {2858198},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, motivation, older adults, online work}
+  keywords            = {crowdsourcing, motivation, older adults, online work},
 }
 @article{irani2015cultural,
   title               = {The cultural work of microwork},
@@ -2332,14 +2373,14 @@
   number              = {5},
   pages               = {720--739},
   year                = {2015},
-  publisher           = {Sage Publications}
+  publisher           = {Sage Publications},
 }
 @MISC{dawnDigitalSweatshopCushing,
   author              = {Cushing, Ellen},
   url                 = {http://www.eastbayexpress.com/oakland/dawn-of-the-digital-sweatshop/Content?oid=3301022},
   title               = {Dawn of the Digital Sweatshop},
-  month               = {August},
-  year                = {2012}
+  month               = {8},
+  year                = {2012},
 }
 @article{Sun20111033,
   title = "Working for one penny: Understanding why people would like to participate in online tasks with low payment ",
@@ -2365,6 +2406,7 @@
   series              = {CSCW '12},
   year                = {2012},
   isbn                = {978-1-4503-1086-4},
+  location            = {Seattle, Washington, USA},
   pages               = {1013--1022},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2145204.2145355},
@@ -2372,13 +2414,13 @@
   acmid               = {2145355},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, feedback system, human computation, review system}
+  keywords            = {crowdsourcing, feedback system, human computation, review system},
 }
 @MISC{jonBrelig,
   url                 = {https://www.youtube.com/watch?v=N3T6FyymsCw},
   title               = {Infoscout: Using Mechanical Turk to Mine Reciepts 7-23-2013},
-  month               = {July},
-  year                = {2013}
+  month               = {7},
+  year                = {2013},
 }
 @article{pollard1963factory,
   title               = {Factory Discipline in the Industrial Revolution. 1},
@@ -2388,13 +2430,13 @@
   number              = {2},
   pages               = {254--271},
   year                = {1963},
-  publisher           = {Wiley Online Library}
+  publisher           = {Wiley Online Library},
 }
 @book{turner2010counterculture,
   title               = {From counterculture to cyberculture: Stewart Brand, the Whole Earth Network, and the rise of digital utopianism},
   author              = {Turner, Fred},
   year                = {2010},
-  publisher           = {University Of Chicago Press}
+  publisher           = {University Of Chicago Press},
 }
 @article{murray1983decentralisation,
   title               = {The decentralisation of production—the decline of the mass-collective worker?},
@@ -2404,7 +2446,7 @@
   number              = {1},
   pages               = {74--99},
   year                = {1983},
-  publisher           = {SAGE Publications}
+  publisher           = {SAGE Publications},
 }
 @article {restructuringPieceworkBaker,
   author              = {Baker, Peter},
@@ -2417,7 +2459,7 @@
   url                 = {http://dx.doi.org/10.1111/j.1468-005X.1993.tb00033.x},
   doi                 = {10.1111/j.1468-005X.1993.tb00033.x},
   pages               = {43--55},
-  year                = {1993}
+  year                = {1993},
 }
 @article{vezina1992light,
   title               = {When is light work heavy? Components of the physical workload of sewing machine operators working at piecework rates},
@@ -2427,7 +2469,7 @@
   number              = {4},
   pages               = {268--276},
   year                = {1992},
-  publisher           = {Elsevier}
+  publisher           = {Elsevier},
 }
 @article{pieceworkBiologicalHarm,
   title               = {Effect of duration of employment in piecework on severe disability among female garment workers},
@@ -2435,7 +2477,7 @@
   journal             = {Scandinavian journal of work, environment \& health},
   pages               = {329--334},
   year                = {1989},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @something{blarg,
   ISSN                = {03553140-1795990X},
@@ -2447,21 +2489,22 @@
   publisher           = {Scandinavian Journal of Work, Environment \& Health},
   title               = {Effect of duration of employment in piecework on severe disability among female garment workers},
   volume              = {15},
-  year                = {1989}
+  year                = {1989},
 }
 @article{schoenberger1988fordism,
+  title               = {From Fordism to flexible accumulation: technology, competitive strategies, and international location},
   author              = {Schoenberger, Erica},
   journal             = {Environment and Planning D: Society and Space},
   volume              = {6},
   number              = {3},
   pages               = {245--262},
   year                = {1988},
-  publisher           = {SAGE Publications}
+  publisher           = {SAGE Publications},
 }
 @article{towardsGlobalFordism,
   author              = {Lipietz,Alain},
   year                = {1982},
-  month               = {March},
+  month               = {3},
   title               = {Towards Global Fordism?},
   journal             = {New Left Review},
   volume              = {0},
@@ -2470,7 +2513,7 @@
   note                = {Last updated - 2013-02-24},
   keywords            = {Political Science},
   isbn                = {0028-6060},
-  url                 = {http://search.proquest.com/docview/1301937328?accountid=14026}
+  url                 = {http://search.proquest.com/docview/1301937328?accountid=14026},
 }
 @article{rogstadius2011assessment,
   title               = {An Assessment of Intrinsic and Extrinsic Motivation on Task Performance in Crowdsourcing Markets.},
@@ -2478,7 +2521,7 @@
   journal             = {ICWSM},
   volume              = {11},
   pages               = {17--21},
-  year                = {2011}
+  year                = {2011},
 }
 @inproceedings{crowdForgeKittur,
   author              = {Kittur, Aniket and Smus, Boris and Khamkar, Susheel and Kraut, Robert E.},
@@ -2487,6 +2530,7 @@
   series              = {UIST '11},
   year                = {2011},
   isbn                = {978-1-4503-0716-1},
+  location            = {Santa Barbara, California, USA},
   pages               = {43--52},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2047196.2047202},
@@ -2494,7 +2538,7 @@
   acmid               = {2047202},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {coordination, crowdsourcing, distributed processing, human computation, mapreduce, mechanical turk}
+  keywords            = {coordination, crowdsourcing, distributed processing, human computation, mapreduce, mechanical turk},
 }
 @inproceedings{turkitLittle,
   author              = {Little, Greg and Chilton, Lydia B. and Goldman, Max and Miller, Robert C.},
@@ -2503,6 +2547,7 @@
   series              = {UIST '10},
   year                = {2010},
   isbn                = {978-1-4503-0271-5},
+  location            = {New York, New York, USA},
   pages               = {57--66},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1866029.1866040},
@@ -2510,13 +2555,13 @@
   acmid               = {1866040},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {human computation, mturk, toolkit}
+  keywords            = {human computation, mturk, toolkit},
 }
 @book{tolliday1986between,
   title               = {Between fordism and flexibility},
   author              = {Tolliday, Steven and Zeitlin, Jonathan},
   year                = {1986},
-  publisher           = {Oxford}
+  publisher           = {Oxford},
 }
 @article{turner1952trade,
   title               = {Trade unions, differentials and the levelling of wages},
@@ -2526,7 +2571,7 @@
   number              = {3},
   pages               = {227--282},
   year                = {1952},
-  publisher           = {Wiley Online Library}
+  publisher           = {Wiley Online Library},
 }
 @article{roy1953work,
   title               = {Work satisfaction and social reward in quota achievement: An analysis of piecework incentive},
@@ -2536,7 +2581,7 @@
   number              = {5},
   pages               = {507--514},
   year                = {1953},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{levi2009union,
   title               = {Union democracy reexamined},
@@ -2546,7 +2591,7 @@
   number              = {2},
   pages               = {203--228},
   year                = {2009},
-  publisher           = {SAGE Publications}
+  publisher           = {SAGE Publications},
 }
 @inproceedings{measuringCrowdsourcingCheng,
   author              = {Cheng, Justin and Teevan, Jaime and Bernstein, Michael S.},
@@ -2555,6 +2600,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1365--1374},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702145},
@@ -2562,7 +2608,7 @@
   acmid               = {2702145},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, microtasks, task effort}
+  keywords            = {crowdsourcing, microtasks, task effort},
 }
 @article{gevins2003neurophysiological,
   title               = {Neurophysiological measures of cognitive workload during human-computer interaction},
@@ -2572,20 +2618,20 @@
   number              = {1-2},
   pages               = {113--131},
   year                = {2003},
-  publisher           = {Taylor \& Francis}
+  publisher           = {Taylor \& Francis},
 }
 @MISC{lowWagesMarketForLemons,
   author              = {Ipeirotis,Panos},
   title               = {Mechanical Turk, Low Wages, and the Market for Lemons},
   url                 = {http://www.behind-the-enemy-lines.com/2010/07/mechanical-turk-low-wages-and-market.html},
-  month               = {July},
-  year                = {2010}
+  month               = {7},
+  year                = {2010},
 }
 @article{waldinger1996helots,
   title               = {Helots no more: A case study of the Justice for Janitors campaign in Los Angeles},
   author              = {Waldinger, Roger D and Erickson, Chris and Milkman, Ruth and Mitchell, Daniel and Valenzuela, Abel and Wong, Kent and Zeitlan, Maurice},
   journal             = {The Ralph and Goldy Lewis Center for Regional Policy Studies},
-  year                = {1996}
+  year                = {1996},
 }
 @inproceedings{takingAHITMcInnis,
   author              = {McInnis, Brian and Cosley, Dan and Nam, Chaebong and Leshed, Gilly},
@@ -2594,6 +2640,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {2271--2282},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858539},
@@ -2601,7 +2648,7 @@
   acmid               = {2858539},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, design, rejection, risk management, trust}
+  keywords            = {crowdsourcing, design, rejection, risk management, trust},
 }
 @article{mcknight1998initial,
   title               = {Initial trust formation in new organizational relationships},
@@ -2611,7 +2658,7 @@
   number              = {3},
   pages               = {473--490},
   year                = {1998},
-  publisher           = {Academy of Management}
+  publisher           = {Academy of Management},
 }
 @inproceedings{hong2015group,
   title               = {In-group questions and out-group answers: Crowdsourcing daily living advice for individuals with autism},
@@ -2619,7 +2666,7 @@
   booktitle           = {Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems},
   pages               = {777--786},
   year                = {2015},
-  organization        = {ACM}
+  organization        = {ACM},
 }
 @article{solinger1995chinese,
   title               = {The Chinese work unit and transient labor in the transition from socialism},
@@ -2629,7 +2676,7 @@
   number              = {2},
   pages               = {155--183},
   year                = {1995},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @article{bechky2006gaffers,
   title               = {Gaffers, gofers, and grips: Role-based coordination in temporary organizations},
@@ -2639,7 +2686,7 @@
   number              = {1},
   pages               = {3--21},
   year                = {2006},
-  publisher           = {INFORMS}
+  publisher           = {INFORMS},
 }
 @article {Pickard509,
   author              = {Pickard, Galen and Pan, Wei and Rahwan, Iyad and Cebrian, Manuel and Crane, Riley and Madan, Anmol and Pentland, Alex},
@@ -2653,7 +2700,7 @@
   issn                = {0036-8075},
   URL                 = {http://science.sciencemag.org/content/334/6055/509},
   eprint              = {http://science.sciencemag.org/content/334/6055/509.full.pdf},
-  journal             = {Science}
+  journal             = {Science},
 }
 @incollection{fevre1986contract,
   title               = {Contract work in the recession},
@@ -2661,7 +2708,7 @@
   booktitle           = {The Changing Experience of Employment},
   pages               = {18--34},
   year                = {1986},
-  publisher           = {Springer}
+  publisher           = {Springer},
 }
 @article{kalleberg2000nonstandard,
   title               = {Nonstandard employment relations: Part-time, temporary and contract work},
@@ -2669,7 +2716,7 @@
   journal             = {Annual review of sociology},
   pages               = {341--365},
   year                = {2000},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @inproceedings{quinnbedersonTaxonomy,
   author              = {Quinn, Alexander J. and Bederson, Benjamin B.},
@@ -2678,6 +2725,7 @@
   series              = {CHI '11},
   year                = {2011},
   isbn                = {978-1-4503-0228-9},
+  location            = {Vancouver, BC, Canada},
   pages               = {1403--1412},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/1978942.1979148},
@@ -2685,13 +2733,13 @@
   acmid               = {1979148},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, data mining, human computation, literature review, social computing, survey, taxonomy}
+  keywords            = {crowdsourcing, data mining, human computation, literature review, social computing, survey, taxonomy},
 }
 @inproceedings{geiger2011managing,
   title               = {Managing the Crowd: Towards a Taxonomy of Crowdsourcing Processes.},
   author              = {Geiger, David and Seedorf, Stefan and Schulze, Thimo and Nickerson, Robert C and Schader, Martin},
   booktitle           = {AMCIS},
-  year                = {2011}
+  year                = {2011},
 }
 @inproceedings{yuenSurvey, 
   author              = {M. C. Yuen and I. King and K. S. Leung},
@@ -2701,16 +2749,16 @@
   pages               = {766-773},
   keywords            = {business data processing;outsourcing;business production model;crowdsourcing system;distributed problem-solving;human computation;Algorithm design and analysis;Computers;Encyclopedias;Games;Humans;Internet;Production;crowdsourcing;survey},
   doi                 = {10.1109/PASSAT/SocialCom.2011.203},
-  month               = {Oct}
+  month               = {Oct},
 }
 @article{IraniFromCriticalDesign,
   author              = {Irani, Lilly and Silberman, M. Six},
   title               = {From Critical Design to Critical Infrastructure: Lessons from Turkopticon},
   journal             = {interactions},
-  issuedate           = {July + August 2014},
+  issue_date          = {July + August 2014},
   volume              = {21},
   number              = {4},
-  month               = {jul},
+  month = jul,
   year                = {2014},
   issn                = {1072-5520},
   pages               = {32--35},
@@ -2719,16 +2767,16 @@
   doi                 = {10.1145/2627392},
   acmid               = {2627392},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @article{OlsonMakeDistanceWorkWork,
   author              = {Olson, Judith S. and Olson, Gary M.},
   title               = {How to Make Distance Work Work},
   journal             = {interactions},
-  issuedate           = {March + April 2014},
+  issue_date          = {March + April 2014},
   volume              = {21},
   number              = {2},
-  month               = {March},
+  month = mar,
   year                = {2014},
   issn                = {1072-5520},
   pages               = {28--35},
@@ -2737,7 +2785,7 @@
   doi                 = {10.1145/2567788},
   acmid               = {2567788},
   publisher           = {ACM},
-  address             = {New York, NY, USA}
+  address             = {New York, NY, USA},
 }
 @incollection{kargerIterativeLearning,
   title               = {Iterative Learning for Reliable Crowdsourcing Systems},
@@ -2747,7 +2795,7 @@
   pages               = {1953--1961},
   year                = {2011},
   publisher           = {Curran Associates, Inc.},
-  url                 = {http://papers.nips.cc/paper/4396-iterative-learning-for-reliable-crowdsourcing-systems.pdf}
+  url                 = {http://papers.nips.cc/paper/4396-iterative-learning-for-reliable-crowdsourcing-systems.pdf},
 }
 @inproceedings{mitraComparingStrategies,
   author              = {Mitra, Tanushree and Hutto, C.J. and Gilbert, Eric},
@@ -2756,6 +2804,7 @@
   series              = {CHI '15},
   year                = {2015},
   isbn                = {978-1-4503-3145-6},
+  location            = {Seoul, Republic of Korea},
   pages               = {1345--1354},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2702123.2702553},
@@ -2763,7 +2812,7 @@
   acmid               = {2702553},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowd sourcing, experimentation, human computation, mechanical turk, micro task, qualitative coding}
+  keywords            = {crowd sourcing, experimentation, human computation, mechanical turk, micro task, qualitative coding},
 }
 @inproceedings{latozaCrowdDev,
   title               = {Crowd development},
@@ -2771,27 +2820,27 @@
   booktitle           = {Cooperative and Human Aspects of Software Engineering (CHASE), 2013 6th International Workshop on},
   pages               = {85--88},
   year                = {2013},
-  organization        = {Citeseer}
+  organization        = {Citeseer},
 }
 @article{walker1952man,
   title               = {The man on the assembly line},
   author              = {Walker, Charles Rumford and Guest, Robert H},
   year                = {1952},
-  publisher           = {JSTOR}
+  publisher           = {JSTOR},
 }
 @misc{fageol1932motor,
   title               = {Motor vehicle and method of constructing the same},
   author              = {Fageol, William B},
   year                = {1932},
-  month               = {December},
+  month        =sep # "~13",
   publisher           = {Google Patents},
-  note                = {US Patent 1,877,653}
+  note                = {US Patent 1,877,653},
 }
 @inproceedings{weld2010decision,
   title               = {Decision-theoretic control of crowd-sourced workflows},
   author              = {Weld, Peng Dai Mausam Daniel S},
   booktitle           = {Twenty-Fourth Association for the Advancement of Artificial Intelligence Conference on Artificial Intelligence},
-  year                = {2010}
+  year                = {2010},
 }
 @inproceedings{suzukiAtelier,
   author              = {Suzuki, Ryo and Salehi, Niloufar and Lam, Michelle S. and Marroquin, Juan C. and Bernstein, Michael S.},
@@ -2800,6 +2849,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {2645--2656},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858121},
@@ -2807,32 +2857,32 @@
   acmid               = {2858121},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowd work, crowdsourcing, micro-internships}
+  keywords            = {crowd work, crowdsourcing, micro-internships},
 }
 @book{foucault1977discipline,
   title               = {Discipline and punish: The birth of the prison},
   author              = {Foucault, Michel},
   year                = {1977},
-  publisher           = {Vintage}
+  publisher           = {Vintage},
 }
 @book{ahlquist2013interest,
   title               = {In the interest of others: Organizations and social activism},
   author              = {Ahlquist, John S and Levi, Margaret},
   year                = {2013},
-  publisher           = {Princeton University Press}
+  publisher           = {Princeton University Press},
 }
 @book{mccallum2013global,
   title               = {Global unions, local power: the new spirit of transnational labor organizing},
   author              = {McCallum, Jamie K},
   year                = {2013},
-  publisher           = {Cornell University Press}
+  publisher           = {Cornell University Press},
 }
 @misc{pewSharing,
   title               = {Shared, Collaborative, and On Demand: The New Digital Economy},
   author              = {Smith, Aaron},
   year                = {2016},
   month               = {May},
-  publisher           = {Pew Research Center}
+  publisher           = {Pew Research Center},
 }
 @inproceedings{yuanAlmost,
   author              = {Yuan, Alvin and Luther, Kurt and Krause, Markus and Vennix, Sophie Isabel and Dow, Steven P and Hartmann, Bjorn},
@@ -2841,6 +2891,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {1005--1017},
   numpages            = {13},
   url                 = {http://doi.acm.org/10.1145/2818048.2819953},
@@ -2848,7 +2899,7 @@
   acmid               = {2819953},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Design, critique, crowdsourcing, expertise, feedback, rubrics}
+  keywords            = {Design, critique, crowdsourcing, expertise, feedback, rubrics},
 }
 @inproceedings{ZhaoPrecisionCrowdsourcing,
   author              = {Zhao, Qian and Huang, Zihong and Harper, F. Maxwell and Terveen, Loren and Konstan, Joseph A.},
@@ -2857,6 +2908,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {1615--1625},
   numpages            = {11},
   url                 = {http://doi.acm.org/10.1145/2818048.2819957},
@@ -2864,7 +2916,7 @@
   acmid               = {2819957},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Crowdsourcing, Online Communities, Reciprocity}
+  keywords            = {Crowdsourcing, Online Communities, Reciprocity},
 }
 @inproceedings{LykourentzouPersonalityMatters,
   author              = {Lykourentzou, Ioanna and Antoniou, Angeliki and Naudet, Yannick and Dow, Steven P.},
@@ -2873,6 +2925,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {260--273},
   numpages            = {14},
   url                 = {http://doi.acm.org/10.1145/2818048.2819979},
@@ -2880,7 +2933,7 @@
   acmid               = {2819979},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Crowsourcing, personality-based balancing, team formation}
+  keywords            = {Crowsourcing, personality-based balancing, team formation},
 }
 @inproceedings{KucherbaevReLauncher,
   author              = {Kucherbaev, Pavel and Daniel, Florian and Tranquillini, Stefano and Marchese, Maurizio},
@@ -2889,6 +2942,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {1609--1614},
   numpages            = {6},
   url                 = {http://doi.acm.org/10.1145/2818048.2820005},
@@ -2896,7 +2950,7 @@
   acmid               = {2820005},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Crowdsourcing, Execution speed, Micro-tasks, Task relaunching}
+  keywords            = {Crowdsourcing, Execution speed, Micro-tasks, Task relaunching},
 }
 @inproceedings{YuEncouragingOutside,
   author              = {Yu, Lixiu and Kittur, Aniket and Kraut, Robert E.},
@@ -2905,6 +2959,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {1214--1222},
   numpages            = {9},
   url                 = {http://doi.acm.org/10.1145/2818048.2820025},
@@ -2912,7 +2967,7 @@
   acmid               = {2820025},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Crowdsourcing, design, idea generation, problem solving}
+  keywords            = {Crowdsourcing, design, idea generation, problem solving},
 }
 @inproceedings{KimStoria,
   author              = {Kim, Joy and Monroy-Hernandez, Andres},
@@ -2921,6 +2976,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {1018--1027},
   numpages            = {10},
   url                 = {http://doi.acm.org/10.1145/2818048.2820072},
@@ -2928,7 +2984,7 @@
   acmid               = {2820072},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Social computing, creative collaboration, crowdsourcing, storytelling}
+  keywords            = {Social computing, creative collaboration, crowdsourcing, storytelling},
 }
 @inproceedings{DongEmbracingDiversity,
   author              = {Dong, Wei and Ehrlich, Kate and Macy, Michael M. and Muller, Michael},
@@ -2937,6 +2993,7 @@
   series              = {CSCW '16},
   year                = {2016},
   isbn                = {978-1-4503-3592-8},
+  location            = {San Francisco, California, USA},
   pages               = {274--287},
   numpages            = {14},
   url                 = {http://doi.acm.org/10.1145/2818048.2835198},
@@ -2944,7 +3001,7 @@
   acmid               = {2835198},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {Culture, Distance, Geography, Homophily, MNC, SNA, Social Media, Social Networks}
+  keywords            = {Culture, Distance, Geography, Homophily, MNC, SNA, Social Media, Social Networks},
 }
 @inproceedings{Law:2016:CKC:2858036.2858144,
   author              = {Law, Edith and Yin, Ming and Goh, Joslin and Chen, Kevin and Terry, Michael A. and Gajos, Krzysztof Z.},
@@ -2953,6 +3010,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {4098--4110},
   numpages            = {13},
   url                 = {http://doi.acm.org/10.1145/2858036.2858144},
@@ -2960,7 +3018,7 @@
   acmid               = {2858144},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, curiosity, motivation}
+  keywords            = {crowdsourcing, curiosity, motivation},
 }
 @inproceedings{Nebeling:2016:WCW:2858036.2858169,
   author              = {Nebeling, Michael and To, Alexandra and Guo, Anhong and de Freitas, Adrian A. and Teevan, Jaime and Dow, Steven P. and Bigham, Jeffrey P.},
@@ -2969,6 +3027,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {3834--3846},
   numpages            = {13},
   url                 = {http://doi.acm.org/10.1145/2858036.2858169},
@@ -2976,7 +3035,7 @@
   acmid               = {2858169},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, smartwatches, wearables, writing}
+  keywords            = {crowdsourcing, smartwatches, wearables, writing},
 }
 @inproceedings{Cai:2016:CRI:2858036.2858237,
   author              = {Cai, Carrie J. and Iqbal, Shamsi T. and Teevan, Jaime},
@@ -2985,6 +3044,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {3143--3154},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858237},
@@ -2992,7 +3052,7 @@
   acmid               = {2858237},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowdsourcing, microtasks, selfsourcing}
+  keywords            = {crowdsourcing, microtasks, selfsourcing},
 }
 @inproceedings{Ikeda:2016:PBP:2858036.2858327,
   author              = {Ikeda, Kazushi and Bernstein, Michael S.},
@@ -3001,6 +3061,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {4111--4121},
   numpages            = {11},
   url                 = {http://doi.acm.org/10.1145/2858036.2858327},
@@ -3008,7 +3069,7 @@
   acmid               = {2858327},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {crowd work, crowdsourcing, incentives, motivation}
+  keywords            = {crowd work, crowdsourcing, incentives, motivation},
 }
 @inproceedings{Hahn:2016:KAB:2858036.2858364,
   author              = {Hahn, Nathan and Chang, Joseph and Kim, Ji Eun and Kittur, Aniket},
@@ -3017,6 +3078,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {2258--2270},
   numpages            = {13},
   url                 = {http://doi.acm.org/10.1145/2858036.2858364},
@@ -3024,7 +3086,7 @@
   acmid               = {2858364},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {complex workflow, crowd work, crowdsourcing, design patterns, information synthesis}
+  keywords            = {complex workflow, crowd work, crowdsourcing, design patterns, information synthesis},
 }
 @inproceedings{Chang:2016:ACC:2858036.2858411,
   author              = {Chang, Joseph Chee and Kittur, Aniket and Hahn, Nathan},
@@ -3033,6 +3095,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {3180--3191},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858411},
@@ -3040,7 +3103,7 @@
   acmid               = {2858411},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {computer supported cooperative work (CSCW), database access / informationretrieval, empirical methods, quantitative, worldwide web and hypermedia}
+  keywords            = {computer supported cooperative work (CSCW), database access / informationretrieval, empirical methods, quantitative, worldwide web and hypermedia},
 }
 @inproceedings{Newell:2016:OMA:2858036.2858490,
   author              = {Newell, Edward and Ruths, Derek},
@@ -3049,6 +3112,7 @@
   series              = {CHI '16},
   year                = {2016},
   isbn                = {978-1-4503-3362-7},
+  location            = {Santa Clara, California, USA},
   pages               = {3155--3166},
   numpages            = {12},
   url                 = {http://doi.acm.org/10.1145/2858036.2858490},
@@ -3056,7 +3120,7 @@
   acmid               = {2858490},
   publisher           = {ACM},
   address             = {New York, NY, USA},
-  keywords            = {bias, classifier, crowdsourcing, framing, microtask, priming, task-design}
+  keywords            = {bias, classifier, crowdsourcing, framing, microtask, priming, task-design},
 }
 @article{rosecrance1996rise,
   title               = {Rise of the Virtual State, The},
@@ -3065,7 +3129,7 @@
   volume              = {75},
   pages               = {45},
   year                = {1996},
-  publisher           = {HeinOnline}
+  publisher           = {HeinOnline},
 }
 @article{seymour1954manual,
   title               = {Manual skills and industrial productivity},
@@ -3075,7 +3139,7 @@
   number              = {4},
   pages               = {240--248},
   year                = {1954},
-  publisher           = {IET}
+  publisher           = {IET},
 }
 @inproceedings{kaufmann2011more,
   title               = {More than fun and money. Worker Motivation in Crowdsourcing-A Study on Mechanical Turk.},
@@ -3085,4 +3149,3 @@
   pages               = {1--11},
   year={2011}
 }
-@Comment{jabref-meta: databaseType:bibtex;}

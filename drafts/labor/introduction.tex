@@ -2,6 +2,8 @@
 \makeatletter
 \def\blx@maxline{77}
 \makeatother
+
+% \usepackage[style=alphabetic]{biblatex}
 \begin{document}
 
 \newcommand{\note}[1]{\onlyinsubfile{\ali{#1}}}
@@ -103,12 +105,12 @@ Researchers have offered their input on this open question along three major thr
   Perhaps more tightly constrained,
   what can and cannot be done by crowd workers?
   % (what are the \textbf{complexity limits}) \note{(hospitals at high level?) -- team scaffolds} \note{why is there a high limit? is that different with crowds?}
-    \cite[for example, see][]{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,embracingErrorKrishna,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364};
+    \cite{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,embracingErrorKrishna,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364};
   \item What forms of work design, and worker management and arrangement, are viable?
   % \note{time in motion studies; job design; } or is this more about managers, coops, etc...
-    \cite[for example, see][]{bernsteinSoylent,sensitiveTasks,LykourentzouPersonalityMatters,KucherbaevReLauncher,Law:2016:CKC:2858036.2858144,Cai:2016:CRI:2858036.2858237,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}; and%
+    \cite{bernsteinSoylent,sensitiveTasks,LykourentzouPersonalityMatters,KucherbaevReLauncher,Law:2016:CKC:2858036.2858144,Cai:2016:CRI:2858036.2858237,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}; and%
   \item What will work and the place of work look like for the workers?
-    \cite[for example, see][]{turkopticon,storiesIraniSilberman,dynamo,crowdcollab,whyWouldAnyoneBrewer,takingAHITMcInnis}
+    \cite{turkopticon,storiesIraniSilberman,dynamo,crowdcollab,whyWouldAnyoneBrewer,takingAHITMcInnis}
     % \note{these questions are all a little guilty of vagueness but this feels especially ``meh''}
 \end{enumerate}
 
@@ -146,7 +148,7 @@ Piecework as a metaphor for the type of work at hand is not new.
 Indeed,
 \citeauthor{crowdworkFuture}
 in
-\citeyear{crowdworkFuture}
+\citeauthor{crowdworkFuture}
 referenced crowd work as ``piecework'' briefly
 as a loose analogy to the form of work emerging at the time
 % but not given as much weight as it perhaps could have been
@@ -215,6 +217,7 @@ Finally, we will offer design implications based on this research\dots
 
 \onlyinsubfile{
   \balance{}
+  % \bibliography{references}
   \printbibliography
 }
 
