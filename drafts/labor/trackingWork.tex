@@ -1,8 +1,8 @@
-\documentclass{sigchi}
+\documentclass[chi_draft]{sigchi}
 
 
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles}
-\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth}
+\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth,endnotes}
 \usepackage[normalem]{ulem}
 % \usepackage{url}
 % \def\UrlOrds{\do\*\do\-\do\~\do\'\do\"\do\-}%
@@ -92,9 +92,11 @@
 
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
+\newcommand{\note}[1]{\footnote{#1}}
 \begin{document}
 \renewcommand{\onlyinsubfile}[1]{}
 \renewcommand{\notinsubfile}[1]{#1}
+\renewcommand{\note}[1]{\onlyinsubfile{\note{#1}}}
 \title{\plaintitle}
 
 \numberofauthors{3}
