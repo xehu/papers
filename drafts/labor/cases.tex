@@ -3,9 +3,8 @@
 \def\blx@maxline{77}
 \makeatother
 \begin{document}
-
 \section{Major Research Questions}
-% \ali{4 paragraphs on what happened in the above contexts; 2 paragraphs on best/worst outcomes \& why; ??? paragraphs on predictions for crowdsourcing}
+% \al¬i{4 paragraphs on what happened in the above contexts; 2 paragraphs on best/worst outcomes \& why; ??? paragraphs on predictions for crowdsourcing}
 
 %  _ _           _ _                __ 
 % | (_)_ __ ___ (_) |_ ___    ___  / _|
@@ -42,13 +41,12 @@ a number of contributions to the field that have extended the boundaries of crow
 The exploration of crowdsourcing's potential and limits has principally looked at
 manipulating and extending along three dimensions:
 \begin{inlinelist}
-  % \item \cref*{sec:decomposition},
-  \item \lowercase{\nameref{sec:decomposition}},
-  \item \nameref{sec:workAbstraction}, and
+  % \item \cref*{sec:Complexity},
+  \item \nameref{sec:Complexity},
+  \item \nameref{sec:Slicing}, and
   \item \nameref{sec:flexibility}
 \end{inlinelist}.
 We'll explore these aspects of crowdsourcing,
-% As we'll discuss these dimensions,
 discussing the extents to which work can be
 decomposed,
 contextually abstracted, and
@@ -66,70 +64,83 @@ to the question of the furthest limits of crowdsourcing.
 %  \__,_|\___|\___\___/|_| |_| |_| .__/ \___/|___/_|\__|_|\___/|_| |_|
 %                                |_|                                  
 %
-
 % stronger topic sentences
-% boosterist
+% boosterist (???)
 
 
-\subsubsection{Achieving complexity}\label{sec:decomposition}
-Crowdsourcing has explored the decomposition of work for the better part of a decade;
-\citeauthor{crowdForgeKittur} specifically
-drive at this goal by addressing the possibility of
+\subsubsection{Achieving greater complexity}\label{sec:Complexity}
+\topic{Crowdsourcing research has spent the better part of a decade attempting
+to prove the viability of crowdsourcing in increasingly complex work.}  % this is my topic sentence.
+\citeauthor{crowdForgeKittur}
+map the discussion toward this goal in their work on
 crowdsourcing complex work
 \cite{crowdForgeKittur}.
-\citeauthor{cheng2015break} found that microtasks
---- though not necessarily \textit{faster} than ``macrotasks'' ---
-yield higher quality work,
-particularly when that work is susceptible to frequent interruptions
-\cite{cheng2015break}.
+\citeauthor{Lasecki:2013:CCC:2501988.2502057} tackle an area of computationally assisted interaction
+--- conversational artificial intelligence ---
+and find ways to arrange workers and formulate a ``crowd--powered conversational assistant''
+\cite{Lasecki:2013:CCC:2501988.2502057}.
+Other work has followed a similar pattern,
+identifying target milestones in Computer Science
+that have presented significant challenges for researchers,
+and demonstrating that ``crowd--powered'' systems can tackle many of these challenges
+with generally greater success than purely computational attempts
+\cite[][and others]{Lasecki:2013:RCL:2441776.2441912,foundry}.
 
-Much of the research in the space of designing crowd work has
-sought to illustrate the potential to take highly creative or skilled work
-and generate high--quality results.
-Perhaps the most notable case study here can be found in
-\citeauthor{foundry}'s \textit{Foundry}, which employed
-``flash teams'' to accomplish work typically thought of as only within reach of experts
-\cite{foundry}.
+% NEEDS TO GO ELSEWHERE
+% \citeauthor{cheng2015break} found that microtasks
+% --- though not necessarily \textit{faster} than ``macrotasks'' ---
+% yield higher quality work,
+% particularly when that work is susceptible to frequent interruptions
+% \cite{cheng2015break}.
 
-Research exploring the decomposition of work more generally
---- that is, without the constraint of an employer/requester directing workers ---
-has since emerged as well.
-\citeauthor{selfsourcingTeevan2014} further push the boundaries of decomposed work,
+
+\topic{While much of the above work has focused on
+clever arrangements of systems to manage collectives of workers,
+another body of work has turned inward toward managing the self.}
+\citeauthor{selfsourcingTeevan2014} push the boundaries of decomposed work,
 exploring ``selfsourcing'', and further this work with \citeauthor{selfsourcingTeevan2016}
 \cite{selfsourcingTeevan2014,selfsourcingTeevan2016}.
 While some of this work doesn't strictly fall under ``crowdsourcing'',
 the [scientific] management of the self as a worker
---- of sorts ---
+(of sorts)
 will prove relevant as we trace the literature surrounding piecework.
 
-The work described thus far has explored along myriad paths the ways that
-we can manage workers for the purpose of accomplishing complex tasks with
-rapidly sourced workers from all over the world.
-Critically, the work's defining characteristic involves
-the use of the Internet as a medium both 
-to coordinate workers, as well as to do the work itself.
-But research into the ``decomposition'' of work more generally
-illustrates the same concepts of work that ``Taylorism''
-and scientific management sought to embody
----
-\citeauthor{professionalCrowdworkEthics} in particular foresaw this danger
-and warned of it in, but they were by no means alone in their warnings
-\cite{crowdworkFuture,professionalCrowdworkEthics,nickerson2013crowd}.
+\topic{A smaller but growing body of work has reflected on these bodies of work
+and brought to our attention a number of ethical questions surrounding the
+increasing complexity of crowdwork and the hazards that increasingly arise.}
+\citeauthor{professionalCrowdworkEthics} bring some of these issues at stake
+--- working for increasing amounts of time on tasks of growing complexity, only to discover that requesters are not willing to pay,
+for instance ---
+but these and other dangers range an enormous landscape % too informal?
+\cite{crowdworkFuture,professionalCrowdworkEthics,nickerson2013crowd,dynamo}.
 
-Following this thread of work, it may be said that
-much of the work in crowdsourcing has found ways of ``vertically slicing'' work
-such that each person is responsible for as small a task as can be made reasonable
---- taking a minute of audio, for instance, and transcribing that.
-The findings we take away from the crowdsourcing literature might be summed up as
-a number of ways
-to break tasks down \cite[see][]{selfsourcingTeevan2014,foundry,crowdForgeKittur} and
-measuring the costs as they relate to work completion \&
-to a lesser extent to workers
-\cite[see][]{measuringCrowdsourcingCheng,cheng2015break,crowdworkFuture,professionalCrowdworkEthics}.
+\topic{We summarize the work discussed so far in this way:
+% crowdsourcing researchers have attempted to find the characteristics of crowdwork
+researchers of crowdsourcing and on--demand labor in general
+have attempted to find the characteristics which
+enable and stymie successful applications of this form of work,
+and how to get past or around these boundaries.}
+Whether this work has focused on the self (as in the case of ``selfsourcing'')
+or on others (as in \textit{CrowdForge} and \textit{Foundry}),
+crowdsourcing literature has generally studied the constituent work
+and attempted either to work around or indeed with the limitations of crowdwork to accomplish a difficult task
+\cite{selfsourcingTeevan2014,selfsourcingTeevan2016,crowdForgeKittur,foundry}.
+% Following this thread of work, it may be said that
+% much of the work in crowdsourcing has found ways of ``vertically slicing'' work
+% such that each person is responsible for as small a task as can be made reasonable
+% --- taking a minute of audio, for instance, and transcribing that.
+% The findings we take away from the crowdsourcing literature might be summed up as
+% a number of ways
+% to break tasks down \cite[see][]{selfsourcingTeevan2014,foundry,crowdForgeKittur} and
+% measuring the costs as they relate to work completion \&
+% to a lesser extent to workers
+% \cite[see][]{measuringCrowdsourcingCheng,cheng2015break,crowdworkFuture,professionalCrowdworkEthics}.
 
 
-Research into piecework has considered the decomposition of work;
-\citeauthor{10.2307/23702539} describes piecework in \citeyear{10.2307/23702539} as
+\topic{Research into piecework has explored similar limits,
+with particularly striking parallels in
+the language used to describe factors necessary for piecework to thrive.}
+\citeauthor{10.2307/23702539} describe piecework in \citeyear{10.2307/23702539} as
 ``\dots~based on examination of various shop jobs,
 which included calculation of the standard time and compensation for each task.
 Most piecework plans required additional clerical and supervisory people
@@ -141,11 +152,11 @@ In this context,
 the introspection of tasks by experts and the careful work assignment \& management of workers
 we see in historical piecework seem to parallel crowdsourcing.
 
-% \citeauthor{Brown01041990} draws more decisive boundaries on piece rate approaches to remuneration,
+\citeauthor{Brown01041990} draws more decisive boundaries on piece rate approaches to remuneration,
 identifying in analysis of data from
 the U.S. Bureau of Labor and Statistics that
-``larger establishment are less likely to use piece rates and predominantly female establishments more likely to do so; unionized establishments make significantly greater use of standard--rate pay than do nonunion establishments; \textbf{incentive pay is less likely in jobs with a variety of duties than in jobs with a narrow set of routinized duties}; and the ease of monitoring work quality is correlated with the use of incentive pay''
-% \cite{Brown01041990}.
+``larger establishment are less likely to use piece rates and predominantly female establishments more likely to do so; unionized establishments make significantly greater use of standard--rate pay than do nonunion establishments; \textit{incentive pay is less likely in jobs with a variety of duties than in jobs with a narrow set of routinized duties}; and the ease of monitoring work quality is correlated with the use of incentive pay''
+\cite{Brown01041990}.
 
 
 What's different today? We can turn to \citeauthor{10.2307/23702539}'s reflection on railroad piecework
@@ -181,7 +192,7 @@ we should expect to see the challenges stymieing collective action that we see i
 %   \_/\_/ \___/|_|  |_|\_\  \__,_|_.__/|___/\__|_|  \__,_|\___|\__|_|\___/|_| |_|
 %                                                                                
 
-\subsubsection{Work Abstraction}\label{sec:workAbstraction}
+\subsubsection{Work Abstraction}\label{sec:Slicing}
 Decomposition allows requesters to assign parallelized tasks
 without undue concern for the broader context of the work.
 The earlier example of transcribed audio is admittedly a carefully curated one
@@ -722,7 +733,7 @@ despite substantive work into aligning the motivations of workers and requesters
 
     \subsubsection{External Management}
     We discussed Fordism and Taylorism earlier in our discussions of
-    \nameref{sec:decomposition} and \nameref{sec:flexibility},
+    \nameref{sec:Complexity} and \nameref{sec:flexibility},
     but here the core of these paradigmatic views
     --- the scientific management of work ---
     becomes relevant.

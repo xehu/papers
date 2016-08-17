@@ -32,8 +32,6 @@
 }
 
 \setlist{nolistsep}
-
-
 \def\plaintitle{Reexamining Crowd Work: A Historical Framing of On--Demand Labor as Piecework}
 \def\plainauthor{All the people (Ali, Margaret, MSB, who else?)}
 \def\emptyauthor{}
@@ -93,6 +91,9 @@
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
 \newcommand{\note}[1]{\footnote{#1}}
+\newcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafting 
+\onlyinsubfile{\renewcommand{\topic}[1]{\textbf{#1}}} % if you're in a subfile, bold the \topic sentences
+
 \begin{document}
 \renewcommand{\onlyinsubfile}[1]{}
 \renewcommand{\notinsubfile}[1]{#1}
