@@ -42,141 +42,7 @@ to the question of the furthest limits of crowdsourcing.
 
 
 
-
-
-\subsubsection{Achieving greater complexity}\label{sec:Complexity}
-\topic{Crowdsourcing research has spent the better part of a decade attempting
-to prove the viability of crowdsourcing in increasingly complex work.}  % this is my topic sentence.
-\citeauthor{crowdForgeKittur}
-map the discussion toward this goal in their work on
-crowdsourcing complex work
-\cite{crowdForgeKittur}.
-\ali{Types of things that people are trying to do that are complex: e.g. 1, e.g. 2, etc\dots}
-\citeauthor{Lasecki:2013:CCC:2501988.2502057} tackle an area of computationally assisted interaction
---- conversational artificial intelligence ---
-and find ways to arrange workers and formulate a ``crowd--powered conversational assistant''
-\cite{Lasecki:2013:CCC:2501988.2502057}.
-Other work has followed a similar pattern,
-identifying target milestones in Computer Science
-that have presented significant challenges for researchers,
-and demonstrating that ``crowd--powered'' systems can tackle many of these challenges
-with generally greater success than purely computational attempts
-\cite[][and others]{Lasecki:2013:RCL:2441776.2441912,foundry}.
-
-\ali{the thing that has made all of this possible has been decomposition and the application of computational processes (e.g. MapReduce) to make it all possible}
-
-\topic{While much of the above work has focused on
-clever arrangements of systems to manage collectives of workers,
-another body of work has turned inward toward managing the self.}
-\citeauthor{selfsourcingTeevan2014} push the boundaries of decomposed work,
-exploring ``selfsourcing'', and further this work with \citeauthor{selfsourcingTeevan2016}
-\cite{selfsourcingTeevan2014,selfsourcingTeevan2016}.
-While some of this work doesn't strictly fall under ``crowdsourcing'',
-the [scientific] management of the self as a worker
-(of sorts)
-will prove relevant as we trace the literature surrounding piecework.
-
-\topic{A smaller but growing body of work has reflected on this
-and brought to our attention a number of ethical questions surrounding the
-increasing complexity of crowdwork and the hazards that increasingly arise.}
-\citeauthor{professionalCrowdworkEthics} bring some of these issues at stake
---- working for increasing amounts of time on tasks of growing complexity, only to discover that requesters are not willing to pay,
-for instance ---
-but these and other dangers range an enormous landscape % too informal?
-\cite{crowdworkFuture,professionalCrowdworkEthics,nickerson2013crowd,dynamo}.
-
-\ali{
-Nuke this:
-\topic{We summarize the work discussed so far in this way:
-researchers of crowdsourcing and on--demand labor in general
-have attempted to find the characteristics which
-enable and stymie successful applications of this form of work,
-and how to get past or around these boundaries.}
-Whether this work has focused on the self (as in the case of ``selfsourcing'')
-or on others (as in \textit{CrowdForge} and \textit{Foundry}),
-crowdsourcing literature has generally studied the constituent work
-and attempted either to work around or indeed with the limitations of crowdwork to accomplish a difficult task
-\cite{selfsourcingTeevan2014,selfsourcingTeevan2016,crowdForgeKittur,foundry}.
-
-Crowdforge, turkomatic, others talk about limiting factors; bring them up
-}
-% \topic{Research into piecework has also explored the limits of piecework,
-% with some findings.}
-
-\ali{
-
-Talked to someone about this section and got some feedback\dots
-\begin{enumerate}
-  \item Explain what ``clever arrangement of work'' in the first paragraph means
-        (should be simple; Find--Fix--Verify is the \textit{sort} of thing I mean);
-  \item I should make the ``selfsourcing'' stuff clearer for people unfamiliar with it
-        (maybe even to justify its placement here); and
-  \item I should break up \citeauthor{10.2307/23702539} \& \citeauthor{Brown01041990}
-        to make the historical stuff on piecework
-        directly speak to the three previous paragraphs.
-  \item (Maybe?) summarize the piecework stuff
-        (the last paragraph approaches that, but more could be done).
-\end{enumerate}
-Thoughts on this?
-
-}
-
-% the language used to describe the factors considered for piecework to thrive.}
-First, we look to
-\citeauthor{10.2307/23702539},
-who describes piecework as
-    ``\dots~based on examination of various shop jobs,
-    which included calculation of the standard time and compensation for each task''
-\cite{10.2307/23702539}.
-\citeauthor{10.2307/23702539} later enumerates some of the roles required
-to facilitate piecework in the early \nth{20} century:
-    ``\dots~piecework clerks, inspectors, and ``experts''\dots''
-\cite{10.2307/23702539}.
-\citeauthor{Brown01041990} makes a more assertive
-claim about the factors necessary for piecework to thrive,
-specifically arguing that
-    ``\dots~incentive pay is less likely in jobs with
-    a variety of duties than in jobs with a narrow set of routinized duties''
-\cite{Brown01041990}.
-\citeauthor{10.2307/23702539} makes another claim that
-successful cases of piecework owed themselves in part to the fact that
-    ``\dots~only [the largest and most wealthy railroads] had the resources to~\dots
-    pay the overhead involved in installing work reorganization''
-\cite{10.2307/23702539}.
-
-\topic{Digital media have expanded the scope of viable piecework by pushing drastically on the limits
-cited by piecework researchers.}
-The research on piecework tells us that
-we should expect piecework to thrive in industries where
-the nature of the work is limited in complexity.
-Given the flourishing of on--demand labor platforms such as
-Uber, Amazon Mechanical Turk, and others, we ask ourselves
-what --- if anything --- has changed.
-We argue that the Internet has trivialized the costs and challenges of the earlier limiting factors for two reasons:
-\begin{inlinelist}
-  \item Technology make it much easier to do complex work aided by computers; and % is there a source for this? Is this necessary to cite?
-  \item The Internet allows us to leverage the benefits of ``economies of scale'' at very little cost
-        to the system--designer \cite{lessig2006code}
-\end{inlinelist}.
-
-
-\ali{\citeauthor{10.2307/23702539} also argues that
-a significant obstacle to the introduction of piecework in railroad shops was
-the resistance of workers
-(the other being the resistance of management (for different and varying reasons)).
-In the cases of online platforms like AMT and digitally mediated platforms like Uber,
-where in both cases workers rarely
-if ever
-interact face--to--face and
-opportunities for coordination and collective action are severely limited,
-we should expect to see
-the challenges stymieing collective action
-that we see in \citeauthor{dynamo} and elsewhere
-\cite{10.2307/23702539,dynamo}.}
-
-
-
-
+\subfile{complexity}
 
 \subsubsection{Slicing work smaller
 \joke{ --- or ``putting the {\tiny `micro'} in microwork''}
@@ -276,8 +142,6 @@ similar tasks together
 by ``embracing error'' and forming models describing the latency of workers in classifying objects at rapid speeds,
 the authors offer orders--of--magnitude improvements
 in various binary classification tasks
-% on the principle that diverse workers complete these tasks
-% in order to accurately inform the model on the variety of delays in response times.
 \cite{embracingErrorKrishna}.
 And rather than building tasks to \textit{tolerate} worker drop--off and attrition,
 some researchers have designed work predicated on the expectation of it instead:
@@ -292,16 +156,6 @@ The work thus far seems to attempt to maximize the quality of work among workers
   \item Designing tasks with break points to facilitate the on--boarding and off--boarding that happens anyway \cite{cheng2015break}, and
   \item Expecting certain levels of attrition and incorrectness and using that variability to their advantage \cite{embracingErrorKrishna}
 \end{inlinelist}.
-
-
-% \subsubsection{Piecework's role here}
-% We address the question of the limits of crowdsourcing in three parts:
-% \begin{inlinelist}
-% \item decomposition
-% \item work abstraction
-% and \item flexibility
-% \end{inlinelist}.
-% The literature on piecework has offered insights into each of these topics, which we will explore now.
 
 
 Flexibility has been explored through the lens of Fordism, perhaps best illustrated by
@@ -484,11 +338,13 @@ The work we've seen so far
   \begin{appendices}
 \section{Graveyard}
 
-\citeauthor{cheng2015break} found that microtasks
---- though not necessarily \textit{faster} than ``macrotasks'' ---
-yield higher quality work,
-particularly when that work is susceptible to frequent interruptions
-\cite{cheng2015break}.
+\endnotetext{
+    \citeauthor{cheng2015break} found that microtasks
+    --- though not necessarily \textit{faster} than ``macrotasks'' ---
+    yield higher quality work,
+    particularly when that work is susceptible to frequent interruptions
+    \cite{cheng2015break}.
+}
 
 \subsection{What forms of work design and worker management are viable?}
 \begin{itemize}
@@ -645,12 +501,6 @@ despite substantive work into aligning the motivations of workers and requesters
 
 
 
-
-    % Low pay yields variable quality work for a number of reasons,
-    % but before we discuss the causes of this effect, we should discuss the
-
-    % Variance in the quali
-
     The effect low wages have had on piece work and factory workers is well--known;
     \citeauthor{gantt1913work} discuss this exact mechanism in his book on
     % \citetitle{gantt1913work}, pointing out that
@@ -764,7 +614,7 @@ despite substantive work into aligning the motivations of workers and requesters
     We argue that these threads of resistance against management in various forms
     are in fact one.
 
-
+  \theendnotes
   \end{appendices}
   }
 
