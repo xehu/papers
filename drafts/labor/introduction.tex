@@ -1,98 +1,96 @@
 \documentclass[trackingWork]{subfiles}
+\onlyinsubfile{
+  \hypersetup{
+    citecolor  = blue,
+    linkcolor  = JokeGreen,
+  }
+}
+
 \makeatletter
 \def\blx@maxline{77}
 \makeatother
-
 \begin{document}
-
-% what am i trying to say? that crowd work is an instantiation of piecework
-% framing/bullet points
-
 \section{Introduction}
 \topic{The past decade has seen a flourishing of on--demand work,
-motivated by the framing of work as
-contextually abstract and therefore
-interchangeable and modular.}
-The statuses of many of these workers
-(known colloquially as ``Turkers'')
-have become so fleeting that 
-they have been described as ``transient''
+largely driven by the reformulation of work as
+the constituent parts of larger tasks.}
+This framing of work into abstract blocks
+has allowed people to engage in work despite
+limited time,
+little to no awareness of the broader context of the work, and 
+(often) fleeting identities and associations
 \cite{kargerIterativeLearning,mitraComparingStrategies,latozaCrowdDev}.
 The realization
-that tasks can be accomplished by directing and managing this crowd of workers
+that complex tasks can be accomplished by directing and managing crowds of workers
 has spurred the research and and industry communities to flock to sites of labor
 like Amazon's Mechanical Turk (AMT)
-to explore the limits of this distributed, seemingly ephemeral labor force.
+to explore the limits of this distributed, fleeting workforce.
 Researchers in particular have taken to the space in earnest,
 finding opportunities to enable new forms of work
-as well as using Turkers
-as representative populations of the public
+using this population of ``Turkers''
+\note{as test subjects in a sort of at--scale laboratory for economic and other behavioral studies}
 \cite{bernsteinSoylent,redballoon,paolacci2010running}.
 
-The many sites of work replicating and extending on
-the general style of labor popularized by AMT
-have predominantly involved work done on a computer
-or involving the human processing of data,
-leading many to call this ``information work"
-\cite{turkopticon,professionalCrowdworkEthics,IraniFromCriticalDesign,OlsonMakeDistanceWorkWork}.
-\citeauthor{howe2008crowdsourcing} defined ``crowdsourcing'' in \citeyear{howe2008crowdsourcing}
-as
-``taking a job traditionally performed by a designated agent
-(usually an employee)
-and outsourcing it to an undefined,
-generally large group of people in the form of an open call''
-\cite{howe2008crowdsourcing}.
+\topic{This form of work has grown considerably in size,
+far beyond the domain of ``information work'' from which it first sprang.}
+While \citeauthor{howe2008crowdsourcing} described crowdsourcing as
+``outsourcing [work] to an undefined, generally large group of people in the form of an open call'',
+for years the instantiation of this work was limited to the utilization of
+human intelligence to process data and act on information
+\cite{CrowdsourcingUserStudies,movieSummarizationWu,
+      yuenSurvey,geiger2011managing,quinnbedersonTaxonomy}.
+More recently, crowdsourcing of embodied work
+--- driving, cleaning, for instance ---
+has become a focus of on--demand labor markets
+\cite{uberAlgorithm,uberOfficial,zaarlyOfficial,taskrabbitOfficial}.
+Today, on--demand work promises to become a \joke{yuge industry}
+\joke{[citation needed]}.
 
-In the years since,
-scholars have generated taxonomies for the work done by many distributed workers
-in an attempt to better categorize and reason about the many forms of work done 
-on information work platforms such as AMT, oDesk, etc\dots
-\cite{yuenSurvey,geiger2011managing,quinnbedersonTaxonomy}.
-We add that,
-under \citeauthor{howe2008crowdsourcing}'s constraints,
-even \textit{more} new forms of work fall squarely under
-the metaphorical umbrella we collectively call ``crowdsourcing''.
+% \topic{This matters because\dots WHYYYYYYYYYYYYYYY\\}
+% Indeed, this on--demand workforce has sparked interest
+% across industries ranging
+% driving for hire (for example Uber),
+% house--cleaning (Handy),
+% and generalized services (TaskRabbit)
+% \cite{uberOfficial,zaarlyOfficial,taskrabbitOfficial}.
+% Today, a rapidly growing transient workforce is forming,
+% itself assembling piece--by--piece as industries and researchers find yet more unexpected ways
+% to benefit from a latent pool of previously vetted workers
+% \cite{pewSharing}.
 
-\topic{This matters because\dots}
-Indeed, this on--demand workforce has sparked interest
-across industries ranging
-driving for hire (for example Uber),
-house--cleaning (Handy),
-and generalized services (TaskRabbit)
-\cite{uberOfficial,zaarlyOfficial,taskrabbitOfficial}.
-Today, a rapidly growing transient workforce is forming,
-itself assembling piece--by--piece as industries and researchers find yet more unexpected ways
-to benefit from a latent pool of previously vetted workers
-\cite{pewSharing}.
-
+\topic{For all the growth we've observed in this labor market,
+we have also seen a complicated and conflicted culture emerge among its constituent workers.}
 Researchers have made efforts to understand the people
 that have gravitated toward crowdsourcing platforms
 since its emergence and popularization,
 but as the form of work has grown and changed, so too have the demographics of workers
 \cite{Ross,whoareNOTtheTurkers}.
-Some of this research has been motivated by the realization of the sociality of gig work,
+Some of this research has been motivated by the identification of the sociality of gig work,
 and the frustration and disenfranchisement that these systems embody
 \cite{turkopticon,dynamo}.
-Other work has focused on the outcomes of work,
+Other work has focused on the \textit{outcomes} of this frustration,
 reflecting on the resistance workers express against digitally mediated labor markets
 \cite{uberAlgorithm}.
 
-The extant body of work has ostensibly sought to answer one underlying question:
-What does the future hold for work and those that do it? % expand on ...?
-Researchers have offered their input on this open question along three major threads of scholarship:
+\topic{The extant body of work has ostensibly sought to answer one underlying question:
+What does the future hold for work and those that do it?}
+Researchers have offered their input on this open question along three major threads:
 \begin{enumerate}
-  \item What are the limits of crowdsourcing?
-  Perhaps more tightly constrained,
-  what can and cannot be done by crowd workers?
-    \cite{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,embracingErrorKrishna,
-          Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364};
+  \item What are the limits of crowdsourcing
+        \cite{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,embracingErrorKrishna,
+              Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}?
+        \note{Perhaps to be more precise, we ask two questions here:
+                \begin{enumerate}
+                  \item how far will crowdsourcing reach into the everyday lives of people, and
+                  \item how complex can crowdwork become?
+                \end{enumerate}}
   \item What forms of work design, and worker management and arrangement, are viable?
-    \cite{bernsteinSoylent,sensitiveTasks,LykourentzouPersonalityMatters,KucherbaevReLauncher,
-          Law:2016:CKC:2858036.2858144,Cai:2016:CRI:2858036.2858237,
-          Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}; and%
+        \cite{bernsteinSoylent,sensitiveTasks,LykourentzouPersonalityMatters,KucherbaevReLauncher,
+              Law:2016:CKC:2858036.2858144,Cai:2016:CRI:2858036.2858237,
+              Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}; and%
   \item What will work and the place of work look like for the workers?
-    \cite{turkopticon,storiesIraniSilberman,dynamo,crowdcollab,whyWouldAnyoneBrewer,
-          takingAHITMcInnis}
+        \cite{turkopticon,storiesIraniSilberman,dynamo,crowdcollab,whyWouldAnyoneBrewer,
+              takingAHITMcInnis}
 \end{enumerate}
 
 
@@ -147,25 +145,12 @@ Finally, we will offer design implications based on this research.
 \onlyinsubfile{
   \balance{}
   \printbibliography
-  % \theendnotes
-\nobalance{}
-\clearpage
-\begin{appendices}
-\section{Sleeping kittens}
-\begin{itemize}
-  \item on--demand labor has consumed an increasing proportion of the labor market in the past ten years [\textit{Pew research on on--demand labor}];
-  the work  has ranged from Turk work processes
-  \item some of it has been about resisting Uber \& other gig labor platforms \cite{bernsteinSoylent,uberAlgorithm};
-  some researchers have tackled understanding this new instantiation of work, but come up short (\textit{how}).
-
-  \item (what binds this together)
-  \item we offer a framing on this topic that situates the research so far on a timeline of the maturation of another form of work that emerged approximately 150 years ago
-  --- that is, piecework --- which convincingly suggests that on--demand labor in the form of Turking, driving for Uber, etc\dots are in fact little more than piecework re--surging today.
-
-  \item this paper will trace the body of research describing microwork --- and later gig work --- and place it in the context of historical piecework and the industrial revolution as a whole.
-  \item informed by this new lens, we'll then turn our attention to the future of this re--emergent form of work, and suggest ways that researchers and users of on--demand labor might influence the outcomes we predict in this paper.
-\end{itemize}
-\end{appendices}
+  \nobalance{}
+  \clearpage
+  \begin{appendices}
+  \section{Sleeping kittens}
+  \theendnotes
+  \end{appendices}
 
 }
 

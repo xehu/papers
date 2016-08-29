@@ -7,6 +7,7 @@
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
+
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 
@@ -84,18 +85,22 @@
 \bibliography{references}
 % \addbibresource{references}
 
+
+
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
 \newcommand{\note}[1]{\footnote{#1}}
-\newcommand{\topic}[1]{\textbf{#1}} % if you're in a subfile, bold the \topic sentences
-\newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, bold the \topic sentences
-
+\newcommand{\topic}[1]{\textbf{#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
 \begin{document}
 \renewcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafting 
-\renewcommand{\joke}[1]{} % don't do anything with \jokes! Just throw them away!
+\renewcommand{\joke}[1]{} % don't do anything with \jokes! Just throw them away! (Better to drop it than accidentally include it)
 \renewcommand{\onlyinsubfile}[1]{}
 \renewcommand{\notinsubfile}[1]{#1}
 \renewcommand{\note}[1]{\onlyinsubfile{\note{#1}}}
+
+
+
 \title{\plaintitle}
 
 \numberofauthors{3}
