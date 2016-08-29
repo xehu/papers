@@ -1,0 +1,117 @@
+\documentclass[trackingWork]{subfiles}
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\begin{document}
+
+\subsubsection{Slicing work smaller
+\joke{ --- or ``putting the {\tiny `micro'} in microwork''}
+}\label{sec:Slicing}
+
+Concurrent with the body of work on the complexity of crowdsourcing
+has been a thread of work exploring the decomposition of work.
+In this section we'll discuss some of the approaches and the results 
+the crowdsourcing community have taken from their work.
+Then, as previously,
+we'll discuss some of the findings that piecework research
+has yielded.
+Finally, we'll discuss similarities and differences between crowdwork and piecework,
+and how crowdwork's limitations and potential differ from piecework's.
+
+\subsubsubsection{Crowdwork's perspective.}
+\topic{The research on crowdwork and decomposition has generally driven toward finding new ways
+to strip unnecessary context from work,
+allowing tasks to be broken down into smaller parts.}
+As \citeauthor{verroios2014context} frame it,
+``the crowd must be able to act with
+global understanding when each contributor only has access to local views''
+\cite{verroios2014context}.
+% the decomposition of work allows requesters to assign tasks to workers in parallel,
+% theoretically scaling to as many workers as there are tasks.
+% As the nature of the work has grown in complexity,
+% so too has the challenge of parallelizing and decontextualizing work;
+Researchers have thus investigated the role of
+distributed, contextually independent work
+in the contexts of collaborative writing of various forms,
+software development,
+classification, and myriad other purposes
+\cite{Kittur:2009:CCI:1518701.1518928,Baecker:1993:UID:169059.169312,
+      10.2307/1562247,karnin2010crowdsourcing,bragg2013crowdsourcing,
+      chilton2013cascade}.
+
+% \topic{i was going to say something here about breaking work apart to the point that nobody can piece things together,
+% but i think this would be more interesting as a commentary on trusting workers or something.}
+% Given that much of the focus in crowdsourcing has focused on information work,
+% \citeauthor{sensitiveTasks}, for instance,
+% illustrate one approach to ensuring that workers never become aware of
+% enough information to piece together sensitive data
+% \cite{sensitiveTasks}.
+
+
+\topic{One of the emergent properties of micro--tasks has been the relative cost of
+\textit{finding} worthwhile tasks.}
+The research community has documented and to some extent attempted to intervene in
+the discovery of worthwhile tasks
+\cite{taskSearch}.
+\citeauthor{Cosley:2007:SUI:1216295.1216309}
+attempts to address this by
+directing workers to tasks through
+``intelligent task routing''
+\cite{Cosley:2007:SUI:1216295.1216309}.
+Much of this work and the work at the periphery of this space, then,
+has focused on
+minimizing the amount of time that people need to spend doing
+anything other than the work for which they are paid.
+
+{
+\subsubsubsection{Piecework's perspective.}
+My goal for this section is to make this all about the assembly line and
+scientific management, and how piecework literature tried to measure everything,
+but found it untenable given the extra equipment that was necessary
+(but generally which didn't exist) to track every movement and action that workers took.
+
+\subsubsubsection{What's changed.}
+The finding here is that
+crowdwork can be more carefully micro--managed than piecework could be,
+and that this is a double--edged sword:
+we can effectively give feedback to workers on everything they do,
+but this is emboldening us to try to
+over--manage workers just as piecework tried to do.}
+
+% The question, then, becomes about how to break tasks down as much as possible
+% (as discussed in the previous section)
+% without losing the necessary context to do a task.
+% ow can we design work so that as little context as possible is provided,
+% without leaving out context or information necessary to complete the task?
+
+% While some research has attempted to increase workers' awareness of the work they do in
+% apparent efforts to yield higher quality work,
+% others have turned this constraint of crowdwork into a feature ---
+% the abstraction from the work itself
+% appears to allow requesters to engage workers in work with ---
+% for instance ---
+% sensitive, confidential or otherwise personally identifying information.
+% We will discuss these and other avenues of research here.
+
+% \textit{Cascade} demonstrated that it's possible to
+% break certain classes of tasks apart
+% in such a way that they yield taxonomies of various subjects,
+% a task generally thought to be sufficiently complex that only expert workers
+% with top--down awareness of the task
+% --- in this case, with awareness of all the constituent colors ---
+% could complete the task
+% \cite{chilton2013cascade}.
+% \citeauthor{verroios2014context} further illustrate this potential by
+% forming a task one might consider highly contextually dependent
+% --- summarizing the contents of a movie ---
+% in such a way that crowd workers could contribute small pieces of work without
+% needing to know the content of the rest of the project
+% \cite{verroios2014context}.
+
+
+\onlyinsubfile{
+  % \balance{}
+  \printbibliography
+}
+
+\end{document}
