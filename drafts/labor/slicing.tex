@@ -4,7 +4,7 @@
 \makeatother
 \begin{document}
 
-\subsubsection{Slicing work smaller
+\subsubsection[slicing work into smaller parts]{Slicing work smaller
 \joke{ --- or ``putting the {\tiny `micro'} in microwork''}
 }\label{sec:Slicing}
 
@@ -18,7 +18,7 @@ has yielded.
 Finally, we'll discuss similarities and differences between crowdwork and piecework,
 and how crowdwork's limitations and potential differ from piecework's.
 
-\subsubsubsection{Crowdwork's perspective.}
+\subsubsubsection{\crowdworkpers}
 \topic{The research on crowdwork and decomposition has generally driven toward finding new ways
 to strip unnecessary context from work,
 allowing tasks to be broken down into smaller parts.}
@@ -26,10 +26,6 @@ As \citeauthor{verroios2014context} frame it,
 ``the crowd must be able to act with
 global understanding when each contributor only has access to local views''
 \cite{verroios2014context}.
-% the decomposition of work allows requesters to assign tasks to workers in parallel,
-% theoretically scaling to as many workers as there are tasks.
-% As the nature of the work has grown in complexity,
-% so too has the challenge of parallelizing and decontextualizing work;
 Researchers have thus investigated the role of
 distributed, contextually independent work
 in the contexts of collaborative writing of various forms,
@@ -38,14 +34,6 @@ classification, and myriad other purposes
 \cite{Kittur:2009:CCI:1518701.1518928,Baecker:1993:UID:169059.169312,
       10.2307/1562247,karnin2010crowdsourcing,bragg2013crowdsourcing,
       chilton2013cascade}.
-
-% \topic{i was going to say something here about breaking work apart to the point that nobody can piece things together,
-% but i think this would be more interesting as a commentary on trusting workers or something.}
-% Given that much of the focus in crowdsourcing has focused on information work,
-% \citeauthor{sensitiveTasks}, for instance,
-% illustrate one approach to ensuring that workers never become aware of
-% enough information to piece together sensitive data
-% \cite{sensitiveTasks}.
 
 
 \topic{One of the emergent properties of micro--tasks has been the relative cost of
@@ -63,55 +51,53 @@ has focused on
 minimizing the amount of time that people need to spend doing
 anything other than the work for which they are paid.
 
-{
-\subsubsubsection{Piecework's perspective.}
-My goal for this section is to make this all about the assembly line and
-scientific management, and how piecework literature tried to measure everything,
-but found it untenable given the extra equipment that was necessary
-(but generally which didn't exist) to track every movement and action that workers took.
 
-\subsubsubsection{What's changed.}
-The finding here is that
-crowdwork can be more carefully micro--managed than piecework could be,
-and that this is a double--edged sword:
-we can effectively give feedback to workers on everything they do,
-but this is emboldening us to try to
-over--manage workers just as piecework tried to do.}
+\subsubsubsection{\pieceworkpers}
+The beginnings of systematized task decomposition stretch back as far as the \nth{17} century,
+when Airy employed young boys at the Greenwich Observatory who
+``possessed the basic skills of mathematics, including
+`Arithmetic, the use of Logarithms, and Elementary Algebra'~''
+to \textit{compute} astronomical phenomena
+\cite{grier2013computers}.
+Airy's tasks were unique at the time for several reasons:
+\begin{enumerate}
+  \item each task was quickly verifiable by a qualified [human] computer,
+  \item tasks were discrete --- independent from one another, and
+  \item knowledge of the full scope of the project --- indeed, knowledge of anything more than the problem set at hand ---
+  was wholly unnecessary.
+\end{enumerate}
 
-% The question, then, becomes about how to break tasks down as much as possible
-% (as discussed in the previous section)
-% without losing the necessary context to do a task.
-% ow can we design work so that as little context as possible is provided,
-% without leaving out context or information necessary to complete the task?
 
-% While some research has attempted to increase workers' awareness of the work they do in
-% apparent efforts to yield higher quality work,
-% others have turned this constraint of crowdwork into a feature ---
-% the abstraction from the work itself
-% appears to allow requesters to engage workers in work with ---
-% for instance ---
-% sensitive, confidential or otherwise personally identifying information.
-% We will discuss these and other avenues of research here.
+\subsubsubsection{\whatchanged}
+\ali{todo}
 
-% \textit{Cascade} demonstrated that it's possible to
-% break certain classes of tasks apart
-% in such a way that they yield taxonomies of various subjects,
-% a task generally thought to be sufficiently complex that only expert workers
-% with top--down awareness of the task
-% --- in this case, with awareness of all the constituent colors ---
-% could complete the task
-% \cite{chilton2013cascade}.
-% \citeauthor{verroios2014context} further illustrate this potential by
-% forming a task one might consider highly contextually dependent
-% --- summarizing the contents of a movie ---
-% in such a way that crowd workers could contribute small pieces of work without
-% needing to know the content of the rest of the project
-% \cite{verroios2014context}.
 
 
 \onlyinsubfile{
-  % \balance{}
+  \balance{}
   \printbibliography
+  
+  \clearpage
+  \nobalance{}
+  \begin{appendices}
+    \section{Paragraph graveyard}
+    The finding here is that
+    crowdwork can be more carefully micro--managed than piecework could be,
+    and that this is a double--edged sword:
+    we can effectively give feedback to workers on everything they do,
+    but this is emboldening us to try to
+    over--manage workers just as piecework tried to do.
+
+    My goal for this section is to make two points:
+    \begin{enumerate}
+      \item show how this is related to the assembly line and scientific management,
+            and how piecework literature tried to measure everything,
+            but found it untenable given the extra equipment that was necessary
+            (but generally which didn't exist)
+            to track every movement and action that workers took.
+      \item show how this work was enabled by the ``verifiability'' of work output(?)
+    \end{enumerate}
+  \end{appendices}
 }
 
 \end{document}
