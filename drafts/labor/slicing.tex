@@ -8,64 +8,52 @@
 \joke{ --- or ``putting the {\tiny `micro'} in microwork''}
 }\label{sec:Slicing}
 
-Concurrent with the body of work on the complexity of crowdsourcing
-has been a thread of work exploring the decomposition of work.
-In this section we'll discuss some of the work that
-the crowdsourcing community have made toward making tasks more finite and discreet.
-Then, as in the previous section,
-we'll discuss some of the insights that piecework research has offered.
-Finally, we'll discuss similarities and differences between crowdwork and piecework,
-and how crowdwork's limitations and potential differ from piecework's.
-
 \subsubsubsection{\crowdworkpers}
-\topic{The crowdsourcing research into slicing work into smaller parts
-has largely centered around removing extraneous context from the worker's view.}
-
-While \citeauthor{Kinnaird:2012:WTM:2389176.2389219}
-advocated that
-greater context of the task would foster more reliably high--quality work
-(especially, according to their findings, when applied to more veteran crowd workers)
-% \cite{Kinnaird:2012:WTM:2389176.2389219}.
-% Nevertheless,
-the consensus that emerged
-seems best--represented by \citeauthor{verroios2014context}'s framing of
-the tension still present in the design of crowd work, that
-``the crowd must be able to act with
+% \ali{Does this belong here at all? The complexity argument just dives in.}
+\topic{The crowdsourcing research into work decomposition
+has largely focused on minimizing the additional context necessary to do tasks,
+and making it easier to do tasks with less time.}
+This first thread is
+perhaps best described by \citeauthor{verroios2014context} as
+making crowd workers ``\dots able to act with
 global understanding when each contributor only has access to local views''
-\cite{Kinnaird:2012:WTM:2389176.2389219,verroios2014context}.
-While \citeauthor{Kinnaird:2012:WTM:2389176.2389219} showed that
-it's possible to achieve higher quality work by
-providing people with more information about the work they're doing,
-an alternative approach to dealing with crowd workers
---- one which treats micro task workers as
-``modular, protocol--defined computational services'' ---
-ultimately prevailed
-\cite{Kinnaird:2012:WTM:2389176.2389219,irani2015cultural}.
-
-% Researchers have thus investigated the role of
-% distributed, contextually independent work
-% in the contexts of collaborative writing of various forms,
-% software development,
-% classification, and myriad other purposes
-% \cite{Kittur:2009:CCI:1518701.1518928,Baecker:1993:UID:169059.169312,
-%       10.2307/1562247,karnin2010crowdsourcing,bragg2013crowdsourcing,
-%       chilton2013cascade}.
+\cite{verroios2014context}.
+With the exception of a few cases
+(specifically, \citeauthor{Kinnaird:2012:WTM:2389176.2389219}'s work
+which finds that greater work context fosters more reliably high--quality work),
+the micro task paradigm has emerged as the overwhelming favorite
+\cite{selfsourcingTeevan2014,selfsourcingTeevan2016,
+      cheng2015break,Kinnaird:2012:WTM:2389176.2389219}.
 
 
-\topic{One of the emergent properties of micro--tasks has been the relative cost of
-\textit{finding} worthwhile tasks.}
-The research community has documented and to some extent attempted to intervene in
-the discovery of worthwhile tasks
-\cite{taskSearch}.
-\citeauthor{Cosley:2007:SUI:1216295.1216309}
-attempts to address this by
-directing workers to tasks through
-``intelligent task routing''
-\cite{Cosley:2007:SUI:1216295.1216309}.
-Much of this work and the work at the periphery of this space, then,
-has focused on
-minimizing the amount of time that people need to spend doing
-anything other than the work for which they are paid.
+\topic{As the additional context necessary to complete a task diminishes,
+the marginal cost of finding and
+\textit{doing} tasks has increasingly become the focus of research.}
+\citeauthor{taskSearch} illustrate the challenges on AMT,
+and some work has gone into ameliorating the problems specific to this work site
+(\textit{ReLauncher}), % does anyone care for project names?
+while other work designs tasks around gap time
+(\textit{Twitch Crowdsourcing} \& \textit{Wait--Learning})
+\cite{taskSearch,KucherbaevReLauncher,Vaish:2014:TCC:2611222.2556996,
+      Cai:2015:WLW:2702123.2702267}.
+Yet more work looks at the general framing of tasks,
+chaining and arranging them to maximally exploit
+the attention and stress threshold % ???
+of workers
+\cite{Cai:2016:CRI:2858036.2858237}.
+Rather than attempt to minimize the error rates in micro--tasks,
+as \citeauthor{Kinnaird:2012:WTM:2389176.2389219} suggested,
+we as a community have leaned \textit{into} the peril of
+low--context work,
+``embracing error'' in crowdsourcing
+\cite{embracingErrorKrishna}.
+
+Not all of the work toward optimizing crowd work--flows has gone toward
+minimizing the creative input of crowd workers;
+a thriving body of literature adopts
+practices such as pipelining to allow experts to participate in crowd work
+\cite{foundry}.
+
 
 
 \subsubsubsection{\pieceworkpers}
@@ -114,6 +102,42 @@ Airy's tasks were unique at the time for several reasons:
             to track every movement and action that workers took.
       \item show how this work was enabled by the ``verifiability'' of work output(?)
     \end{enumerate}
+
+    As a result, the prevalent mindset of designing work for crowd workers
+    --- one which treats micro task workers as
+    ``modular, protocol--defined computational services'' ---
+    has inexorably alienated workers from the greater context of their work
+    \cite{irani2015cultural}.
+
+
+    \ali{i don't like this section \textit{here}, but i like it in general. what do?}
+    \topic{One of the emergent properties of micro--tasks has been the relative cost of
+    \textit{finding} worthwhile tasks.}
+    The research community has documented and to some extent attempted to intervene in
+    the discovery of worthwhile tasks
+    \cite{taskSearch}.
+    \citeauthor{Cosley:2007:SUI:1216295.1216309}
+    attempts to address this by
+    directing workers to tasks through
+    ``intelligent task routing''
+    \cite{Cosley:2007:SUI:1216295.1216309}.
+    Much of this work and the work at the periphery of this space, then,
+    has focused on
+    minimizing the amount of time that people need to spend doing
+    anything other than the work for which they are paid.
+
+    What we take away from this and the previous set of work is that
+    the value of adopting crowdsourcing for any particular task
+    seems to be mediated by two questions:
+    \begin{inlinelist}
+      \item How long does it take to train workers to do the work in question? and
+      \item How long does it take for the worker to do the work?
+    \end{inlinelist}
+    Minimizing these criteria has become
+    the overarching motivation of the crowdsourcing work design community
+    \cite{cheng2015break,Newell:2016:OMA:2858036.2858490}
+
+
   \end{appendices}
 }
 
