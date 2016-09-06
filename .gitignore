@@ -35,3 +35,4 @@
 *.bcf
 /secret/*
 *.ent
+*synctex.gz(busy)
