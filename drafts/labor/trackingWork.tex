@@ -95,6 +95,13 @@
 \newcommand{\note}[1]{\footnote{#1}}
 \newcommand{\topic}[1]{\textbf{#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
 \newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
+\onlyinsubfile{
+  \hypersetup{
+    citecolor  = blue,
+    linkcolor  = blue,
+  }
+}
+
 \begin{document}
 \renewcommand{\topic}[1]{#1} % don't do anything with \topic sentences; this is just for drafting 
 \renewcommand{\joke}[1]{} % don't do anything with \jokes! Just throw them away! (Better to drop it than accidentally include it)
@@ -154,162 +161,167 @@
 \subfile{introduction.tex}
 \subfile{cases.tex}
 
-\section{The Bleak Future of Crowd Work}
-We've traced a path from piecework itself through
-the processes that describe the design and implementation of piece work and crowd work as part of the same thread;
-in tracing this process, we touched on the relationships between decomposition,
-work \& worker abstraction,
-flexibility, and followed through both the general fallout of crowd work in the research community
-as well as the fallout between workers and the managers and other external parties
---- including researchers.
-
-Throughout these case studies, we have pointed out the parallels between
-the contemporary research in on--demand labor and
-the much larger body of research constituting our understanding of topics such as
-piecework, factory work, and laborer relations.
-If we agree that this framing is useful and informative, then
-several topics emerge as relatively open questions in the study of crowd work and on--demand labor.
-Two of the most pressing questions are
-\begin{inlinelist}
-\item the beginnings of factories, and 
-\item the decline of relevance of worker advocacy organizations.
-\end{inlinelist}
-We will discuss those questions here.
-
-
-
-\subsection{The beginnings of factories}\label{sec:Factorization}
-We established earlier that abstracted work and low wages tend to result in variable outcomes,
-which presents problems for employers.
-% So work output is variable, and that's bad. What are we doing about it?
-Historically, this is what led to factories; by employing a cohort of known workers,
-we can be reasonably assured that the quality of the work will be better than random.
-Furthermore, we can invest more resources in training workers and
-get workers to do more complex work with more context.
-% you would pay some experts who understood what they needed to do
-% and they would form a cohort into which you invest more.
-
-Some research already looks at research such as investing in workers, and
-informally, we know that this happens among industry requesters
-\cite{jonBrelig,shepherdingDow}.
-AMT, meanwhile, offers requesters the ability to create tasks which are
-not just hidden from unqualified workers by default, but completely.
-Requesters have taken to using lists of worker IDs which reference
-workers who have proven their reliability,
-representing a sort of proto--organization of loosely connected workers.
-
-This, then, suggests that the beginning of the regularization of workforces
---- a sort of coalescence of factories ---
-is already happening.
-If our framing of on--demand labor is accurately describing an underlying relationship with piecework,
-then we should watch for the emergence and popularization of persistent teams of workers.
-% While this field site will likely prove exceedingly difficult to 
-% Social computing researchers should seek to understand this process more
-% fully, as we a
-
-\subsection{The decline of advocacy organizations}
-The rise of labor unions in the \nth{20} century seems to have been precipitated by
-severely unjust conditions imposed on workers in factories and elsewhere
-\cite{ebbinghaus1999institutions}.
-Incidents broadly describing this dynamic can be found in research on AMT
-\cite{turkopticon,dynamo}.
-If these are prototypical labor advocacy organizations of contemporary on--demand work,
-the next question we should look to is if
---- and indeed \textit{how} ---
-these institutions might face challenges in the future.
-
-For insight on this, we return to \citeyear{levi2009union}'s study of labor unions,
-and identify that
-``Scholars who evaluate union governance by procedural criteria generally find that oligarchy tends to arise and persist even when democratic procedures are in place''
-\cite{levi2009union}.
-Indeed, \citeauthor{levi2009union} writes about the general perception that labor unions were either
-% unable to satisfy their needs or otherwise more invested in the 
-This perception already appears to be emerging in digitally mediated peer--governed organizations,
-as \citeauthor{keegan2010egalitarians} and others have illustratively documented
-\cite{beschastnikh2008wikipedian,keegan2010egalitarians}.
-If these organizations and others are to avoid the same fate that labor unions faced,
-they should take care to study this phenomenon and attempt to avoid it.
-
-\section{Implications for Design}
-If it's agreed that
-the major topics we've discussed thus far are related and
---- at least to \textit{some} extent ---
-precipitated in the fashion we argue,
-then we have a rare opportunity as researchers,
-and as agents of change in the communities we study,
-to affect change on the dynamics of crowd and on--demand work
-as they continue to develop.
-
-Without claiming to have easy, cut--and--dry solutions to these problems,
-we can nevertheless bring to attention a number of critical opportunities to
-learn from historical parallels in piecework and factory labor,
-and make informed decisions regarding whether
-(or indeed how)
-we may want to influence outcomes.
-The challenges we bring to attention here are as follows:
-\begin{inlinelist}
-  \item codifying investment toward collective goods into the designs of systems;
-  \item (re--)decentralizing the internet; and
-  \item enabling reputation transferral.
-\end{inlinelist}
-
-
-\subsection{Codify the common good}
-As \citeauthor{lessig2006code} points out in his book,
-digital media give designers the opportunity to design and build into the systems
-policies and practices to contribute to the collective benefit of the people therein
-\cite{lessig2006code}.
-Historically, the confluence of forces \citeauthor{lessig2006code} describes
-would ultimately result in outcomes such as benefits for workers,
-funds for sick leave and vacation, and other conveniences.
-The transient nature of on--demand work would seem to problematize this arrangement,
-but we can discuss and explore the viability of building into systems the mechanisms necessary
-to save a portion of payment from every gig,
-record taxable income, or
-myriad other generally administrative tasks automatically.
-
-
-\subsection{Decentralize the internet --- again}
-Digitally mediated on--demand labor markets have historically been insular and incompatible with one another,
-forcing workers either to choose one or juggle participation in these markets with great difficulty.
-An ``API'' for on--demand labor markets could make it possible for any person
-or organization to instantiate their own marketplace and inter--operate with.
-This can be changed, and indeed must, if we are to realize the hopes of early researchers who advocated the
-democratizing nature and power of the internet
-\cite{barlow2009declaration,lanier2014owns}.
-
-\subsection{Deal with reputation}
-Reputation systems in on--demand labor markets are fundamentally broken.
-To say nothing of the fact that information workers (such as those on AMT) can't transfer their reputations to qualitatively different forms of labor
-like driving--for--hire (e.g. Uber), even within the same industry
-it's currently not feasible for workers to transfer their reputations or other information from one place to another.
-This affects more than the reputation and trustworthiness of workers;
-accounting for things such as taxes, benefits, etc\dots is all but left to the individual workers, who struggle with myriad bureaucratic obstacles.
-We can design systems that facilitate the aggregation and, more importantly, the transferral of reputation, income, and other features of work.
-
-
-
-\section{Discussion}
-We've discussed a number of aspects of on--demand work that
-offer parallels with historical piecework.
-Perhaps more importantly, we've hopefully demonstrated that the dynamics we observe in on--demand work
-are interrelated and follow from one another just as necessarily as they did in
-the development and maturation of piecework and factory work through the \nth{20} century.
-This framing on on--demand work should, we hope, provide us with the necessary historical context
-to make better--informed design decisions about how we want ``the future of crowd work'' to look.
-
-\section{Conclusion}
-\citeauthor{crowdworkFuture} discussed many of the challenges and problems in crowd work in \citeyear{crowdworkFuture},
-but didn't necessarily situate the notion of crowd work in a broader context.
-This paper attempts to fill that gap, and in doing so hopes
-to give the research community theoretical grounding to work with and within on--demand labor more successfully.
-But more than that, we hope to have addressed important questions to inform how we actually might make crowd work
-a career in which we want our children to work.
 
 
 \balance{}
 \printbibliography
 
+\clearpage
+\nobalance{}
+\endnotetext{
+  \section{The Bleak Future of Crowd Work}
+  We've traced a path from piecework itself through
+  the processes that describe the design and implementation of piece work and crowd work as part of the same thread;
+  in tracing this process, we touched on the relationships between decomposition,
+  work \& worker abstraction,
+  flexibility, and followed through both the general fallout of crowd work in the research community
+  as well as the fallout between workers and the managers and other external parties
+  --- including researchers.
+
+  Throughout these case studies, we have pointed out the parallels between
+  the contemporary research in on--demand labor and
+  the much larger body of research constituting our understanding of topics such as
+  piecework, factory work, and laborer relations.
+  If we agree that this framing is useful and informative, then
+  several topics emerge as relatively open questions in the study of crowd work and on--demand labor.
+  Two of the most pressing questions are
+  \begin{inlinelist}
+  \item the beginnings of factories, and 
+  \item the decline of relevance of worker advocacy organizations.
+  \end{inlinelist}
+  We will discuss those questions here.
+
+
+
+  \subsection{The beginnings of factories}\label{sec:Factorization}
+  We established earlier that abstracted work and low wages tend to result in variable outcomes,
+  which presents problems for employers.
+  % So work output is variable, and that's bad. What are we doing about it?
+  Historically, this is what led to factories; by employing a cohort of known workers,
+  we can be reasonably assured that the quality of the work will be better than random.
+  Furthermore, we can invest more resources in training workers and
+  get workers to do more complex work with more context.
+  % you would pay some experts who understood what they needed to do
+  % and they would form a cohort into which you invest more.
+
+  Some research already looks at research such as investing in workers, and
+  informally, we know that this happens among industry requesters
+  \cite{jonBrelig,shepherdingDow}.
+  AMT, meanwhile, offers requesters the ability to create tasks which are
+  not just hidden from unqualified workers by default, but completely.
+  Requesters have taken to using lists of worker IDs which reference
+  workers who have proven their reliability,
+  representing a sort of proto--organization of loosely connected workers.
+
+  This, then, suggests that the beginning of the regularization of workforces
+  --- a sort of coalescence of factories ---
+  is already happening.
+  If our framing of on--demand labor is accurately describing an underlying relationship with piecework,
+  then we should watch for the emergence and popularization of persistent teams of workers.
+  % While this field site will likely prove exceedingly difficult to 
+  % Social computing researchers should seek to understand this process more
+  % fully, as we a
+
+  \subsection{The decline of advocacy organizations}
+  The rise of labor unions in the \nth{20} century seems to have been precipitated by
+  severely unjust conditions imposed on workers in factories and elsewhere
+  \cite{ebbinghaus1999institutions}.
+  Incidents broadly describing this dynamic can be found in research on AMT
+  \cite{turkopticon,dynamo}.
+  If these are prototypical labor advocacy organizations of contemporary on--demand work,
+  the next question we should look to is if
+  --- and indeed \textit{how} ---
+  these institutions might face challenges in the future.
+
+  For insight on this, we return to \citeyear{levi2009union}'s study of labor unions,
+  and identify that
+  ``Scholars who evaluate union governance by procedural criteria generally find that oligarchy tends to arise and persist even when democratic procedures are in place''
+  \cite{levi2009union}.
+  Indeed, \citeauthor{levi2009union} writes about the general perception that labor unions were either
+  % unable to satisfy their needs or otherwise more invested in the 
+  This perception already appears to be emerging in digitally mediated peer--governed organizations,
+  as \citeauthor{keegan2010egalitarians} and others have illustratively documented
+  \cite{beschastnikh2008wikipedian,keegan2010egalitarians}.
+  If these organizations and others are to avoid the same fate that labor unions faced,
+  they should take care to study this phenomenon and attempt to avoid it.
+
+  \section{Implications for Design}
+  If it's agreed that
+  the major topics we've discussed thus far are related and
+  --- at least to \textit{some} extent ---
+  precipitated in the fashion we argue,
+  then we have a rare opportunity as researchers,
+  and as agents of change in the communities we study,
+  to affect change on the dynamics of crowd and on--demand work
+  as they continue to develop.
+
+  Without claiming to have easy, cut--and--dry solutions to these problems,
+  we can nevertheless bring to attention a number of critical opportunities to
+  learn from historical parallels in piecework and factory labor,
+  and make informed decisions regarding whether
+  (or indeed how)
+  we may want to influence outcomes.
+  The challenges we bring to attention here are as follows:
+  \begin{inlinelist}
+    \item codifying investment toward collective goods into the designs of systems;
+    \item (re--)decentralizing the internet; and
+    \item enabling reputation transferral.
+  \end{inlinelist}
+
+
+  \subsection{Codify the common good}
+  As \citeauthor{lessig2006code} points out in his book,
+  digital media give designers the opportunity to design and build into the systems
+  policies and practices to contribute to the collective benefit of the people therein
+  \cite{lessig2006code}.
+  Historically, the confluence of forces \citeauthor{lessig2006code} describes
+  would ultimately result in outcomes such as benefits for workers,
+  funds for sick leave and vacation, and other conveniences.
+  The transient nature of on--demand work would seem to problematize this arrangement,
+  but we can discuss and explore the viability of building into systems the mechanisms necessary
+  to save a portion of payment from every gig,
+  record taxable income, or
+  myriad other generally administrative tasks automatically.
+
+
+  \subsection{Decentralize the internet --- again}
+  Digitally mediated on--demand labor markets have historically been insular and incompatible with one another,
+  forcing workers either to choose one or juggle participation in these markets with great difficulty.
+  An ``API'' for on--demand labor markets could make it possible for any person
+  or organization to instantiate their own marketplace and inter--operate with.
+  This can be changed, and indeed must, if we are to realize the hopes of early researchers who advocated the
+  democratizing nature and power of the internet
+  \cite{barlow2009declaration,lanier2014owns}.
+
+  \subsection{Deal with reputation}
+  Reputation systems in on--demand labor markets are fundamentally broken.
+  To say nothing of the fact that information workers (such as those on AMT) can't transfer their reputations to qualitatively different forms of labor
+  like driving--for--hire (e.g. Uber), even within the same industry
+  it's currently not feasible for workers to transfer their reputations or other information from one place to another.
+  This affects more than the reputation and trustworthiness of workers;
+  accounting for things such as taxes, benefits, etc\dots is all but left to the individual workers, who struggle with myriad bureaucratic obstacles.
+  We can design systems that facilitate the aggregation and, more importantly, the transferral of reputation, income, and other features of work.
+
+
+
+  \section{Discussion}
+  We've discussed a number of aspects of on--demand work that
+  offer parallels with historical piecework.
+  Perhaps more importantly, we've hopefully demonstrated that the dynamics we observe in on--demand work
+  are interrelated and follow from one another just as necessarily as they did in
+  the development and maturation of piecework and factory work through the \nth{20} century.
+  This framing on on--demand work should, we hope, provide us with the necessary historical context
+  to make better--informed design decisions about how we want ``the future of crowd work'' to look.
+
+  \section{Conclusion}
+  \citeauthor{crowdworkFuture} discussed many of the challenges and problems in crowd work in \citeyear{crowdworkFuture},
+  but didn't necessarily situate the notion of crowd work in a broader context.
+  This paper attempts to fill that gap, and in doing so hopes
+  to give the research community theoretical grounding to work with and within on--demand labor more successfully.
+  But more than that, we hope to have addressed important questions to inform how we actually might make crowd work
+  a career in which we want our children to work.
+}
+\theendnotes
 
 \end{document}
 
