@@ -1,12 +1,11 @@
 \documentclass[chi_draft]{sigchi}
 
-\usepackage{zref-xr}
-\usepackage{zref-xr}
-\zxrsetup{%
-  tozreflabel=false, % not needed, since `zref` is not used otherwise
-  toltxlabel=true, % classical LaTeX labels that can be referenced with \ref, \pageref
-}
-\zexternaldocument{cases.tex}% star form: only LaTeX labels are imported
+\usepackage{xr-hyper}
+% \zxrsetup{%
+%   tozreflabel=false, % not needed, since `zref` is not used otherwise
+%   toltxlabel=true, % classical LaTeX labels that can be referenced with \ref, \pageref
+% }
+% \zexternaldocument{cases.tex}% star form: only LaTeX labels are imported
 
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles,appendix,endnotes}
 \usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth,endnotes,cleveref}
@@ -14,7 +13,7 @@
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
-
+\usepackage{mfirstuc}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 
@@ -97,6 +96,11 @@
 \newcommand{\crowdworkpers}{Crowdwork's perspective.}
 \newcommand{\whatchanged}{What's changed.}
 \newcommand{\implication}{Implications for crowdwork.}
+\newcommand{\pieceworkdefinition}{piecework is the paradigm of renumeration that is largely made compelling for its use of ``payment for results''%
+, leading to and leveraging narrower skill sets required for narrowly defined tasks,
+and affording workers some amount of freedom to complete tasks
+(and consequently earn money)
+at at whatever rate and in whichever manner they wish}
 
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
@@ -153,7 +157,7 @@
 \subfile{introduction.tex}
 \subfile{piecework_lit.tex}
 \subfile{cases.tex}
-
+\subfile{research_implications.tex}
 
 \balance{}
 \printbibliography
