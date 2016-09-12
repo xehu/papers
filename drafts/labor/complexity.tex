@@ -4,10 +4,8 @@
 \makeatother
 \begin{document}
 
+% \renewcommand{\topic}[1]{#1}
 \subsubsection[finding crowdwork's limits]{Achieving greater complexity}\label{sec:complexity}
-\ali{maybe a subssubsubsusbsubsection on the result/implication?
-more people can make crowd tasks, but the algiorithmic manag}
-
 \subsubsubsection{\crowdworkpers}
 \topic{Crowdsourcing research has spent the better part of a decade attempting
 to prove the viability of crowdsourcing in increasingly complex work.}  % this is my topic sentence.
@@ -38,22 +36,43 @@ allow researchers to convincingly argue that expert teams can be rapidly formed%
 \cite{foundry}.
 
 
+
 \subsubsubsection{\pieceworkpers}
 \topic{The research into piecework makes the case that
 piecework has been limited principally by the challenges of human management and oversight.}
-\citeauthor{10.2307/23702539}%
-, who describes piecework as
-    ``\dots~based on examination of various shop jobs,
-      which included calculation of the standard time and compensation for each task''%
-, argues that piecework must be rigorously evaluated at a time that demands
-\textit{other people} perform the evaluation.
-% \cite{10.2307/23702539}.
-\citeauthor{10.2307/23702539} later enumerates some of the roles required
-to facilitate piecework in the early \nth{20} century:
-    ``\dots~piecework clerks, inspectors, and ``experts''\dots''
+\citeauthor{10.2307/23702539} describes a case study in Santa Fe Railway, which
+deployed scientific management and a piecework regime in an attempt to stymie rising repair costs
 \cite{10.2307/23702539}.
-This criterion strictly limits the extent to which piecework can grow in complexity;
-it must, for instance, be quickly evaluable by another person.
+Returning to \citeauthor{hart2016rise}'s reflections on piecework's limitations,
+we recall the multidimensional problem
+--- tasks comprising of numerous, sometimes conflicting, goals
+\cite{hart2016rise}.
+It would be reasonable, then, to infer that work like this
+--- reasonably highly skilled work where quality is difficult to assess ---
+would be unsuitable for piecework.
+
+\topic{\citeauthor{hart2016rise} and \citeauthor{10.2307/23702539}%
+, without acknowledging one another%
+, seemingly corroborate one another's conclusions at different levels of observation.}
+\citeauthor{10.2307/23702539} enumerates some of the roles required
+to facilitate piecework in the early \nth{20} century:
+    ``\dots~piecework clerks, inspectors, and `experts'\dots''
+\cite{hart2016rise,10.2307/23702539}.
+\citeauthor{10.2307/23702539} and \citeauthor{hart2016rise} may seem
+to be making differing claims about the limitations of piecework, but
+we argue that \citeauthor{10.2307/23702539}
+is simply making a more concrete observation illustrating the insight that
+\citeauthor{hart2016rise} later makes.
+\citeauthor{10.2307/23702539} recognizes that
+it's necessary for a successful piecework shop to employ
+clerks,
+inspectors, and
+other experts to properly design and evaluate complex work.
+\citeauthor{hart2016rise} argues an ultimate limit to how far this can go;
+at some point, evaluating multidimensional work output for quality
+(rather than for quantity) becomes infeasible.
+
+
 
 
 \topic{Piecework researchers also make claims regarding
@@ -70,6 +89,20 @@ successful cases of piecework owed themselves in part to the fact that
 Together, \citeauthor{10.2307/23702539} and \citeauthor{Brown01041990}
 make a persuasive argument that piecework is limited in complexity by
 managerial overhead and the fixed cost of adopting a piecework payment regime.
+
+\topic{There are other characteristics to effective complex piecework institutions, such as
+appropriately designed management practices.}
+\citeauthor{10.2307/2118435} describe the role of the foreman in West Virginia coal mines under the piecework model:
+``The foreman had the power to hire and fire workers and allocate workplaces,
+but then left the face--worker largely free to his own efforts so that
+often he went all day without seeing the foreman''
+\cite{10.2307/2118435}.
+The general approach adopted by these West Virginia mines was,
+as in other factories with active foremen,
+to let the foreman be the intermediary between management and the worker.
+Specifically, foremen were responsible for allocating resources and
+understanding when and how to modify work as necessary
+\cite{wray1949marginal}.
 
 
 \subsubsubsection{\whatchanged}
@@ -109,7 +142,7 @@ crowdsourcing's version of ``piecework clerks'', we point out that
 today algorithms manage workers as pieceworkers once did
 \cite{uberAlgorithm,10.2307/23702539}.
 
-\topic{Technology more directly facilitates the subversion of expertise requirements
+\topic{Furthermore, technology more directly facilitates the subversion of expertise requirements
 by giving non--experts access to information that would otherwise be unavailable.}
 Taxi drivers in London endure rigorous training to pass a test known as ``The Knowledge''
 --- a demonstration of the driver's comprehensive familiarity.
@@ -125,9 +158,29 @@ the collective data generated by other users
 ranging topics such as police activity, congestion, construction, etc\dots
 \cite{silva2013traffic,hind2014outsmarting}.
 
-\topic{Crowdsourcing falters when the routinization of complex work proves difficult.}
-\ali{Something about complexity being difficult to make routine when
-there are lots of little, varied, unpredictable tasks (nod to \citeauthor{Brown01041990})}
+\subsubsubsection{\implication}
+\topic{The piecework literature gives us a template for pushing the boundaries of complexity in piecework, but
+it also signals some of the ultimate limitations of crowdwork and piecework in general.}
+While the threshold preventing task requesters from utilizing piecework
+has dropped thanks to affordances of the Internet, the ceiling on task complexity hasn't moved significantly.
+If we're to make use of \citeauthor{Brown01041990}'s prescriptions,
+we would benefit from finding ways to decompose varied tasks into homogeneous microtasks.
+
+We should also consider exploring the limitations that algorithmic management bring along more carefully.
+While research has touched on this subject, we've yet to make out the bigger picture of this theme
+\cite{uberAlgorithm}.
+If we can resolve the tension between workers and perilously antagonistic managers, as \citeauthor{10.2307/2118435} suggest,
+then we may be able to break a toxic cycle of mistrustful requesters \cite[for example][]{MaliciousCrowdworkersGadiraju}
+and develop more considerate platforms as \citeauthor{takingAHITMcInnis} advocate
+\cite{takingAHITMcInnis}.
+
+
+
+
+
+% \topic{Crowdsourcing falters when the routinization of complex work becomes too difficult.}
+% \ali{Something about complexity being difficult to make routine when
+% there are lots of little, varied, unpredictable tasks (nod to \citeauthor{Brown01041990})}
 
 
 
