@@ -7,7 +7,6 @@
 \subsubsection[the decomposition of work]{The Decomposition of Work}\label{sec:decomposition}
 
 \subsubsubsection{\crowdworkpers}
-% \ali{Does this belong here at all? The complexity argument just dives in.}
 \topic{The crowdsourcing research into work decomposition
 has largely focused on minimizing the additional context necessary to do tasks%
 , and making it easier to do tasks with less time.}
@@ -34,6 +33,21 @@ while other work designs tasks around gap time
 (\textit{Twitch Crowdsourcing} \& \textit{Wait--Learning})
 \cite{taskSearch,KucherbaevReLauncher,Vaish:2014:TCC:2611222.2556996%
 ,       Cai:2015:WLW:2702123.2702267}.
+% \topic{One of the emergent properties of micro--tasks has been the relative cost of
+%     \textit{finding} worthwhile tasks.}
+%     The research community has documented and to some extent attempted to intervene in
+%     the discovery of worthwhile tasks
+%     \cite{taskSearch}.
+\citeauthor{Cosley:2007:SUI:1216295.1216309}
+attempts to address this by
+directing workers to tasks through
+``intelligent task routing''
+\cite{Cosley:2007:SUI:1216295.1216309}.
+Much of this work and the work at the periphery of this space, then%
+, has focused on
+minimizing the amount of time that people need to spend doing
+anything other than the work for which they are paid.
+
 Yet more work looks at the general framing of tasks%
 , chaining and arranging them to maximally exploit
 the attention and stress threshold % ???
@@ -45,12 +59,6 @@ Rather than attempt to minimize the error rates in micro--tasks%
 low--context work%
 , ``embracing error'' in crowdsourcing
 \cite{embracingErrorKrishna}.
-
-Not all of the work toward optimizing crowd work--flows has gone toward
-minimizing the creative input of crowd workers;
-a thriving body of literature adopts
-practices such as pipelining to allow experts to participate in crowd work
-\cite{foundry}.
 
 
 \subsubsubsection{\pieceworkpers}
@@ -71,8 +79,6 @@ The work Airy solicited was interesting for several reasons.
 First, work output was quickly verifiable;
 Airy could assign variably skilled workers to compute values%
 , and have other workers check their work.
-\ali{I could point out that the opportunity to check work and
-repeat the task is a little like find--fix--verify, but is that jumping the gun?}
 Second, tasks were discrete --- that is, independent from one another.
 Finally, knowledge of the full scope of the project
 --- indeed, knowledge of anything more than the problem set at hand ---
@@ -92,32 +98,62 @@ As a result%
 ultimately reached a limit of usefulness.
 
 
-\ali{\citeauthor{marx2012economic} in here? Alienated from the context of the work?
-Critiques about piecework marginalizing workers?
-\citeauthor{american1921problem} wrote about this as well
-(albeit they were advocating from workers' perspectives, but who isn't?)}
-
 \subsubsubsection{\whatchanged}
-\begin{inlinelist}
-  \item Computers make it possible to switch from one task to another
-  unlike any arbitrary manufacturing factory possibly could;
-  \item we've sliced works to such small sizes that the marginal costs
-  --- things like task--finding, cognitive load switching, etc\dots ---
-  have become relatively large;
-  \item instrumentation has become so advanced that
-  the curve of diminishing value on measuring and tracking workers has shifted significantly
-  (but not been obliterated);
-  \ali{some companies have suggested self--tracking through
-  programs that give workers fitbits and whatnot --- I could make the argument that
-  this is just an illustration of that, but
-  it's not really about work \textit{per se} unless
-  you think about it as the general management of workers. Thoughts?}
-\end{inlinelist}
+ \topic{A number of factors in crowdwork are different from piecework,
+ chief among them being the relative ease with which
+ the metaphorical ``assembly line'' can be changed.}
+ Computers make it possible to switch from one task to another
+unlike any arbitrary manufacturing factory possibly could;
+a worker could do any number of
+different \textit{types} of tasks in the span of just a few minutes
+\cite{delayAndOrderLasecki}.
+This has spurred an entire body of work investigating the effects of
+ordering,
+pacing,
+interruptions, and
+other factors in piecework that would have been
+all but impossible to measure consistently as few as 20 years ago
+\cite{cheng2015break,measuringCrowdsourcingCheng,embracingErrorKrishna}.
+ 
+Further, we've sliced work to such small scales that the marginal activities
+--- things like finding work, cognitive task switching, etc\dots ---
+have become relatively large compared to the tasks themselves
+\cite{taskSearch}.
+In the historical case of piecework,
+moving metallurgical tools, mining equipment, or
+other industry materials would have been prohibitively difficult and slow;
+workers were encouraged to specialize in a single set of tasks,
+allowing pieceworkers to sequence their tasks optimally on their own
+\cite{hart2013rise}.
+
+Rather than fall into the trap that \citeauthor{irani2015cultural} warns of,
+--- one which where crowdworkers are rendered as
+``modular, protocol--defined computational services'' ---
+we may yield better results from crowdwork if we think of workers as similar to
+specialized, repurposable tools
+\cite{irani2015cultural}.
+\ali{feeling meh about this argument\dots}
+ 
+Finally, instrumentation has reached a sufficiently advanced and ubiquitous point that
+the dream of scientific management and Taylorism
+--- to measure every motion at every point throughout the workday and beyond ---
+is not only doable, but trivial
+\cite{waltz2012quantified}.
+One of the major challenges \citeauthor{10.2307/23702539} cites as
+preventing scientific management from being fully utilized,
+the difficulty of tracking work \& workers, no longer exists
+\cite{10.2307/23702539}.
 
 
 
 \subsubsubsection{\implication}
-
+Crowdwork research today is on the right track to investigate pipelining and meta--task design.
+That is, investigating better work discovery methods, producing tools for workers to make more informed decisions
+\cite[see, for example,][]{turkopticon}.
+It's not clear how much benefit there is in the further decomposition of work,
+given that we've hit bottlenecks with the cognitive stresses of switching between tasks
+as \citeauthor{delayAndOrderLasecki} highlight
+\cite{delayAndOrderLasecki}.
 
 \onlyinsubfile{
   \balance{}
@@ -126,60 +162,32 @@ Critiques about piecework marginalizing workers?
   % \clearpage
   % \nobalance{}
   }
-  \endnotetext{
-    \section{Slicing notes}
-    The finding here is that
-    crowdwork can be more carefully micro--managed than piecework could be%
-,     and that this is a double--edged sword:
-    we can effectively give feedback to workers on everything they do%
-,     but this is emboldening us to try to
-    over--manage workers just as piecework tried to do.
+%   \endnotetext{
+% %     \section{Slicing notes}
+% %     The finding here is that
+% %     crowdwork can be more carefully micro--managed than piecework could be%
+% % ,     and that this is a double--edged sword:
+% %     we can effectively give feedback to workers on everything they do%
+% % ,     but this is emboldening us to try to
+% %     over--manage workers just as piecework tried to do.
 
-    My goal for this section is to make two points:
-    \begin{enumerate}
-      \item show how this is related to the assembly line and scientific management%
-,             and how piecework literature tried to measure everything%
-,             but found it untenable given the extra equipment that was necessary
-            (but generally which didn't exist)
-            to track every movement and action that workers took.
-      \item show how this work was enabled by the ``verifiability'' of work output(?)
-    \end{enumerate}
-
-    As a result, the prevalent mindset of designing work for crowd workers
-    --- one which treats micro task workers as
-    ``modular, protocol--defined computational services'' ---
-    has inexorably alienated workers from the greater context of their work
-    \cite{irani2015cultural}.
+% %     My goal for this section is to make two points:
+% %     \begin{enumerate}
+% %       \item show how this is related to the assembly line and scientific management%
+% % ,             and how piecework literature tried to measure everything%
+% % ,             but found it untenable given the extra equipment that was necessary
+% %             (but generally which didn't exist)
+% %             to track every movement and action that workers took.
+% %       \item show how this work was enabled by the ``verifiability'' of work output(?)
+% %     \end{enumerate}
 
 
-    \ali{i don't like this section \textit{here}, but i like it in general. what do?}
-    \topic{One of the emergent properties of micro--tasks has been the relative cost of
-    \textit{finding} worthwhile tasks.}
-    The research community has documented and to some extent attempted to intervene in
-    the discovery of worthwhile tasks
-    \cite{taskSearch}.
-    \citeauthor{Cosley:2007:SUI:1216295.1216309}
-    attempts to address this by
-    directing workers to tasks through
-    ``intelligent task routing''
-    \cite{Cosley:2007:SUI:1216295.1216309}.
-    Much of this work and the work at the periphery of this space, then%
-,     has focused on
-    minimizing the amount of time that people need to spend doing
-    anything other than the work for which they are paid.
+%     % \ali{i don't like this section \textit{here}, but i like it in general. what do?}
+    
 
-    What we take away from this and the previous set of work is that
-    the value of adopting crowdsourcing for any particular task
-    seems to be mediated by two questions:
-    \begin{inlinelist}
-      \item How long does it take to train workers to do the work in question? and
-      \item How long does it take for the worker to do the work?
-    \end{inlinelist}
-    Minimizing these criteria has become
-    the overarching motivation of the crowdsourcing work design community
-    \cite{cheng2015break,Newell:2016:OMA:2858036.2858490}
+    
 
 
-  }
+%   }
 
 \end{document}
