@@ -48,6 +48,25 @@ Much of this work and the work at the periphery of this space, then%
 minimizing the amount of time that people need to spend doing
 anything other than the work for which they are paid.
 
+Earlier we discussed \citeauthor{cheng2015break}'s work
+measuring the impact that interruption has on worker performance
+\cite{cheng2015break}.
+This work illustrates a broader sentiment in
+both the study and practice
+of crowd work, that microtasks should be designed resiliently against the variability of workers%
+, fully exploiting the abstracted nature of each piece of work
+\cite{interruptionIqbal,delayAndOrderLasecki,vaish2014low}.
+That is to say, micro--tasks should be designed such that a single worker's poor performance%
+, or a good worker's sudden departure%
+, does not significantly impact the agenda of the work as a whole.
+While \citeauthor{cheng2015break} found costs with breaking tasks into smaller components
+in the form of higher cumulative time to complete
+(albeit much shorter real time to complete, owing to parallelization)%
+, \citeauthor{delayAndOrderLasecki} found that at least \textit{some} performance can be recouped by stringing 
+similar tasks together
+\cite[respectively]{cheng2015break,delayAndOrderLasecki}.
+
+
 Yet more work looks at the general framing of tasks%
 , chaining and arranging them to maximally exploit
 the attention and stress threshold % ???
@@ -99,14 +118,17 @@ ultimately reached a limit of usefulness.
 
 
 \subsubsubsection{\whatchanged}
- \topic{A number of factors in crowdwork are different from piecework,
+ \topic{A number of factors in crowd work are different from piecework,
  chief among them being the relative ease with which
  the metaphorical ``assembly line'' can be changed.}
  Computers make it possible to switch from one task to another
 unlike any arbitrary manufacturing factory possibly could;
 a worker could do any number of
-different \textit{types} of tasks in the span of just a few minutes
-\cite{delayAndOrderLasecki}.
+different \textit{types} of tasks in the span of just a few minutes,
+driven in particular by the power \citeauthor{lessig2006code} points to ---
+that system--designers can share, modify, and instantiate environments
+like sites of labor in a few lines of code
+\cite{delayAndOrderLasecki,lessig2006code}.
 This has spurred an entire body of work investigating the effects of
 ordering,
 pacing,
@@ -127,9 +149,9 @@ allowing pieceworkers to sequence their tasks optimally on their own
 \cite{hart2013rise}.
 
 Rather than fall into the trap that \citeauthor{irani2015cultural} warns of,
---- one which where crowdworkers are rendered as
+--- one which where crowd workers are rendered as
 ``modular, protocol--defined computational services'' ---
-we may yield better results from crowdwork if we think of workers as similar to
+we may yield better results from crowd work if we think of workers as similar to
 specialized, repurposable tools
 \cite{irani2015cultural}.
 \ali{feeling meh about this argument\dots}
@@ -145,9 +167,8 @@ the difficulty of tracking work \& workers, no longer exists
 \cite{10.2307/23702539}.
 
 
-
 \subsubsubsection{\implication}
-Crowdwork research today is on the right track to investigate pipelining and meta--task design.
+crowd work research today is on the right track to investigate pipelining and meta--task design.
 That is, investigating better work discovery methods, producing tools for workers to make more informed decisions
 \cite[see, for example,][]{turkopticon}.
 It's not clear how much benefit there is in the further decomposition of work,
@@ -155,39 +176,5 @@ given that we've hit bottlenecks with the cognitive stresses of switching betwee
 as \citeauthor{delayAndOrderLasecki} highlight
 \cite{delayAndOrderLasecki}.
 
-\onlyinsubfile{
-  \balance{}
-  \printbibliography
-  
-  % \clearpage
-  % \nobalance{}
-  }
-%   \endnotetext{
-% %     \section{Slicing notes}
-% %     The finding here is that
-% %     crowdwork can be more carefully micro--managed than piecework could be%
-% % ,     and that this is a double--edged sword:
-% %     we can effectively give feedback to workers on everything they do%
-% % ,     but this is emboldening us to try to
-% %     over--manage workers just as piecework tried to do.
-
-% %     My goal for this section is to make two points:
-% %     \begin{enumerate}
-% %       \item show how this is related to the assembly line and scientific management%
-% % ,             and how piecework literature tried to measure everything%
-% % ,             but found it untenable given the extra equipment that was necessary
-% %             (but generally which didn't exist)
-% %             to track every movement and action that workers took.
-% %       \item show how this work was enabled by the ``verifiability'' of work output(?)
-% %     \end{enumerate}
-
-
-%     % \ali{i don't like this section \textit{here}, but i like it in general. what do?}
-    
-
-    
-
-
-%   }
 
 \end{document}

@@ -7,100 +7,79 @@
 
 \subsubsection[the relationships of workers]{The Relationships of Workers to Work, Peers, and Others}
 \label{sec:relationships}
-\subsubsubsection{\crowdworkpers}
-\topic{A number of ethical questions surrounding the
-    increasing complexity of crowdwork and the hazards have increasingly arisen.}
-    \citeauthor{professionalCrowdworkEthics} bring some of these issues at stake
-    --- working for increasing amounts of time on tasks of growing complexity%
-,     only to discover that requesters are not willing to pay%
-,     for instance ---
-    but these and other dangers range an enormous landscape
-    \cite{crowdworkFuture,professionalCrowdworkEthics,nickerson2013crowd,dynamo}.
 
-\ali{TODO:
-\begin{enumerate}
-  \item \crowdworkpers
-  \item \pieceworkpers
-  \item \whatchanged
-\end{enumerate}
-}
+\subsubsubsection{\crowdworkpers}
+\topic{The relationships of workers with their work, with their peers, and with others
+are complex and not especially well--understood.}
+While researchers have begun to appreciate
+the sociality of crowd workers in labor markets,
+the study of these communities is made enormously more challenging by
+the limited access of online spaces 
+\cite{crowdcollab}.
+Nevertheless, a number of interesting findings have
+already emerged in the crowd work literature%
+, which we can report here.
+
+
+
+
+\topic{A number of ethical questions surrounding the
+increasing complexity of crowd work have arisen in recent years.}
+\citeauthor{professionalcrowdworkEthics} bring some of these issues at stake
+--- working for increasing amounts of time on tasks of growing complexity%
+, only to discover that requesters are not willing to pay%
+, for instance ---
+but these and other dangers range an enormous landscape
+\cite{crowdworkFuture,professionalcrowdworkEthics,nickerson2013crowd,dynamo}.
+
+
+Some research already looks at research such as investing in workers, and
+informally, we know that this happens among industry requesters
+\cite{jonBrelig,shepherdingDow}.
+AMT, meanwhile, offers requesters the ability to create tasks which are
+not just hidden from unqualified workers by default, but completely.
+Requesters have taken to using lists of worker IDs which reference
+workers who have proven their reliability,
+representing a sort of proto--organization of loosely connected workers.
+
+
+\subsubsubsection{\pieceworkpers}
+The rise of labor unions in the \nth{20} century seems to have been precipitated by
+egregiously unjust conditions imposed on workers in factories and elsewhere
+\cite{ebbinghaus1999institutions}.
+Incidents broadly describing this dynamic can be found in research on AMT
+\cite{turkopticon,dynamo}.
+If these are prototypical labor advocacy organizations of contemporary on--demand work,
+the next question we should look to is if
+--- and indeed \textit{how} ---
+these institutions might face challenges in the future.
+
+For insight on this, we return to \citeyear{levi2009union}'s study of labor unions,
+and identify that
+``Scholars who evaluate union governance by procedural criteria generally find that oligarchy tends to arise and persist even when democratic procedures are in place''
+\cite{levi2009union}.
+Indeed, \citeauthor{levi2009union} writes about the general perception that labor unions were either
+% unable to satisfy their needs or otherwise more invested in the 
+This perception already appears to be emerging in digitally mediated peer--governed organizations,
+as \citeauthor{keegan2010egalitarians} and others have illustratively documented
+\cite{beschastnikh2008wikipedian,keegan2010egalitarians}.
+If these organizations and others are to avoid the same fate that labor unions faced,
+they should take care to study this phenomenon and attempt to avoid it.
+
+
+\subsubsubsection{\whatchanged}
+\topic{While online and distributed workers can be harder to find,
+other features make the study thereof rewarding for the substantively different ways
+that we can approach their study.}
+The longitudinal analysis of everyday discourse, for instance,
+is trivial in the study of online communities
+
+
+\subsubsubsection{\implication}
 
 
 
 \onlyinsubfile{
-  % \balance{}
-  \printbibliography
-  % \clearpage
-  % \nobalance{}
-  }
-  \endnotetext{
-    \section{Flexibility notes}
-    A number of researchers have identified
-    worker attrition%
-,     variability of worker performance%
-,     and uncertainty about good versus bad--faith actors as open questions of crowdwork
-    \cite{MaliciousCrowdworkersGadiraju,Ipeirotis:2010:QMA:1837885.1837906}.
-    \ali{We can and should discuss the distinction between presumably ``bad faith'' workers
-    \& workers who are merely responding in kind to bad requesters
-    --- and the broader questions surrounding
-    the roles that requesters as well as workers should play ---
-    but let it suffice to say that
-    requesters have been trying to understand and manage what appears to them as inconsistent work.
-    Their ways of responding to that variance in work quality has largely involved
-    making the work more flexible and resilient to work
-    (although some work has gone into investigating the causes, rather than treating the symptoms)}
-
-    Earlier we discussed \citeauthor{cheng2015break}'s work
-    measuring the impact that interruption has on worker performance
-    \cite{cheng2015break}.
-    This work illustrates a broader sentiment in
-    both the study and practice
-    of crowdwork, that microtasks should be designed resiliently against the variability of workers%
-,     fully exploiting the abstracted nature of each piece of work
-    \cite{interruptionIqbal,delayAndOrderLasecki,vaish2014low}.
-    That is to say, micro--tasks should be designed such that a single worker's poor performance%
-,     or a good worker's sudden departure%
-,     does not significantly impact the agenda of the work as a whole.
-    While \citeauthor{cheng2015break} found costs with breaking tasks into smaller components
-    in the form of higher cumulative time to complete
-    (albeit much shorter real time to complete, owing to parallelization)%
-,     \citeauthor{delayAndOrderLasecki} found that at least \textit{some} performance can be recouped by stringing 
-    similar tasks together
-    \cite[respectively]{cheng2015break,delayAndOrderLasecki}.
-
-    \citeauthor{embracingErrorKrishna} take a different approach;
-    by ``embracing error'' and forming models describing the latency of workers in classifying objects at rapid speeds%
-,     the authors offer orders--of--magnitude improvements
-    in various binary classification tasks
-    \cite{embracingErrorKrishna}.
-    And rather than building tasks to \textit{tolerate} worker drop--off and attrition%
-,     some researchers have designed work predicated on the expectation of it instead:
-    \citeauthor{sensitiveTasks} describe ways of assigning tasks in such a way that
-    crowd workers would never be given enough information to piece together sensitive information about
-    any single topic
-    \cite{sensitiveTasks}.
-
-    The work thus far seems to attempt to maximize the quality of work among workers through various means:
-    \begin{inlinelist}
-      \item Identifying ``bad'' workers (fraught with problems as this characterization is) \cite{MaliciousCrowdworkersGadiraju}%
-,       \item Designing tasks with break points to facilitate the on--boarding and off--boarding that happens anyway \cite{cheng2015break}, and
-      \item Expecting certain levels of attrition and incorrectness and using that variability to their advantage \cite{embracingErrorKrishna}
-    \end{inlinelist}.
-
-
-    Flexibility has been explored through the lens of Fordism, perhaps best illustrated by
-    \citeauthor{tolliday1986between}'s treatment describing
-    turnover rates rising above 300\% in the decade leading to the introduction of the assembly line in 1913.
-    Specifically, the utilization of ``\dots~`semi--special' machine tools which could be adapted
-    [and]~\dots~added flexibility through seasonal layoffs for production workers and the use of
-    piece rates~\dots~rather than a day wage system''
-    \cite{tolliday1986between}.
-
-    In the field of piecework%
-,     the research covering this topic has both explored
-    a breadth of tasks that might be rendered doable by piecemeal workers
-    \textit{as well as} longitudinally documented the success of these approaches.
-    Here, we \ali{\dots?}
+\printbibliography
 }
-% \theendnotes
 \end{document}
