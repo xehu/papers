@@ -13,7 +13,9 @@
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
-\usepackage{mfirstuc}
+\usepackage{mfirstuc,lastpage}
+\usepackage[en-GB]{datetime2}
+\usepackage{fancyhdr}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 
@@ -152,8 +154,15 @@ at at whatever rate and in whichever manner they wish}
     \email{of final document}}\\
 }
 \maketitle
-
-% Abstract time
+\DTMsetdatestyle{mmddyyyy}
+\DTMsetup{datesep=/}
+\pagestyle{fancy}
+\lfoot{Last compiled \today~at \DTMcurrenttime}
+\cfoot{}
+\rfoot{page \thepage/\pageref*{LastPage}}
+\fancyhead{}
+\pagenumbering{arabic}
+\renewcommand{\headrulewidth}{0pt}
 \subfile{abstract.tex}
 
 \category{H.5.m.}{Information Interfaces and Presentation
