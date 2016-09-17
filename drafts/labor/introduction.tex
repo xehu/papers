@@ -25,68 +25,53 @@
 
 \section{Introduction}\label{sec:introduction}
 
-\topic{The past decade has seen a flourishing of on--demand work,
+\topic{The past decade has seen a flourishing of \textit{on--demand work},
 largely driven by the reformulation of work as
 the constituent parts of larger tasks.}
-This framing of work into modular blocks
-has allowed people to engage in work despite
-limited time,
-little to no awareness of the broader context of the work, and 
-(often) fleeting identities and associations
-\cite{kargerIterativeLearning,mitraComparingStrategies,latozaCrowdDev}.
-We've seen on--demand work passing by a number of aliases:
-as \textit{crowd work} --- on platforms such as Amazon Mechanical Turk (AMT) and other sites of (predominantly) information work;
-as \textit{gig work} --- typically involving platforms for one--off jobs, like driving, courier services, etc\dots;
-as the \textit{sharing economy} --- where participants can rent out their valuables (such as a car, a home, etc\dots)
-on an ad hoc basis when they don't need it.
-The realization
-that complex tasks can be accomplished by directing and managing crowds of workers
-has spurred the research and industry communities to flock to sites of labor
-like AMT
-to explore the limits of this distributed, on--demand workforce.
-Researchers have taken to the space in earnest,
-finding opportunities to enable new forms of work
-using this population of ``Turkers''
-\cite{bernsteinSoylent,redballoon,paolacci2010running}.
+This framing of work into de-contextualized, modular blocks
+enables computation to hire workers at scale through open calls on the internet~\cite{howe2008crowdsourcing,Bigham2014,crowdworkFuture}.
+Distributed paid participants then engage in the work whenever their schedules allow,
+with little to no awareness of the broader context of the work, and 
+with (often) fleeting identities and associations
+\cite{martin2014being,uberAlgorithm}.
+In this paper, we use the term on--demand work to join a pair of related phenomena:%We've seen on--demand work passing by a number of aliases:
+(1) \textit{crowd work}, on platforms such as Amazon Mechanical Turk (AMT) and other sites of (predominantly) information work; and
+(2) \textit{gig work}, typically involving platforms for one--off jobs, like driving, courier services, or administrative support.
+%as the \textit{sharing economy} --- where participants can rent out their valuables (such as a car, a home, etc\dots)
+%on an ad hoc basis when they don't need it.
+The realization that complex tasks can be accomplished by directing and managing these crowds of workers spurred industry to flock to sites of labor
+like AMT and Uber to explore the limits of this distributed, on--demand workforce.
+Researchers have also taken to the space in earnest,
+developing systems and designs that enable new forms of production~(e.g., \cite{bernsteinSoylent,vizwiz,paolacci2010running}).
 
-\ali{this mega--paragraph may need to be reduced since it started as two, did very little/nothing to reduce it.}
-\topic{This form of work has grown considerably in size,
-far beyond the domain of ``information work'' from which it first sprang.}
-While \citeauthor{howe2008crowdsourcing} described crowdsourcing as
-``outsourcing [work] to an undefined, generally large group of people in the form of an open call'',
-for years the instantiation of this work was limited to the utilization of
-human intelligence to process data and act on information
+\topic{As on--demand work has grown far beyond the domain of information work from which it first sprang, it has given rise to an increasingly complicated and conflicted culture amongst both the workers who enable it and the researchers who empower it.}
+Originally, \citeauthor{howe2008crowdsourcing} described crowdsourcing in general terms as
+``outsourcing [work] to an undefined, generally large group of people in the form of an open call''.
+However, for years its instantiation was limited to the utilization of
+human intelligence to process data, participate in scientific studies, and perform information work
 \cite{CrowdsourcingUserStudies,movieSummarizationWu,
       yuenSurvey,geiger2011managing,quinnbedersonTaxonomy}.
-More recently, crowdsourcing of embodied work
---- driving, cleaning, for instance ---
-has become a focus of on--demand labor markets
+More recently, crowdsourcing of physically embodied work
+--- driving and cleaning, for instance ---
+has become a focus for on--demand labor markets
 \cite{uberAlgorithm,uberOfficial,zaarlyOfficial,taskrabbitOfficial}.
-For all the growth we've observed in this labor market,
-we have also seen a complicated and conflicted culture emerge among its constituent workers.
-Researchers have made efforts to understand the people
-that have gravitated toward crowdsourcing platforms
-since its emergence and popularization,
-but as the form of work has grown and changed, so too have the demographics of workers
-\cite{Ross,whoareNOTtheTurkers}.
+This growth prompted increasing efforts to understand the workers who gravitate toward these platforms~\cite{Ross,whoareNOTtheTurkers}.
 Some of this research has been motivated by the identification of the sociality of gig work,
 and the frustration and disenfranchisement that these systems embody
-\cite{turkopticon,dynamo}.
+\cite{turkopticon,martin2014being,takingAHITMcInnis}.
 Other work has focused on the \textit{outcomes} of this frustration,
 reflecting on the resistance workers express against digitally mediated labor markets
-\cite{uberAlgorithm}.
+\cite{uberAlgorithm,dynamo}.
 
-\topic{The extant body of work has ostensibly sought to answer one underlying question:
-What does the future hold for crowd work and those that do it?}
+\topic{This body of research has sought to answer one central question:
+What does the future hold for on--demand work and those that do it?}
 Researchers have offered their input on this open question along three major threads:
 \begin{enumerate}
   \item \nameref{sec:complexity}?
         Specifically,
         \begin{inlinelist}
-          \item how complex are the goals that crowd work can accomplish? and
-          \item how far will crowd work reach into the everyday lives of people?
-          \msb{which people? workers? requesters? do you mean, will recruiting crowd work be the domain of experts or everyday end users?}
-          \ali{I think I'm trying to ask how much of the world will do crowd work --- the whole world, or just representative slices of lots of different types of people (experts, non--experts, etc\dots)}
+          \item How complex are the goals that crowd work can accomplish?, and
+          \item What kinds of goals and industries may eventually utilize it?
         \end{inlinelist}
         \cite{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,
               Nebeling:2016:WCW:2858036.2858169,
@@ -101,32 +86,33 @@ Researchers have offered their input on this open question along three major thr
               whyWouldAnyoneBrewer,takingAHITMcInnis}
         % \ali{is this about collective action? yes; also, career growth? education? governance? sociality? wages?}
 \end{enumerate}
-
-
-\subsection{Piecework as a lens to understand crowdsourcing}
-This large and growing body of research has conversed
-to varying degrees with labor scholarship,
-but has not offered a persuasive framing for holistically explaining
+This research literature has largely sought to answer these questions by examining the present phenomenon.
+So far, it has not offered a framing for holistically explaining
 the developments in worker processes that researchers have developed, or
-the phenomena in social environments we have observed;
+the emergent phenomena in social environments;
 nor has any research, to our knowledge,
 gone as far as predict future developments.
-To the extent that the research community has explored the boundaries of crowd work,
-it nevertheless has not reflected on the underlying mechanisms determining those boundaries.
-Similarly, work directed toward the decomposition of tasks has begun to appreciate the limits of decomposition,
-but on the whole it hasn't considered the relationship between the decomposition of work and the complexity of work.
+
+\subsection{Piecework as a lens to understand crowdsourcing}
+% MSB Cutting because it seems like it's just attacking the literature unnecessarily...
+% ----
+%This large and growing body of research has conversed
+%to varying degrees with labor scholarship,
+% ...
+%To the extent that the research community has explored the boundaries of crowd work,
+%it nevertheless has not reflected on the underlying mechanisms determining those boundaries.
+%Similarly, work directed toward the decomposition of tasks has begun to appreciate the limits of decomposition,
+%but on the whole it hasn't considered the relationship between the decomposition of work and the complexity of work.
 % \ali{Mixed feelings about this because I think I'll need to go back into decomposition and
 % give a whole thing on \citeauthor{marx2012economic}
 % if I bring this up as a real failing of the crowd work research to date.
 % Thoughts?}
-While researchers are quickly picking up on the importance of
-the relationships between workers in these platforms,
-this research seems to be unfolding without the benefit of any of
-the inter--personal labor research that has been informing modern work for the better part of a century.
+%While researchers are quickly picking up on the importance of
+%the relationships between workers in these platforms,
+%this research seems to be unfolding without the benefit of any of
+%the inter--personal labor research that has been informing modern work for the better part of a century.
 % \ali{Overall: too long? too vague? overstating the shortcomings?}
-
-We offer a framing for crowd work spanning the aforementioned industries
-collectively as a contemporary instantiation of \namerefl{sec:pieceworkArc} ---
+In this paper, we offer a framing for on--demand work as a contemporary instantiation of \textit{piecework}: %\namerefl{sec:pieceworkArc} ---
 a work and payment structure which breaks tasks down into standalone contracts,
 wherein payment is made for \textit{work output}, rather than for \textit{time}.
 Piecework as a metaphor for crowd work is not new.
@@ -137,44 +123,43 @@ as a loose analogy to the form of work emerging at the time
 \cite{crowdworkFuture}.
 But more than this,
 the framing of on--demand labor as a re--instantiation of piecework
-gives us more material to make sense of the broader research on this new form of work
-by evaluating this work through a much more refined theoretical lens,
-informed by decades of rigorous, empirically based research.
+gives us years of historical material to make sense of the broader research on this new form of work, and allows us to reflect on--demand work through a mature theoretical lens, informed by decades of rigorous, empirically based research.
 
-More concretely, by looking at crowd work as
+More concretely, by looking at on--demand work as
 an instantiation (or even a continuation) of piecework,
 and by looking for patterns of behavior that the corresponding literature predicts
 on this basis, we can
 \begin{inlinelist}
   \item make sense of the phenomena so far as part of a much larger series of interrelated events;
-  \item bring into focus the ongoing work among
+  \item reflect on similarities in the ongoing work among
         workers,
         system--designers, and
         researchers in this space;
         and finally,
-  \item offer predictions of what crowd work researchers,
+  \item to the extent that history repeats itself, offer predictions of what on--demand work researchers,
         and workers themselves,
-        should expect to see on the horizon of on--demand work.
+        should expect to see on the horizon.
 \end{inlinelist}
-For example,
-we draw upon the piecework literature to focus the research crowd work researchers have done on the complexity of work,
-and come up with theoretically grounded mechanisms explaining the limitations researchers have struggled to overcome thus far.
+For example, we will draw on the piecework literature such as case studies of the Santa Fe Railway to understand the historical complexity limits in piecework, and leverage that understanding to suggest which modern complexity limits in crowd work~\cite{crowdworkFuture} may be fundamental and which may be overcome.
+%we draw upon the piecework literature to focus the research crowd work researchers have done on the complexity of work,
+%and come up with theoretically grounded mechanisms explaining the limitations researchers have struggled to overcome thus far.
 % \msb{what I think would really help this paragraph is a single great example, in one or two sentences, of how this kind of framing would help. ``For example, we draw on ... to explain ...''. Reader goes AHA I see why you're doing this now!}
 
 
+We organize this paper as follows: we first review the literature on piecework to lay  groundwork and make clear the analogy to on--demand work. Then, we interrogate the three major research questions above from a piecework frame. We will 
 % We will look at a broad range of cases under a number of major themes \msb{a broad range under a number of themes is an empty calorie sentence. get specific.}
 % we propose as broadly describing the types of research being done in crowd work
 % and more generally in what we argue is contemporary piecework.
-We will look at the above questions in crowd work through the lens
-first of the body of research made by crowd work researchers,
-and then of the body of work piecework researchers have offered.
-After validating this lens as a way of reasoning about crowd work and on--demand labor as a whole,
-we will identify differences between piecework as historically understood and
-digitally mediated crowd work as we experience it today,
-and how those differences influence the predictions that researchers in piecework have already made.
+%We will look at the above questions in crowd work through the lens
+%first of the body of research made by crowd work researchers,
+%and then of the body of work piecework researchers have offered.
+%After validating this lens as a way of reasoning about crowd work and on--demand labor as a whole,
+we will identify similarities and differences between piecework as historically understood and
+on--demand work as we experience it today.
+Finally, we will make predictions of future developments based on how those similarities and differences influenced piecework.
 % we will use this perspective to suggest areas of research worth anticipating,
 % and developments we should expect to see in the maturation of digitally mediated work.
-Finally, we will offer design implications based on this research.
+Finally, we will offer design implications for researchers and practitioners based on our results.
 
 
 \onlyinsubfile{
