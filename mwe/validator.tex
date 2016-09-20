@@ -1,12 +1,14 @@
 \documentclass{article}
+\usepackage{media9}
 
-\usepackage[citestyle=numeric,backend=biber]{biblatex}% bibliography style
-\usepackage[colorlinks]{hyperref}    % better urls in bibliography
-
-\bibliography{references}
 \begin{document}
-Test the complete \texttt{.bib} file: \nocite{turner2010counterculture}.
 
-% \bibliographystyle{plainnat}  % needs package natbib
-\printbibliography
+\includemedia[
+  width=0.4\linewidth,
+  height=0.3\linewidth,
+  activate=pageopen,
+  addresource=videos/Ruinn.MP4,
+  flashvars={source=videos/Ruinn.MP4}
+]{}{VPlayer9.swf}
+
 \end{document}
