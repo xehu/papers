@@ -1,13 +1,14 @@
 \documentclass[trackingWork]{subfiles}
-% \makeatletter
-% \def\blx@maxline{77}
-% \makeatother
-\onlyinsubfile{\usepackage{xr-hyper}
-\usepackage{hyperref}
-\externaldocument{complexity}
-\externaldocument{relationships}
-\externaldocument{decomposition}
-}
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+% \onlyinsubfile{
+% \usepackage{xr-hyper}
+% \usepackage{hyperref}
+% \externaldocument{complexity}
+% \externaldocument{relationships}
+% % \externaldocument{decomposition}
+% }
 \begin{document}
 
 \subsection[How far can work be decomposed into smaller microtasks]{Decomposing Work}\label{sec:decomposition}
@@ -237,9 +238,9 @@ In part due to this limitation, 99designs workers often recycle old designs rath
 So, ultimately, the levels of decomposition are likely to follow the contours of context required. Low-context work will be extremely highly decomposed. High-context work will continue to be limited.
 
 
-\onlyinsubfile{
-  \balance{}
-  \printbibliography
-}
+% \onlyinsubfile{
+%   \balance{}
+%   \printbibliography
+% }
 
 \end{document}

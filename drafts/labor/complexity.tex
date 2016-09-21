@@ -14,35 +14,100 @@ Crowdwork
   - More recent shift toward using experts
 \end{comment}
 
-\subsection[What are the complexity limits of crowd work]{Identifying the Complexity Limits of Crowd Work}\label{sec:complexity}
-A key question to the future of on--demand work is \textit{what} precisely will become part of this economy. Paid crowdsourcing began with simple microtasks on platforms such as Amazon Mechanical Turk, but microtasks are only helpful if they build up to a larger whole. So, our first question: how complex can the work outcomes from crowd work be?
+\subsection[What are the complexity limits of crowd work]
+{Identifying the Complexity Limits of Crowd Work}\label{sec:complexity}
+A key question to the future of on--demand work
+\ali{is this an old remnant of me being indecisive about terms?} is
+\textit{what} precisely will become part of this economy.
+Paid crowdsourcing began with simple microtasks on platforms such as
+Amazon Mechanical Turk, but
+microtasks are only helpful if they build up to a larger whole.
+So, our first question:
+how complex can the work outcomes from crowd work be?
 
 \subsubsection{\crowdworkpers}
 
-\topic{Crowdsourcing research has spent the better part of a decade proving the viability of crowdsourcing in complex work.}  % this is my topic sentence.
-Unless crowdsourcing can demonstrate viability for meaningfully complex tasks, the argument runs, it will be incapable of ensuring a pro-social outcome for work and workers~\cite{crowdworkFuture}.
-\citeauthor{crowdForgeKittur} first opened the question of whether crowdsourcing could be used for goals that are not simple parallel tasks~\cite{crowdForgeKittur}.
-Their work demonstrated proof-of-concept crowdsourcing of a simple encyclopedia article and news summary.
-Seeking to raise the complexity ceiling~\cite{myers2000past}, researchers have since created additional proof-of-concept applications and techniques, including conversational assistants~\cite{Lasecki:2013:CCC:2501988.2502057}, medical data interpreters~\cite{Lasecki:2013:CCC:2501988.2502057}, and idea generation~\cite{YuEncouragingOutside,yu2014distributed,Yu2016a}, to name a few examples.
+\topic{Crowdsourcing research has spent the better part of a decade
+proving the viability of crowdsourcing in complex work.}
+Unless crowdsourcing can demonstrate viability for meaningfully complex tasks,
+the argument runs,
+it will be incapable of ensuring a pro--social outcome for work and workers
+\cite{crowdworkFuture}.
+\citeauthor{crowdForgeKittur} first opened the question of
+whether crowdsourcing could be used for goals that are not simple parallel tasks
+\cite{crowdForgeKittur}.
+Their work demonstrated proof--of--concept crowdsourcing of
+a simple encyclopedia article and news summary
+--- tasks which could be verified or repeated
+with reasonable expectations of similar outcomes.
+Seeking to raise the complexity ceiling
+\cite{myers2000past},
+researchers have since created
+additional proof--of--concept applications and techniques,
+including conversational assistants \cite{Lasecki:2013:CCC:2501988.2502057},
+medical data interpreters \cite{Lasecki:2013:CCC:2501988.2502057}, and
+idea generation \cite{YuEncouragingOutside,yu2014distributed,Yu2016a},
+to name a few examples.
 
-\topic{This body of research has often invoked insights from Computer Science and applied them to human workflows.}
-The crowd work literature typically identifies target milestones that have presented significant challenges for researchers, leverages an insight from Computer Science (for example, MapReduce~\cite{crowdForgeKittur} or sequence alignment algorithms~\cite{lasecki2012real}), and arranges humans as computational black boxes within those approaches.
+\topic{This body of research has often invoked insights from
+Computer Science and applied them to human workflows.}
+The crowd work literature typically identifies target milestones that have
+presented significant challenges for researchers,
+leverages an insight from Computer Science
+(for example, MapReduce
+\cite{crowdForgeKittur} or
+sequence alignment algorithms
+\cite{lasecki2012real}),
+and arranges humans as computational black boxes within those approaches.
+\ali{We could quote \citeauthor{storiesIraniSilberman} and say ``human APIs'',
+but that gets a little critique--y, and we might want to save that for later.}
 This approach has proven a compelling one because
-it leverages the in--built advantages of scale, automation, and programmability that software affords.
-%For example, \textit{Foundry}'s tools for managing and arranging expert groups into a cohort allow researchers to convincingly argue that expert teams can be rapidly formed, just like non--expert teams \cite{foundry}.
+it leverages the in--built advantages of
+scale,
+automation, and
+programmability that software affords.
 
-It is now clear that this approach works with focused complex tasks, but the broader wicked problems~\cite{rittel1973dilemmas} remain unsolved. 
-As a first example, idea generation shows promise~\cite{YuEncouragingOutside,yu2014distributed,Yu2016a}, but there is as yet no general crowdsourced solution for the broader goal of invention and innovation~\cite{fuge2014analysis}. 
-Second, focused writing tasks are now feasible~\cite{Kim2017,bernsteinSoylent,Nebeling:2016:WCW:2858036.2858169,writingMicroTasks,agapie2015crowdsourcing}, but there is no general solution to create a high-quality crowd-powered author across domains. 
-Third, data analysis tasks such as clustering~\cite{chilton2013cascade}, categorization~\cite{andre2014crowd}, and outlining~\cite{luther2015crowdlines} are possible, but there is no general solution for sensemaking.
-It is not yet clear what insights would be required to enable crowdsourced solutions for these broader wicked problems and other crowdsourced goals such as addressing climate change~\cite{introne2011climate}.
+It is now clear that this approach works with focused complex tasks, but
+the broader wicked problems \citeauthor{rittel1973dilemmas} brings up remain unsolved
+\cite{rittel1973dilemmas}.
+As a first example,
+idea generation shows promise
+\cite{YuEncouragingOutside,yu2014distributed,Yu2016a},
+but there is as yet no general crowdsourced solution for
+the broader goal of invention and innovation
+\cite{fuge2014analysis}.
+Second,
+focused writing tasks are now feasible
+\cite{Kim2017,bernsteinSoylent,Nebeling:2016:WCW:2858036.2858169,
+      writingMicroTasks,agapie2015crowdsourcing}, but
+there is no general solution to create
+a high--quality crowd--powered author across domains. 
+Third,
+data analysis tasks such as
+clustering \cite{chilton2013cascade},
+categorization \cite{andre2014crowd}, and
+outlining \cite{luther2015crowdlines}
+are possible, but there is no general solution for sensemaking.
+It is not yet clear what insights would be required
+to enable crowdsourced solutions for these broader wicked problems and
+other crowdsourced goals such as addressing climate change
+\cite{introne2011climate}.
 
-Restricting attention to non-expert microtask workers limited the ambitions of research in the area. 
-So, \citeauthor{foundry} introduced the idea of crowdsourcing with online paid \textit{experts} from platforms such as Upwork.
-Expert crowdsourcing enables access to a much broader set of workers, for example designers and programmers.
-Researchers then apply similar Computer Science techniques but to expert ``macro-tasks''~\cite{cheng2015break,haas2015argonaut}.
-This approach has led to successful crowdsourcing of goals such as the user-centered design process~\cite{foundry}, programming tasks~\cite{latoza2014microtask,Fast2016,Chen2016}, and mentorship~\cite{suzukiAtelier}.
-However, there remains the open question of how complex the work outcomes from these approaches will be.
+Restricting attention to non--expert microtask workers limited
+the ambitions of research in the area.
+So, \citeauthor{foundry} introduced the idea of crowdsourcing with
+online paid \textit{experts} from platforms such as Upwork.
+Expert crowdsourcing enables access to a much broader set of workers,
+for example designers and programmers.
+Researchers then apply similar Computer Science techniques but
+to expert ``macro-tasks''
+\cite{cheng2015break,haas2015argonaut}.
+This approach has led to successful crowdsourcing of goals such as
+the user--centered design process \cite{foundry},
+programming tasks \cite{latoza2014microtask,Fast2016,Chen2016}, and
+mentorship \cite{suzukiAtelier}.
+However, there remains the open question of
+how complex the work outcomes from these approaches will be.
 
 
 \subsubsection{\pieceworkpers}
@@ -56,82 +121,73 @@ However, there remains the open question of how complex the work outcomes from t
 - Management practices
 \end{comment}
 
-\topic{\citeauthor{grier2013computers} gives early accounts of a piecework strategy in Airy's creation of the British Nautical Almanac~\cite{grier2013computers}.} 
-Airy's goal was complex --- mathematical calculations to produce tables that would allow sailors to locate themselves by starlight from sea. 
-Many of his contributors did not have high-level mathematical training, so Airy broke down the task into simpler calculations and distributed them by mail, accomplishing the complex goal through piecework tasks that paid little.
+\topic{\citeauthor{grier2013computers} gives early accounts of
+a piecework strategy in Airy's creation of
+the British Nautical Almanac
+\cite{grier2013computers}.}
+Airy's goal was complex
+--- mathematical calculations to produce tables that would
+allow sailors to locate themselves by starlight from sea.
+Many of his contributors did not have high--level mathematical training,
+so Airy broke down the task into simpler calculations and
+distributed them by mail,
+accomplishing the complex goal through piecework tasks that paid little.
 
-
-However, when piecework entered the American economy, it was not used for complex work.
+However, when piecework entered the American economy,
+it was not used for complex work.
 Initially for farm work, as
 \citeauthor{hughRaynbirdTaskWork} and others discuss,
 the practice remained relatively obscure until
-%it was brought to the textile industry
-%\cite{hughRaynbirdTaskWork}.
-%\topic{Piecework then began to grow: first applied to farm work, as
-%\citeauthor{hughRaynbirdTaskWork} and others illustrate,
-%the practice remained relatively obscure until
-it blossomed in the textile industry~\cite{hughRaynbirdTaskWork}.
-Complexity levels remained low at the turn of the \nth{20} century as piecework saturated New York City~\cite{riisOtherSideLives}. %was documenting abhorrent working \& living conditions of pieceworkers in New York City,
-However, writers of the time focused their attentive on wage~\cite{burton1899commercial} and management regimes \cite{norton1900textile}.
-%\citeauthor{clark1908cotton}, for instance,
-%relays his observations of textile mill pieceworkers and his realization that
-%``When he works by the day the Italian operative wishes to leave before the whistle blows,
-%but if he works by the piece he will work as many hours as it is possible for him to stand''
-%\cite{clark1908cotton}.
-%During this period, best practices regarding the measurement and management of
-%piecework rates, and of workers in the engineering industry,
-%were beginning to take shape
-%\cite{burton1899commercial}.
-% \ali{Everything up till now has been pointing at complexity (right? if not, then~\dots~lol)}
-The work remained low-skilled in part because it was infeasible to provide new pieceworkers with the comprehensive education that was familiar through apprenticeships \cite{hart2013rise}.
+it blossomed in the textile industry
+\cite{hughRaynbirdTaskWork}.
+Complexity levels remained low at the turn of
+the \nth{20} century as piecework saturated New York City
+\cite{riisOtherSideLives}.
+However, writers of the time focused their attention on
+wage \cite{burton1899commercial} and
+management regimes \cite{norton1900textile}.
+\ali{\citeauthor{hart2013rise} would later argue of this time that\dots?
+I'm beginning to notice that I'm really gravitating toward naming authors,
+which is totally weird when I read through conventional HCI papers.}
+The work remained low--skilled in part because
+it was infeasible to provide new pieceworkers with the comprehensive education
+that apprenticeships imparted \cite{hart2013rise}.
+\ali{I feel like this sort of jumps ahead without mentioning it
+(in my head it's a jump from
+\citeauthor{norton1900textile}'s \citeyear{norton1900textile} to
+\citeauthor{hart2013rise}'s ~1940s), and
+I felt like this was a phenomenon that
+I'd like to shine in a positive(--ish?) light.}
 
-
-
-Measurement limited the complexity of piecework: only tasks that could be measured and priced could be completed via piecework. 
-When \citeauthor{Brown01041990} investigated what limited the adoption of piecework in industries that otherwise gravitated toward it (e.g., railway engineers), the homogeneity of tasks %and  and the costs associated with adopting a piecework model
-arose as a major contributing factor~\cite{Brown01041990}.
-% \ali{that last paragraph is a mix of complexity and decomposition I think}
-%\topic{Piecework researchers have found themselves trying to understand what characteristics limit piecework,
-%or more precisely what has prevented piecework from becoming more prevalent.}
-%The research into piecework makes the case that piecework has been limited principally by the challenges of human management and oversight.
-\citeauthor{10.2307/23702539} concurs via a case study in Santa Fe Railway, which used ``efficiency experts'' to develop a ``standard time'' to determine pay for each task at the company informed by ``thousands of individual operations at the Topeka shops''~\cite{10.2307/23702539}.
-%The cost of measuring workers in such excruciating detail at the turn of the \nth{20} century was undoubtedly immense,
-%but this ``standard time'' value, which determined the pay that workers would earn for each task they do,
-%was the only viable approach at the time to determine appropriate pay given the task
-%\cite{10.2307/23702539}.
-%But the repeated measurement of workers' time to complete tasks had shortcomings;
-%for one thing, pay rates for rarer tasks
-%were necessarily less certain than for more common tasks,
-%which had the simple benefit of a larger sample size.
-%\ali{Do I need ``for another thing\dots''? This paragraph is kind of huge already. Not sure how to break it up/down as it is.}
+Measurement limited the complexity of piecework:
+only tasks that could be measured and priced could be completed via piecework. 
+When \citeauthor{Brown01041990} investigated
+what limited the adoption of piecework in industries that otherwise gravitated toward it
+(e.g., railway engineers),
+the homogeneity of tasks arose as a major contributing factor
+\cite{Brown01041990}.
+\citeauthor{10.2307/23702539} concurs via a case study in Santa Fe Railway,
+which used ``efficiency experts'' to develop a ``standard time''
+to determine pay for each task at the company informed by
+``thousands of individual operations'' % removed ``at the Topeka shop'' because even I had to reach back into the back of my mind to be like ``Oh, yeah, Kansas''.
+\cite{10.2307/23702539}.
 One might conclude from \citeauthor{10.2307/23702539}'s observations that
-complex, creative work --- which is inherently heterogeneous and difficult to routinize ---
+complex, creative work
+--- which is inherently heterogeneous and difficult to routinize ---
 would be unsuitable for piecework.
 
 \topic{Piecework was also limited to tasks that could be clearly evaluated.}
-The roles required to facilitate piecework in the early \nth{20} century included ``piecework clerks, inspectors, and `experts'''
+The roles required to facilitate piecework in the early \nth{20} century included
+``piecework clerks, inspectors, and `experts'''
 \cite{10.2307/23702539}.
-%\citeauthor{10.2307/23702539} further recognizes that
-%it's necessary for a successful piecework shop to employ
-%clerks,
-%inspectors, and
-%other experts to properly design and evaluate complex work.
-\citeauthor{hart2016rise} argues for an ultimate complexity limit: at some point, evaluating multidimensional work for quality (rather than for quantity) becomes infeasible.
+\citeauthor{hart2016rise} argues for an ultimate complexity limit:
+at some point, evaluating multidimensional work for quality
+(rather than for quantity) becomes infeasible.
 In his words,
 ``if the quality of the output is more difficult to measure than the quantity [\ldots]
-%perhaps because of `difficult--to--observe' production techniques,
 then a piecework system is likely to encourage
 an over--emphasis on quantity produced and an under-emphasis on quality''
 \cite{hart2016rise}.
-%This, \citeauthor{hart2016rise} argues, may have fundamentally hamstrung piecework,
-%and ultimately precipitated its downfall,
-%especially with the increasing complexity of manufacturing work
-%over the course of the \nth{20} century.
-%\ali{just to be clear, this whole point is queuing up so that later I can be like
-%``Oh hey computers are terrific at evaluating some stuff really quickly.
-%And researchers in crowd work have done some work on workers evaluating other workers
-%(e.g. Find--Fix--Verify, arguably \textit{PeerStudio} does something along this line)
-%\cite{bernsteinSoylent,Kulkarni:2015:PRP:2724660.2724670}''}
 Complex work, which is often subjective to evaluate, falls victim to this criteria.
 
 \topic{This focus on measurement and tracking had consequences.}
@@ -142,8 +198,6 @@ the rigorous tracking, measurement, and training of workers
 for which scientific management became famous
 \cite{10.2307/23702539}.
 If true, 
-%This argument is certainly compelling;
-%it would seem to make 
 the concurrent upswing of
 scientific management and Fordism
 through the first two--thirds of the \nth{20} century
@@ -154,62 +208,38 @@ alongside piecework was not only understandable, but predictable
 in addition to constraints on the kind of \textit{work} that's amenable to piecework,
 only certain kinds of \textit{organizations} are amenable to piecework.}
 Researchers detail three organizational criteria.
-% \msb{I think a reader wouldn't understand why that claim is relevant.
-% Let's invert it, something like how
-% the researchers point out that
-% only certain kinds of organizations can effectively make use of piecework.}
-First, \citeauthor{Brown01041990} argues that piecework ``is less likely in jobs with
-a variety of duties than in jobs with a narrow set of routinized duties''~\cite{Brown01041990}.
+First, \citeauthor{Brown01041990} argues that
+piecework ``is less likely in jobs with a variety of duties than in
+jobs with a narrow set of routinized duties''
+\cite{Brown01041990}.
 \citeauthor{SJOE:SJOE371} points out the phenomenon here as a market effect:
-``in an environment with multi--tasking, pay schemes based on tightly specified performance may \textit{induce workers to neglect tasks} that are less easy to measure''
+``in an environment with multi--tasking,
+pay schemes based on tightly specified performance may
+\textit{induce workers to neglect tasks} that are less easy to measure''
 (emphasis added) \cite{SJOE:SJOE371}.
-% \msb{that's confusing, is incentive pay the same as piecework?
-% can you cut the first part of the quote and
-% give us the noun instead of forcing us to figure it out?}.
-Second, complexity was limited by access to capital to create the necessary infrastructure.
-As \citeauthor{10.2307/23702539} reports, %that successful cases of piecework owed themselves in part to the fact that
-only the largest and most wealthy railroads had the resources to ``pay the overhead involved in installing work reorganization'' \cite{10.2307/23702539}.
-% Together, \citeauthor{10.2307/23702539} and \citeauthor{Brown01041990}
-% make a persuasive argument that piecework is limited in complexity by
-% the capacity to endure managerial overhead while transitioning to a new system.
-% \msb{wait, wasn't that in a previous paragraph?
-% that should be joined with the managerial overhead text above}
-% \ali{I'm trying to make this argument that \cite{10.2307/23702539} is making two claims;
-% the first is that there are limits on doing hard, ``difficult--to--observe'' work,
-% and the second is that the cost propagates up to management,
-% putting limits on who can run piecework systems.
-% So\dots\\
-% \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{1em}} Rewrite\\
-% \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{1em}} Refactor\\
-% \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{1em}} Drop
-% Maybe I should just merge it with the next paragraph?}
+Second,
+complexity was limited by access to capital to create the necessary infrastructure.
+As \citeauthor{10.2307/23702539} reports,
+only the largest and most wealthy railroads had the resources
+to ``pay the overhead involved in installing work reorganization''
+\cite{10.2307/23702539}.
 Third, organizations required capable managers in charge of the pieceworkers.
-% \topic{There are other characteristics to effective complex piecework institutions, such as
-% appropriately designed management practices.}
-% \citeauthor{10.2307/2118435} describe the role of the foreman in West Virginia coal mines under the piecework model:
-% ``The foreman had the power to hire and fire workers and allocate workplaces,
-% but then left the face--worker largely free to his own efforts so that
-% often he went all day without seeing the foreman''
-% \cite{10.2307/2118435}.
 The West Virginia mines, for example, hired foremen 
-% The general approach adopted by these West Virginia mines was,
-% as in other factories with active foremen,
-to be the intermediary between upper management and the worker~\cite{10.2307/2118435}.
+to be the intermediary between upper management and the worker
+\cite{10.2307/2118435}.
 Specifically, foremen were responsible for allocating resources and
 understanding when and how to modify work as necessary
 \cite{wray1949marginal}.
-% \msb{Currently unclear what I'm supposed to take out of this. Summarize for me. What does this say about the complexity limits of piecework?}
-% The management of pieceworkers %, \citeauthor{10.2307/2118435} and later \citeauthor{wray1949marginal} argue,
-% demanded people in positions akin to foremen
-% --- intermediate managers people who were
-% \begin{inlinelist}
-%   \item familiar with and even sympathetic to the needs of workers,
-%   \item empowered by higher level management to make decisions, and
-%   \item relaxed enough in day--to--day work to allow workers to go about their work
-% \end{inlinelist}
-% \cite{wray1949marginal,10.2307/2118435}.
-So, in sum, organizations historically could only take advantage of piecework if they had homogenous work to be done, access to capital to purchase the necessary equipment, and the ability to hire intermediate management.
-
+So, in sum,
+organizations historically could only take advantage of piecework if they had
+homogeneous work to be done,
+access to capital to purchase the necessary equipment, and
+the ability to hire intermediate management.
+\ali{will people understand the nuance here of ``intermediate'' meaning that
+the management act as \textit{intermediaries}?
+I know that sounds stupid, but
+I feel like the wording has a connotation of just being ``middle management'',
+which doesn't communicate that these are bidirectional negotiators.}
 
 \topic{The research seems to suggest that it was difficult to apply piecework to more skilled work,
 particularly because maximizing on the advantages of piecework seemed to reward
@@ -222,22 +252,8 @@ seamstresses knew how to sew together denim
 \cite{10.2307/2338394,riisOtherSideLives}.
 
 
-%\topic{This isn't to say that complex work is outside of the realm of piecework; indeed, we've discussed complex applications of crowd work already.}
-%While \citeauthor{hart2013rise} described a flourishing of ingenious piecework design, much of it arose out of necessity --- it was infeasible to provide new workers with the comprehensive education that was familiar to men through apprenticeships \cite{hart2013rise}.
-%While this constraint led to much more tightly scoped work who now had to specialize in extremely narrowly defined roles.
-%The same could be said of Airy and his \textit{computers} --- young boys whose preparations consisted principally of a relatively specific mathematics curriculum \cite{grier2013computers}.
-% Instead, we argue that the literature suggests that piecework is tightly limited only when the application of piecework follows a direct, perhaps even unimaginative, mapping from an time--based regime to an output--based one.
-% When the work is redesigned from the ground up --- as we see with mathematicians in the \nth{19} century and with the metalworking industry during the Second World War --- it seems that we don't yet know the limits of complexity with regard to piecework.
-%\ali{This is \textit{almost} making a prediction, but I wanted to take something punchy away from the stuff I cite here.}
-
-
-
-
-
 
 \subsubsection{\whatchanged}
-\msb{Before you get into this, summarize what I am supposed to have learned from the prior section on piecework.
-You're about to draw on those points to make your argument, so they need to be at the top of my mind here.}
 \topic{Piecework makes a number of observations leading to the conclusion that
 piecework's complexity is fundamentally bounded by several limitations,
 chief among them the costs of managerial overhead and the transition thereto.}
@@ -247,11 +263,7 @@ they're sufficiently large to absorb the cost of transitioning to a piecework sy
 \citeauthor{10.2307/2118435} and \citeauthor{wray1949marginal}'s observations for
 the importance of competent, effective managerial oversight
 --- a human resource, which made the scaling cost prohibitively expensive for many
-% in their times (\citeyear{10.2307/2118435} and \citeyear{wray1949marginal}, respectively)
 \cite{10.2307/2118435,wray1949marginal,10.2307/23702539,Brown01041990}.
-\ali{Something like this? Should I dig deeper?
-I can line these points up in a way to make the next paragraph sort of obvious or inevitably,
-depending on how actively engaged someone is while reading this\dots}
 
 \topic{Digital media have expanded the scope of
 viable piecework by pushing drastically on the limits
@@ -260,34 +272,24 @@ The research on piecework tells us that
 we should expect piecework to thrive in industries where
 the nature of the work is limited in complexity
 \cite{Brown01041990}.
-% \msb{I don't recall this point in the prior section:
-% I remember management overhead and fixed costs of materials,
-% I don't remember a paragraph about complexity.
-% If we want to draw on that point, make it in the earlier section}
 Given the flourishing of on--demand labor platforms such as
 Uber, AMT, and others, we ask ourselves
 what --- if anything --- has changed.
 We argue that
 the Internet has trivialized
-the costs and challenges of the earlier limiting factors %  for two reasons:
-% \begin{inlinelist}
-  % \item 
-  because technology make it easier
-  \begin{inlinelist}
-  \item to do complex work aided by computers and
-  \item to evaluate and manage workers as they do increasingly complex work,
-        even observing their work to an otherwise unprecedented granularity.
-  \end{inlinelist}
+the costs and challenges of the earlier limiting factors
+because technology make it easier
+\begin{inlinelist}
+\item to do complex work aided by computers and
+\item to evaluate and manage workers as they do increasingly complex work,
+      even observing their work to an otherwise unprecedented granularity.
+\end{inlinelist}
 
-%   \item The Internet allows us to leverage the benefits of
-%         ``economies of scale'' at very little cost
-%         to the system--designer \cite{lessig2006code,miller2011understanding}.% \msb{I don't understand that argument. What is scaling here? The people? The tools for complex work?}
-% \end{inlinelist}
 
+\ali{maybe this should go away?
 \topic{Technology has made it possible
 for non--experts to do work that was once considered
 within the domain of experts.}
-\msb{I don't yet buy the following argument. If the point is that technology makes us more expert, I disagree that the CrowdCrit/Voyant systems are using technology to do this. They are building the smarts into their OWN workflows, rather than giving workers EXTERNAL tools that make them smarter. Giving workers a calculator is an external tool; the mathematical tables project already demonstrated that you can build smarts into the workflow if you don't have one.}
 \citeauthor{yuanAlmost} builds on the work of others
 (\textit{Voyant} and, more relevantly, \textit{CrowdCrit})
 to design workflows that yield ``expert--level feedback''
@@ -299,9 +301,9 @@ informed in part by researchers --- acting as inspectors --- and experts
 Where \citeauthor{10.2307/23702539} would call additionally for the identification of
 crowdsourcing's version of ``piecework clerks'', we point out that
 today algorithms manage workers as pieceworkers once did
-\cite{uberAlgorithm,10.2307/23702539}.
+\cite{uberAlgorithm,10.2307/23702539}.}
 
-\topic{Furthermore, technology more directly facilitates the subversion of expertise requirements
+\topic{Technology facilitates the subversion of expertise requirements
 by giving non--experts access to information that would otherwise be unavailable.}
 Taxi drivers in London endure rigorous training to pass a test known as ``The Knowledge''
 --- a demonstration of the driver's comprehensive familiarity.
@@ -315,31 +317,44 @@ people entirely unfamiliar with a city
 to know more about a city even than experts through
 the collective data generated by other users
 ranging topics such as police activity, congestion, construction, etc\dots
-\cite{silva2013traffic,hind2014outsmarting}. \msb{what's the insight I should take away from this paragraph? what does this say about crowd work?}
+\cite{silva2013traffic,hind2014outsmarting}.
+\msb{what's the insight I should take away from this paragraph? what does this say about crowd work?}
+\ali{Maybe I'm burnt out but I feel like the topic sentence is the takeaway and
+I'm not entirely sure what else to put here.
+Maybe that digital media can make it possible for non--experts to do increasingly expert work,
+informed by ``insider'' or ``expert'' knowledge of work, the way Uber, Waze, etc\dots do?}
 
 \subsubsection{\implication}
-\msb{This paragraph can be expanded to make a more concrete argument. What will be possible? What won't?}
-\topic{The piecework literature gives us a template for pushing the boundaries of complexity in piecework, but
-it also signals some of the ultimate limitations of crowd work and piecework in general.}
-While the threshold preventing task requesters from utilizing piecework
-has dropped thanks to affordances of the Internet, the ceiling on task complexity hasn't moved significantly. \msb{is that your prediction? I would argue against the fact that it hasn't moved significantly, crowdforge did far more complex work, as did flash teams and flash orgs}
-If we're to make use of \citeauthor{Brown01041990}'s prescriptions,
-we would benefit from finding ways to decompose varied tasks into homogeneous microtasks. \msb{isn't that what we've been doing all along?}
+% \topic{The piecework literature gives us a template for pushing the boundaries of complexity in piecework, but
+% it also signals some of the ultimate limitations of crowd work and piecework in general.}
+% While the threshold preventing task requesters from utilizing piecework
+% has dropped thanks to affordances of the Internet, the ceiling on task complexity hasn't moved significantly.
+% \msb{is that your prediction? I would argue against the fact that it hasn't moved significantly, crowdforge did far more complex work, as did flash teams and flash orgs}
+% If we're to make use of \citeauthor{Brown01041990}'s prescriptions,
+% we would benefit from finding ways to decompose varied tasks into homogeneous microtasks. \msb{isn't that what we've been doing all along?}
 
-\msb{this doesn't seem like a concrete prediction. what would piecework say will happen if we didn't resolve the tension?}
-We should also consider exploring the limitations that algorithmic management bring along more carefully.
-While research has touched on this subject, we've yet to make out the bigger picture of this theme
+We should consider exploring the limitations that algorithmic management bring along more carefully.
+While crowd work research has touched on this subject, we've yet to make out the bigger picture of this theme
 \cite{uberAlgorithm}.
 If we can resolve the tension between workers and perilously antagonistic managers, as \citeauthor{10.2307/2118435} suggest,
 then we may be able to break a toxic cycle of mistrustful requesters \cite[for example][]{MaliciousCrowdworkersGadiraju}
 and develop more considerate platforms as \citeauthor{takingAHITMcInnis} advocate
 \cite{takingAHITMcInnis}.
+\ali{What will happen if we don't do this?
+Maybe this is where I should bring up
+the ``market for lemons'' metaphor and say that
+the market will just continue to decline in quality until
+nobody is willing to rely on it either as a source of data/information (requesters), or
+a means of sustaining oneself financially (workers).}
 
 Finally, and perhaps most importantly,
 we need to replicate the success of narrowly slicing education and training for expert work
 as \citeauthor{hart2013rise} and \citeauthor{grier2013computers} described in their piecework examples
-\cite{hart2013rise,grier2013computers} \msb{remind us of what those were}.
-That is, we need to identify new ways to train crowdworkers for uniquely narrowly defined work. \msb{I don't understand: why?}
+of human computation \cite{grier2013computers} and drastically reformulating macro--tasks given the constraints of piecework \cite{hart2013rise}.
+\ali{If we can find better ways to train crowd workers for narrowly defined work,
+we can envision more complex applications and outcomes of crowd work,
+as in the case of metalwork breaking away from the historical requirements of lengthy,
+comprehensive apprenticeships.}
 To some extent, an argument can be made that
 MOOCs and other online education resources
 provide crowd workers with the resources that they need, but 
@@ -350,7 +365,18 @@ If we can overcome this obstacle,
 we might be able to empower crowd workers to do complex work such as engineering and metalworking,
 rather than doom them to match girl reputations:
 ``brash, irregular, immoral, and uneducated''
-\cite{10.2307/3827491}. \msb{how will that reduce any of the problems except the last one?}
+\cite{10.2307/3827491}.
+\msb{how will that reduce any of the problems except the last one?}
+\ali{I was thinking of fleshing out that the antipathy in general
+(``brash, immoral, etc\dots'') stems from these workers not being high--skill;
+we see similar descriptions used of Turkers when people talk about
+malicious and
+low--skill Turkers and getting them to ``expert--level work''.
+the historical counterexample is that
+metalworking pieceworkers didn't have these reputations,
+and we can suppose that this is because they \textit{were} trained
+(albeit unconventionally), and therefore considered educated, regular, etc\dots
+Too much of a stretch?}
 
 
 \onlyinsubfile{
