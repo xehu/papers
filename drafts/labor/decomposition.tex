@@ -3,7 +3,7 @@
 \def\blx@maxline{77}
 \makeatother
 % \onlyinsubfile{
-% \usepackage{xr-hyper}
+% \usepackage{xr--hyper}
 % \usepackage{hyperref}
 % \externaldocument{complexity}
 % \externaldocument{relationships}
@@ -58,7 +58,7 @@ low--context work, ``embracing error'' in crowdsourcing~\cite{embracingErrorKris
 
 \topic{The general lesson has been that the more micro the task, and the more fine the decomposition, the greater the risk that workers lose context necessary to perform the work well.}
 For example, workers edit adjacent paragraphs in inconsistent ways~\cite{bernsteinSoylent,Kim2017}, interpret tasks in different ways~\cite{kairam2016parting}, and exhibit lower motivation~\cite{Kinnaird:2012:WTM:2389176.2389219} without sufficient context.
-Research has sought to ameliorate this issue by designing workflows help workers ``act with global understanding when each contributor only has access to local views''~\cite{verroios2014context}, typically by automatically or manually generating higher-level representations for the workers to reflect on~\cite{chilton2013cascade,verroios2014context,Kim2017}.
+Research has sought to ameliorate this issue by designing workflows help workers ``act with global understanding when each contributor only has access to local views''~\cite{verroios2014context}, typically by automatically or manually generating higher--level representations for the workers to reflect on~\cite{chilton2013cascade,verroios2014context,Kim2017}.
 
 % \topic{The crowdsourcing research into work decomposition
 % has largely focused on minimizing the additional context necessary to do tasks%
@@ -112,9 +112,9 @@ as the ``heyday'' of the use of piecework.
 He attributes this to the shortage of male workers,
 who would have gone through a conventional apprenticeship process
 affording them more comprehensive knowledge of the total scope of work.
-One might reflect on the observation that ``Rosie the Riveter''
---- an icon of mid--\nth{20} century America who represented empowerment and opportunity for women \cite{honey1985creating} ---
-was herself a pieceworker
+One might reflect on the observation that ``Rosie the Riveter'',
+an icon of \nth{20} century America who represented empowerment and opportunity for women \cite{honey1985creating},
+was a pieceworker
 \cite{davies2014origins}.
 
 
@@ -130,16 +130,13 @@ when Airy employed young boys at the Greenwich Observatory who
 `Arithmetic, the use of Logarithms, and Elementary Algebra'~''
 to compute astronomical phenomena
 \cite{grier2013computers}.
-%These workers became the first \textit{computers}.
-
 The work that Airy solicited resonates with modern crowd work for several reasons.
 First, work output was quickly verifiable;
 Airy could assign variably skilled workers to compute values,
 and have other workers check their work.
 Second, tasks were discrete --- that is, independent from one another.
-Finally, knowledge of the full scope of the project
---- indeed, knowledge of anything more than the problem set at hand ---
-was unnecessary.
+Finally, workers could be trained on a very narrow subset of mathematical skills to be
+sufficiently qualified to do this work.
 
 This approach found its audience in the early \nth{20} century with the rise of Fordism and scientific management (or Taylorism).
 Scientific management suggested that it was possible to measure work  at unprecedented resolution and precision.
@@ -176,16 +173,14 @@ Where \citeauthor{10.2307/23702539} directly implicates measurement as
 preventing scientific management from being fully utilized,
 %the difficulty of tracking work \& workers, no longer exists
 %\cite{10.2307/23702539}.}
-modern crowd work is measuring and modeling every click, scroll, and keyboard event~\cite{rzeszotarski2011instrumenting,rzeszotarski2012crowdscape}.
+modern crowd work is measuring and modeling every click, scroll, and keyboard event
+\cite{rzeszotarski2011instrumenting,rzeszotarski2012crowdscape}.
 The result is that on--demand work can articulate and track far more carefully than piecework historically could.
 
 \topic{A second shift is  
-%A number of factors in crowd work are different from piecework, chief among them being 
 the relative ease with which the metaphorical ``assembly line'' can be changed.}
-% Computers make it possible to switch from one task to another unlike any arbitrary manufacturing factory possibly could;
-%modern on--demand workers on AMT and other platforms can more readily do any number of
-%different \textit{types} of tasks in the span of just a few minutes
-Historical manufacturing equipment could not quickly be assembled, edited, and redeployed.\msb{cite for historical piecework equipment being a large time + money investment?}
+Historical manufacturing equipment could not quickly be assembled, edited, and redeployed
+\cite{hu1961parallel}.
 In contrast, today system--designers can share, modify, and instantiate environments
 like sites of labor in a few lines of code
 \cite{lessig2006code,turkitLittle}.
@@ -199,7 +194,7 @@ all but impossible to manipulate as few as 20 years ago
  
 Third, modern crowd work has sliced work to such small scales that the marginal activities
 --- things like finding work and cognitive task switching ---
-have become relatively large compared to the tasks themselves
+have become large relative to the tasks themselves
 \cite{taskSearch}.
 In the historical case of piecework,
 moving metallurgical tools, mining equipment, or
@@ -208,34 +203,21 @@ workers were encouraged to specialize in a single set of tasks,
 allowing pieceworkers to sequence their tasks optimally on their own
 \cite{hart2013rise}.
 The result is that crowd workers are more free agents than historically was the case.
-However, because they spend significant time searching for tasks, the piece rate is less a good estimate of take-home earnings than before.
-
-% Rather than fall into the trap that \citeauthor{irani2015cultural} warns of,
-% --- one which where crowd workers are rendered as
-% ``modular, protocol--defined computational services'' ---
-% we may yield better results from crowd work if we think of workers as similar to
-% specialized, repurposable tools
-% \cite{irani2015cultural}.
-% \ali{feeling meh about this argument\dots}
- 
-
+However, because they spend significant time searching for tasks, the piece rate is less a good estimate of take--home earnings than before.
 
 
 \subsubsection{\implication}
-If measurement precision limited the depth of decomposition for piecework historically, as \citeauthor{10.2307/23702539} argues, then modern on--demand work stands to become far more finely-sliced and highly decomposed than ever before.
+If measurement precision limited the depth of decomposition for piecework historically, as \citeauthor{10.2307/23702539} argues, then modern on--demand work stands to become far more finely--sliced and highly decomposed than ever before.
 Online tools make measurement and validation so easy~\cite{rzeszotarski2011instrumenting} that these aspects of piecework are solved, or near enough that they no longer limit task decomposition.
 Now, not just tasks, but entire workers' histories~\cite{hata2017glimpse}, can be collected and analyzed in detail.
-% crowd work research today is on the right track to investigate pipelining and meta--task design.
-% That is, investigating better work discovery methods, producing tools for workers to make more informed decisions
-% \cite[see, for example,][]{turkopticon}.
 
 However, decomposition has hit a second bottleneck: cognition. 
 Task switching costs and other cognitive costs make it difficult to work tasks so far decontextualized from their original intention \cite{delayAndOrderLasecki}.
-There will of course be tasks that can be decomposed without much context, and these will form the most fine-grained of microtasks.
+There will of course be tasks that can be decomposed without much context, and these will form the most fine--grained of microtasks.
 However, other tasks cannot be freed from context --- for example, logo design requires a deep understanding of the client and their goals.
 In part due to this limitation, 99designs workers often recycle old designs rather than make new ones for each client~\cite{araujo201399designs}.
 
-So, ultimately, the levels of decomposition are likely to follow the contours of context required. Low-context work will be extremely highly decomposed. High-context work will continue to be limited.
+So, ultimately, the levels of decomposition are likely to follow the contours of context required. Low--context work will be extremely highly decomposed. High--context work will continue to be limited.
 
 
 % \onlyinsubfile{
