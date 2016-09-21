@@ -1,20 +1,21 @@
 \documentclass[trackingWork]{subfiles}
-\makeatletter
-\def\blx@maxline{77}
-\makeatother
-\onlyinsubfile{
-  \usepackage{xr-hyper}
-  \usepackage{hyperref}
+% \makeatletter
+% \def\blx@maxline{77}
+% \makeatother
+\onlyinsubfile{\usepackage{xr-hyper}
+\usepackage{hyperref}
+\externaldocument{complexity}
+\externaldocument{relationships}
+\externaldocument{decomposition}
 }
-
 \begin{document}
 
 \subsubsection[How far can work be decomposed into smaller and smaller microtasks]{Decomposing Work}\label{sec:decomposition}
 
 \subsubsubsection{\crowdworkpers}
 \topic{The crowdsourcing research into work decomposition
-has largely focused on minimizing the additional context necessary to do tasks%
-, and making it easier to do tasks with less time.}
+has largely focused on minimizing the additional context necessary to do tasks,
+and making it easier to do tasks with less time.}
 This first thread is
 perhaps best described by \citeauthor{verroios2014context} as
 making crowd workers ``\dots able to act with
@@ -22,22 +23,22 @@ global understanding when each contributor only has access to local views''
 \cite{verroios2014context}.
 With the exception of a few cases
 (specifically, \citeauthor{Kinnaird:2012:WTM:2389176.2389219}'s work
-which finds that greater work context fosters more reliably high--quality work)%
-, the micro task paradigm has emerged as the overwhelming favorite
-\cite{selfsourcingTeevan2014,selfsourcingTeevan2016%
-,       cheng2015break,Kinnaird:2012:WTM:2389176.2389219}.
+which finds that greater work context fosters more reliably high--quality work),
+the micro task paradigm has emerged as the overwhelming favorite
+\cite{selfsourcingTeevan2014,selfsourcingTeevan2016,
+      cheng2015break,Kinnaird:2012:WTM:2389176.2389219}.
 
 
-\topic{As the additional context necessary to complete a task diminishes%
-, the marginal cost of finding and
+\topic{As the additional context necessary to complete a task diminishes,
+the marginal cost of finding and
 \textit{doing} tasks has increasingly become the focus of research.}
-\citeauthor{taskSearch} illustrate the challenges on AMT%
-, and some work has gone into ameliorating the problems specific to this work site
+\citeauthor{taskSearch} illustrate the challenges on AMT,
+and some work has gone into ameliorating the problems specific to this work site
 (\textit{ReLauncher}), % does anyone care for project names?
 while other work designs tasks around gap time
 (\textit{Twitch Crowdsourcing} \& \textit{Wait--Learning})
-\cite{taskSearch,KucherbaevReLauncher,Vaish:2014:TCC:2611222.2556996%
-,       Cai:2015:WLW:2702123.2702267}.
+\cite{taskSearch,KucherbaevReLauncher,Vaish:2014:TCC:2611222.2556996,
+      Cai:2015:WLW:2702123.2702267}.
 % \topic{One of the emergent properties of micro--tasks has been the relative cost of
 %     \textit{finding} worthwhile tasks.}
 %     The research community has documented and to some extent attempted to intervene in
@@ -48,8 +49,8 @@ attempts to address this by
 directing workers to tasks through
 ``intelligent task routing''
 \cite{Cosley:2007:SUI:1216295.1216309}.
-Much of this work and the work at the periphery of this space, then%
-, has focused on
+Much of this work and the work at the periphery of this space, then,
+has focused on
 minimizing the amount of time that people need to spend doing
 anything other than the work for which they are paid.
 
@@ -58,30 +59,30 @@ measuring the impact that interruption has on worker performance
 \cite{cheng2015break}.
 This work illustrates a broader sentiment in
 both the study and practice
-of crowd work, that microtasks should be designed resiliently against the variability of workers%
-, fully exploiting the abstracted nature of each piece of work
+of crowd work, that microtasks should be designed resiliently against the variability of workers,
+fully exploiting the abstracted nature of each piece of work
 \cite{interruptionIqbal,delayAndOrderLasecki,vaish2014low}.
-That is to say, micro--tasks should be designed such that a single worker's poor performance%
-, or a good worker's sudden departure%
-, does not significantly impact the agenda of the work as a whole.
+That is to say, micro--tasks should be designed such that a single worker's poor performance,
+or a good worker's sudden departure,
+does not significantly impact the agenda of the work as a whole.
 While \citeauthor{cheng2015break} found costs with breaking tasks into smaller components
 in the form of higher cumulative time to complete
-(albeit much shorter real time to complete, owing to parallelization)%
-, \citeauthor{delayAndOrderLasecki} found that at least \textit{some} performance can be recouped by stringing 
+(albeit much shorter real time to complete, owing to parallelization),
+\citeauthor{delayAndOrderLasecki} found that at least \textit{some} performance can be recouped by stringing 
 similar tasks together
 \cite[respectively]{cheng2015break,delayAndOrderLasecki}.
 
 
-Yet more work looks at the general framing of tasks%
-, chaining and arranging them to maximally exploit
+Yet more work looks at the general framing of tasks,
+chaining and arranging them to maximally exploit
 the attention and stress threshold % ???
 of workers
 \cite{Cai:2016:CRI:2858036.2858237}.
-Rather than attempt to minimize the error rates in micro--tasks%
-, as \citeauthor{Kinnaird:2012:WTM:2389176.2389219} suggested%
-, we as a community have leaned \textit{into} the peril of
-low--context work%
-, ``embracing error'' in crowdsourcing
+Rather than attempt to minimize the error rates in micro--tasks,
+as \citeauthor{Kinnaird:2012:WTM:2389176.2389219} suggested,
+we as a community have leaned \textit{into} the peril of
+low--context work,
+``embracing error'' in crowdsourcing
 \cite{embracingErrorKrishna}.
 
 
@@ -91,8 +92,8 @@ piecework and labor
 has been wrestling with the decomposition of work for centuries.}
 The beginnings of
 systematic task decomposition
-stretch back as far as the \nth{17} century%
-, when Airy employed young boys at the Greenwich Observatory who
+stretch back as far as the \nth{19} century,
+when Airy employed young boys at the Greenwich Observatory who
 ``possessed the basic skills of mathematics, including
 `Arithmetic, the use of Logarithms, and Elementary Algebra'~''
 to compute, by hand, astronomical phenomena
@@ -101,25 +102,43 @@ These workers became the first \textit{computers}.
 
 The work Airy solicited was interesting for several reasons.
 First, work output was quickly verifiable;
-Airy could assign variably skilled workers to compute values%
-, and have other workers check their work.
+Airy could assign variably skilled workers to compute values,
+and have other workers check their work.
 Second, tasks were discrete --- that is, independent from one another.
 Finally, knowledge of the full scope of the project
 --- indeed, knowledge of anything more than the problem set at hand ---
 was unnecessary.
 
 The insight of breaking tasks down into smaller components didn't find its audience until
-the early \nth{20} century%
-, with the rise of Fordism and scientific management (or Taylorism).
+the early \nth{20} century,
+with the rise of Fordism and scientific management (or Taylorism).
 From scientific management, we found that
 we could measure work at unprecedented resolution and precision.
-As \citeauthor{Brown01041990} points out%
-, piecework most greatly benefits the instrumented measurement of workers, but certainly
+As \citeauthor{Brown01041990} points out,
+piecework most greatly benefits the instrumented measurement of workers, but certainly
 in Ford and Taylor's time --- and certainly in Airy's time ---
 highly instrumented, automatic measurement of workers was all but impossible.
-As a result%
-, the distillation of work into smaller chunks
+As a result,
+the distillation of work into smaller chunks
 ultimately reached a limit of usefulness.
+
+\topic{Piecework researchers address a number of the problems with the decomposition of work,
+and the conflicting pressures managers and workers put forth.}
+\citeauthor{bewley1999wages} in particular points out that
+the approach of paying workers by the piece is
+``\dots~not practical for workers doing many tasks, because of
+the cost of establishing the rates and because
+piecework does not compensate workers for time spent switching tasks''.
+Ultimately, \citeauthor{bewley1999wages} argues that
+``[piecework is] infeasible, because \dots
+total output is the joint product of varying groups of people''
+\cite{bewley1999wages}.
+\ali{This is becoming both
+a complexity    argument and
+a decomposition argument\dots
+I'm okay with using \citeauthor{bewley1999wages} in both, but
+I want people to read this paper and not be like
+``wow this author sure got their money's worth from those three books!''}
 
 
 \subsubsubsection{\whatchanged}
@@ -181,5 +200,10 @@ given that we've hit bottlenecks with the cognitive stresses of switching betwee
 as \citeauthor{delayAndOrderLasecki} highlight
 \cite{delayAndOrderLasecki}.
 
+
+\onlyinsubfile{
+  \balance{}
+  \printbibliography
+}
 
 \end{document}
