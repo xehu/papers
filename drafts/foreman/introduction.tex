@@ -1,0 +1,22 @@
+\documentclass[main]{subfiles}
+\onlyinsubfile{
+  \usepackage{xr-hyper}
+  \usepackage{hyperref}
+  % \externaldocument{nameHere}
+}
+
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\begin{document}
+
+\section{Introduction}\label{sec:introduction}
+
+\cite{haas2015argonaut}
+\onlyinsubfile{
+  \balance{}
+  \printbibliography
+}
+
+\end{document}
