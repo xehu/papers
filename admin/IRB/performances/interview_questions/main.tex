@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage{balance,graphics,setspace,parskip,sourceserifpro,textcomp}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[tiny,compact]{titlesec}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage{nameref,color}
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  % pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  % pdfauthor={\emptyauthor},
+  % pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=blue,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+\usepackage[citestyle=numeric,backend=biber]{biblatex}
+\bibliography{references}
+% \setlength{\parskip}{.4em}
+\pagenumbering{gobble}
+\begin{document}
+
+Interviews with performance artists under this protocol are designed to be
+(at least somewhat)
+open--ended, but given that we're still going in with a handful of
+\textbf{a priori} notions of what we want to learn about,
+we have a list of prepared questions that we plan to use to prompt
+further discussion about whatever proves to be of interest to participants.
+That is, while we have questions about performance artists'
+\hyperref[sec:Background]{backgrounds},
+\hyperref[sec:LearningCraft]{learning their craft},
+\hyperref[sec:EngagingAudience]{engaging with an audience that has more direct avenues of communication},
+\&
+\hyperref[sec:DealingWithLaw]{negotiating the political and legal issues within online platforms}.
+
+\begin{enumerate}
+
+  \section*{Background}
+            \label{sec:Background}
+    \item How long have you been (streaming | YouTubing | podcasting | etc\dots)?
+    \item What did you do before that?
+    \item What got you into this?
+
+  \section*{Learning the craft}
+            \label{sec:LearningCraft}
+    \item I imagine there are some skills that you have to learn to be a good
+          (streamer, podcaster, etc\dots); can you talk about any of the skills
+          you found you had to learn to be good at this?
+    \item What sorts of things do you have to become good at
+          that your audience might not realize (if anything)?
+  
+  \section*{Engaging the Audience}
+            \label{sec:EngagingAudience}
+    \item Do you see feedback or engagement from your audience?
+          How?
+    \item What avenues do people take to engage with you?
+          Do you actively open and manage those channels, or
+          do people simply find them?
+    \item How do you respond to that kind of engagement?
+          That is,
+            do you prompt it?
+            Encourage it?
+            Keep it at arm's length?
+    \item Do you encounter much criticism?
+          (If so\dots)
+    \item How do you deal with criticism?
+    \item Is this feedback and engagement overall a good thing, or
+          is it generally more trouble than the value it provides?
+  
+  \section*{Dealing with ``law'' and politics}
+            \label{sec:DealingWithLaw}
+    \item Do any policies or rules come up in your videos?
+          To give an example, do you find yourself fending off DMCA complaints,
+          or having to argue that your content isn't in violation of some rule?
+    \item Do rules and policies ever change?
+          (Can you describe how?)
+    \item What influence do you (or others in your position) have
+          (if any)
+          in affecting policies?
+    \item How do you think of yourself
+          in relation to the platform you publish on?
+    \item To be more specific,
+          how much agency do you feel you have in
+          changing policies that don't make sense
+          (or are unreasonably applied)?
+\end{enumerate}
+
+% \printbibliography{}
+\end{document}

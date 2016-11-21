@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{balance,graphics,setspace,parskip,times,hyperref,titling,microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[compact]{titlesec}
+\usepackage[citestyle=numeric,backend=biber]{biblatex}
+\bibliography{references}
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \textbf{\LARGE{\@title}}
+
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+\title{Externalizing Worker Qualifications}
+\author{Ali Alkhatib}
+
+\begin{document}
+\maketitle{}
+
+\section*{Background}
+Labor market platforms ranging industries and styles of work
+(e.g. Uber, TaskRabbit, UpWork, and Amazon Mechanical Turk)
+have struggled for years with persistent and
+in some cases growing
+challenges relating to worker qualifications.
+These issues range a wide spectrum:
+in some cases, worker qualifications are non--transferable,
+leading requesters to ``re--invent the wheel'' as they attempt to determine
+in their own way whether a potential worker is qualified and reliable.
+
+Problems determining a worker's qualifications start on day 1;
+labor markets begin their relationships with new workers
+almost entirely uncertain about the worker's competence in any type of task.
+Gathering this information through qualification exams is generally
+time--consuming and costly.
+
+Challenges mount as workers' skill sets develop;
+work requiring more training and skill (for example, translating or programming)
+are either verified by individual \textit{requesters} (e.g. Amazon Mechanical Turk)
+or are verified by the \textit{platform} itself (e.g. UpWork).
+While the \textit{UpWork} model avoids needless repetitive work by
+generally consolidating qualifying exams at the platform level,
+these labor platforms nevertheless find themselves in the unenviable
+(and often unexpected) position of
+having to develop new qualifications exams to outpace would--be cheaters.
+
+
+
+% \textit{I want to communicate something along the lines of how
+% these labor markets shouldn't be expected
+% to handle these problems very well, because
+% they've been focusing on sparking a form of commerce that hasn't existed before,
+% etc\dots
+% but I feel like this sounds too much like
+% ``It's no wonder you all have failed!'' and
+% I feel like there's no way to dig myself out of that hole.
+% Thoughts?}
+
+
+\section*{A (Potential) Solution}
+In offline labor markets involving skilled workers,
+credentials are sometimes managed by
+external, trusted organizations:
+the state requires electricians
+to serve in apprenticeships and
+pass licensing exams;
+lawyers take exams administered by the American Bar Association (ABA);
+doctors take similar exams given by their own oversight organization (the NBME).
+
+This approach may prove useful in
+alleviating the burden online labor markets are increasingly taking on.
+By externalizing worker qualifications, a number of benefits can emerge:
+\begin{enumerate}
+  \item New workers can provide some evidence of their work history to labor platforms,
+        mitigating or even resolving the ``cold start'' problem of
+        not knowing the trustworthiness or competence of a new user.
+  \item Aggregated (even heterogeneous)
+        ratings sourced from differing labor markets can provide
+        a more holistic picture of a worker's areas of competence.
+        Workers can use this information to identify specialization more easily,
+        reducing wasted time \textit{searching for} or \textit{working on} suboptimal tasks.
+        Requesters can benefit from this information by
+        making more informed decisions about which worker to contract.
+  \item By turning the reputation management of workers into an external entity
+        (agnostic to labor platform),
+        designers and developers can focus more fully on the marketplace itself.
+\end{enumerate}
+
+% Rather than invest time and effort into worker reputation systems,
+% qualifications exams, and all of the overhead associated with these challenges,
+% labor platforms could
+% externalize worker reputations and qualifications to other entities.
+% Most labor markets 
+
+\section*{Measurable Variables}
+
+
+\section*{First Steps}
+
+% \printbibliography{}
+\end{document}
