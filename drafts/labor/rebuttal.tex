@@ -5,56 +5,118 @@
 \usepackage[tiny,compact]{titlesec}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \bibliography{references}
-% \setlength{\parskip}{.4em}
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{%
+   % label=\alph*),
+ label=\arabic*),
+}
 \pagenumbering{gobble}
 \begin{document}
-We'd like to thank the reviewers for the feedback they offered
---- their input will absolutely strengthen this paper.
+We'd sincerely like to thank the reviewers for the feedback they generously offered
+--- your comments have pointed out some opportunities for clarification
+and potential changes in our framing that we think will help strengthen the paper.
 
-1AC and R5 bring up that one of the issues with historical analysis such as ours
-is that the method strips away context in pursuit of ahistoric conclusions.
-This is absolutely an excellent point, and
-a shortcoming which we struggled to articulate in our discussion section.
-We'll add more to the discussion section to highlight the potential hazards
-of applying historical analyses due to the different
-politics, economies, cultures, and other factors which
-may influence any phenomena.
+1AC and R5 bring up that one of the potential hazards with
+historical analysis is that
+it tends to strip away context in pursuit of ahistoric conclusions.
+This is an excellent point, and
+the reference to~\citeauthor{rosenberg1994exploring}'s
+work in particular is especially beneficial to us, as his work
+(in~\citeyear{rosenberg1982inside} and later~\citeyear{rosenberg1994exploring})
+offers a concise description of the spirit of the method we adopted here,
+and articulates a limited use case for this approach.
 
-\textit{There's almost certainly something by Rosenberg about how
-        historical analysis is flawed but not totally unhelpful.
-        I'll quote it.}
+In our revision, we'll attempt to clarify two things:
+\begin{enumerate}
+  \item that this particular contribution offers
+        to fill some of the gaps in crowd work and suggests potential futures
+        (perhaps specifically offering
+            ``to narrow our estimates
+              and thus to concentrate resources
+              in directions that are more likely to have useful payoffs''~\cite{rosenberg1994exploring});
+  and
+  \item that the overarching method here may be
+        a powerful tool for researchers attempting
+        to make sense of (seemingly) new phenomena
+        (for example,
+        arguing ``that past history is
+                  an indispensable source of information
+                  to anyone interested in characterizing technologies''~\cite{rosenberg1982inside}).
+\end{enumerate}
 
-R5 also points out that we give attention to \citeauthor{grier2013computers}'s work and
+
+% To quote~\citeauthor{rosenberg1994exploring},
+% ``Science will often provide the capability to acquire information
+% \dots that we do not presently possess, but
+% \textit{science does not make the acquisition of this information costless}''
+%~\cite{rosenberg1994exploring}.
+% In that spirit, 
+% This is absolutely an excellent point, and
+% a shortcoming which we struggled to articulate in our discussion section.
+% We'll add more to the discussion section to highlight the potential hazards
+% of applying historical analyses due to the different
+% politics, economies, cultures, and other factors which
+% may influence any phenomena.
+
+% \textit{There's almost certainly something by Rosenberg about how
+%         historical analysis is flawed but not totally unhelpful.
+%         I'll quote it.}
+
+R5 also points out that we give attention to~\citeauthor{grier2013computers}'s work and
 the case study of human computers,
 perhaps at the expense of the other case studies
 (that is, the cases of the matchstick girls and railroad workers).
-While we'll occasionally reference other cases
-(such as the industrial workers outside of
-the railroad industry in the early and mid--\nth{20} century),
-we'll bring the other two case studies to
-a similar level of scrutiny that the case study of Airy's human computers
-(as described by \citeauthor{grier2013computers}~\cite{grier2013computers}) is afforded.
+While we occasionally bring to light other cases
+(such as the industrial workers during the Second World War),
+we'll attempt to bring the two major case studies to
+a similar level of attention as we afford Airy's human computers,
+% which~\citeauthor{grier2013computers} offers~\cite{grier2013computers},
+making these three case studies into
+more equal threads which recur throughout the paper.
 
-R3 noted that we decided to cluster crowd work research in a particular way
+R3 noted our decision to cluster crowd work research in a particular way,
 which consolidated some research
---- for instance, into ``professional development'' --- into
-the broader topic of ``complexity'';
-the observation is well taken, and we'll dedicate some space to reflect on
-the decisions we made with regard to clustering.
+--- for instance, the work into ``professional development'' ---
+into the broader topic of ``complexity'';
+the concern R3 raises is well taken, and
+we'll dedicate some space to reflect on
+the decisions we made with regard to clustering research topics.
 
-R4 and R5 suggest a number of works in scientific management
-(\textbf{Hounsell}, \textbf{Roe Smith}, and \citeauthor{williamson2016}) for a more complete view on scientific management.
-We struggled with this topic in the process of writing,
-as we wanted to communicate a high--level overview of some topics only as they
-were relevant to the core argument of piecework.
-We worried that bringing \textbf{Hounsell}, \textbf{Roe Smith}, and others into
-the section mentioning scientific management would have necessitated
-a much more involved discussion than
-this venue's format would afford.
-Given this feedback, we'll
-acknowledge this influential work and point out that there's
-significantly more detail and nuance to scientific management than
-we could afford to explore, given our prerogative.
+R4 and R5 offer a number of works
+(e.g. by~\textbf{Hounsell}, \textbf{Roe Smith}, and~\citeauthor{williamson2016},
+separately)
+for a more comprehensive discussion of scientific management.
+We agree that these works will
+substantively add to a reader's understanding of scientific management.
+% We'll attempt to bring into discussion these works, but
+% our original concern was that a satisfactory review of scientific management
+% would be difficult to articulate concisely.
+We'll attempt to crystallize the body of work concisely, and
+point out that there's much more to be said about these topics.
+
+
+% We found ourselves struggling to reconcile
+% how adequately to bring up some of the leading thinkers in
+% scientific management
+% --- and their contributions ---
+% given the tight constraints.
+% We can only gesture to~\textbf{Hounsell}, \textbf{Roe Smith}, and~\citeauthor{williamson2016}
+% and point out that there's substantially more to scientific management than we
+% can ``afford'' to communicate.
+% Given this feedback, we'll attempt to carefully balance the desire
+% to satisfactorily discuss leading minds in these fields with
+% the limited space afforded to provide readers with context
+% We struggled with this topic in the process of writing,
+% as we wanted to communicate a high--level overview of some topics only as they
+% were relevant to the core argument of piecework.
+% We worried that bringing \textbf{Hounsell}, \textbf{Roe Smith}, and others into
+% the section mentioning scientific management would have necessitated
+% a much more involved discussion than
+% this venue's format would afford.
+% Given this feedback, we'll
+% acknowledge this influential work and point out that there's
+% significantly more detail and nuance to scientific management than
+% we could afford to explore, given our prerogative.
 
 % {\LARGE
 % Dear reviewers,
