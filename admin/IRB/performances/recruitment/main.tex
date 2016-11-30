@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage{balance,graphics,setspace,parskip,sourceserifpro,textcomp}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[tiny,compact]{titlesec}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\usepackage{nameref,color}
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  % pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  % pdfauthor={\emptyauthor},
+  % pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=blue,
+  urlcolor=linkColor,
+  breaklinks=true,
+  hypertexnames=false
+}
+
+\usepackage[citestyle=numeric,backend=biber]{biblatex}
+\bibliography{references}
+% \setlength{\parskip}{.4em}
+\pagenumbering{gobble}
+\begin{document}
+Hi,
+
+My name's Ali Alkhatib. % link to homepage
+I'm a PhD student at Stanford.
+I'm studying professional online performers
+(like YouTubers, Twitch streamers, etc\dots)
+--- basically anyone who does it as a major source of income.
+
+Specifically, I'm looking into
+the relationships people have with their platforms
+--- so for instance, what it's like for
+YouTubers to make their living from the videos they put on YouTube,
+talking to and working with YouTube's admins,
+and dealing with controversial ``meta'' topics like
+sudden changes to rules on the platform.
+
+I'm emailing because I saw your
+[\textbf{online streaming/broadcasting channel}]
+and I thought your perspective would be interesting.
+I was wondering if you'd be willing to chat with me about anything relating to
+[\textbf{streaming|YouTubing|etc\dots}]. % make it clear this'll be anonymous if desired
+
+% What I had in mind is a chat that would probably take about 30 minutes,
+% possibly with a few follow up conversations.
+% I was figuring to video chat via
+% FaceTime or Google Hangout or something for the first
+% ``long'' conversation, and email for later follow ups.
+
+If you're open to chatting about online performances and stuff, feel free to
+\href{mailto:ali.alkhatib@cs.stanford.edu}{email me}
+(\texttt{ali\allowbreak .alkhatib\allowbreak @cs\allowbreak .stanford.edu}) or
+call me at my cell phone: ${+1~(408)~348-2720}$
+
+PS: if you're curious what sort of research I generally do,
+feel free to poke around at \href{https://ali-alkhatib.com}{my personal site}
+(\texttt{https://\allowbreak ali-\allowbreak alkhatib\allowbreak .com}).
+
+\end{document}

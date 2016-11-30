@@ -1,0 +1,28 @@
+We sincerely thank the reviewers for the feedback they offered. Your comments have identified several opportunities for clarification and potential changes in our framing that we think will help strengthen the paper.
+
+RISKS OF HISTORICAL ANALYSIS
+1AC & R5 bring up that one of the potential hazards with historical analysis is that it tends to strip away context in pursuit of ahistoric conclusions. This is an excellent point, and the pointers to Rosenberg's works in particular are especially beneficial; his 1982 and 1994 works offer concise descriptions of the spirit of the method we adopted here, and articulates a use case for this approach. In our revision, we will clarify that:
+1. Our contribution suggests potential futures, offering "to narrow our estimates and thus to concentrate resources in directions that are more likely to have useful payoffs" (Rosenberg 1994); and
+2. Our method of relating history to modern socio–technical systems may be a useful tool for researchers attempting to make sense of ostensibly new phenomena. In other words, offering "that past history is an indispensable source of information to anyone interested in characterizing technologies" (Rosenberg 1982).
+
+CASE STUDY FOCUS
+R5 points out that we give attention to Grier's (2013) work and the case of human computers, perhaps at the expense of the other case studies. Our goal had been to equally highlight the case studies of the match– girls and railroad workers. While we occasionally bring to light other cases (such as the industrial workers during the Second World War), we'll bring more focus on these "major" case studies (the match–girls and the railroad workers) to afford them the scrutiny human computers earned.
+
+To use the match–girls as an example, we'll address the reorientation of their payment for work from time– centric to output–centric. This reorientation led to further discretization and decomposition, allowing managers to track the match–girls more minutely, evaluate their working styles & resultant performance, and encourage or discourage certain behaviors much more granularly via precise disciplinary measures. This analysis will also allow us to make deeper conclusions about the implications of piecework decomposition on crowdwork.
+
+We'll also return to literature on the relationships among match–girls in their nascent labor movement and the notably adversarial relationships they had with their managers, whose disciplinary methods later took on punitive, arbitrary qualities. This discussion will expose further parallels between the internal and external relationships of crowdworkers and pieceworkers.
+
+TOPIC SELECTION
+R3 & R4 note that our decision to cluster crowdwork research around three questions consolidated some research — for instance, the "quantity–quality dilemma" (R4), "professional development" (R3), and "incentive structures" (R3) — into other broader topics. This critique is well taken. We will dedicate some space to reflect on the decisions we made with regard to clustering research topics.
+
+RELATED WORK
+R4 & R5 offer a number of works (e.g. Williamson 2016) for a more comprehensive discussion of scientific management. We agree that these works will substantively add to a reader's understanding of scientific management. We'll attempt to crystallize the body of work concisely, and point out that there's much more to be said about these topics.
+
+ETHICS
+R4 asks whether our analysis can shed any light onto the question of "whether it is ethical, to make use of crowdwork in HCI research". We had two interpretations of this question: 1) whether piecework itself is ethical, or 2) whether research on crowdwork is ethical. We'll engage here with the former.
+
+We will add this topic to the Discussion of our paper, integrating the resource R4 offered (Williamson 2016). Briefly, the literature on the history of labor does not frame the question as "whether piecework is inherently ethical or unethical", instead asking what conditions render it exploitative.
+
+This literature we brought to bear suggests that exploitation occurs when conditions harm workers directly or indirectly, such as in sweatshops and agricultural work with pesticides, or where employers systematically underpay or overwork laborers by contemporary standards.
+
+The question then is whether socio–technical infrastructure like Mechanical Turk (AMT) and other marketplaces similarly harm, underpay, or overwork workers. AMT itself does not directly require any amount of payment or work, but its design encourages employers to engage in such behaviors: piecework rates, for example, undervalue workers' task search time, and task design interfaces undeniably frame workers as unreliable by recommending replication with multiple workers rather than trusting and paying individual workers more. 
