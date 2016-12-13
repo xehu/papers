@@ -32,6 +32,17 @@
 % re-using, if desired).  Use \emtpyauthor when submitting for review
 % so you remain anonymous.
 
+\newlist{numberlist}{enumerate*}{1}
+\setlist*[numberlist,1]{%
+   % label=\alph*),
+ label={\nthwords*,},
+}
+
+\newlist{Numberlist}{enumerate*}{1}
+\setlist*[Numberlist,1]{%
+   % label=\alph*),
+ label={\Nthwords*,},
+}
 \newlist{inlinelist}{enumerate*}{1}
 \setlist*[inlinelist,1]{%
    % label=\alph*),

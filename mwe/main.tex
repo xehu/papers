@@ -1,15 +1,40 @@
 \documentclass[11pt]{article}
 \usepackage{balance,graphics,setspace,parskip,times,hyperref}
+\usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
 \usepackage[margin=1in]{geometry}
-\usepackage[inline]{enumitem}
+\usepackage{enumitem}
 \usepackage[tiny,compact]{titlesec}
+
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \bibliography{references}
 % \setlength{\parskip}{.4em}
 
+\newcounter{mycounter}
+\setcounter{mycounter}{1}
 \begin{document}
+\newlist{Numberlist}{enumerate*}{1}
+\setlist*[Numberlist,1]{%
+   % label=\alph*),
+ label={\Nthwords*,},
+}
 
-hello world
+\begin{inlinelist}
+\item foo.
+\item hello.
+\item ahhh.
+\end{inlinelist}
 
-% \printbibliography{}
+% \Nthwords{mycounter}
+% \Nthwords{mycounter}
+% \themycounter
+% \themycounter
+% \themycounter
+
+
+% \setcounter{mycounter}{11}
+% \themycounter
+% \themycounter
+
+% \setcounter{mycounter}{470}
+% \themycounter
 \end{document}
