@@ -1,9 +1,9 @@
 \documentclass[11pt]{article}
-\usepackage{balance,graphics,setspace,parskip,times,hyperref}
-\usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
+% \usepackage{balance,graphics,setspace,parskip,times,hyperref}
+% \usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
 \usepackage[margin=1in]{geometry}
-\usepackage{enumitem}
-\usepackage[tiny,compact]{titlesec}
+% \usepackage{enumitem}
+% \usepackage[tiny,compact]{titlesec}
 
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \bibliography{references}
@@ -11,18 +11,30 @@
 
 \newcounter{mycounter}
 \setcounter{mycounter}{1}
-\begin{document}
-\newlist{Numberlist}{enumerate*}{1}
-\setlist*[Numberlist,1]{%
-   % label=\alph*),
- label={\Nthwords*,},
-}
+% \begin{document}
 
-\begin{inlinelist}
-\item foo.
-\item hello.
-\item ahhh.
-\end{inlinelist}
+\usepackage[shortlabels]{enumitem}
+% \setlist[enumerate]{nosep}
+
+\begin{document}
+This is first line and i need to remove space between this line and
+item list below it.
+\begin{enumerate}[-,topsep=0pt]
+\item asdasd
+\item dsfdsf
+\end{enumerate}
+
+% \newlist{Numberlist}{enumerate*}{1}
+% \setlist*[Numberlist,1]{%
+%    % label=\alph*),
+%  label={\Nthwords*,},
+% }
+
+% \begin{inlinelist}
+% \item foo.
+% \item hello.
+% \item ahhh.
+% \end{inlinelist}
 
 % \Nthwords{mycounter}
 % \Nthwords{mycounter}
