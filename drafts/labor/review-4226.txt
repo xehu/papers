@@ -1,0 +1,267 @@
+CHI 2017 Papers and Notes
+
+Reviews of submission #4226: "Examining Crowd Work Through The Historical
+Lens of Piecework"
+
+------------------------ Submission 4226, Review 2 ------------------------
+
+Reviewer:           primary (1AC)
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   3  (Knowledgeable)
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0 
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+
+The Review
+
+
+1AC: The Meta-Review
+
+   The submission provides a novel historical lens through which to view
+   contemporary human computation tasks. An enormous body of
+   interdisciplinary literature is brought to bear to examine the
+   antecedents of decomposition, distribution, and payment that predate
+   prevailing crowdworker/gig economy models. The submission provides
+   important historical contexts and cases to ground contemporary debates
+   makes it of enormous interest and relevance for the CHI community. There
+   is an unusually high degree of consensus among diverse reviewers that the
+   paper is well-written, novel, and exhaustive. R5 notes some concerns
+   about stripping away context in pursuit of conclusions given the
+   substantial differences in social/economic/cultural context. 
+
+Rebuttal response
+
+
+
+------------------------ Submission 4226, Review 1 ------------------------
+
+Reviewer:           secondary (2AC)
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   4  (Expert )
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0 
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+
+The Review
+
+
+1AC: The Meta-Review
+
+
+Rebuttal response
+
+
+
+------------------------ Submission 4226, Review 3 ------------------------
+
+Reviewer:           external
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   3  (Knowledgeable)
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0 
+
+Award Nomination
+
+   
+
+Your Assessment of this Paper's Contribution to HCI
+
+   In this 9.5-page paper, the authors aim to understand crowd work through
+   the historical lens of piecework, a trend of work decomposition,
+   distribution, and payment. The authors are motivated to learn from
+   history so as not to repeat. They conduct literature review of piecework
+   to anticipate answers to a) limits of crowd work b) limits of work
+   decomposition in crowdwork and c) worker’s relationships with each
+   other and their crowd work.  The primary contribution of this work is a
+   historical perspective on the most recent decade of crowdsourcing
+   research.
+
+The Review
+
+   Crowdwork is of interest and valuable to a reasonably broad subset of the
+   CHI community. The authors do a nice job presenting a detailed literature
+   review of piecework and related constructs (Taylor’s Scientific
+   Management) and explaining the new understandings gained in crowdwork.
+   They also demonstrate the value of this new understanding to CHI. 
+
+   As the authors note, previous researchers have made the connection
+   between piecework and crowdwork but have not explored the relationship in
+   as much depth.  One might argue that they have instead looked to more
+   recent theories in industrial engineering (optimization) and management
+   science (job enrichment; job design) which inevitably were informed by
+   early work on piecework.  Regardless, I believe there is value in
+   situating current theories of crowdwork in relation to historical
+   theories when considering complexity limits of work, task decomposition,
+   and worker relationships.  Too often, we fail to learn from the past.
+   This paper offers an extensive reference list and introduction for those
+   entering the field of study and learning from the past.
+
+   One small suggestion for improvement would be to consider explaining why
+   you chose not to address other components of crowdwork including
+   incentives structures and professional advancement.
+
+   In short, I believe this paper is worthy of publication at CHI.
+
+Rebuttal response
+
+    I have read the author's rebuttal and feel they have adequately
+   addressed my concerns. I am confident that they will be able to make
+   their suggested changes in the short time frame allowed. I am very much
+   looking forward to seeing this paper presented at CHI and then
+   subsequently assigning it to my students.
+
+
+------------------------ Submission 4226, Review 4 ------------------------
+
+Reviewer:           external
+Overall rating:     4.5  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   3  (Knowledgeable)
+
+Recommendation
+
+   . . . Between possibly accept and strong accept; 4.5 
+
+Award Nomination
+
+   If accepted, this paper would not be among the top 20% of papers presented at CHI
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The contribution of this paper is to provide a comparative approach to
+   thinking about the future of crowd work in the context of piecework
+   history. It provides an account of the way human employment, has evolved
+   and shifted over time.  
+
+The Review
+
+   Overall I quite enjoyed reading this paper. It is well written, and how
+   we understand and study crowd work and other facets of ‘sharing
+   economy’ concepts is topical. The use of the piecework lens has helped
+   me personally to better understand the phenomenon, and provides a
+   meaningful way to articulate how it evolves moving forward.
+
+   The timely nature of the topic contributes to its significance, and there
+   is significant literature supporting the positions presented. The work
+   would appear original in its ideas (in the context of HCI research at
+   least).
+
+   The validity of this work can - and should - be challenged as part of an
+   ongoing discussion about the role of HCI in the context of crowd work,
+   and its place within society.
+
+   I am satisfied with the writing and presentation approach - I found the
+   document to be clear and well written.
+
+   Changes I would suggest the authors consider:
+
+   * Add something - perhaps as part of the review of piecework - about the
+   quantity-quality dilemma/scale and how it relates to the complexity of
+   work. It is unpacked more later as part of the problems, but I think it
+   would be of benefit to have it clearer from the outset.
+   * Some discussion that contrasts HCI researcher’s perspective studying
+   the experiences of crowd work, with what it means, and whether it is
+   ethical, to make use of crowd work in HCI research.
+   * Further to the above - more discussion about forward looking strategies
+   that the HCI community can and should investigate would be welcome.
+
+
+   Other recent work worth investigating that is relevant to the discourse
+   on crowdsourcing that mentions (in passing) a piecework comparison:
+   Williamson, V. (2016). On the ethics of crowdsourced research. PS:
+   Political Science & Politics, 49(01), 77-81.
+
+Rebuttal response
+
+   Happy with the authors response. Have adjusted my score up slightly, as I
+   am more convinced the proposed changes/clarifications make for an
+   important contribution.
+
+
+------------------------ Submission 4226, Review 5 ------------------------
+
+Reviewer:           external
+Overall rating:     4  (scale is 0.5..5; 5 is best)
+
+Expertise
+
+   3  (Knowledgeable)
+
+Recommendation
+
+   Possibly Accept: I would argue for accepting this paper; 4.0 
+
+Award Nomination
+
+   If accepted, this paper would not be among the top 20% of papers presented at CHI
+
+Your Assessment of this Paper's Contribution to HCI
+
+   The paper has a laudable goal of placing work on crowdsourcing into a
+   historical perspective, comparing it to early 20th century piecework. It
+   is not common for HCI scholarship to try to understand through historical
+   comparison. The paper draws upon a large literature - only a small part
+   of it historical.
+
+The Review
+
+   I think the paper is quite unusual in its goal of setting important
+   contemporary HCI work in an historical context. Unfortunately, I think
+   the paper does not draw very deep or insightful comparisons. The paper
+   uses history to draw structural comparisons between then and now - much
+   in the way that an economist or organizational scientist would apply
+   history for their own purposes. One common shortcoming of history by
+   organizational scientists or economists (but by no means all such
+   scholarship, e.g. there is great use of history by the economist Nathan
+   Rosenberg) is that it strips away all context and draws conclusions that
+   are ahistorical. I think this is a problem with this paper. Another
+   problem with this paper is that while it has a very long list of
+   citations, there are only two or three, e.g. David Grier's book on human
+   computers, that he really engages in the text. The author would have been
+   better advised to take a small number of historical cases and compare
+   them in greater depth to contemporary crowdsourcing. This would have
+   given the author more opportunity to understand how the context in which
+   the work was done mattered or did not matter - for there are very
+   different conditions for carrying out and delivering work today compared
+   to 100 years ago. Scientific management and production lines are
+   mentioned in passing in the paper, but the leading historical literature
+   on this subject, such as that by David Hounsell and Merrit Roe Smith, is
+   not cited.
+
+Rebuttal response
+
+   I feel slightly better about the paper based upon the author comments in
+   the rebuttal. I think the paper will be better for the changes they
+   propose making. I do not wish to change my overall score.
+
+
+
