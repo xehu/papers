@@ -24,24 +24,26 @@
 \begin{document}
 
 \section{Introduction}\label{sec:introduction}
-{The past decade has seen a flourishing of \textit{on--demand work},
+\msb{Please take a full pass through for consistent terminology. In the intro, we align on on--demand work and call it the union of crowd work and gig work. But then, in the title and the research questions, everything is crowd work, crowd work, crowd work. I suggest either using crowd work in the introduction and explaining that you're using that to mean both traditional crowd work as well as modern gig work, or using on--demand work in the title and in the research questions. I see the point ``(which we will refer to as \textit{crowd work} subsequently, for consistency with prior literature)'', but it feels like a cop out. Which one do we want to use, really? Let's pick one and be consistent throughout.}
+
+\ali{\textit{On--demand work} is more ``correct'', but I'm worried that crowdsourcing researchers will skim it and feel there's nothing relevant to them. Is that giving them too little credit?}
+
+\topic{The past decade has seen a flourishing of \textit{on--demand work},
 largely driven by the reformulation of work as
 constituent parts of larger tasks.}
-This framing of work into modular blocks
+This framing of work into modular
 has enabled the computational hiring \& management of workers at scale~\cite{howe2008crowdsourcing,Bigham2014,crowdworkFuture}.
 Distributed paid participants then engage in work whenever their schedules allow,
 with little to no awareness of the broader context of the work, and
 often with fleeting identities and associations~\cite{martin2014being,uberAlgorithm}.
 In this paper, we use the term on--demand work to join a pair of related phenomena:
-\begin{numberlist}[itemjoin*={;~and~},itemjoin={;~}]
-\item \textit{crowd work}, on platforms such as Amazon Mechanical Turk (AMT) and other sites of (predominantly) information work
-\item \textit{gig work}, often as platforms for one--off jobs, like driving, courier services, or administrative support.
-\end{numberlist}
+first, \textit{crowd work}, on platforms such as Amazon Mechanical Turk (AMT) and other sites of (predominantly) information work;
+and second, \textit{gig work}, often as platforms for one--off jobs, like driving, courier services, or administrative support.
 The realization that complex goals can be accomplished by directing and managing crowds of workers spurred industry to flock to sites of labor
-like AMT to explore the limits of this distributed, on--demand workforce.
+such as AMT to explore the limits of this distributed, on--demand workforce.
 Researchers have also taken to the space in earnest,
 developing systems and designs that enable new forms of production
-\cite[e.g.][]{bernsteinSoylent,vizwiz,paolacci2010running}.
+(e.g. \cite{bernsteinSoylent,vizwiz,paolacci2010running}).
 
 \topic{As on--demand work has grown far beyond information work, it has given rise to an increasingly complex, conflicted culture amongst both the workers who enable it and the researchers who study it.}
 \citeauthor{howe2008crowdsourcing} first described crowdsourcing broadly as
@@ -60,8 +62,8 @@ reflecting on the resistance workers express against digitally mediated labor ma
 \topic{This body of research has broadly sought to answer one central question:
 What does the future hold for on--demand work and those who do it?}
 Researchers have offered insights on this question along three major threads:
-\begin{numberlist}[itemjoin*={;~and~},itemjoin={;~}]
-  \item \nameref{sec:complexity}?
+% \begin{numberlist}[itemjoin*={.~And~},itemjoin={.~}]
+  First, \nameref{sec:complexity}?
         Specifically,
         \begin{inlinelist}[label=(\alph*)]
           \item How complex are the goals that crowd work can accomplish?, and
@@ -69,16 +71,16 @@ Researchers have offered insights on this question along three major threads:
         \end{inlinelist}
         \cite{foundry,suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,
               Nebeling:2016:WCW:2858036.2858169,
-              Hahn:2016:KAB:2858036.2858364}
-  \item \nameref{sec:decomposition}
+              Hahn:2016:KAB:2858036.2858364}.
+  Second, \nameref{sec:decomposition}
         \cite{embracingErrorKrishna,bernsteinSoylent,sensitiveTasks,
               LykourentzouPersonalityMatters,KucherbaevReLauncher,
               Law:2016:CKC:2858036.2858144,Cai:2016:CRI:2858036.2858237,
-              Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}
-  \item \nameref{sec:relationships}?
+              Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}.
+  And third, \nameref{sec:relationships}?
         \cite{turkopticon,storiesIraniSilberman,dynamo,crowdcollab,
               whyWouldAnyoneBrewer,takingAHITMcInnis}.
-\end{numberlist}
+% \end{numberlist}
 
 This research has largely sought to answer these questions by examining extant on--demand work phenomena.
 So far, it has not offered a framing for holistically explaining
@@ -95,39 +97,40 @@ Piecework as a metaphor for crowd work is not new.
 Indeed,
 \citeauthor{crowdworkFuture} in \citeyear{crowdworkFuture}
 referenced crowd work as piecework briefly
-as a loose analogy to the form of work emerging at the time~\cite{crowdworkFuture}.
+as a loose analogy~\cite{crowdworkFuture}.
 But more than this,
 the framing of on--demand labor as a re--instantiation of piecework
-gives us years of historical material to make sense of this new form of work, and allows us to reflect on--demand work through a mature theoretical lens, informed by decades of rigorous, empirically based research.
+gives us years of historical material to make sense of this new form of work, and allows us to reflect on--demand work through a mature theoretical lens, informed by decades of rigorous, empirical research.
 
 More concretely, by looking at on--demand work as
 an instantiation (or even a continuation) of piecework,
 and by interrogating patterns that the corresponding literature predicts
 on this basis, we can
-\begin{numberlist}[itemjoin*={; and },itemjoin={;~}]
-  \item make sense of past events as part of a much larger series of an interrelated phenomenon
-  \item reflect on differences in the factors that impacted piecework historically and their impact on--demand work today
-  \item to some extent, offer predictions of what on--demand work researchers,
-        and workers themselves,
-        might expect to see on the horizon.
-\end{numberlist}
+% \begin{numberlist}[itemjoin*={; and },itemjoin={;~}]
+first, make sense of past events as part of a much larger series of an interrelated phenomenon;
+second, reflect on differences in the factors that impacted piecework historically and their impact on--demand work today;
+and third, to some extent, offer predictions of what on--demand work researchers,
+and workers themselves,
+might expect to see on the horizon.
+% \end{numberlist}
 For example, we will draw on the piecework literature regarding task decomposition,
 which was historically limited by shortcomings in measurement and instrumentation, and
-leverage that understanding to suggest how modern technology affects this mechanism in on--demand work.
+leverage that understanding to suggest how modern technology affects this mechanism in on--demand work
+--- namely, by enabling precise tracking and measurement of workers via algorithms and software.
 
 
 We organize this paper as follows:
-\begin{numberlist}[itemjoin*={; and },itemjoin={;~}]
-  \item we review the definition and historical arc of piecework
-  to lay groundwork and make clear the analogy to on--demand work
-  (which we'll call \textit{crowd work} hereon
-  for consistency with the existing literature)
-  \item we interrogate the three major research questions above using the lens of piecework. 
-  We will identify similarities and differences between piecework as historically understood and
-  on--demand work as we know it today
-  \item we will make predictions of future developments based on how those similarities and differences influenced piecework
-  \item we will offer implications for researchers and practitioners based on our results.
-\end{numberlist}
+% \begin{numberlist}[itemjoin*={; and },itemjoin={;~}]
+first, we review the definition and historical arc of piecework
+to lay groundwork and make clear the analogy to on--demand work
+(which we'll call \textit{crowd work} hereon
+for consistency with the existing literature);
+second, we interrogate the three major research questions above using the lens of piecework. 
+We will identify similarities and differences between piecework as historically understood and
+on--demand work as we know it today;
+third, we will make predictions of future developments based on how those similarities and differences influenced piecework;
+finally, we will offer implications for researchers and practitioners based on our results.
+% \end{numberlist}
 
 
 % \onlyinsubfile{
