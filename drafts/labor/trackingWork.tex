@@ -76,10 +76,11 @@
 \setlength{\pdfpagewidth}{\pprw}
 \setlength{\pdfpageheight}{\pprh}
 \definecolor{PineGreen}{HTML}{008800}
-\definecolor{BrickRed}{HTML}{FF0000}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
 \definecolor{JokeGreen}{HTML}{00C953}
 \newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
-\newcommand{\ali}[1]{{\color{BrickRed}[al2: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
 \newcommand{\TO}{\textit{Turkopticon}}
 \newcommand{\DO}{\textit{Dynamo}}
 
@@ -122,7 +123,7 @@ at at whatever rate and in whichever manner they wish} % do i use this more than
 \newcommand{\onlyinsubfile}[1]{#1}
 \newcommand{\notinsubfile}[1]{}
 \newcommand{\note}[1]{\footnote{#1}}
-\newcommand{\topic}[1]{\textbf{#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
+\newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
 \newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
 
 \let\internalNoteali\ali
