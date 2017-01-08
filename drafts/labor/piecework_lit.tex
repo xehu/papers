@@ -17,7 +17,7 @@
 myriad instantiations of on--demand labor, but
 researchers have generally made this allusion in passing.}
 Since this paper traces a much stronger parallel between
-(historical) piecework and (contemporary) crowd work
+(historical) piecework and (contemporary) on--demand work
 (and, more generally, on--demand labor),
 a more comprehensive background on piecework will be useful.
 We will more carefully discuss piecework in this section
@@ -28,7 +28,7 @@ and second, we'll trace the rise and fall of piecework at a high level,
 identifying key figures and ideas during this time.
 This section is not intended to be comprehensive:
 instead, it sets up the scaffolding necessary for
-our later investigations of crowd work's three questions:
+our later investigations of on--demand work's three questions:
 complexity limits,
 task decomposition, and
 worker relationships.
@@ -79,10 +79,9 @@ that seems a bit wishy--washy though; I'd like to say something like
 
 \topic{By \citeyear{hughRaynbirdTaskWork} we find
 a concise definition of piecework
-in \citeauthor{hughRaynbirdTaskWork}'s essay on piecework
-(where he also calls it ``measure work'', ``grate work'', and ``task work''),
+in \citeauthor{hughRaynbirdTaskWork}'s essay on piecework,
+% (where he also calls it ``measure work'', ``grate work'', and ``task work''),
 particularly driven toward encapsulating the manual labor of farmwork.}
-\ali{I just made the line ``Raynbird's essay on piecework''; is that enough to make it sound less important?}
 \citeauthor{hughRaynbirdTaskWork} does this by contrasting with the ``day--labourer'' ---
 ``the chief difference lies between the day--labourer,
 who receives a certain some of money~\dots~for his day's work,
@@ -96,19 +95,19 @@ well--studied in labor economics as well~\cite{Figlio2007901,weitzman1976new,10.
 
 \topic{It's worth acknowledging that
 ``this distinction [between piece--rates and time--rates] was not completely clear--cut''~\cite{hart2013rise}.}
-Indeed, employers adopted piece--rate compensation in some aspects and
-time--rate compensation in others.
-The Rowan premium system,
-which essentially paid workers
-a base rate for time plus, potentially,
-an additional pay dependent on output~\cite{rowan1901premium};
-this was just one of several alternatives to categorical time-- and piece--rate renumeration paradigms.
+Employers implemented piece--rates in some aspects and
+time--rates in others.
+The Rowan premium system, for example,
+essentially paid workers
+a base rate for time plus
+additional pay dependent on output~\cite{rowan1901premium}.
 As \citeauthor{rowan1901premium}'s premium system guaranteed an hourly rate
 regardless of the worker's productive output
 \textit{as well as} additional compensation tied to performance,
-workers under this regime were
+workers were
 in some senses ``task--labourers'', but
 in other senses ``day--labourers''.
+This was just one of several alternatives to strict time-- and piece--rate renumeration paradigms.
 
 \topic{It may be worth thinking about piecework through the lens of its \textit{emergent} properties to help understand it.}
 \citeauthor{hughRaynbirdTaskWork} argues for the merits of piecework,
@@ -148,29 +147,27 @@ now, they
 could be trained quickly on narrowly scoped tasks,
 demonstrate proficiency, and become experts.
 
-\topic{Piecework's popularity in the United States and Europe plummeted almost as quickly as it had climbed.}
-Between 1938 and 1942, the proportion of metal workers who were pieceworkers had climbed steeply 11\% to 60\%~\cite{hart2005piecework};
-by 1961, that proportion dropped to as little as 8\%~\cite{carlson1982time}.
-\citeauthor{carlson1982time} details that, from 1973 to 1980, the remaining bastions of piecework
+\topic{Piecework's popularity in the United States and Europe fell almost as quickly as it had climbed.}
+Between 1938 and 1942, the proportion of metal workers under piecework systems had climbed steeply from 11\% to 60\%~\cite{hart2005piecework}.
+By 1961, that proportion dropped to 8\%~\cite{carlson1982time}.
+\citeauthor{carlson1982time} details that, from 1973 to 1980, the holdouts of piecework
 --- where more than 50\% worked under incentive wage plans ---
 were principally in clothes--making (e.g. hosiery, footwear, and garments).
 \citeauthor{hart2013rise}'s work substantively explores the precipitous decline of piecework in the last third of the \nth{20} century.
 
-\ali{``, ultimately arguing that\dots''?}
 
 
 In summary, piecework:
 \begin{inlinelist}
-  \item paid workers for quantity of work done, rather than time done,
-        but occasionally mixed the two payment models
-  \item afforded workers freedom in when and how much to work
-  \item structured tasks such that people who didn't have the training
-        to engage in the traditional labor force could still participate.
+  \item paid workers for \textit{quantity} of work done, rather than \textit{time} done,
+        but occasionally mixed the two payment models;
+  \item afforded workers a sense of freedom and independence; and
+  \item structured tasks in such a way as to facilitate more narrowly scoped training and education.
 \end{inlinelist}
 
 \msb{If you want to make the argument in the last paragraph of this subsection that piecework assumed no professional skills, it's worth calling that out slightly more visibly throughout the subsection.}\ali{I don't want to suggest that, actually, at least not ultimately; in the beginning, sure, but by WWII it definitely required certain specialized training (arguably in Airy's case too)}
 
-Viewing crowd work as a modern instantiation of piecework is relatively straightforward by this definition.
+Viewing on--demand work as a modern instantiation of piecework is relatively straightforward by this definition.
 First, platforms such as Mechanical Turk, Uber and TaskRabbit pay by the task, though some such as Upwork do offer hourly rates as well.
 Second, workers are attracted to these platforms by the freedom they offer to pick the time and place of work~\cite{martin2014being,whyWouldAnyoneBrewer}.
 Third, system developers as on Mechanical Turk typically assume no professional skills in transcription or other areas, and attempt to build that expertise into the work flow~\cite{noronha2011platemate,bernsteinSoylent}.
@@ -205,13 +202,14 @@ What did I pull from the threads that are related to industrial and railroad wor
 
 \end{comment}
 
+% \onlyinsubfile{\clearpage}
 \subsubsection{\ali{should I drop this? Railroad and other }Industrial Workers}
-\topic{Piecework might be most familiar to the HCI researcher in the context of the assembly line, which largely defined manufacturing through the \nth{20} century.}
+\topic{Piecework might be most familiar to the HCI researcher at the assembly line, which largely defined manufacturing through the \nth{20} century.}
 In the railroad industry and especially on the assembly line
 we see many of the mechanisms of work and worker management that later made their way into crowd work.
 Furthermore, it's from here the piecework literature draws most upon to find limits speaking to complexity and task granularity.
 We'll expose these facets of piecework very superficially in the context of industrial work
-to better speak to these research questions in crowd work later.
+to better speak to these research questions in on--demand labor later.
 
 \topic{Railway companies adopted piecework regimes in the early \nth{20} century;
 what followed was a flourishing in the management practices with pieceworkers,
@@ -299,6 +297,11 @@ What did I pull from the threads that are related to domestic/farmwork?
 - Brown: Task variability matters
 - Clark: pieceworkers work harder, more diligently, etc...
 - Riis saw terrible conditions, documented and communicated it to the world
+
+\citeauthor{clark1908cotton} observed textile mill pieceworkers and reported,
+``When he works by the day the Italian operative wishes to leave before the whistle blows,
+but if he works by the piece he will work as many hours as it is possible for him to stand''~\cite{clark1908cotton}.
+
 
 \end{comment}
 
