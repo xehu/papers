@@ -15,7 +15,7 @@ Crowdwork
 \end{comment}
 
 \subsection[What are the complexity limits of on--demand work]
-{Identifying the Complexity Limits of On--Demand Work}\label{sec:complexity}
+{Complexity Limits of On--Demand Work}\label{sec:complexity}
 A key question to the future of on--demand work is
 \textit{what} precisely will become part of this economy.
 Paid crowdsourcing began with simple microtasks on platforms such as
@@ -26,39 +26,34 @@ how complex can the work outcomes from on--demand work be?
 
 \subsubsection{\crowdworkpers}
 
-\topic{Crowdsourcing research has spent the better part of a decade
-proving the viability of crowdsourcing in complex work.}
-Unless on--demand work as a whole can demonstrate viability for meaningfully complex tasks,
-the argument runs,
-it will be incapable of ensuring a pro--social outcome for work and workers~\cite{crowdworkFuture}.
-\citeauthor{crowdForgeKittur} first opened the question of
-whether crowdsourcing could be used for goals that are not simple parallel tasks~\cite{crowdForgeKittur}.
+%\topic{Crowdsourcing research has spent the better part of a decade
+%proving the viability of crowdsourcing in complex work.}
+%Unless on--demand work as a whole can demonstrate viability for meaningfully complex tasks,
+%the argument runs,
+%it will be incapable of ensuring a pro--social outcome for work and workers~\cite{crowdworkFuture}.
+\topic{\citeauthor{crowdForgeKittur} first opened the question of
+whether crowdsourcing could be used for goals that are not simple parallel tasks~\cite{crowdForgeKittur}.}
 Their work demonstrated proof--of--concept crowdsourcing of
-a simple encyclopedia article and news summary
+an encyclopedia article and news summary
 --- tasks which could be verified or repeated
 with reasonable expectations of similar outcomes.
-Seeking to raise the complexity ceiling~\cite{myers2000past},
+Seeking to raise the complexity ceiling,
 researchers have since created
 additional proof--of--concept applications and techniques,
 including conversational assistants~\cite{lasecki2013chorus},
 medical data interpreters~\cite{lasecki2013chorus}, and
-idea generation work--flows~\cite{YuEncouragingOutside,yu2014distributed,Yu2016a},
-to name a few examples.
+idea generation work--flows~\cite{YuEncouragingOutside,yu2014distributed,Yu2016a}.
 
 \topic{To achieve complex work, this body of research has often applied ideas from Computer Science to design new crowdsourcing work--flows.}
-Beginning with a goal that has
-presented significant challenges for computers,
-the researcher leverages an insight from Computer Science
-(for example, MapReduce~\cite{crowdForgeKittur} or
-sequence alignment algorithms~\cite{lasecki2012real})
-and arranges humans as computational black boxes within those approaches.
+The system designer leverages techniques such as MapReduce~\cite{crowdForgeKittur} and
+sequence alignment algorithms~\cite{lasecki2012real}, arranging humans as computational black boxes within.
 This approach has proven a compelling one because
 it leverages the in--built advantages of
 scale,
 automation, and
 programmability that software affords.
 
-\topic{It is now clear that this computational workflow approach works with focused complex tasks, but
+\topic{It is now clear that this computational workflow approach works with some classes of complex tasks, but
 the broader wicked problems largely remain unsolved~\cite{rittel1973dilemmas}.}
 As a first example,
 idea generation shows promise~\cite{YuEncouragingOutside,yu2014distributed,Yu2016a},
@@ -141,59 +136,75 @@ Industrial workers
 \end{itemize}
 }
 
+\msb{ summarizing the later conclusion so we can support it here:
+complexity is determined by whether we can encode it into workflows
+complexity is determined by whether we can modularize and measure it
+complexity is determined by how much management overhead there is
+complexity is determined by the infrastructure that can support it
+}
+
 \topic{Piecework's body of research most squarely addresses complexity in two of the cases we looked at earlier:
-Airy's human computers and among industrial workers, especially during World War II.}
-The majority of piecework's perspective, on this topic, will come from these areas.
+Airy's human computers and among industrial workers.}
+%The majority of piecework's perspective, on this topic, will come from these areas.
 
-\topic{Airy's work opened the door to greater task complexity by decomposition.}
-Airy's computers had relatively limited education in mathematics, but
-they were nevertheless collectively able to accomplish complex goals by
-approaching distinct, subdivided, quickly verifiable tasks in chunks~\cite{grier2013computers}.
-\ali{do i need to say more?}
+\topic{Airy's work on astronomical charts opened the door to greater task complexity by encoding the intelligence into the process rather than the people.}
+Airy's computers had relatively limited education in mathematics, but by combining individual simple mathematical operations, Airy was able to create a complex composite outcome~\cite{grier2013computers}.
+Likewise, in Ford's factories, no individual could build the entire car, but the process could emergently produce one.
 
-\topic{It seemed, too, that only tasks that could be measured and priced could be completed via piecework
---- a conclusion which would fundamentally limit the potential complexity of piecework.}
-Earlier we discussed \citeauthor{10.2307/23702539}'s and later \citeauthor{Brown01041990}'s analysis of railway workers;
-one might conclude from \citeauthor{10.2307/23702539}'s observations in particular that
-complex, creative work
+However, when piecework intially entered the American economy,
+it was not used for complex work.
+Without having designed complex work processes, piecework managers were restricted to available workers' skills such as sewing: it was infeasible to provide new pieceworkers with the comprehensive education
+that apprenticeships imparted \cite{hart2013rise}.
+So, initially piecework arose for farm work, and as
+\citeauthor{hughRaynbirdTaskWork} and others discuss,
+the practice remained relatively obscure until
+it blossomed in the textile industry~\cite{hughRaynbirdTaskWork}.
+Complexity levels remained low at the turn of
+the \nth{20} century as piecework saturated New York City~\cite{riisOtherSideLives}.
+
+\topic{Measurement also limited the complexity of piecework: only tasks that could be measured and priced could be completed via piecework.}
+Earlier we discussed \citeauthor{10.2307/23702539}'s and later \citeauthor{Brown01041990}'s analysis of railway workers.
+They identified task homogeneity and measurement as key requirements for piecework.
+However, complex, creative work
 --- which is inherently heterogeneous and difficult to routinize ---
-would be unsuitable for piecework~\cite{10.2307/23702539}.
-\citeauthor{Brown01041990}'s description of efficiency experts would corroborate this;
-``efficiency experts'' can effectively gauge how long known tasks should take, but
-would find themselves overwhelmed if they attempted to assess creative work like design,
+was unsuitable~\cite{10.2307/23702539}.
+\citeauthor{Brown01041990}'s description of ``efficiency experts'' would corroborate this;
+efficiency experts can effectively gauge how long known tasks should take, but
+would find themselves overwhelmed if they attempted to assess creative tasks like scientific research,
 which can take an arbitrary number of iterations before proceeding to a subsequent step.
 
-\topic{The next innovation in piecework's drive toward complexity came on
-the assembly line, specifically during the war effort.}
-At a time when manufacturing firms needed more able--bodied workers, but
-all of the conventionally trained metalworkers had joined the armed forces,
-factories turned to women~\cite{honey1985creating,davies2014origins}.
-This need to train workers rapidly to do very narrowly defined tasks resulted in
-a \textit{recomposition} of work, wherein
-workers were only prepared for the tasks they would do;
-riveters would only be trained on how to do rivet and
-to pass the output to the next person on the assembly line,
-who could evaluate and send the work back or proceed with the next step.
+
+%\topic{The next innovation in piecework's drive toward complexity came on
+%the assembly line, specifically during the war effort.}
+%At a time when manufacturing firms needed more able--bodied workers, but
+%all of the conventionally trained metalworkers had joined the armed forces,
+%factories turned to women~\cite{honey1985creating,davies2014origins}.
+%This need to train workers rapidly to do very narrowly defined tasks resulted in
+%a \textit{recomposition} of work, wherein
+%workers were only prepared for the tasks they would do;
+%riveters would only be trained on how to do rivet and
+%to pass the output to the next person on the assembly line,
+%who could evaluate and send the work back or proceed with the next step.
 
 
-\ali{OR\dots
+%\ali{OR\dots
 
 
-\topic{Only tasks that could be measured and priced could be completed via piecework
---- a fact which fundamentally limited the potential complexity of piecework.}
-Earlier we discussed \citeauthor{10.2307/23702539}'s and later \citeauthor{Brown01041990}'s analysis of railway workers;
-one might conclude from \citeauthor{10.2307/23702539}'s observations in particular that
-complex, creative work
---- which is inherently heterogeneous and difficult to routinize ---
-would be unsuitable for piecework~\cite{10.2307/23702539}.
-\citeauthor{Brown01041990}'s description of efficiency experts would corroborate this;
-``efficiency experts'' can effectively gauge how long known tasks should take, but
-would find themselves overwhelmed if they attempted to assess creative work like design,
-which can take an arbitrary number of iterations before proceeding to a subsequent step.
+%\topic{Only tasks that could be measured and priced could be completed via piecework
+%--- a fact which fundamentally limited the potential complexity of piecework.}
+%Earlier we discussed \citeauthor{10.2307/23702539}'s and later \citeauthor{Brown01041990}'s analysis of railway workers;
+%one might conclude from \citeauthor{10.2307/23702539}'s observations in particular that
+%complex, creative work
+%--- which is inherently heterogeneous and difficult to routinize ---
+%would be unsuitable for piecework~\cite{10.2307/23702539}.
+%\citeauthor{Brown01041990}'s description of efficiency experts would corroborate this;
+%``efficiency experts'' can effectively gauge how long known tasks should take, but
+%would find themselves overwhelmed if they attempted to assess creative work like design,
+%which can take an arbitrary number of iterations before proceeding to a subsequent step.
 
-\topic{Piecework was limited to tasks that could be quickly and accurately evaluated.}
-For example, the roles required to facilitate piecework
-in the early \nth{20} century included ``piecework clerks, inspectors, and `experts'''~\cite{10.2307/23702539}.
+\topic{Moreover, piecework was limited to tasks that could be quickly and accurately evaluated.}
+%For example, the roles required to facilitate piecework
+%in the early \nth{20} century included ``piecework clerks, inspectors, and `experts'''~\cite{10.2307/23702539}.
 \citeauthor{hart2016rise} argue that evaluation limited piecework's complexity:
 at some point, evaluating multidimensional work for quality
 (rather than for quantity) becomes infeasible.
@@ -201,6 +212,8 @@ In his words,
 ``if the quality of the output is more difficult to measure than the quantity [\ldots]
 then a piecework system is likely to encourage
 an over--emphasis on quantity~\dots~and an under--emphasis on quality''~\cite{hart2016rise}.
+Complex work, which is often subjective to evaluate, falls victim to this criteria.
+%``pay schemes based on~\dots~performance may induce workers to neglect tasks that are less easy to measure''~\cite{SJOE:SJOE371}.
 
 % \topic{This focus on measurement and tracking had consequences.}
 % \citeauthor{10.2307/23702539} suggests that the first sparks of scientific management
@@ -215,23 +228,23 @@ an over--emphasis on quantity~\dots~and an under--emphasis on quality''~\cite{ha
 % alongside piecework was not only understandable, but predictable~\cite{hart2013rise}.
 
 
-\topic{Piecework researchers were also finding that certain types of \textit{organizations},
-as well as certain types of \textit{work},
-were more amenable to piecework regimes.}
-\citeauthor{Brown01041990} wrote that piecework was
-``less likely in jobs with a variety of duties than in
-jobs with a narrow set of routinized duties''~\cite{Brown01041990};
-\citeauthor{SJOE:SJOE371} hypothesized this as an effect of market forces
---- suggesting that
-``pay schemes based on~\dots~performance may induce workers to neglect tasks that are less easy to measure''~\cite{SJOE:SJOE371}.
-Airy seemed to recognize this,
-decomposing complex mathematical problems into easily verified components, % ~\cite{grier2013computers},
-but applying this model to tasks like railway engineering may have been prohibitively difficult.
+%\topic{Piecework researchers were also finding that certain types of \textit{organizations},
+%as well as certain types of \textit{work},
+%were more amenable to piecework regimes.}
+%\citeauthor{Brown01041990} wrote that piecework was
+%``less likely in jobs with a variety of duties than in
+%jobs with a narrow set of routinized duties''~\cite{Brown01041990};
+%\citeauthor{SJOE:SJOE371} hypothesized this as an effect of market forces
+%--- suggesting that
+%``pay schemes based on~\dots~performance may induce workers to neglect tasks that are less easy to measure''~\cite{SJOE:SJOE371}.
+%Airy seemed to recognize this,
+%decomposing complex mathematical problems into easily verified components, % ~\cite{grier2013computers},
+%but applying this model to tasks like railway engineering may have been prohibitively difficult.
 
-\topic{But it was more than the inherent qualities of work and the organization of the firm that mattered;
-management practices themselves had to be appropriately geared to working with pieceworkers.}
-Competent foremen were integral both for allocating resources and
-for liaising between workers and upper management~\cite{wray1949marginal,10.2307/2118435}.
+%\topic{But it was more than the inherent qualities of work and the organization of the firm that mattered;
+%management practices themselves had to be appropriately geared to working with pieceworkers.}
+%Competent foremen were integral both for allocating resources and
+%for liaising between workers and upper management~\cite{wray1949marginal,10.2307/2118435}.
 % The West Virginia mines, as \citeauthor{10.2307/2118435} writes,
 % ~\cite{10.2307/2118435}.
 
@@ -273,7 +286,7 @@ for liaising between workers and upper management~\cite{wray1949marginal,10.2307
 % --- farm workers didn't need to be trained on how to plow fields, or birth foals;
 % seamstresses knew how to sew together denim~\cite{10.2307/2338394,riisOtherSideLives}.
 
-}
+%}
 % \clearpage
 \subsubsection{\whatchanged}
 \begin{comment}
@@ -285,26 +298,27 @@ for liaising between workers and upper management~\cite{wray1949marginal,10.2307
 
 \topic{The research on piecework tells us that
 we should expect piecework to thrive in industries where
-the nature of the work is limited in complexity~\cite{Brown01041990}.}
-Given the flourishing of on--demand labor platforms such as
-Uber, AMT, and others, we ask ourselves
-what --- if anything --- has changed.
-We argue that
-the internet has trivialized
-the costs and challenges of the earlier limiting factors
-because technology makes it easier
-\begin{inlinelist}
-  \item for workers to do complex work without training,
-  \item to manage workers in doing complex work, and 
-  \item to create the infrastructure necessary to manage the workers.
-\end{inlinelist}
+the nature of the work is limited in complexity~\cite{Brown01041990}, and become less common as work becomes more complex.}
+%Given the flourishing of on--demand labor platforms such as
+%Uber, AMT, and others, we ask ourselves
+%what --- if anything --- has changed.
+However, has computation shifted piecework's previous limits of expertise, measurement, and evaluation?
 
-\topic{Technology increases non--experts' levels of expertise by giving access to information that would otherwise be unavailable.}
-For example, taxi drivers in London endure rigorous training to pass a test known as ``The Knowledge''
---- a demonstration of the driver's comprehensive familiarity with the city's roads.
+%We argue that
+%the internet has trivialized
+%the costs and challenges of the earlier limiting factors
+%because technology makes it easier
+%\begin{inlinelist}
+%  \item for workers to do complex work without training,
+%  \item to manage workers in doing complex work, and 
+%  \item to create the infrastructure necessary to manage the workers.
+%\end{inlinelist}
+
+\topic{In some ways, yes: technology increases non--experts' levels of expertise by giving access to information that would otherwise be unavailable.}
+For example, taxi drivers in London endure rigorous training to pass a test known as ``The Knowledge'': a demonstration of the driver's comprehensive familiarity with the city's roads.
 This test is so challenging that veteran drivers develop significantly larger
 the regions of the brain associated with spatial functions such as navigation~\cite{Maguire11042000,Maguire2894,Skok:1999:KML:299513.299625,skok2000managing,Woollett1407,woollett2011acquiring}.
-In contrast, with on--demand platforms such as Uber, services such as Google Maps \& Waze make it possible for
+In contrast, with on--demand platforms such as Uber, services such as Google Maps and Waze make it possible for
 people entirely unfamiliar with a city
 to operate professionally~\cite{silva2013traffic,hind2014outsmarting}.
 Other examples include search engines enabling information retrieval, and
@@ -313,18 +327,24 @@ By augmenting the human intellect~\cite{engelbart2001augmenting},
 computing has shifted the complexity of work that is possible without training.
 
 \topic{Algorithms have automated some tasks that previously fell to management.}
-Computational systems hire workers~\cite{turkitLittle,weld2010decision}, as well as direct their activities~\cite{uberAlgorithm}, and act as ``piecework clerks''~\cite{10.2307/23702539} to inspect, modify and combine work~\cite{turkopticon,takingAHITMcInnis}.
-In many cases, the intermediary function has been removed as well, leading workers to need to directly email requesters for clarification and feedback~\cite{martin2014being}.
-These algorithms, however, are less able than human managers to manage contingencies that were not programmed into them.
+Computational systems now %hire workers~\cite{turkitLittle,weld2010decision}, as well as direct their activities~\cite{uberAlgorithm}, and 
+act as ``piecework clerks''~\cite{10.2307/23702539} to inspect, modify and combine work~\cite{turkopticon,takingAHITMcInnis}.
+%In many cases, the intermediary function has been removed as well, leading workers to need to directly email requesters for clarification and feedback~\cite{martin2014being}.
+However, these algorithms are less able than human managers to evaluate subjective work.
+%So, assessment remains a bottleneck.
 
 
-\topic{Finally, the organizational limit on infrastructure creation is somewhat lessened.}
-Writing web scripts takes fewer people and fewer hours than creating physical equipment for piecework.
-\citeauthor{turkitLittle}'s vision was that any user with basic programming skills could tap into on--demand human intelligence.
-As better toolkits lower this threshold~\cite{myers2000past} and computational thinking diffuses, a broader population will be able to use on--demand work.
+%\topic{Finally, the organizational limit on infrastructure creation is somewhat lessened.}
+%Writing web scripts takes fewer people and fewer hours than creating physical equipment for piecework.
+%\citeauthor{turkitLittle}'s vision was that any user with basic programming skills could tap into on--demand human intelligence.
+%As better toolkits lower this threshold~\cite{myers2000past} and computational thinking diffuses, a broader population will be able to use on--demand work.
 
 % \clearpage
 \subsubsection{\implication}
+Algorithms are undoubtably capable of shepherding more complex work than the linear processes available to Airy and Ford.
+However, as work becomes more complex, it becomes increasingly difficult to codify a process to achieve it~\cite{Faraj2006a,edmondson2012teaming}.
+So, while algorithms will increase the complexity ceiling beyond what was possible previously with piecework, there is a fundamental limit to how complex such work can become.
+
 Technology's ability to support human cognition will enable stronger assumptions about workers' abilities, increasing the complexity of on--demand work outcomes.
 Just as the shift to expert crowdsourcing increased complexity, so too will workers with better tools increase the set of tasks possible.
 Beyond this, further improvements would most likely come from replicating the success of narrowly--slicing education for expert work as \citeauthor{hart2013rise} and \citeauthor{grier2013computers} described in their piecework examples
@@ -335,26 +355,34 @@ provide crowd workers with the resources that they need, but
 it remains to be seen whether that work will be appropriately valued, let alone
 properly interpreted by task solicitors~\cite{aguaded2013mooc}.
 If we can overcome this obstacle,
-we might be able to empower more of these workers to do complex work such as engineering and metalworking,
-rather than doom them to ``uneducated'' match girl reputations~\cite{10.2307/3827491}.
+we might be able to empower more of these workers to do complex work such as engineering,
+rather than doom them to ``uneducated'' match--girl reputations~\cite{10.2307/3827491}.
 However, many such experts are already available on platforms such as Upwork, so training may not directly increase the complexity accessible to on--demand work unless it makes common expertise more broadly available.
 
-Will the shift from human managers to Turing--complete algorithms raise the complexity ceiling? 
-By the Turing test, the algorithms would be at best indistinguishable from human piecework clerks and foremen.
-So in terms of enabling coordination, algorithmic management is unlikely to directly raise the ceiling beyond what piecework could achieve.
-However, as a resource constraint, algorithms are a fixed cost and not a per--person cost like human managers.
-So in terms of accessibility, algorithms will allow a broader class of organizations and individuals to benefit from soliciting on--demand work.
-This shift may enable complex goals that were not cost--effective before to become feasible.
-However, because algorithms remain far from replicating all of the foreman's responsibilities,
-most likely is a middle ground in which on--demand work re--introduces
-the human element to management in a more targeted way~(e.g.,~\cite{haas2015argonaut,kulkarni2012mobileworks,crowdguilds}).
-This move will require resolving the tension between workers and perilously antagonistic managers, as \citeauthor{10.2307/2118435} suggest, to break a toxic cycle of mistrustful requesters~\cite{MaliciousCrowdworkersGadiraju}.
+Evaluation remains as difficult for crowd work as it did for the efficiency experts. 
+Reputation systems for crowdsourcing platforms remain notoriously inflated~\cite{Horton2015a}.
+Ultimately, many aspects of assessment remain subjective: whether a logo made for a client is fantastic or terrible may depend on taste.
+
+So, in the case of complexity, the history of piecework does not yet offer compelling evidence that on--demand work will achieve far more complex outcomes than piecework did.
+Improvements in workflows, measurement and evaluation have already been made, and it is not clear that the remaining challenges are readily solveable.
+However, on--demand work will be far more broadly distributed than piecework historically was---reaching many more tasks and areas of expertise by virtue of the internet.
+
+%Will the shift from human managers to Turing--complete algorithms raise the complexity ceiling? 
+%By the Turing test, the algorithms would be at best indistinguishable from human piecework clerks and foremen.
+%So in terms of enabling coordination, algorithmic management is unlikely to directly raise the ceiling beyond what piecework could achieve.
+%However, as a resource constraint, algorithms are a fixed cost and not a per--person cost like human managers.
+%So in terms of accessibility, algorithms will allow a broader class of organizations and individuals to benefit from soliciting on--demand work.
+%This shift may enable complex goals that were not cost--effective before to become feasible.
+%However, because algorithms remain far from replicating all of the foreman's responsibilities,
+%most likely is a middle ground in which on--demand work re--introduces
+%the human element to management in a more targeted way~(e.g.,~\cite{haas2015argonaut,kulkarni2012mobileworks,crowdguilds}).
+%This move will require resolving the tension between workers and perilously antagonistic managers, as \citeauthor{10.2307/2118435} suggest, to break a toxic cycle of mistrustful requesters~\cite{MaliciousCrowdworkersGadiraju}.
 
 
-Finally, the cost of creating piecework infrastructure has dropped. 
-Expensive manufacturing equipment has been largely replaced by computer code~\cite{lessig2006code}.
-As with lowered costs of management, lowered infrastructure costs will make on--demand work accessible to a broader set of people and organizations.
-This in and of itself does not raise the complexity ceiling, but by broadening the potential market for on--demand work, it may enable a new set of goals and needs take part.
+%Finally, the cost of creating piecework infrastructure has dropped. 
+%Expensive manufacturing equipment has been largely replaced by computer code~\cite{lessig2006code}.
+%As with lowered costs of management, lowered infrastructure costs will make on--demand work accessible to a broader set of people and organizations.
+%This in and of itself does not raise the complexity ceiling, but by broadening the potential market for on--demand work, it may enable a new set of goals and needs take part.
 
 % \onlyinsubfile{
 %   \balance{}

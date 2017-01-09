@@ -16,8 +16,7 @@
 At its core,
 on--demand work has been enabled by decomposition of large goals into many small tasks.
 As such,
-one of the central questions in the literature is how to design these microtasks,
-and which kinds of tasks are amenable to decomposition.
+one of the central questions in the literature is how finely-sliced these microtasks can become, and which kinds of tasks are amenable to decomposition.
 In this section,
 we place these questions in the context of piecework's Taylorist evolution.
 
@@ -44,15 +43,15 @@ consist of creative methods for decomposing goals.}
 Even when tasks such as writing and editing cannot be reliably performed by individual workers,
 researchers demonstrated that
 decompositions of these tasks into workflows can succeed~\cite{crowdForgeKittur,
-                                                               bernsteinSoylent,
-                                                               writingMicroTasks,
-                                                               Nebeling:2016:WCW:2858036.2858169}. 
+bernsteinSoylent,
+writingMicroTasks,
+Nebeling:2016:WCW:2858036.2858169}. 
 These decompositions typically take the form of workflows,
 which are algorithmic sequences of tasks that manage interdependencies~\cite{Bigham2014}. 
 Workflows often utilize a first sequence of tasks to identify an area of focus (e.g.,
 a paragraph topic~\cite{crowdForgeKittur},
 an error~\cite{bernsteinSoylent},
-or a concept~\cite{Yu2016a,Yu2016b} and a second sequence of tasks to execute work on that area. 
+or a concept~\cite{Yu2016a,Yu2016b}) and a second sequence of tasks to execute work on that area. 
 This decomposition style has been successfully applied across many areas,
 including food labeling~\cite{noronha2011platemate},
 brainstorming~\cite{siangliulue2015toward,yu2014distributed},
@@ -97,7 +96,7 @@ workers edit adjacent paragraphs in inconsistent ways~\cite{bernsteinSoylent,Kim
 interpret tasks in different ways~\cite{kairam2016parting},
 and exhibit lower motivation~\cite{Kinnaird:2012:WTM:2389176.2389219} without sufficient context.
 Research has sought to ameliorate this issue by
-designing workflows help workers ``act with global understanding when
+designing workflows to help workers ``act with global understanding when
 each contributor only has access to local views''~\cite{verroios2014context},
 typically by automatically or manually generating higher--level representations
 for the workers to reflect on~\cite{chilton2013cascade,verroios2014context,Kim2017}.
@@ -107,11 +106,9 @@ the invisible labor of \textit{finding} tasks~\cite{martin2014being} has arisen 
 \citeauthor{taskSearch} illustrate the task search challenges on AMT.
 Workers seek out good requesters~\cite{martin2014being} and then 
 ``streak'' to perform many tasks of that same type~\cite{taskSearch}.
-and some work has gone into ameliorating the problems specific to this work site (\textit{ReLauncher}),
-
+%and some work has gone into ameliorating the problems specific to this work site (\textit{ReLauncher}),
 Researchers have reacted by designing task recommendation systems~\cite[e.g.][]{Cosley:2007:SUI:1216295.1216309}
-and others focused on
-minimizing the amount of time that people need to spend doing anything other than
+and minimizing the amount of time that people need to spend doing anything other than
 the work for which they are paid~\cite{callison2014crowd}.
 
 
@@ -158,7 +155,10 @@ similarly to the efficiency experts hired in the Santa Fe Railway, but
 substantially more precise.
 The distillation of work into smaller units ultimately bottomed out with tasks as small as could be usefully measured~\cite{10.2307/23702539}.
 
-The fourth and final stage was narrow expertise training. As World War II raged and there was a dearth of skilled workers, managers trained women just enough to be able to complete their tasks~\cite{hart2013rise}. Over time, these women could gain proficiency and gain broader expertise.
+The fourth and final stage was narrow expertise training. 
+Even after work is decomposed and measured, there may not be enough workers available to do it. 
+So, as World War II raged and there was a dearth of skilled workers, managers trained women just enough to be able to complete their tasks~\cite{hart2013rise}. 
+Over time, these women could gain proficiency and gain broader expertise.
 
 %\topic{Piecework researchers enumerate a number of problems with the decomposition of work,
 %and the conflicting pressures managers and workers put forth.}
@@ -192,14 +192,14 @@ is not only doable,
 but trivial~\cite{waltz2012quantified}.}
 Where \citeauthor{10.2307/23702539} directly implicates measurement as
 preventing scientific management from being fully utilized,
-no longer exists
 modern crowd work is measuring and modeling every click,
 scroll,
 and keyboard event~\cite{rzeszotarski2011instrumenting,rzeszotarski2012crowdscape}.
 The result is that on--demand work can articulate and track far more carefully than piecework historically could.
 
+
 \topic{A second shift is  
-the relative ease with which the metaphorical ``assembly line'' can be changed.}
+the relative ease with which the metaphorical ``assembly line'' can be experimented with and measured.}
 Historical manufacturing equipment could not quickly be assembled,
 edited,
 and redeployed~\cite{hu1961parallel}.
@@ -213,8 +213,8 @@ ordering,
 pacing,
 interruptions,
 and
-other factors in piecework that would have been
-all but impossible to manipulate as few as 20 years ago~\cite{dai2015and,Cai:2016:CRI:2858036.2858237,cheng2015break,measuringCrowdsourcingCheng,embracingErrorKrishna}.
+other factors accelerating scientific management that would have been
+all but impossible as few as 20 years ago~\cite{dai2015and,Cai:2016:CRI:2858036.2858237,cheng2015break,measuringCrowdsourcingCheng,embracingErrorKrishna}.
 
 %Third,
 %modern crowd work has sliced work to such small scales that the marginal activities
@@ -237,7 +237,7 @@ all but impossible to manipulate as few as 20 years ago~\cite{dai2015and,Cai:201
 \subsubsection{\implication}
 If decomposition in piecework progressed in four stages, we have seen three of them in on--demand work so far.
 First, as with piecework, on--demand work began by decomposing tasks so that anyone could complete them, as with data labeling on Amazon Mechanical Turk.
-Second, we began to modularize and measure existing expertise (e.g., software engineering, design) so that it could be brought into crowdsourcing systems~\cite{foundry,Chen2016}.
+Second, we began to modularize and measure external expertise (e.g., software engineering, design) so that it could be brought into crowdsourcing systems~\cite{foundry,Chen2016}.
 Third, we used measurement to mathematically optimize workers' behaviors so that we could make the systems more efficient~\cite{weld2010decision}.
 
 The fourth stage, then, appears likely to occur: narrow training of workers for expert tasks. 
