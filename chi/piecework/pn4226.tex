@@ -135,9 +135,9 @@ at at whatever rate and in whichever manner they wish} % do i use this more than
 \newcommand{\topic}[1]{{\color{Blue}#1}} % if you're in a subfile, bold the \topic sentences to make it easier to skim/diagnose logical issues
 \newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
 
-% \let\internalNoteali\ali
+\let\internalNoteali\ali
 \let\internalNotemsb\msb
-% \onlyinsubfile{\renewcommand{\ali}[1]{\onlyinsubfile{\internalNoteali{#1}}}}
+\onlyinsubfile{\renewcommand{\ali}[1]{\onlyinsubfile{\internalNoteali{#1}}}}
 \onlyinsubfile{\renewcommand{\msb}[1]{\onlyinsubfile{\internalNotemsb{#1}}}}
 
 \renewcommand{\headrulewidth}{0pt}
