@@ -7,6 +7,86 @@
 
 \section{Introduction}\label{sec:introduction}
 
+\ali{
+  Components of a good intro (anything else to add?):
+  \begin{itemize}
+    \item state of the world
+    \item what's the problem?
+    \item why this problem is such a big deal(?)
+    \item what's making this problem so persistent?
+    \item what's the insight we bring?
+    \item what we built/did
+    \item what did we find?
+  \end{itemize}
+}
+
+\begin{enumerate}
+  % state of the world
+  \item on--demand work has grown significantly
+  \item task diversity is growing
+  \item new platforms continue to emerge
+  
+  % what's wrong?
+  \item workers are struggling to signal quality:
+  \begin{enumerate}
+     \item new workers --- cold start problem
+     \item old workers --- too much noise
+  \end{enumerate}
+  \item requesters have problems as well:
+  \begin{enumerate}
+    \onlyinsubfile{
+      \item did trump really quote Bane in his inaugural?
+      \item omg like really
+    }
+    
+    % why is this problem a big deal?
+    \item requesters don't know whom to trust and have to bootstrap their own trustworthiness evaluations
+          (e.g. qualifications exams, tentatively and very cautiously trusting coarse heuristic data)
+    \item requesters tend to undervalue workers --- at least at first --- leading to a ``market for lemons''
+  \end{enumerate}
+  
+  % Why is this so hard?
+  \item a few problems frustrate the design of interventions
+  \begin{enumerate}
+    \item platforms have little incentive to facilitate external agents of intervention
+    \item the stakeholders that platforms are more interested in seem to be those with the money (i.e. requesters)
+          \ali{maybe too argumentative?}
+    \item on--demand workers gravitate toward these platforms in large part because of the transience and ephemeral nature of the work
+          (therefore, working against that will meet with resistance (and possibly attrition) from the very workers who constitute the platform today)
+  \end{enumerate}
+
+  % What's our insight?
+  \item in ``conventional'' work, the problem of signaling a worker's quality was solved by using past worker performance as a proxy for future performance
+  \item on--demand work platforms have tried to do this with approval and rating systems, but they're generally too vague to be useful
+        % (on AMT, requesters limit work to those with approval ratings higher than 95\% or even 99\%, or workers with thousands or tens of thousands of tasks completed, or both)
+  \item conventional work r\'{e}sum\'{e}s usually allow the worker to emphasize and omit information that's not relevant --- \textbf{what if we facilitated that?}
+  
+  % So what did we do?
+  \item we built a system that collected data from workers' profiles on online crowdsourcing platforms
+  (first AMT, then others), and parsed that data to present more meaningful analytic data on things like
+  \begin{enumerate}
+    \item the nature of the task; objective (i.e. factually based and evaluable) versus subjective (e.g. survey \ali{maybe also object labeling?})
+    \item the type of requester; academic versus industry
+    \item \textit{others}
+  \end{enumerate}
+  \item we also built a proof--of--concept qualifications management system abstracted from both our worker profile system and the work platform itself
+  (to explore the potential to abstract worker qualifications and credentials from the system itself, allowing other parties to specialize in this task)
+  
+  % What did we find/how did it go?
+  \item we evaluated this system from two perspectives:
+  \begin{enumerate}
+    \item did requesters who used this system find that the worker data better--informed their qualifications management and worker solicitation?
+          in other words, was the output of the work more reliably accurate when they relied on the analytic data that we provided versus the coarse approval/rejection rating?
+    \item did \textit{workers} benefit from having high level data providing some insight into their work trends? did this lead them to better work more quickly? did they take a more active role in the management of their reputation / ``worker profile'' / r\'{e}sum\'{e}?
+  \end{enumerate}
+  \item we also explored whether the externalized worker qualification system worked effectively, and considered the potential advantages and disadvantages of a set of decoupled systems rather than an integrated one (market, qualifications assessment system, payment platform, etc\dots).
+\end{enumerate}
+
+
+
+
+
+\ali{
 On--demand work has so far been a compelling way to arrange work and imagine workers;
 the fleeting nature of work seems to appeal greatly to workers, and
 the looser expectations of responsibility toward workers appeals to employers and clients.
@@ -16,8 +96,8 @@ another class of challenges and problems.
 Among them remains the challenge of ensuring that workers
 --- first crowd workers, and later gig workers --- both
 \begin{inlinelist}
-\item know the skills necessary to do the immediate task and
-\item will continue to produce work at the desired level of quality.
+  \item know the skills necessary to do the immediate task and
+  \item will continue to produce work at the desired level of quality.
 \end{inlinelist}
 By far, two approaches have taken hold:
 First, qualification exams (e.g. Amazon Mechanical Turk and Upwork),
@@ -28,7 +108,7 @@ Second, relying on outside certification bodies (e.g. Uber, \ali{do we know of o
         --- in Uber's case, local DMVs and similar bodies ---
         have sufficiently evaluated a person's ability to do the tasks necessary.
 
-Other approaches exist, but have not (yet) garnered the interest of on--demand firms in general.
+Other approaches exist, but have not (yet) garnered the interest of on--demand firms in general.}
 
 
 % Research has looked into this question from a handful of perspectives;
