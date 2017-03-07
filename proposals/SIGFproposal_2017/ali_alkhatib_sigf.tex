@@ -80,10 +80,14 @@ as well as the policies necessary for it to succeed. % ~108 words
 
 
 \section*{Motivating Work: Historical Analysis of Piecework}
-\topic{Piecework has historically disempowered workers and empowered employers.}
-Subdividing work and paying per task drives employees to work faster and longer,
+\topic{Piecework has historically disempowered workers and empowered employers, and
+many the same dynamics of disenfranchisement and frustration are poised to return today.}
+In our most recent work~\cite{pieceworkCrowdworkGigwork}, we found that a number of aspects of piecework
+--- a form of work payment that began more than a century ago ---
+bears striking resemblance to the contemporary labor we call ``gig work''.
+By subdividing work and paying for each task, employees are driven to work faster and longer,
 affording them little control over working conditions.
-For most of its history, piecework offered no benefits, occupational health and safety, or social insurance.
+And for most of its history, piecework yielded no benefits, occupational health and safety, or social insurance.
 When piecework combined with job routinization, workers became interchangeable and deindividuated.
 This combination of piecework and routinization produced the dominant payment system during the industrial era,
 starting with agriculture and home production but quickly moving into factories.
@@ -190,9 +194,54 @@ It can be argued that with a few lines of code, we can effect outsize change on 
 % Are unions the answer, or some other form of worker organization?
 
 \section*{Research plan}
-\begin{blah}
+\topic{We intend to build a system that tracks gig workers' professional histories across myriad work platforms,
+aggregating \& consolidating that data, and
+allowing workers to curate their professional identities, instantiated by a ``digital r\'{e}sum\'{e}''.}
+A number of open questions stand to be informed by this endeavor:
+first, do tools and systems like these help various stakeholders (such as workers, or requesters) in measurable ways?
+And second, what can we learn about collective governance from a system that is designed and operated collectively with workers themselves?
+
+\topic{At a high level, we can study the usefulness of this system using standard experimental approaches.}
+First, through quantitative methods (for example, comparing workers' earnings over time); and
+second, through qualitative  methods (for example, through interviews to determine whether workers find and exploit specialty niches as a result of this tool).
+We can also explore employers perspectives in tangible ways;
+for example, given concerns about the quality of work~\cite{Ipeirotis:2010:QMA:1837885.1837906,le2010ensuring,Law:2017:CTR:2998181.2998197},
+we will investigate whether a system that better communicates worker expertise allows employers to rely more confidently on crowdwork.
+
+\topic{More broadly, we can think of this as an opportunity to engage in participatory design and democracy, and
+to learn best practices through experimentation.}
+We can take this opportunity to study collective governance in online settings
+--- extending, as \citeauthor{russell1982collective} describes it,
+from the ``on--shot'' cases of collective action that we instantiated in our earlier work~\cite{dynamo} to ``ongoing'' collective action~\cite{russell1982collective}.
+While considerable effort has gone toward collective governance
+(e.g.~\cite{ostrom1990governing,mccallum2013global,ahlquist2013interest,olsonlogic,polletta2002freedom}),
+many of these mechanisms rely on collocation to some extent or another;
+the best practices of collective governance for communities that never meet
+(e.g moderators and administrators on Wikipedia)
+remains unclear.
+
+
+
+\begin{comment}
+\topic{We're pursuing the design of a system that offers a very narrow slice of workers' needs based on
+what we've learned so far from gig workers, and from the historical timeline that we saw in piecework.}
+Informed by our observations from fieldwork while organizing and motivating collective action~\cite{dynamo}
+and from other research~\cite{martin2014being},
+we've found that gig workers are highly resistant to traditional labor advocacy and empowerment tools, such as labor unions.
+In part, this may be because the conventional systems of affiliations and labor unions are a poor match;
+to say nothing of responding to the varied needs of people who participate in the gig economy to differing degrees,
+what we consider conventional labor advocacy structures is anathema to gig workers:
+``If you mean a `labor union', I would not feel comfortable taking part.
+It runs against my grain because I am an individualist.
+[\dots]~I consider myself self--employed\dots~not working for anyone in particular''.
+Looking through piecework's history, we found that similar sentiments existed in the early years of piecework~\cite{pieceworkCrowdworkGigwork}.
+While this sentiment shifted over the following decades, it's worth considering that this shift occurred over a number of years, and
+only as people became increasingly familiar with the conclusion that forms of gig 
+\end{comment}
+
+\begin{comment}
 We intend to create a platform that can become a template for online work that better represents workers' needs.
-However, solutions that exist for traditional, non-gig workers
+However, solutions that exist for traditional, non--gig workers
 --- especially labor unions ---
 face resistance from workers in the gig economy~\cite{martin2014being,dynamo}.
 This distaste may be due to a general decline in public opinion of unions.
@@ -213,16 +262,18 @@ However, our interest (and Fair Care Labs') is to generalize its insights to oth
 While the driving domain is already crowded with services such as Lyft and Uber, domestic work is a more ideal area to launch a research prototype.
 In addition, the NDWA Fair Care Labs' support and network will help us gain rapid traction. The web and mobile application, Alia, enables the basic affordances of ``gig'' work for domestic work
 --- rapid scheduling of any available worker in the network (Figure 1).
-\end{blah}
+\end{comment}
 
 
 \section*{Interdisciplinarity}
-For this research to succeed, the methodological approaches of Political Science
-and the engineering skills of Computer Science must not only be in conversation, but in concert.
-The challenge in designing for collective governance,
-as~\citeauthor{russell1982collective} (\citeyear{russell1982collective}) differentiates it from collective action,
-is such that collective governance
-``takes on the character of a nearly anthropological investigation of minute interrelationships''~\cite{russell1982collective}.
+\topic{This research will call on methods and skills originally from and generally found in disparate fields.}
+As we showed with our paper examining the relationship between piecework and gig work~\cite{pieceworkCrowdworkGigwork},
+the lens of a social scientist can inform conversations about digitally mediated work in ways that many computer scientists are not otherwise able to offer.
+At the same time, the perspectives of computer scientists
+--- and the challenges digitally mediated spaces bring with them ---
+offer to reinvigorate deeply theoretically grounded discussion and offer field sites with which to experiment and test these theories.
+
+\begin{blah}
 In order to design a system that empowers workers,
 a researchers must first attempt to understand a wide range of workers' circumstances:
 The needs of workers;
@@ -230,24 +281,34 @@ the contexts in which they work;
 their relationships with one another, with other groups, \& with institutions such as governments;
 and more generally the paradigmatic views of gig workers.
 Only then can one reasonably hope to design a system consistent with the views and broader culture of gig work.
+\end{blah}
 
+\begin{blah}
 \citeauthor{uberAlgorithm} and \citeauthor{crowdcollab} have identified a number of ways that workers subvert and circumvent the intents of system--designers,
 both in digital workplaces and where work is simply mediated digitally~\cite{uberAlgorithm,crowdcollab}.
 These patterns of behavior elude algorithmic tracking and measurement because they deliberately avoid the \textit{a priori} assumptions made by the designers of systems,
 who attempt to structure these sites of work in ways to create incentives for preferred behavior.
 Identifying and understanding the details of this behavior thus begins with a qualitative,
 ethnographic endeavor.
+\end{blah}
 
 \section*{Anticipated Contributions \& Implications}
-This research is important given the recent trends toward the discretization of work.
-With increasing numbers of people joining the gig economy,
-and lacking sufficient work toward digitally mediated forms of collective action and governance,
-disenfranchised and marginalized laborers in particular stand to lose significantly.
-Indeed, advances made by labor advocacy groups in the past century have already eroded
-due to the classification of many of these workers as ``contractors'' rather than ``employees'',
-signaling the larger trend of the reversal of benefits and protections for which workers have fought.
+This research is of significant importance given the recent trends in the ``gig economy''.
+With more and more people joining the workforce in this capacity~\cite{pewSharing,pewSharing24percent},
+concerns about ``the future of work''~\cite{waterCooler,crowdworkFuture} continue to grow.
+Without compelling career trajectories in this space,
+the optimistic prediction seems to be that we will have little say in the outcome of this shift in work.
+Our hope is that, concretely, the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
+More broadly, we expect to offer two major contributions to the Human--Computer Interaction community:
+first, an existence proof that a gig work market for complex, specialized workers is possible; and
+second, insights into how best to scaffold and foster ongoing collective governance.
+% and lacking sufficient work toward digitally mediated forms of collective action and governance,
+% disenfranchised and marginalized laborers in particular stand to lose significantly.
+% Indeed, advances made by labor advocacy groups in the past century have already eroded
+% due to the classification of many of these workers as ``contractors'' rather than ``employees'',
+% signaling the larger trend of the reversal of benefits and protections for which workers have fought.
 
-More broadly, this project's will speak to the critique that the internet,
+This project's will speak to the critique that the internet,
 far from the democratizing force that Barlow predicted it would be,
 has become an infrastructure facilitating the corporate centralization of power~\cite{barlow2009declaration,jones2011does,EboCybertopia}.
 The success of this project will therefore not only
