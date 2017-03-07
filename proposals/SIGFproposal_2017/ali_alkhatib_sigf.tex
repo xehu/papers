@@ -38,13 +38,14 @@
 % \setlist*[inlinelist,1]{
 %   label=\arabic*),
 % }
+\makeatletter         
+\def\@maketitle{   % custom maketitle 
+{\Large \scshape \@title} ~~~\@author ~ on  \@date \par 
+\smallskip \hrule \smallskip }
 
-% \setlist[itemize]{itemsep=0pt,topsep=0pt,parsep=0pt}
-% \setenumerate{itemsep=0pt,topsep=0pt,parsep=0pt}
-% \newcommand{\sectitle}[1]{\textit{#1}}
-\title{Designing for Complex Gig Work and Careers}
+\title{Designing Digital Hiring Halls}
 \author{Ali Alkhatib}
-\date{Submitted \today}
+\date{\today}
 
 
 % take half 
@@ -56,20 +57,22 @@
 %
 \definecolor{Blue}{HTML}{0000FF}
 \newcommand{\topic}[1]{{\color{Blue}#1}}
+\renewcommand{\topic}[1]{{#1}}
 \definecolor{Gray}{HTML}{BABABA}
 \newcommand{\ugh}[1]{{\color{Gray}\textit{#1}}}
 \newenvironment{blah}{\par\color{Gray}\itshape}{\par}
 
-
-% Michael Bernstein [5:42 PM] 
-% feedback:
-% [x] first paragraph: "gig work” needs examples (Uber, Mechanical Turk) so people know what you’re talking about. I know you get there in the second paragraph, but I think a reader will tune out the first paragraph if they don’t know concretely what you’re talking about.
-% [x] research plan: I’d like to see a stronger transition. Ideally, a question that the historical analysis left open that you are now poised to answer
-% [x] research plan: make clearer that your proposal is to transition this historical framing into a novel system that you are building (I don’t think that readers will automatically know this)
-% [x] research plan: whoa, you jump to experimental analysis before you even describe what it is! I need 1-2 paragraphs describing the system that you’re building. Walk through what it does, what a worker will do with it.
-% [x] research plan: can cut the third paragraph for space if needed
-% [x] interdisciplinarity: call out the obvious: that you are a trained social scientist now in a computer science department
-
+% Michael Bernstein [9:40 PM]
+% [x] add a title
+% [x] “new instantiation” —> “modern instantiation”
+% [x] why “further” in a second sentence of an abstract?
+% [x] "design and develop a 'digital hiring hall’”— specify for gig workers?
+% [x] need a sentence in the abstract describing what your system actually does (e.g., create a portable resume across services by scraping work histories, letting workers use that history to demonstrate abilities to a new platform)
+% [x] final sentence of abstract has three broadbrush implications, choose one that it maximizes
+% [x] intro to Research Plan section needs a more focused question, specifically the one that you’re solving. "will gig work remain an undesirable career path” is too broad for our project to answer. likewise, "we propose to build one of the potential futures that we discussed” is too vague. Instead, start with a focused question more like (and this isn’t refined, but:) "How can workers demonstrate their skill?” And explain in one sentence this was an issue historically, and it was only partially solved b/c they couldn’t X. But now you can build technology to X. And that’s what you’re going to do.
+% [x] "who are proficient at translating between two specific languages”: ground this. e.g., they have lots of previously recorded work by a translation service on Mechanical Turk to vouch for their quality
+% [x] Interdisciplinarity: first sentence is weaksauce — get specific
+% [x] Contributions: “little say” — why is this the _optimistic_ prediction? wouldn’t the optimist say that we _can_ steer it?
 
 
 
@@ -77,19 +80,30 @@
 
 
 \begin{document}
-  % \maketitle
+  \maketitle
   \begin{abstract}
-Gig work has become a new instantiation of piecework.
-Further, gig work platforms allow employers to geographically disperse workers and silo workers' information,
-making organization and coordination all but impossible,
-and stymieing work specialization and expertise.
-Our research will draw on our past work, using historical analysis of piecework to inform this contemporary phenomenon,
-to design and develop a ``digital hiring hall''.
-Our research will
-shed light on the potential complexity limits of gig work,
-point to possible futures of labor advocacy for gig workers,
-and offer some insights into the best practices of principally online collective governance.
+    Gig work has become a modern instantiation of piecework.
+    Their platforms allow employers to
+    disperse workers geographically and silo workers' information,
+    making organization and coordination all but impossible,
+    and stymieing work specialization and expertise.
+    Our research will draw on our past work,
+    using historical analysis of piecework to inform this contemporary phenomenon,
+    to design and develop a ``digital hiring hall''
+    --- a platform--independent repository for workers to store their body of work, curate their professional image,
+    and better signal expertise to employers.
+    Our research will
+    begin to instantiate one of the potential futures of labor advocacy for gig workers.
   \end{abstract}
+
+
+
+
+
+
+
+
+
 
 
 \section*{Motivating Work: Historical Analysis of Piecework}
@@ -120,11 +134,16 @@ Much of this work has been limited in complexity to easily verifiable work, stym
 in many of the same ways that historically limited information workers' careers~\cite{grier2013computers}.
 
 
-\topic{In our examination of crowd work and gig work as a reinstantiation of piecework~\cite{pieceworkCrowdworkGigwork}, we identify a number of parallels that relate to this question.}
-First, that the first ``human computers'' were geographically distributed and only retained for several years to stifle career development opportunities~\cite{grier2013computers};
-second, that effective uses of historical piecework were generally limited to easily measured work due to a general mistrust~\cite{american1921problem,richards1904anything};
+\topic{In our examination of crowd work and gig work as
+a reinstantiation of piecework~\cite{pieceworkCrowdworkGigwork},
+we identify a number of parallels that relate to this question.}
+First, that the first ``human computers'' were geographically distributed and
+only retained for several years to stifle career development opportunities~\cite{grier2013computers};
+second, that effective uses of historical piecework were generally limited to
+easily measured work due to a general mistrust~\cite{american1921problem,richards1904anything};
 third, this mistrust led to such a starkly adversarial relationship between workers and managers that
-it may have precipitated the wave of labor advocacy which defined the first half of the \nth{20} century~\cite{hart2013rise,hart2016rise}.
+it may have precipitated the wave of labor advocacy which defined
+the first half of the \nth{20} century~\cite{hart2013rise,hart2016rise}.
 What remains then are serious questions about the future of gig work as informed by piecework's history.
 We have limited knowledge of how gig workers today are adapting to digitally mediated, constantly changing labor markets.
 Similarly, we know very little about gig work's potential to support complex work, let alone how to turn that potential into reality.
@@ -137,29 +156,35 @@ researchers of digital sites of work have the ability not only to influence, but
 It can be argued that with a few lines of code, we can effect outsize change on the future of gig work
 --- a form of work that continues to grow by the year~\cite{pewSharing,pewSharing24percent}.
 
-\section*{Research plan}
+
+
+
+
+
+
+
+% [x] intro to Research Plan section needs a more focused question, specifically the one that you’re solving. "will gig work remain an undesirable career path” is too broad for our project to answer. likewise, "we propose to build one of the potential futures that we discussed” is too vague. Instead, start with a focused question more like (and this isn’t refined, but:) "How can workers demonstrate their skill?” And explain in one sentence this was an issue historically, and it was only partially solved b/c they couldn’t X. But now you can build technology to X. And that’s what you’re going to do.
+\section*{Research Plan}
 \topic{While our research considered a number of possible futures for gig work in general and gig workers in particular,
 several important questions remain unresolved.}
-For example, will gig work remain an undesirable career path,
-largely taken up by people who can't or won't commit to conventional work arrangements;
-or can gig work someday come to represent highly skilled, sought after work?
+For example, we pointed to the general question that researchers had been asking for some time ---
+whether gig work will become a site of complex, rewarding work
+--- or if it will remain a setting for low quality tasks with little upward mobility.
 While we offered a framework for answering questions such as this one, the reality is that
 any researcher or team exploring this area
 --- especially on the basis of the parallel we drew ---
 would fundamentally need to be conversant with several deep bodies of research spanning myriad fields.
 
-Informed by our research into gig work, we propose to build one of the potential futures that we discussed.
+We concluded that gig work's potential will be determined by
+how easily skilled workers can secure good work through these platforms.
+In order to do that, workers need to be able to communicate rich information about their qualifications to employers,
+which existing markets have so far struggled to do.
 \topic{We will build a system that tracks gig workers' professional histories across myriad work platforms,
-aggregating \& consolidating that data, and
-allowing workers to curate their professional identities, instantiated by a ``digital hiring hall''.}
-% A number of open questions stand to be informed by this endeavor:
-% first, do tools and systems like these help various stakeholders (such as workers, or requesters) in measurable ways?
-% And second, what can we learn about collective governance from a system that is designed and operated collectively with workers themselves?
+aggregating, consolidating, \& analyzing that data, and
+allowing workers to curate their professional identities, instantiated by a ``digital hiring hall'' for gig workers.}
 
-% \begin{blah}
-% [ ] research plan: whoa, you jump to experimental analysis before you even describe what it is! I need 1-2 paragraphs describing the system that you’re building. Walk through what it does, what a worker will do with it.
-% \topic{1--2 paragraphs describing the system. What does it do? what will workers do with it?}
-\topic{The system we intend to build will serve two roles --- one for workers and one for employers.} % that the worker can curate and that requesters and platforms at large can access to make hiring decisions algorithmically.
+
+\topic{The system we intend to build will serve two roles --- one for workers and one for employers.}
 Gig workers will share their work histories from platforms such as Amazon Mechanical Turk with our repository,
 which will allow us to provide the worker with information upon which they can reflect
 (e.g. detailed analysis of their work trends, approval rates under various circumstances, etc\dots)
@@ -174,15 +199,14 @@ offering more in--depth analysis of workers' histories, we hope to find that
 we can direct employers to gig workers whose overall experiences match the employer's given needs.
 For example, if an employer or a platform queries our platform for
 workers who are proficient at translating between two specific languages,
-we can yield a list of workers who would be suitable for the task.
+we can yield a list of workers who would be suitable for the task, determined by
+the workers' comprehensive histories on Mechanical Turk and, potentially, elsewhere.
 
 \topic{This approach is similar in some senses to the role that hiring halls played through the \nth{20} century.}
 By disconnecting workers' data from the platforms themselves, our repository will act as a sort of ``digital hiring hall'',
 connecting employers with workers whose varied work histories provide them with the expertise necessary to do given tasks.
 By engaging workers in the management of this repository, we will advance the metaphor in much the same way that
 labor unions maintained --- and continue to operate --- hiring halls of their workers.
-
-% \end{blah}
 
 
 \topic{At a high level, we can study the usefulness of this system using standard experimental approaches.}
@@ -192,67 +216,20 @@ We can also explore employers perspectives in tangible ways;
 for example, given concerns about the quality of work~\cite{Ipeirotis:2010:QMA:1837885.1837906,le2010ensuring,Law:2017:CTR:2998181.2998197},
 we will investigate whether a system that better communicates worker expertise allows employers to rely more confidently on crowdwork.
 
-\begin{comment}
-\topic{More broadly, we can think of this as an opportunity to engage in participatory design and democracy, and
-to learn best practices through experimentation.}
-We can take this opportunity to study collective governance in online settings
---- extending, as \citeauthor{russell1982collective} describes it,
-from the ``one--shot'' cases of collective action that we instantiated in our earlier work~\cite{dynamo}
-      to ``ongoing'' collective action~\cite{russell1982collective}.
-While considerable effort has gone toward collective governance
-(e.g.~\cite{ostrom1990governing,mccallum2013global,ahlquist2013interest,olsonlogic,polletta2002freedom}),
-many of these mechanisms rely on collocation to some extent or another;
-the best practices of collective governance for communities that never meet
-(e.g moderators and administrators on Wikipedia)
-remains unclear.
-\end{comment}
 
 
-\begin{comment}
-\topic{We're pursuing the design of a system that offers a very narrow slice of workers' needs based on
-what we've learned so far from gig workers, and from the historical timeline that we saw in piecework.}
-Informed by our observations from fieldwork while organizing and motivating collective action~\cite{dynamo}
-and from other research~\cite{martin2014being},
-we've found that gig workers are highly resistant to traditional labor advocacy and empowerment tools, such as labor unions.
-In part, this may be because the conventional systems of affiliations and labor unions are a poor match;
-to say nothing of responding to the varied needs of people who participate in the gig economy to differing degrees,
-what we consider conventional labor advocacy structures is anathema to gig workers:
-``If you mean a `labor union', I would not feel comfortable taking part.
-It runs against my grain because I am an individualist.
-[\dots]~I consider myself self--employed\dots~not working for anyone in particular''.
-Looking through piecework's history, we found that similar sentiments existed in the early years of piecework~\cite{pieceworkCrowdworkGigwork}.
-While this sentiment shifted over the following decades, it's worth considering that this shift occurred over a number of years, and
-only as people became increasingly familiar with the conclusion that forms of gig 
-\end{comment}
 
-\begin{comment}
-We intend to create a platform that can become a template for online work that better represents workers' needs.
-However, solutions that exist for traditional, non--gig workers
---- especially labor unions ---
-face resistance from workers in the gig economy~\cite{martin2014being,dynamo}.
-This distaste may be due to a general decline in public opinion of unions.
-However, the traditional mechanics of a labor union are also a poor match: challenging issues include managing the benefits and proportional representation of workers whose contracts may last only minutes or hours, enforcing collective decisions on a decentralized network of workers, and establishing trust between workers who may never meet face--to--face.
-In our early fieldwork, for example, a worker on Amazon Mechanical Turk stated:
-``If by `union' you mean a `labor union', I would not feel comfortable taking part.
-It runs against my grain because I am an individualist.
-[\dots] I consider myself self--employed\dots\  not working for anyone in particular.''
 
-Given these constraints, what alternative model would give workers more power in an online gig--economy platform while still enabling a market to emerge and function? To explore one such alternative, we will collaborate with the National Domestic Workers Alliance's innovation arm, the Fair Care Labs, to create tools for online pieceworkers to collectively manage and govern their own labor markets.
-While the literature in social computing design and crowdsourcing already features many tools for successful decentralized collaborations (e.g., Wikipedia), and collective action movements (e.g., change.org), templates and guidelines for sustained collective action and governance online in high--stakes situations that affect workers' livelihoods are rare.
-Such efforts tend to swell quickly, but soon find themselves embroiled as they struggle to satisfy myriad stakeholders .
-Our goal is to introduce design mechanisms to enable collectives of gig workers to form, debate policy, and implement their decisions over a long period of time.
 
-Together with the Fair Care Labs, we are designing and launching a cooperative gig labor market for domestic workers (house cleaners).
-This cooperative labor market, Alia, is designed for domestic workers in the California Bay Area.
-However, our interest (and Fair Care Labs') is to generalize its insights to other workers and industries.
-While the driving domain is already crowded with services such as Lyft and Uber, domestic work is a more ideal area to launch a research prototype.
-In addition, the NDWA Fair Care Labs' support and network will help us gain rapid traction. The web and mobile application, Alia, enables the basic affordances of ``gig'' work for domestic work
---- rapid scheduling of any available worker in the network (Figure 1).
-\end{comment}
+
+
+
 
 
 \section*{Interdisciplinarity}
-\topic{This research will call on methods and skills originally from and generally found in disparate fields.}
+% \topic{This research will call on methods and skills originally from and generally found in disparate fields.}
+% \topic{The insights and expertise necessary to conduct this research successfully will call on a variety of skills not typically seen together, such as
+% participant observation, participatory design techniques, and machine learning approaches.}
 As we showed with our paper examining the relationship between piecework and gig work~\cite{pieceworkCrowdworkGigwork},
 the lens of a social scientist can inform conversations about digitally mediated work in ways that many computer scientists are not otherwise able to offer.
 At the same time, the perspectives of computer scientists
@@ -261,40 +238,23 @@ offer to reinvigorate deeply theoretically grounded discussion and offer field s
 As a Computer Science Ph.D. student originally trained as an Anthropologist, I believe
 I'm the best candidate to combine these bodies of literature to make this project succeed.
 
-\begin{comment}
-In order to design a system that empowers workers,
-a researchers must first attempt to understand a wide range of workers' circumstances:
-The needs of workers;
-the contexts in which they work;
-their relationships with one another, with other groups, \& with institutions such as governments;
-and more generally the paradigmatic views of gig workers.
-Only then can one reasonably hope to design a system consistent with the views and broader culture of gig work.
-\end{comment}
 
-\begin{comment}
-\citeauthor{uberAlgorithm} and \citeauthor{crowdcollab} have identified a number of ways that workers subvert and circumvent the intents of system--designers,
-both in digital workplaces and where work is simply mediated digitally~\cite{uberAlgorithm,crowdcollab}.
-These patterns of behavior elude algorithmic tracking and measurement because they deliberately avoid the \textit{a priori} assumptions made by the designers of systems,
-who attempt to structure these sites of work in ways to create incentives for preferred behavior.
-Identifying and understanding the details of this behavior thus begins with a qualitative,
-ethnographic endeavor.
-\end{comment}
+
+
+
+
+
+
+
 
 \section*{Anticipated Contributions \& Implications}
 This research is of significant importance given the recent trends in the ``gig economy''.
 With more and more people joining the workforce in this capacity~\cite{pewSharing,pewSharing24percent},
 concerns about ``the future of work''~\cite{waterCooler,crowdworkFuture} continue to grow.
-Without compelling career trajectories in this space,
-the optimistic prediction seems to be that we will have little say in the outcome of this shift in work.
-Our hope is that, concretely, the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
+Our hope is that the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
 More broadly, we expect to offer two major contributions to the Human--Computer Interaction community:
 first, an existence proof that a gig work market for complex, specialized workers is possible; and
 second, insights into how best to scaffold and foster ongoing collective governance.
-% and lacking sufficient work toward digitally mediated forms of collective action and governance,
-% disenfranchised and marginalized laborers in particular stand to lose significantly.
-% Indeed, advances made by labor advocacy groups in the past century have already eroded
-% due to the classification of many of these workers as ``contractors'' rather than ``employees'',
-% signaling the larger trend of the reversal of benefits and protections for which workers have fought.
 
 This project's will speak to the critique that the internet,
 far from the democratizing force that Barlow predicted it would be,
@@ -306,19 +266,7 @@ but may
 deliver on the promise Barlow made that
 cyberspace and the Internet would be a tool for democratizing access to information, and with that,
 empowering more than the tech elite who engineered it.
-% but will add to the increasingly minority claim that the Internet should be a democratizing force,
-% rather than a centralizing one;
-% \cite{barlow2009declaration}.
-
-% To ensure that system--designers have reasonable access to our findings,
-% our research targets will be top--tier venues in Human--Computer Interaction
-% which support open access publication paradigms
-% (e.g., ACM CHI, ACM CSCW).
-% A second set of outlets will be through the NDWA's relationships with labor advocates and the press.
 
 \pagebreak
 \printbibliography{}
-% \begin{document}
-% \bibliographystyle{acm}
-% \bibliography{references.bib}
 \end{document}
