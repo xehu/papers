@@ -1,163 +1,231 @@
 \documentclass[main]{subfiles}
-
-\makeatletter
-\def\blx@maxline{77}
-\makeatother
 \begin{document}
-
 \section{Introduction}\label{sec:introduction}
 
-\ali{
-  Components of a good intro (anything else to add?):
-  \begin{itemize}
-    \item state of the world
-    \item what's the problem?
-    \item why this problem is such a big deal(?)
-    \item what's making this problem so persistent?
-    \item what's the insight we bring?
-    \item what we built/did
-    \item what did we find?
-  \end{itemize}
+
+% \ali{
+%   Components of a good intro (anything else to add?):
+%   \begin{itemize}
+%     \item state of the world
+%     \item what's the problem?
+%     \item why this problem is such a big deal(?)
+%     \item what's making this problem so persistent?
+%     \item what's the insight we bring?
+%     \item what we built/did
+%     \item what did we find?
+%   \end{itemize}
+% }
+
+
+
+% \topic{Crowdsourcing platforms have principally been limited to low--quality work, with
+% relatively little trust in either the quality or intent of workers~\cite{Ipeirotis:2010:QMA:1837885.1837906,MaliciousCrowdworkersGadiraju}.}
+% Workers who are new to a platform represent an ``unknown quantity'' to the platform,
+% which typically substantially limits the worker's eligibility to claim tasks (for instance, in the case of Amazon Mechanical Turk);
+% even when a worker is known to the platform, requesters themselves don't know whether a worker's reputation
+% --- for instance, a 99\% approval rating ---
+% represents a worker's competence in the sorts of tasks for which the requester is soliciting.
+
+% \topic{This problem has grown over time, and
+% various stopgap solutions to this fundamental absence of trust have emerged.}
+% A significant amount of effort has notably gone toward
+% designing workflows and processes that empower non--expert workers to satisfying complete work tasks.
+% Examples of this can be found in domains such as
+% creative writing~\cite{Kim2017,writingMicroTasks},
+% \ali{and, you know, other things here}, and more.
+% These approaches, with few exceptions, make the same assumption: that 
+% crowd workers are approximately interchangeable, and that
+% workers don't particularly specialize aside from a single--dimensional measure of approval rates
+% (e.g. limiting access to tasks to those with higher than 99.5\% approval ratings).
+
+
+% Many of these approaches assume that workers are cut from the same cloth;
+% that is, most workers are generally similarly qualified and thus interchangeable,
+% or rather to be more precise that
+% a worker's qualification is generally a function involving a small number of dimensions.
+
+% Our research begins by questioning this assumption.
+
+% \topic{On--demand labor has a problem with reputation.}
+
+\topic{One persistent source of frustration in crowdsourcing has been how to make more complex work viable.}
+A great deal of research has gone into various processes and work--flows that would facilitate complex outcomes, but
+much of this work presupposes that workers are generally unskilled.
+\citeauthor{crowdworkFuture} asked a number of years ago whether crowd work would ever become more than it was at the time ---
+``largely a dead--end job''~\cite{crowdworkFuture} ---
+and thus far the answer appears, reluctantly, to be``no''.
+
+
+
+\ali{Notes to do:
+\begin{enumerate}
+  \item challenges for workers
+  \begin{enumerate}
+    \item new to the platform
+    \item new to any unfamiliar requester
+  \end{enumerate}
+  \item challenges for requesters
+  \begin{enumerate}
+    \item complex qualifications are an unknown challenge (e.g. ``someone who's a good image tagger who also knows Tamil''?)
+    \item confidence in existing simple reputation systems is already poor;
+          at best, approval rating of past tasks is not very sensitive
+          (i.e. lots of workers with 99\% approval rates --- says nothing about specific approval rates of tagging or translating or whatever)
+  \end{enumerate}
+\end{enumerate}
 }
 
-\begin{enumerate}
-  % state of the world
-  \item on--demand work has grown significantly
-  \item task diversity is growing
-  \item new platforms continue to emerge
-  
-  % what's wrong?
-  \item workers are struggling to signal quality:
-  \begin{enumerate}
-     \item new workers --- cold start problem
-     \item old workers --- too much noise
-  \end{enumerate}
-  \item requesters have problems as well:
-  \begin{enumerate}
-    \onlyinsubfile{
-      \item did trump really quote Bane in his inaugural?
-      \item omg like really
-    }
+
+
+
+
+
+\deadkittens{
+\topic{In the past decade, as markets for transient on--demand labor have grown in popularity,
+a number of challenges associated with these modes of work have emerged and grown as well.}
+In particular
+it remains to be seen how, or indeed \textit{if}, expert workers will participate in on--demand labor markets.
+While crowdsourcing and the gig economy have made it possible for millions of people to
+participate in the workforce in ways that were previously unavailable to them~\cite[][\ali{todo: add others}]{Zyskowski:2015:ACU:2675133.2675158},
+the longer--term trajectories of these people's careers are still as uncertain as they were when \citeauthor{crowdworkFuture} called crowd work
+``\dots largely a dead--end job''~\cite{crowdworkFuture}.
+So we find ourselves more than 5 years later answering the same question:
+will these people have the opportunity to engage in high--skill work in time?
+% as \citeauthor{crowdworkFuture} hypothesize~\cite{crowdworkFuture}?
+While research has found myriad ways
+to arrange and manage non--expert crowd workers to produce expert quality work,
+these achievements nevertheless do little to affirm that
+the future of work will afford for skilled workers, instead suggesting that
+the work experts do today may someday be done by a handful of non--experts.
+
+
+
+\topic{Lack of trust and reputation has held back high--skilled work.}
+Much of the work into complex crowdsourcing applications has operated on the premise that
+workers are roughly similar; they're all non--experts from a nebulous pool that can be sourced arbitrarily.
+Even where researchers recognize worker persistence,
+workers are often perceived and treated as untrustworthy~\cite{sensitiveTasks}.
+As a result, crowdsourcing innovations typically focus in the domain of workflows and processes
+\ali{--- find--fix--verify, and other examples? }~\cite{bernsteinSoylent,crowdForgeKittur}.
+And, on some level, this is in line with the ethos of on--demand work itself:
+as researchers have found,
+many crowd workers appreciate
+the fleeting nature of their relationship with
+the platform and with the people for whom they work
+~\ali{insert something here about how they like not being obligated to do work at certain times, etc\dots~(I'm pretty sure i have that in a citation or notes somewhere)}
+
+\topic{The reputation problem is closely related to a ``cold start'' problem.}
+Workers who are new to a platform can't signal to the platform that they're any good.
+Even when they're established in the platform,
+it can be difficult for requesters to discern high--quality workers;
+rating inflation
+(exhibited both in AMT as well as on Uber, etc\dots)
+complicates simple approval rating--based judgments, and
+in general these platforms only offer aggregate, coarse data on a worker's quality
+--- for example, their approval rate overall,
+or over the past several months,
+rather than within certain subsets of tasks.
+
+\topic{A historical analysis of on--demand work can inform potential solutions.}
+\ali{When we look at \citeauthor{pieceworkCrowdworkGigwork}'s work, we see that historical analysis can be really useful. We look to the solutions that emerged from nascent piecework and we identify \textit{hiring halls}, which not only served as places to source workers, but also managed the worker's credentials and qualifications.
+If a worker consistently did poor work, he might be kicked out of the group that ran the hiring hall, ensuring a certain level of quality.
+More importantly, if the worker}
+
+
+\topic{Aggregated places for people to store and reference their r\'{e}sum\'{e}s}
+
+\topic{What we built}
+
+\topic{What we found quantitatively}
+
+\topic{What we found qualitatively}
+}
+% \pagebreak
+
+  \textbf{crowd work has a reputation problem};
+        on--demand work has grown significantly;
+        task diversity is growing;
+        new platforms continue to emerge;
+        trust still a problem
+
+  \textbf{this is a cold start problem};
+     workers new to the platform are stuck slogging it;
+     workers new to a requester stuck too.
+
+  \textbf{existing platforms aren't great at this stuff};
+  Mechanical Turk 
+    % \begin{enumerate}
+    %   \item masters, upwork tests
+    %   \item hard to upkeep, long tail doom
+    % \end{enumerate}
+    % \item a few problems frustrate the design of interventions
+    % \begin{enumerate}
+    %   \item platforms have little incentive to facilitate external agents of intervention
+    %   \item \ali{does upwork outsource qualifications}
+    %   \item the stakeholders that platforms are more interested in seem to be those with the money (i.e. requesters)
+    %         \ali{maybe too argumentative?}
+    %   \item on--demand workers gravitate toward these platforms in large part because of the transience and ephemeral nature of the work
+    %         (therefore, working against that will meet with resistance (and possibly attrition) from the very workers who constitute the platform today)
+    % \end{enumerate}
+
+
+    \textbf{clever solution: r\'{e}sum\'{e}s for on--demand workers};
+    % \ali{imagine you have a resume with just your name and the total number of hours you've worked in your life}
+    % requesters don't know whom to trust and have to bootstrap their own trustworthiness evaluations
+    % platforms are stuck too (e.g. qualifications exams, credentials etc\dots)
     
-    % why is this problem a big deal?
-    \item requesters don't know whom to trust and have to bootstrap their own trustworthiness evaluations
-          (e.g. qualifications exams, tentatively and very cautiously trusting coarse heuristic data)
-    \item requesters tend to undervalue workers --- at least at first --- leading to a ``market for lemons''
-  \end{enumerate}
-  
+  % \end{enumerate}
+  % why is this problem a big deal?
+% \item requesters tend to undervalue workers --- at least at first --- leading to a ``market for lemons''
+
   % Why is this so hard?
-  \item a few problems frustrate the design of interventions
-  \begin{enumerate}
-    \item platforms have little incentive to facilitate external agents of intervention
-    \item the stakeholders that platforms are more interested in seem to be those with the money (i.e. requesters)
-          \ali{maybe too argumentative?}
-    \item on--demand workers gravitate toward these platforms in large part because of the transience and ephemeral nature of the work
-          (therefore, working against that will meet with resistance (and possibly attrition) from the very workers who constitute the platform today)
-  \end{enumerate}
+  
 
   % What's our insight?
-  \item in ``conventional'' work, the problem of signaling a worker's quality was solved by using past worker performance as a proxy for future performance
-  \item on--demand work platforms have tried to do this with approval and rating systems, but they're generally too vague to be useful
+  in ``conventional'' work, the problem of signaling a worker's quality was solved by using past worker performance as a proxy for future performance
+  
+  on--demand work platforms have tried to do this with approval and rating systems, but they're generally too vague to be useful
         % (on AMT, requesters limit work to those with approval ratings higher than 95\% or even 99\%, or workers with thousands or tens of thousands of tasks completed, or both)
-  \item conventional work r\'{e}sum\'{e}s usually allow the worker to emphasize and omit information that's not relevant --- \textbf{what if we facilitated that?}
+  
+  conventional work r\'{e}sum\'{e}s usually allow the worker to emphasize and omit information that's not relevant --- \textbf{what if we facilitated that?}
   
   % So what did we do?
-  \item we built a system that collected data from workers' profiles on online crowdsourcing platforms
+  we built a system that collected data from workers' profiles on online crowdsourcing platforms
   (first AMT, then others), and parsed that data to present more meaningful analytic data on things like
   \begin{enumerate}
     \item the nature of the task; objective (i.e. factually based and evaluable) versus subjective (e.g. survey \ali{maybe also object labeling?})
     \item the type of requester; academic versus industry
     \item \textit{others}
   \end{enumerate}
-  \item we also built a proof--of--concept qualifications management system abstracted from both our worker profile system and the work platform itself
+  we also built a proof--of--concept qualifications management system abstracted from both our worker profile system and the work platform itself
   (to explore the potential to abstract worker qualifications and credentials from the system itself, allowing other parties to specialize in this task)
   
   % What did we find/how did it go?
-  \item we evaluated this system from two perspectives:
+  we evaluated this system from two perspectives:
   \begin{enumerate}
     \item did requesters who used this system find that the worker data better--informed their qualifications management and worker solicitation?
           in other words, was the output of the work more reliably accurate when they relied on the analytic data that we provided versus the coarse approval/rejection rating?
     \item did \textit{workers} benefit from having high level data providing some insight into their work trends? did this lead them to better work more quickly? did they take a more active role in the management of their reputation / ``worker profile'' / r\'{e}sum\'{e}?
   \end{enumerate}
-  \item we also explored whether the externalized worker qualification system worked effectively, and considered the potential advantages and disadvantages of a set of decoupled systems rather than an integrated one (market, qualifications assessment system, payment platform, etc\dots).
-\end{enumerate}
+  we also explored whether the externalized worker qualification system worked effectively, and considered the potential advantages and disadvantages of a set of decoupled systems rather than an integrated one (market, qualifications assessment system, payment platform, etc\dots).
+% \end{enumerate}
 
 
+\section{dead kittens}
+\ali{this is getting a little argumentative, yeah?
+I want this to get in the direction of
+\textit{``Things aren't going the way they need to in order for crowd work to be good for people.''}}
+\topic{Today's on--demand labor markets don't seem to be driving toward a bright future for workers.}
+At one end of the spectrum,
+workers are treated as interchangeable cogs whose purposes are as
+backdrops upon which to project rubrics, workflows, and processes~\cite{yuanAlmost}.
+In this space, workers' lack of expertise is precisely what makes this form of labor compelling ---
+as an opportunity to show that, when arranged and managed correctly,
+``\dots non--experts can achieve better coverage and latency than a professional\dots''~\cite{lasecki2012real}.
+At the other end of the spectrum,
+workers in on--demand labor markets are seen as the walking dead ---
+human laborers who will ``satisfice'' until artificially intelligent agents can take over~\ali{[cite Kalanick being Kalanick]}.
 
 
-
-\ali{
-On--demand work has so far been a compelling way to arrange work and imagine workers;
-the fleeting nature of work seems to appeal greatly to workers, and
-the looser expectations of responsibility toward workers appeals to employers and clients.
-But in the exchange we've made for more fleeting relationships,
-we've instantiated --- or at least added fuel to ---
-another class of challenges and problems.
-Among them remains the challenge of ensuring that workers
---- first crowd workers, and later gig workers --- both
-\begin{inlinelist}
-  \item know the skills necessary to do the immediate task and
-  \item will continue to produce work at the desired level of quality.
-\end{inlinelist}
-By far, two approaches have taken hold:
-First, qualification exams (e.g. Amazon Mechanical Turk and Upwork),
-       which ask workers to take a test of some sort to demonstrate that they both
-       understand the task in question \textit{have the ability} to do the task.
-Second, relying on outside certification bodies (e.g. Uber, \ali{do we know of others that match this profile?}),
-        which assumes that outside bodies
-        --- in Uber's case, local DMVs and similar bodies ---
-        have sufficiently evaluated a person's ability to do the tasks necessary.
-
-Other approaches exist, but have not (yet) garnered the interest of on--demand firms in general.}
-
-
-% Research has looked into this question from a handful of perspectives;
-% some have tackled the qualifications problem as a pure assessment problem.
-% others have looked to
-% [\textit{Krishna et al. on long--term workers}]
-
-\ali{I want citations on \textbf{worker qualifications} and on \textbf{worker effort and management}.
-I think Ranjay's paper on looking forward etc\dots~at CSCW 2017 would be right here.
-When do bibtex things come out?}
-
-
-
-% Online labor markets ranging a variety of industries of (largely) service work
-% --- e.g. on--demand drivers (Uber, Lyft, Sidecar, etc\dots) and
-%     information work (Amazon Mechanical Turk, Upwork, CrowdFlower, etc\dots) ---
-% have struggled for some time with pernicious, in some cases \textit{growing},
-% difficulty assessing the quality of its workforce,
-% especially as it applies to a given task.
-% In other words, whether a worker on Amazon Mechanical Turk (AMT) is likely
-% to complete a task ``accurately'' remains an open question,
-% leading researchers to address this pervasive problem in a number of ways
-
-
-% Labor market platforms ranging industries and styles of work
-% (e.g. Uber, TaskRabbit, UpWork, and Amazon Mechanical Turk)
-% have struggled for years with persistent
-% (generally growing)
-% challenges relating to worker qualifications.
-% These issues range a wide spectrum:
-% in some cases, worker qualifications are non--transferable,
-% leading requesters to ``re--invent the wheel'' as they attempt to determine
-% in their own way whether a potential worker is qualified and reliable.
-
-% Problems determining a worker's qualifications start on day 1;
-% labor markets begin their relationships with new workers
-% almost entirely uncertain about the worker's competence in any type of task.
-% Gathering this information through qualification exams is generally
-% time--consuming and costly.
-
-% Challenges mount as workers' skill sets develop;
-% work requiring more training and skill (for example, translating or programming)
-% are either verified by individual \textit{requesters} (e.g. Amazon Mechanical Turk)
-% or are verified by the \textit{platform} itself (e.g. UpWork).
-% While the \textit{UpWork} model avoids needless repetitive work by
-% generally consolidating qualifying exams at the platform level,
-% these labor platforms nevertheless find themselves in the unenviable
-% (and often unexpected) position of
-% having to develop new qualifications exams to outpace would--be cheaters.
 
 
 \end{document}

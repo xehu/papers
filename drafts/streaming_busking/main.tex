@@ -2,11 +2,11 @@
 
 \usepackage{xr-hyper}
 \usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles,appendix,endnotes}
-\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth,cleveref,textcase}
+\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,moreenum,nth,endnotes,cleveref,textcase}
 \usepackage[normalem]{ulem}
 % \usepackage{url}
 % \usepackage{natbib}
-\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+% \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage{mfirstuc,lastpage}
@@ -20,7 +20,7 @@
 \def\blx@maxline{77}
 \makeatother
 
-\bibliography{references}
+
 \providecommand*{\namerefl}[1]{%
 \refused{#1}%
 \MakeTextLowercase{%
@@ -40,7 +40,7 @@
 }
 
 \setlist{nolistsep}
-\def\plaintitle{Aggregated On--Demand Worker Profiles}
+\def\plaintitle{Online Performance Art, and the Politics of Their Platforms}
 \def\plainauthor{Ali Alkhatib, Michael Scott Bernstein}
 \def\emptyauthor{}
 \def\plainkeywords{TODO}
@@ -73,7 +73,7 @@
 \newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
 \newcommand{\TO}{\textit{Turkopticon}}
 \newcommand{\DO}{\textit{Dynamo}}
-\newcommand{\deadkittens}[1]{\endnotetext{#1}}
+
 
 % Make sure hyperref comes last of your loaded packages, to give it a
 % fighting chance of not being over-written, since its job is to
@@ -161,9 +161,7 @@ at at whatever rate and in whichever manner they wish} % do i use this more than
 \keywords{\plainkeywords}
 \subfile{introduction}
 
-% \bibliographystyle{SIGCHI-Reference-Format}
-% \bibliography{references}
-\printbibliography{}
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{references}
 
-\theendnotes{}
 \end{document}
