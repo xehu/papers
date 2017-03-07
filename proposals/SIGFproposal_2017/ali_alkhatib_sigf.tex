@@ -1,24 +1,25 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage{xr-hyper}
-\usepackage{todonotes,txfonts,balance,graphics,color,alphalph,subfiles,appendix,endnotes}
-\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,nth,cleveref,textcase,comment}
+\usepackage{todonotes,balance,graphics,color,alphalph,subfiles,appendix,endnotes,times}
+\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,nth,cleveref,textcase,comment,titlesec}
 \usepackage[normalem]{ulem}
 \usepackage{url}
 % \usepackage{natbib}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-\usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage{mfirstuc,lastpage}
-\usepackage[en-GB]{datetime2}
+\usepackage[en-US]{datetime2}
 \usepackage{fancyhdr,tabularx}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 
 
-\usepackage{mfirstuc,lastpage}
+% \usepackage{mfirstuc,lastpage}
 \bibliography{references}
 \usepackage[margin=1in]{geometry}
 \pagestyle{fancy}
+\titlespacing*{\section}{0.0ex}{2ex plus .3ex}{1ex plus .3ex}
 
 
 \lhead{} % controls the left corner of the header
@@ -38,10 +39,14 @@
 % \setlist*[inlinelist,1]{
 %   label=\arabic*),
 % }
-\makeatletter         
-\def\@maketitle{   % custom maketitle 
-{\Large \scshape \@title} ~~~\@author ~ on  \@date \par 
-\smallskip \hrule \smallskip }
+\makeatletter
+
+\def\maketitle{%
+\par{\centering {\scshape \huge \textbf{\@title}}%
+\par{\@author}
+\par{submitted \today}%
+\par}}
+% \smallskip \hrule \smallskip }
 
 \title{Designing Digital Hiring Halls}
 \author{Ali Alkhatib}
