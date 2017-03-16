@@ -9,10 +9,13 @@
 % \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
 \usepackage{mfirstuc,lastpage}
-\usepackage[en-US]{datetime2}
 \usepackage{fancyhdr,tabularx}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
+
+\usepackage[en-US]{datetime2}
+\DTMsettimestyle{default}
+\DTMsetup{showseconds=true}
 
 
 % \usepackage{mfirstuc,lastpage}
@@ -25,13 +28,13 @@
 \lhead{} % controls the left corner of the header
 % \chead{} % controls the center of the header
 \rhead{Ali Alkhatib} % controls the right corner of the header
-\lfoot{} % controls the left corner of the footer
+\lfoot{last updated} % controls the left corner of the footer
 \cfoot{} % controls the center of the footer
 \rfoot{Page~\thepage} % controls the right corner of the footer
 \renewcommand{\headrulewidth}{0.0pt}
 \renewcommand{\footrulewidth}{0.0pt}
 
-\thispagestyle{empty}% Removes the header from the first page. Change plain to empty to remove the numbering entirely.
+\thispagestyle{empty}
 
 % \setlength{\parskip}{.2em}
 
@@ -44,204 +47,201 @@
 \def\maketitle{%
 \par{\centering {\scshape \huge \textbf{\@title}}%
 \par{\@author}
-\par{submitted \today}%
+\par{DRAFT \DTMcurrenttime~\today}%
+% \par{DRAFT \DTMcurrenttime~on~\today}%
 \par}}
 % \smallskip \hrule \smallskip }
 
-\title{Designing Digital Hiring Halls}
+\definecolor{PineGreen}{HTML}{008800}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{JokeGreen}{HTML}{00C953}
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+
+
+\title{Ethnographic Study of Online Entertainers}
 \author{Ali Alkhatib}
 \date{\today}
 
 
-% take half 
-% motivating work: historical analysis of crowd 
-% gig work instead of on--demand work
-%
-%
-%
-%
 \definecolor{Blue}{HTML}{0000FF}
 \newcommand{\topic}[1]{{\color{Blue}#1}}
-\renewcommand{\topic}[1]{{#1}}
+% \renewcommand{\topic}[1]{{#1}}
 \definecolor{Gray}{HTML}{BABABA}
 \newcommand{\ugh}[1]{{\color{Gray}\textit{#1}}}
 \newenvironment{blah}{\par\color{Gray}\itshape}{\par}
-
-% Michael Bernstein [9:40 PM]
-% [x] add a title
-% [x] “new instantiation” —> “modern instantiation”
-% [x] why “further” in a second sentence of an abstract?
-% [x] "design and develop a 'digital hiring hall’”— specify for gig workers?
-% [x] need a sentence in the abstract describing what your system actually does (e.g., create a portable resume across services by scraping work histories, letting workers use that history to demonstrate abilities to a new platform)
-% [x] final sentence of abstract has three broadbrush implications, choose one that it maximizes
-% [x] intro to Research Plan section needs a more focused question, specifically the one that you’re solving. "will gig work remain an undesirable career path” is too broad for our project to answer. likewise, "we propose to build one of the potential futures that we discussed” is too vague. Instead, start with a focused question more like (and this isn’t refined, but:) "How can workers demonstrate their skill?” And explain in one sentence this was an issue historically, and it was only partially solved b/c they couldn’t X. But now you can build technology to X. And that’s what you’re going to do.
-% [x] "who are proficient at translating between two specific languages”: ground this. e.g., they have lots of previously recorded work by a translation service on Mechanical Turk to vouch for their quality
-% [x] Interdisciplinarity: first sentence is weaksauce — get specific
-% [x] Contributions: “little say” — why is this the _optimistic_ prediction? wouldn’t the optimist say that we _can_ steer it?
-
-
-
-
 
 
 \begin{document}
   \maketitle
   \begin{abstract}
-    Gig work has become a modern instantiation of piecework.
-    Their platforms allow employers to
-    disperse workers geographically and silo workers' information,
-    making organization and coordination all but impossible,
-    and stymieing work specialization and expertise.
-    Our research will draw on our past work,
-    using historical analysis of piecework to inform this contemporary phenomenon,
-    to design and develop a ``digital hiring hall''
-    --- a platform--independent repository for workers to store their body of work, curate their professional image,
-    and better signal expertise to employers.
-    Our research will
-    begin to instantiate one of the potential futures of labor advocacy for gig workers.
+  TODO? ahhhh
   \end{abstract}
 
 
 
+\section*{Situation}
+\topic{In the past decade
+online video sharing % \ali{, such as YouTube and Vimeo,}
+and streaming sites % \ali{, like Twitch and others,}
+have increasingly taken on characteristics of
+Deweyan publics~\cite{dewey2012public,disalvo2009design}.}
+The ``YouTubers'' and ``streamers'' who use these platforms have come to rely both on
+the technical infrastructure these platforms provide \textit{as well as}
+the sociality of the venue itself.
+These sites have in some sense democratized media and entertainment for online performers by
+making the avenues to large audiences substantially more accessible.
+In these transformations into publics, these sites
+have grown into bustling hubs for artists to engage with audiences and practice their trade.
+
+\section*{Problem}
+\topic{Recently, tensions between online performers and the platforms on which they work have shaken people's
+assumptions regarding the nature of the space they're using.}
+Performers on now--defunct Vine demanded --- unsuccessfully --- to be better compensated~\cite{vineWantsMoney,vineInsiderMeeting};
+YouTubers meanwhile struggle to defend their unconventional performance work~\cite{h3h3Lawsuit}
+and individually and collectively field accusations of misconduct of various forms~\cite{youtubeDramaResponses}.
+\ali{now i want to say something like
+``these are all just symptoms of the fact that YouTube and these other platforms aren't the public spaces they were originally perceived to be;
+in fact these are carefully controlled spaces, and we need to better understand this stuff''}
+
+\section*{Insight}
+\topic{Studying contemporary developments through an established lens can be a helpful way of
+making sense of the phenomena we've seen so far, and
+provide us with some grounding to make predictions and inform future design decisions.}
+We've done this before, studying crowdsourcing and gig work as
+an instantiation of \textit{piecework}~\cite{pieceworkCrowdworkGigwork};
+this new framing of an existing domain with historical context not only
+provided us with guidance toward some of the major threads of research
+in the field of crowdsourcing, but
+also informed some of the potential futures of crowdsourcing and
+the even faster--growing gig work labor markets.
+
+To some extent, we can liken online performance art on YouTube, Twitch, and other platforms to street performances.
+Online performers
+--- streamers and YouTubers in particular ---
+tend not to have the formal training of many conventional performers and artists,
+instead growing in proficiency and becoming more skilled principally through their practice;
+in much the same way,
+street performers are 
+%
+Online performance artists have the ability
+to engage directly with their audiences and tailor their performances to the desires of the crowd
+--- YouTubers call upon their audiences to like, dislike, and submit comments to the video, while
+    streamers literally change their performances on the fly to suit the whims of those watching and chatting;
+meanwhile, the most successful street performers typically engage participants,
+drawing them into the performance itself, even bantering with passersby.
+%
+Finally, online performance has increasingly become a site of political engagement and activism,
+sometimes subverting authority
+--- in these cases online moderators and algorithms ---
+in the process of or for the purpose of making a point;
+the history of street performance as a channel for political action and advocacy has been deeply studied
+(see, for example, \cite{harrison1990drawing,cohen1998radical}).
+\section*{Incomplete!}
+\section*{Proposal}
+
+
+% \section*{Motivating Work: Historical Analysis of Contemporary Phenomena}
 
 
 
+% Online performers share an uncanny number of similarities with street performers
+
+% \ali{generally speaking, each major bullet point = roughly 1 paragraph}
+\begin{itemize}
+  \item Online streaming, which started as a recreational hobby~\cite{Hamilton:2014:STF:2611105.2557048,Zhang:2015:CIL:2736084.2736091}, has become
+        a growing industry for entertainers.
+        Further, it has ``democratized'' entertainment, providing people with a public space
+        (e.g. YouTube, Twitch, Vimeo, etc\dots) to explore unconventional performance art
+  \item Our research into crowdsourcing and gig work has yielded
+        a compelling framework for these phenomena as an instantiation of piecework.
+        We've found that this approach
+        --- that is, drawing parallels with historical phenomena ---
+        can generally give researchers of sociotechnical systems substantive framing of a research space.
+  \item To some extent, this can be likened to \textbf{street performance} inasmuch as
+  \begin{itemize}
+    \item the public space allowed non--experts to engage in their craft without commitment, formal training, etc\dots
+    \item entertainers could get more direct feedback from their audience than other avenues could afford them
+    \item entertainers could (and did) subvert authorities (offline, that was the police; online, that's YouTube's moderator team)
+  \end{itemize}
+  \item \textbf{But} there are questions about the politics of (grassroots, potentially subversive) performance art.
+        \ali{need a clearer \textbf{research question}?}
+  \item When we look at this dimension of online performance art, the metaphor begins to break down:
+  \begin{itemize}
+    \item policies and rules are enacted and enforced opaquely, seemingly arbitrarily on private settings
+    \item the notion of the public in this instance is broken, as the phenomenon of shared experience doesn't translate online
+    \item communication between the performer and the audience is carefully mediated
+          (and literally moderated) by the platform itself
+    \item online performances are (generally) more permanent than street performances
+          \ali{technology has thrown a wrench into this lately, with
+              cameras allowing us to record street performances and
+              tools making it impossible (or at least difficult) to save online streams, but
+              \textit{let's not worry about all that}.}
+  \end{itemize}
+  \item So while there are compelling parallels between online performances and the street art of busking,
+        this has only taken us partway in answering important questions about a rapidly growing field.
+\end{itemize}
 
 
 
-
-
-\section*{Motivating Work: Historical Analysis of Piecework}
-\topic{Piecework has historically disempowered workers and empowered employers, and
-many the same dynamics of disenfranchisement and frustration are poised to return today.}
-In our most recent work~\cite{pieceworkCrowdworkGigwork}, we found that a number of aspects of piecework
---- a form of work payment that began more than a century ago ---
-bears striking resemblance to the sort of work we have begun to see emerge in Uber, Lyft, TaskRabbit, and more
---- collectively called ``gig work''.
-By subdividing work and paying for each task, employees are driven to work faster and longer,
-affording them little control over working conditions.
-And for most of its history, piecework yielded no benefits, occupational health and safety, or social insurance.
-When piecework combined with job routinization, workers became interchangeable and deindividuated.
-This combination of piecework and routinization produced the dominant payment system during the industrial era,
-starting with agriculture and home production but quickly moving into factories.
-However, by the turn of the \nth{20} century in the United States,
-campaigns for workers' rights yielded regulations on conditions, and by the late \nth{20} century,
-piecework was associated primarily with migrant labor and sweatshops.
-This contracted piecework economy has remained relatively stable since.
-
-\topic{Today, with the growth of on--demand labor, piecework is reemerging in new forms.}
-Networked computational infrastructure is now mediating each unit of work and worker.
-Uber's taxi drivers are paid per ride and assigned jobs by an algorithm~\cite{uberAlgorithm,hall2015analysis}.
-Information workers, such as those on Amazon Mechanical Turk and Upwork, are paid per task,
-performing vast quantities of data and administrative work~\cite{martin2014being}.
-Increasingly numerous workers make money through one--off tasks like housecleaning and food delivery, all mediated by online platforms.
-Much of this work has been limited in complexity to easily verifiable work, stymieing gig workers' career opportunities
-in many of the same ways that historically limited information workers' careers~\cite{grier2013computers}.
-
-
-\topic{In our examination of crowd work and gig work as
-a reinstantiation of piecework~\cite{pieceworkCrowdworkGigwork},
-we identify a number of parallels that relate to this question.}
-First, that the first ``human computers'' were geographically distributed and
-only retained for several years to stifle career development opportunities~\cite{grier2013computers};
-second, that effective uses of historical piecework were generally limited to
-easily measured work due to a general mistrust~\cite{american1921problem,richards1904anything};
-third, this mistrust led to such a starkly adversarial relationship between workers and managers that
-it may have precipitated the wave of labor advocacy which defined
-the first half of the \nth{20} century~\cite{hart2013rise,hart2016rise}.
-What remains then are serious questions about the future of gig work as informed by piecework's history.
-We have limited knowledge of how gig workers today are adapting to digitally mediated, constantly changing labor markets.
-Similarly, we know very little about gig work's potential to support complex work, let alone how to turn that potential into reality.
-
-\topic{This work carries policy implications for the emerging, and as yet largely unregulated, gig economy.}
-Will gig work represent empowered, independent professionals who freely control their destinies, or 
-will gig work become a geographically distributed ``digital sweatshop''~\cite{dawnDigitalSweatshopCushing}?
-Whereas researchers had relatively little control over the markets that emerged throughout the \nth{20} century,
-researchers of digital sites of work have the ability not only to influence, but to architect these settings~\cite{lessig2006code}.
-It can be argued that with a few lines of code, we can effect outsize change on the future of gig work
---- a form of work that continues to grow by the year~\cite{pewSharing,pewSharing24percent}.
-
-
-
-
-
-
-
-
-% [x] intro to Research Plan section needs a more focused question, specifically the one that you’re solving. "will gig work remain an undesirable career path” is too broad for our project to answer. likewise, "we propose to build one of the potential futures that we discussed” is too vague. Instead, start with a focused question more like (and this isn’t refined, but:) "How can workers demonstrate their skill?” And explain in one sentence this was an issue historically, and it was only partially solved b/c they couldn’t X. But now you can build technology to X. And that’s what you’re going to do.
 \section*{Research Plan}
-\topic{While our research considered a number of possible futures for gig work in general and gig workers in particular,
-several important questions remain unresolved.}
-For example, we pointed to the general question that researchers had been asking for some time ---
-whether gig work will become a site of complex, rewarding work
---- or if it will remain a setting for low quality tasks with little upward mobility.
-While we offered a framework for answering questions such as this one, the reality is that
-any researcher or team exploring this area
---- especially on the basis of the parallel we drew ---
-would fundamentally need to be conversant with several deep bodies of research spanning myriad fields.
+% \begin{itemize}
+%   \item We propose to direct our research energy toward answering one question: 
+% \end{itemize}
 
-We concluded that gig work's potential will be determined by
-how easily skilled workers can secure good work through these platforms.
-In order to do that, workers need to be able to communicate rich information about their qualifications to employers,
-which existing markets have so far struggled to do.
-\topic{We will build a system that tracks gig workers' professional histories across myriad work platforms,
-aggregating, consolidating, \& analyzing that data, and
-allowing workers to curate their professional identities, instantiated by a ``digital hiring hall'' for gig workers.}
+% We propose to conduct ethnographic research of online performance artists who principally earn their income either from Twitch or YouTube (or both).
 
+% \topic{While our research considered a number of possible futures for gig work in general and gig workers in particular,
+% several important questions remain unresolved.}
+% For example, we pointed to the general question that researchers had been asking for some time ---
+% whether gig work will become a site of complex, rewarding work
+% --- or if it will remain a setting for low quality tasks with little upward mobility.
+% While we offered a framework for answering questions such as this one, the reality is that
+% any researcher or team exploring this area
+% --- especially on the basis of the parallel we drew ---
+% would fundamentally need to be conversant with several deep bodies of research spanning myriad fields.
 
-\topic{The system we intend to build will serve two roles --- one for workers and one for employers.}
-Gig workers will share their work histories from platforms such as Amazon Mechanical Turk with our repository,
-which will allow us to provide the worker with information upon which they can reflect
-(e.g. detailed analysis of their work trends, approval rates under various circumstances, etc\dots)
-as well as information in relation to other workers
-(e.g. offering a percentile ranking overall for approval rates, or within specific types of tasks).
-In doing so, we hope to find that workers will identify cues and gravitate toward qualities in work
-in which they identify competitive advantage.
-
-\topic{The second role that this repository will help employers identify and source the best workers for highly skilled work.}
-By aggregating the data from work platforms and
-offering more in--depth analysis of workers' histories, we hope to find that
-we can direct employers to gig workers whose overall experiences match the employer's given needs.
-For example, if an employer or a platform queries our platform for
-workers who are proficient at translating between two specific languages,
-we can yield a list of workers who would be suitable for the task, determined by
-the workers' comprehensive histories on Mechanical Turk and, potentially, elsewhere.
-
-\topic{This approach is similar in some senses to the role that hiring halls played through the \nth{20} century.}
-By disconnecting workers' data from the platforms themselves, our repository will act as a sort of ``digital hiring hall'',
-connecting employers with workers whose varied work histories provide them with the expertise necessary to do given tasks.
-By engaging workers in the management of this repository, we will advance the metaphor in much the same way that
-labor unions maintained --- and continue to operate --- hiring halls of their workers.
+% We concluded that gig work's potential will be determined by
+% how easily skilled workers can secure good work through these platforms.
+% In order to do that, workers need to be able to communicate rich information about their qualifications to employers,
+% which existing markets have so far struggled to do.
+% \topic{We will build a system that tracks gig workers' professional histories across myriad work platforms,
+% aggregating, consolidating, \& analyzing that data, and
+% allowing workers to curate their professional identities, instantiated by a ``digital hiring hall'' for gig workers.}
 
 
-\topic{At a high level, we can study the usefulness of this system using standard experimental approaches.}
-First, through quantitative methods (for example, comparing workers' earnings over time); and
-second, through qualitative  methods (for example, through interviews to determine whether workers find and exploit specialty niches as a result of this tool).
-We can also explore employers perspectives in tangible ways;
-for example, given concerns about the quality of work~\cite{Ipeirotis:2010:QMA:1837885.1837906,le2010ensuring,Law:2017:CTR:2998181.2998197},
-we will investigate whether a system that better communicates worker expertise allows employers to rely more confidently on crowdwork.
+% \topic{The system we intend to build will serve two roles --- one for workers and one for employers.}
+% Gig workers will share their work histories from platforms such as Amazon Mechanical Turk with our repository,
+% which will allow us to provide the worker with information upon which they can reflect
+% (e.g. detailed analysis of their work trends, approval rates under various circumstances, etc\dots)
+% as well as information in relation to other workers
+% (e.g. offering a percentile ranking overall for approval rates, or within specific types of tasks).
+% In doing so, we hope to find that workers will identify cues and gravitate toward qualities in work
+% in which they identify competitive advantage.
+
+% \topic{The second role that this repository will help employers identify and source the best workers for highly skilled work.}
+% By aggregating the data from work platforms and
+% offering more in--depth analysis of workers' histories, we hope to find that
+% we can direct employers to gig workers whose overall experiences match the employer's given needs.
+% For example, if an employer or a platform queries our platform for
+% workers who are proficient at translating between two specific languages,
+% we can yield a list of workers who would be suitable for the task, determined by
+% the workers' comprehensive histories on Mechanical Turk and, potentially, elsewhere.
+
+% \topic{This approach is similar in some senses to the role that hiring halls played through the \nth{20} century.}
+% By disconnecting workers' data from the platforms themselves, our repository will act as a sort of ``digital hiring hall'',
+% connecting employers with workers whose varied work histories provide them with the expertise necessary to do given tasks.
+% By engaging workers in the management of this repository, we will advance the metaphor in much the same way that
+% labor unions maintained --- and continue to operate --- hiring halls of their workers.
 
 
-
-
-
-
-
-
-
-
-
-\section*{Interdisciplinarity}
-% \topic{This research will call on methods and skills originally from and generally found in disparate fields.}
-% \topic{The insights and expertise necessary to conduct this research successfully will call on a variety of skills not typically seen together, such as
-% participant observation, participatory design techniques, and machine learning approaches.}
-As we showed with our paper examining the relationship between piecework and gig work~\cite{pieceworkCrowdworkGigwork},
-the lens of a social scientist can inform conversations about digitally mediated work in ways that many computer scientists are not otherwise able to offer.
-At the same time, the perspectives of computer scientists
---- and the challenges digitally mediated spaces bring with them ---
-offer to reinvigorate deeply theoretically grounded discussion and offer field sites with which to experiment and test these theories.
-As a Computer Science Ph.D. student originally trained as an Anthropologist, I believe
-I'm the best candidate to combine these bodies of literature to make this project succeed.
+% \topic{At a high level, we can study the usefulness of this system using standard experimental approaches.}
+% First, through quantitative methods (for example, comparing workers' earnings over time); and
+% second, through qualitative  methods (for example, through interviews to determine whether workers find and exploit specialty niches as a result of this tool).
+% We can also explore employers perspectives in tangible ways;
+% for example, given concerns about the quality of work~\cite{Ipeirotis:2010:QMA:1837885.1837906,le2010ensuring,Law:2017:CTR:2998181.2998197},
+% we will investigate whether a system that better communicates worker expertise allows employers to rely more confidently on crowdwork.
 
 
 
@@ -252,25 +252,47 @@ I'm the best candidate to combine these bodies of literature to make this projec
 
 
 
-\section*{Anticipated Contributions \& Implications}
-This research is of significant importance given the recent trends in the ``gig economy''.
-With more and more people joining the workforce in this capacity~\cite{pewSharing,pewSharing24percent},
-concerns about ``the future of work''~\cite{waterCooler,crowdworkFuture} continue to grow.
-Our hope is that the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
-More broadly, we expect to offer two major contributions to the Human--Computer Interaction community:
-first, an existence proof that a gig work market for complex, specialized workers is possible; and
-second, insights into how best to scaffold and foster ongoing collective governance.
 
-This project's will speak to the critique that the internet,
-far from the democratizing force that Barlow predicted it would be,
-has become an infrastructure facilitating the corporate centralization of power~\cite{barlow2009declaration,jones2011does,EboCybertopia}.
-The success of this project will therefore not only
-bring a more nuanced understanding of the shifting climate and culture of labor,
-but may
---- in a small way ---
-deliver on the promise Barlow made that
-cyberspace and the Internet would be a tool for democratizing access to information, and with that,
-empowering more than the tech elite who engineered it.
+% \section*{Interdisciplinarity}
+% % \topic{This research will call on methods and skills originally from and generally found in disparate fields.}
+% % \topic{The insights and expertise necessary to conduct this research successfully will call on a variety of skills not typically seen together, such as
+% % participant observation, participatory design techniques, and machine learning approaches.}
+% As we showed with our paper examining the relationship between piecework and gig work~\cite{pieceworkCrowdworkGigwork},
+% the lens of a social scientist can inform conversations about digitally mediated work in ways that many computer scientists are not otherwise able to offer.
+% At the same time, the perspectives of computer scientists
+% --- and the challenges digitally mediated spaces bring with them ---
+% offer to reinvigorate deeply theoretically grounded discussion and offer field sites with which to experiment and test these theories.
+% As a Computer Science Ph.D. student originally trained as an Anthropologist, I believe
+% I'm the best candidate to combine these bodies of literature to make this project succeed.
+
+
+
+
+
+
+
+
+
+
+% \section*{Anticipated Contributions \& Implications}
+% This research is of significant importance given the recent trends in the ``gig economy''.
+% With more and more people joining the workforce in this capacity~\cite{pewSharing,pewSharing24percent},
+% concerns about ``the future of work''~\cite{waterCooler,crowdworkFuture} continue to grow.
+% Our hope is that the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
+% More broadly, we expect to offer two major contributions to the Human--Computer Interaction community:
+% first, an existence proof that a gig work market for complex, specialized workers is possible; and
+% second, insights into how best to scaffold and foster ongoing collective governance.
+
+% This project's will speak to the critique that the internet,
+% far from the democratizing force that Barlow predicted it would be,
+% has become an infrastructure facilitating the corporate centralization of power~\cite{barlow2009declaration,jones2011does,EboCybertopia}.
+% The success of this project will therefore not only
+% bring a more nuanced understanding of the shifting climate and culture of labor,
+% but may
+% --- in a small way ---
+% deliver on the promise Barlow made that
+% cyberspace and the Internet would be a tool for democratizing access to information, and with that,
+% empowering more than the tech elite who engineered it.
 
 \pagebreak
 \printbibliography{}
