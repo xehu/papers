@@ -17,6 +17,8 @@
 \DTMsettimestyle{default}
 \DTMsetup{showseconds=true}
 
+\usepackage{caption}
+\captionsetup[table]{labelformat=empty}
 
 % \usepackage{mfirstuc,lastpage}
 \bibliography{references}
@@ -27,25 +29,26 @@
 
 \lhead{} % controls the left corner of the header
 % \chead{} % controls the center of the header
-\rhead{Ali Alkhatib} % controls the right corner of the header
+\rhead{Alkhatib \& Nagy} % controls the right corner of the header
 \lfoot{last updated} % controls the left corner of the footer
 \cfoot{} % controls the center of the footer
 \rfoot{Page~\thepage} % controls the right corner of the footer
 \renewcommand{\headrulewidth}{0.0pt}
 \renewcommand{\footrulewidth}{0.0pt}
 
+\AtBeginBibliography{\small}
 \thispagestyle{empty}
 
 % \setlength{\parskip}{.2em}
 
-% \newlist{inlinelist}{enumerate*}{1}
-% \setlist*[inlinelist,1]{
-%   label=\arabic*),
-% }
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
 \makeatletter
 
 \def\maketitle{%
-\par{\centering {\scshape \huge \textbf{\@title}}%
+\par{\centering {\scshape \LARGE \textbf{\@title}}%
 \par{\@author}
 \par{DRAFT \DTMcurrenttime~\today}%
 % \par{DRAFT \DTMcurrenttime~on~\today}%
@@ -55,19 +58,24 @@
 \definecolor{PineGreen}{HTML}{008800}
 \definecolor{Red}{HTML}{FF0000}
 \definecolor{Blue}{HTML}{0000FF}
+\definecolor{Black}{HTML}{000000}
 \definecolor{JokeGreen}{HTML}{00C953}
 \newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
 \newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
 
 
-\title{Ethnographic Study of Online Entertainers}
-\author{Ali Alkhatib}
+\title{An Ethnography of Online Performance Artists}
+\author{Ali Alkhatib \& Jeffrey Nagy}
 \date{\today}
-
+\urlstyle{same}
+\hypersetup{
+  colorlinks,
+  citecolor=Black,
+  urlcolor=Blue}
 
 \definecolor{Blue}{HTML}{0000FF}
 \newcommand{\topic}[1]{{\color{Blue}#1}}
-% \renewcommand{\topic}[1]{{#1}}
+\renewcommand{\topic}[1]{{#1}}
 \definecolor{Gray}{HTML}{A0A0A0}
 \newcommand{\ugh}[1]{{\color{Gray}#1}}
 \newenvironment{blah}{\par\color{Gray}\itshape}{\par}
@@ -123,13 +131,17 @@ and specifically the sometimes controversial nature of the experimentation that 
 \topic{One issue frustrating this potential research area is that
 the platforms have changed so dramatically in as few as 5 to 10 years that
 it can seem as though researchers are trying to wade through shifting sands.}
-Scholarship on content creators loses bearing rapidly when economic factors motivate aspiring professional entertainers to join the community~\cite{Hamilton:2014:STF:2611105.2557048};
+Scholarship on content creators loses bearing rapidly when
+economic factors motivate aspiring professional entertainers to join the community~\cite{Hamilton:2014:STF:2611105.2557048};
 the tension between these entertainers experimenting with content remixing and
 the holders of the copyright of the source material
 (for example, see~\cite{Hilderbrand48})
 shifts dramatically when
 the platform's copyright enforcement mechanisms advance
 not just incrementally but substantially~\cite{kim2012institutionalization}.
+And the popularity of candidate field sites can vary chaotically
+(see, for example, Vine reaching as many as 200 million active users and
+abrupt shutdown less than a year later~\cite{vineDecline}).
 
 % \section*{Insight}
 \topic{We recognize that \textit{historical analysis}
@@ -139,11 +151,6 @@ making sense of contemporary phenomena.}
 As we found in a recent paper framing crowd work and gig work as a modern instantiation of \textit{piecework},
 scholarship from a parallel or similar domain can
 provide us some grounding to make sense of what we've seen, as well as inform predictions~\cite{pieceworkCrowdworkGigwork}.
-% This positioning of an existing subject in historical context not only
-% provided us with guidance toward some of the major threads of research
-% in crowdsourcing, but
-% also informed some of the potential futures of crowdsourcing and
-% the ever growing gig work labor markets.
 
 \topic{To that end, we can liken some aspects of online performance art on YouTube and Twitch
 to street performance and busking,
@@ -154,15 +161,22 @@ instead, performers (both online and in the streets) practice more experimental
 drawing on their candid interaction with their audiences,
 which can change from one performance to the next.
 
-\topic{This connection has purchase, but it has flaws, mostly owing to the unique nature of ``networked publics''~\cite{boyd2007youth}.}
+\topic{This connection has purchase, but it has gaps, mostly owing to the unique nature of the internet~\cite{miller2011understanding}.}
 For one thing, most video sharing websites keep videos
-% --- the modern performances ---
 in perpetuity
 --- that is, unless a complaint over copyright infringement is filed, in which case the lifespan of that ``performance'' can be cut short.
 The public that congregates around a performer, too, has similar permanence that offline busking doesn't;
-YouTube comments linger for years after they're made.
+YouTube comments linger for years after they're made, forming in some sense ``networked publics''~\cite{boyd2007youth}.
 And these say nothing of the different nature of algorithmic enforcement of rules and policies, and
 the near--perfect ability of these platforms to redirect revenue and even people's focus instantaneously.
+
+\topic{We propose to fill in these gaps in our framing of online performance as a modern instantiation of street performance.}
+How does the \textit{permanence} of digitally archived videos affect people's willingness to experiment with new formats and styles,
+and \textit{how can we enable and encourage riskier, potentially more rewarding experimentation}?
+How do networked publics influence whether and how performers engage with their audiences,
+and \textit{how can we design publics that engage the audience with each other and with the performer}?
+How do laws, and the algorithmically instantiated policies, on video sharing and streaming platforms spur or stifle creative remixing?
+
 
 % \section*{TODO: Problem with this model}
 % \section*{TODO: Proposal}
@@ -206,47 +220,93 @@ the near--perfect ability of these platforms to redirect revenue and even people
 % \end{itemize}
 
 \section*{Research Plan}
-\ali{Basic plan:
-\begin{itemize}
-  \item contact YouTube channels that have more than 1M subscribers
-        (and have mentioned YouTube policies at some point
-          (suggesting maybe passing interest in discussing meta topics)?)
-  \item Reach out by any contact methods they provide (if none, then skip)
-  \item Semi--structured interview guiding towards:
-  \begin{itemize}
-    \item interaction with platform \& its designers
-    \item engagement with audience
-    \item coordination with other YouTubers (if any)
-  \end{itemize}
-  \item tentative questions include:
-  \begin{itemize}
-    \item platform questions
-    \begin{enumerate}
-      \item when did you switch to (streaming/YouTubing) as primary career?
-      \item what's YouTube's relationship with you?
-      \item if you were telling a new YouTuber how to get started,
-            what would you say they should know about YouTube
-            (the system, the company, etc\dots)
-            that's not immediately obvious?
-    \end{enumerate}
-    \item audience questions
-    \begin{enumerate}
-      \item how do you interact with audiences?
-      \item what sorts of comments do you get?
-      \item do you reply?
-      \item do you change your future content based on feedback in the comments?
-    \end{enumerate}
-    \item peer questions
-    \begin{enumerate}
-      \item what's your sense of the community as a whole?
-      \item how many other YouTubers do you know
-            (let's say you've had a chat with them in the last month and
-             will probably do so again in the next month)?
-      \item are you all cooperative? competitive? what's the culture like?
-    \end{enumerate}
-  \end{itemize}
-\end{itemize}
-}
+\topic{We propose to carry out qualitative research with major online content producers
+on streaming platforms such as Twitch and YouTube, and video sharing sites like YouTube.}
+Much of this work will consist of ethnographic fieldwork, semi--structured interviews, and
+open--ended exploration of the field site as we find parallels and divergences in the domain
+of online performance art from street and other emergent formats of performance and entertainment.
+% With that being said, we can generally frame our agenda in five components
+% ---
+% \begin{inlinelist}
+%   \item Surveying the landscape of online performance platforms,
+%         identifying performers who may be willing to serve as ``informants'', and
+%         recruiting interviewing participants;
+%   \item Investigating the relationships and tensions performers have with \textit{audiences};
+%   \item Exploring the relationships performers have with \textit{other performers};
+%   \item Studying the relationships performers have with \textit{the platforms themselves}; and finally
+%   \item Designing interventions to facilitate creative experimentation in this nascent format,
+%         informed largely by each of the earlier facets of online performance.
+% \end{inlinelist}
+A rough timeline of these phases can be described as such:
+
+\begin{tabular}{p{2cm}|p{13cm}}
+  \textbf{Term} & \textbf{Plan} \\
+\hline
+Q1  & Identify potential participants and begin recruiting participants;
+      begin preliminary interviews and fieldwork.
+      Research specifically focusing on performers' \textit{relationships with audiences}
+      and noting areas of frustration for performers and intervention opportunities \\
+\hline
+Q2  & Qualitative fieldwork toward understanding performers' \textit{relationships with other performers},
+      with some attention toward the potential for performer affiliations \\
+\hline
+Q3  & Fieldwork looking at performers' \textit{relationships with their respective platforms}
+      (for example: YouTube, Twitch) \\
+\hline
+Q4  & Exploring and iterating on \textit{design interventions} with YouTubers and streamers
+      to advance values discussed earlier
+      (audience engagement, online performer affiliation, etc\dots)  \\
+\end{tabular}
+
+\topic{Our interview process will }
+We will use semi--structured interviews
+to remain open to participants guiding our research agenda toward
+whatever they consider to be compelling topics.
+With that being said
+
+
+
+% \ali{Basic plan:
+% \begin{itemize}
+%   \item contact YouTube channels that have more than 1M subscribers
+%         (and have mentioned YouTube policies at some point
+%           (suggesting maybe passing interest in discussing meta topics)?)
+%   \item Reach out by any contact methods they provide (if none, then skip)
+%   \item Semi--structured interview guiding towards:
+%   \begin{itemize}
+%     \item interaction with platform \& its designers
+%     \item engagement with audience
+%     \item coordination with other YouTubers (if any)
+%   \end{itemize}
+%   \item tentative questions include:
+%   \begin{itemize}
+%     \item platform questions
+%     \begin{enumerate}
+%       \item when did you switch to (streaming/YouTubing) as primary career?
+%       \item what's YouTube's relationship with you?
+%       \item if you were telling a new YouTuber how to get started,
+%             what would you say they should know about YouTube
+%             (the system, the company, etc\dots)
+%             that's not immediately obvious?
+%     \end{enumerate}
+%     \item audience questions
+%     \begin{enumerate}
+%       \item how do you interact with audiences?
+%       \item what sorts of comments do you get?
+%       \item do you reply?
+%       \item do you change your future content based on feedback in the comments?
+%     \end{enumerate}
+%     \item peer questions
+%     \begin{enumerate}
+%       \item what's your sense of the community as a whole?
+%       \item how many other YouTubers do you know
+%             (let's say you've had a chat with them in the last month and
+%              will probably do so again in the next month)?
+%       \item are you all cooperative? competitive? what's the culture like?
+%     \end{enumerate}
+%   \end{itemize}
+% \end{itemize}
+% }
 
 % \section*{Broader Impact}
 % \topic{Formally recognized art forms have assimilated emergent genres and types of performance art in the past, and
@@ -372,6 +432,11 @@ the near--perfect ability of these platforms to redirect revenue and even people
 % cyberspace and the Internet would be a tool for democratizing access to information, and with that,
 % empowering more than the tech elite who engineered it.
 
-\pagebreak
+% \pagebreak
+% \renewcommand\bibname{{\small References}}
+\setlength\bibitemsep{0pt}
+
+\renewcommand*{\bibfont}{\tiny}
+
 \printbibliography{}
 \end{document}
