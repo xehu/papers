@@ -38,7 +38,7 @@
 \renewcommand{\headrulewidth}{0.0pt}
 \renewcommand{\footrulewidth}{0.0pt}
 
-\AtBeginBibliography{\small}
+% \AtBeginBibliography{\small}
 \thispagestyle{empty}
 
 \newlist{inlinelist}{enumerate*}{1}
@@ -47,13 +47,21 @@
 }
 \makeatletter
 
-\def\maketitle{%
-\par{\centering {\scshape \LARGE \textbf{\@title}}%
-\par{\@author}
-\par{DRAFT \DTMcurrenttime~\today}%
-\par}}
+% \def\maketitle{%
+% \par{{\scshape \LARGE \textbf{\@title}}%
+% \par{\@author}
+% \par{DRAFT \DTMcurrenttime~\today}%
+% \par}}
 % \smallskip \hrule \smallskip }
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  {\scshape \Large \textbf{\@title}}
 
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
 \definecolor{PineGreen}{HTML}{008800}
 \definecolor{Red}{HTML}{FF0000}
 \definecolor{Blue}{HTML}{0000FF}
@@ -64,7 +72,8 @@
 
 
 \title{An Ethnography of Online Performance Artists}
-\author{Ali Alkhatib \& Jeffrey Nagy}
+\author{Ali Alkhatib \& Jeffrey Nagy
+--- DRAFT \DTMcurrenttime~\today}
 \date{\today}
 \urlstyle{same}
 \hypersetup{
@@ -74,24 +83,32 @@
 
 \definecolor{Blue}{HTML}{0000FF}
 \newcommand{\topic}[1]{{\color{Blue}#1}}
-\renewcommand{\topic}[1]{{#1}}
+% \renewcommand{\topic}[1]{{#1}}
 \definecolor{Gray}{HTML}{A0A0A0}
 \newcommand{\ugh}[1]{{\color{Gray}#1}}
 \newenvironment{blah}{\par\color{Gray}\itshape}{\par}
 
 
+\renewenvironment{abstract}{%
+\hfill\begin{minipage}{0.95\textwidth}
+% \rule{\textwidth}{1pt}
+\itshape
+}
+{
+% \noindent\rule{\textwidth}{1pt}
+\bigskip
+\end{minipage}}
+
 \begin{document}
   \maketitle
   \begin{abstract}
-  Online video sharing and streaming platforms have grown quickly in the past decade
-  to support an emerging community of unconventional entertainers.
-  This eclectic group of artists has collectively been
-  exploring boundaries and experimenting with styles and expectations,
-  critically influencing both our cultural expectations of performers and the norms of performance itself.
-  But these dramatic shifts have coincided with turmoil among this new class of entertainers and artists.
-  The frustration and turmoil they're experiencing
-  --- both with one another and with the very platform on which they ``work'' ---
-  calls for a better understanding of the culture and position of this nascent culture.
+  Online video sharing and streaming platforms have flourished into a bustling industry in the past decade.
+  % to support an emerging community of unconventional entertainers.
+  The artists that have emerged on these platforms since then have
+  explored boundaries and experimented with styles and formats,
+  influencing both audiences' expectations of performers and of the performances themselves.
+  But these shifts have come with turmoil among this new group of artists,
+  calling for better understanding of the culture and position of this new, growing group.
   We propose to conduct ethnographic fieldwork in this domain,
   initially informed by a historical framing, but
   ultimately studying how digitally mediated publics such as these affect
@@ -101,12 +118,11 @@
 
 
 % \section*{Situation}
-\topic{Online video sharing % \ali{, such as YouTube and Vimeo,}
-and streaming sites % \ali{, like Twitch and others,}
-have garnered the attention of audiences around the world
+\topic{Video sharing sites like YouTube and Twitch
+have captured the attention of audiences of billions of people around the world
 in the span of little more than a decade.} % taken on characteristics of
-So widely used are these platforms
-that it would be fair to call them ``publics'' in the Deweyan sense~\cite{dewey2012public,disalvo2009design};
+% So widely used are these platforms
+% that it would be fair to call them ``publics'' in the Deweyan sense~\cite{dewey2012public,disalvo2009design};
 content producers
 --- ``YouTubers'' and ``streamers'' ---
 have begun to make their livings on these sites.
@@ -247,7 +263,7 @@ A rough timeline of these phases can be described as such:
   \textbf{Term} & \textbf{Plan} \\
 \hline
 Q1  & Identify potential participants and begin recruiting participants;
-      begin preliminary interviews and fieldwork.
+      begin interviews and fieldwork.
       Research specifically focusing on performers' \textit{relationships with audiences}
       and noting areas of frustration for performers and intervention opportunities \\
 \hline
@@ -262,13 +278,12 @@ Q4  & Exploring and iterating on \textit{design interventions} with YouTubers an
       (audience engagement, online performer affiliation, etc\dots)  \\
 \end{tabular}
 
-\topic{Our interview process will }
-We will use semi--structured interviews
-to remain open to participants guiding our research agenda toward
-whatever they consider to be compelling topics.
-With that being said
-
-
+\topic{We'll recruit between 10 and 30 YouTube and Twitch content producers whose work is primarily content creation on their respective sites
+--- in other words, people who have gone ``full time''.}
+Our initial interviews will be semi--structured in nature, as we'll want to be open to the possibility that 
+% We will use semi--structured interviews
+% to remain open to participants guiding our research agenda toward
+% whatever they consider to be compelling topics.
 
 % \ali{Basic plan:
 % \begin{itemize}
@@ -438,9 +453,9 @@ With that being said
 
 % \pagebreak
 % \renewcommand\bibname{{\small References}}
-\setlength\bibitemsep{0pt}
+% \setlength\bibitemsep{0pt}
 
-\renewcommand*{\bibfont}{\tiny}
-
+% \renewcommand*{\bibfont}{\tiny}
+\pagebreak
 \printbibliography{}
 \end{document}
