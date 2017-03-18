@@ -1,15 +1,12 @@
 \documentclass[10pt]{article}
 \usepackage{xr-hyper}
-\usepackage{todonotes,balance,graphics,color,alphalph,subfiles,appendix,endnotes,times}
-\usepackage{booktabs,textcomp,microtype,ccicons,enumitem,nth,cleveref,textcase,comment,titlesec}
+\usepackage{balance,times}
+\usepackage{xcolor,microtype,enumitem,nth,,titlesec}
 \usepackage[normalem]{ulem}
-\usepackage{url}
-% \usepackage{natbib}
+\usepackage{url,graphicx}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-% \usepackage[T1]{fontenc}
 \usepackage[pdflang={en-US},pdftex]{hyperref}
-\usepackage{mfirstuc,lastpage}
-\usepackage{fancyhdr,tabularx}
+\usepackage{wrapfig,fancyhdr}
 \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 
@@ -17,13 +14,10 @@
 \DTMsettimestyle{default}
 \DTMsetup{showseconds=true}
 
-\usepackage{caption}
-\captionsetup[table]{labelformat=empty}
-
-% \usepackage{mfirstuc,lastpage}
+% \usepackage{caption,setspace}
 \bibliography{references}
 \usepackage[margin=1in]{geometry}
-\pagestyle{fancy}
+% \pagestyle{fancy}
 \titlespacing*{\section}{0.0ex}{2ex plus .3ex}{1ex plus .3ex}
 
 
@@ -45,23 +39,19 @@
 \setlist*[inlinelist,1]{
   label=\arabic*),
 }
-\makeatletter
 
-% \def\maketitle{%
-% \par{{\scshape \LARGE \textbf{\@title}}%
-% \par{\@author}
-% \par{DRAFT \DTMcurrenttime~\today}%
-% \par}}
-% \smallskip \hrule \smallskip }
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
 \begin{flushleft}
-  {\scshape \Large \textbf{\@title}}
+  {\scshape \LARGE \textbf{\@title}}
 
   \@author
 \end{flushleft}\egroup
 }
 \makeatother
+
+
+
 \definecolor{PineGreen}{HTML}{008800}
 \definecolor{Red}{HTML}{FF0000}
 \definecolor{Blue}{HTML}{0000FF}
@@ -71,7 +61,7 @@
 \newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
 
 
-\title{An Ethnography of Online Performance Artists}
+\title{Ethnography of Online Performance Artists}
 \author{Ali Alkhatib \& Jeffrey Nagy
 --- DRAFT \DTMcurrenttime~\today}
 \date{\today}
@@ -83,7 +73,7 @@
 
 \definecolor{Blue}{HTML}{0000FF}
 \newcommand{\topic}[1]{{\color{Blue}#1}}
-% \renewcommand{\topic}[1]{{#1}}
+\renewcommand{\topic}[1]{{#1}}
 \definecolor{Gray}{HTML}{A0A0A0}
 \newcommand{\ugh}[1]{{\color{Gray}#1}}
 \newenvironment{blah}{\par\color{Gray}\itshape}{\par}
@@ -91,20 +81,17 @@
 
 \renewenvironment{abstract}{%
 \hfill\begin{minipage}{0.95\textwidth}
-% \rule{\textwidth}{1pt}
 \itshape
 }
 {
-% \noindent\rule{\textwidth}{1pt}
 \bigskip
 \end{minipage}}
 
 \begin{document}
   \maketitle
   \begin{abstract}
-  Online video sharing and streaming platforms have flourished into a bustling industry in the past decade.
-  % to support an emerging community of unconventional entertainers.
-  The artists that have emerged on these platforms since then have
+  Abstract: Online video sharing and streaming platforms have flourished over the past decade.
+  The artists on these platforms have
   explored boundaries and experimented with styles and formats,
   influencing both audiences' expectations of performers and of the performances themselves.
   But these shifts have come with turmoil among this new group of artists,
@@ -115,16 +102,16 @@
   the politics of this group of performers.
   \end{abstract}
 
-
-
-% \section*{Situation}
-\topic{Video sharing sites like YouTube and Twitch
-have captured the attention of audiences of billions of people around the world
-in the span of little more than a decade.} % taken on characteristics of
-% So widely used are these platforms
-% that it would be fair to call them ``publics'' in the Deweyan sense~\cite{dewey2012public,disalvo2009design};
-content producers
---- ``YouTubers'' and ``streamers'' ---
+\begin{wrapfigure}{r}{0.5\textwidth}
+\centering
+\includegraphics[width=0.5\textwidth]{figures/cgpgrey.png}
+\caption{\label{fig:Magic}A popular YouTuber discussing election results and various methods of determining election winners.}
+\end{wrapfigure}
+Video sharing sites like YouTube and Twitch
+have captured the attention of billions of people around the world
+in the span of little more than a decade.
+Content producers
+--- known informally as ``YouTubers'' and ``streamers'' ---
 have begun to make their livings on these sites.
 Indeed, these performers have come to rely on
 the technical infrastructure these platforms provide as well as
@@ -138,18 +125,17 @@ engage with audiences,
 practice their craft, and 
 hone their skills~\cite{Hamilton:2014:STF:2611105.2557048,Zhang:2015:CIL:2736084.2736091}.
 
-% \section*{Problem}
-\topic{But recently, tensions between these online performers and the platforms on which they work have shaken people's
-assumptions regarding the nature of the space they're using.}
-Performers on now--defunct Vine demanded --- unsuccessfully --- to be better compensated~\cite{vineWantsMoney,vineInsiderMeeting};
+But recently, tensions between these online performers and the platforms on which they work have shaken people's
+assumptions regarding the nature of the space they're using.
+Performers on now--defunct Vine called (unsuccessfully) to be better compensated~\cite{vineWantsMoney,vineInsiderMeeting};
 YouTubers meanwhile struggle to defend their unconventional performance work~\cite{h3h3Lawsuit}
 and individually and collectively field accusations of misconduct of various forms~\cite{youtubeDramaResponses}.
 These events highlight the politics of an emerging form of expression and art,
 and specifically the sometimes controversial nature of the experimentation that performers engage in.
 
-\topic{One issue frustrating this potential research area is that
+One issue frustrating this potential research area is that
 the platforms have changed so dramatically in as few as 5 to 10 years that
-it can seem as though researchers are trying to wade through shifting sands.}
+it can seem as though researchers are trying to wade through shifting sands.
 Scholarship on content creators loses bearing rapidly when
 economic factors motivate aspiring professional entertainers to join the community~\cite{Hamilton:2014:STF:2611105.2557048};
 the tension between these entertainers experimenting with content remixing and
@@ -163,25 +149,25 @@ And the popularity of candidate field sites can vary chaotically
 abrupt shutdown less than a year later~\cite{vineDecline}).
 
 % \section*{Insight}
-\topic{\textit{Historical analysis}
+\textit{Historical analysis}
 % Studying contemporary phenomena through an established framing
 can be a helpful way of
-making sense of contemporary phenomena and informing early fieldwork.}
+making sense of contemporary phenomena and informing early fieldwork.
 As we found in a recent paper framing crowd work and gig work as a modern instantiation of \textit{piecework},
 scholarship from a parallel or similar domain can
 provide us some grounding to make sense of what we've seen and offer a framework for making reasonable predictions~\cite{pieceworkCrowdworkGigwork}.
 We believe that a similar approach can be used here to help make sense of online streaming and video performances.
 
-\topic{To that end, we can liken some aspects of online performance art on YouTube and Twitch
+To that end, we can liken some aspects of online performance art on YouTube and Twitch
 to street performance and busking,
-allowing us to relate ostensibly new phenomena to robust scholarship.}
+allowing us to relate ostensibly new phenomena to robust scholarship.
 As is the case with street performance,
 online performance isn't restricted to classically trained professionals;
 instead, performers (both online and in the streets) practice more experimental 
 drawing on their candid interaction with their audiences,
 which can change from one performance to the next.
 
-\topic{This connection has purchase, but it has gaps, mostly owing to the unique nature of the internet~\cite{miller2011understanding}.}
+This connection has purchase, but it has gaps, mostly owing to the unique nature of the internet~\cite{miller2011understanding}.
 For one thing, most video sharing websites keep videos
 in perpetuity
 --- that is, unless a complaint over copyright infringement is filed, in which case the lifespan of that ``performance'' can be cut short.
@@ -190,215 +176,69 @@ YouTube comments linger for years after they're made, forming in some sense ``ne
 And these say nothing of the different nature of algorithmic enforcement of rules and policies, and
 the near--perfect ability of these platforms to redirect revenue and even people's focus instantaneously.
 
-\topic{We propose to fill in these gaps in our framing of online performance as a modern instantiation of street performance.}
+We propose to fill in these gaps in our framing of online performance as a modern instantiation of street performance.
 How does the \textit{permanence} of digitally archived videos affect people's willingness to experiment with new formats and styles,
 and \textit{how can we enable and encourage riskier, potentially more rewarding experimentation}?
 How do networked publics influence whether and how performers engage with their audiences,
 and \textit{how can we design publics that engage the audience with each other and with the performer}?
 How do laws, and the algorithmically instantiated policies, on video sharing and streaming platforms spur or stifle creative remixing?
 
-
-% \section*{TODO: Problem with this model}
-% \section*{TODO: Proposal}
-% \section*{Incomplete!}
-% \section*{Proposal}
-
-
-% \ali{generally speaking, each major bullet point = roughly 1 paragraph}
-% \begin{itemize}
-%   \item Online streaming, which started as a recreational hobby~\cite{Hamilton:2014:STF:2611105.2557048,Zhang:2015:CIL:2736084.2736091}, has become
-%         a growing industry for entertainers.
-%         Further, it has ``democratized'' entertainment, providing people with a public space
-%         (e.g. YouTube, Twitch, Vimeo, etc\dots) to explore unconventional performance art
-%   \item Our research into crowdsourcing and gig work has yielded
-%         a compelling framework for these phenomena as an instantiation of piecework.
-%         We've found that this approach
-%         --- that is, drawing parallels with historical phenomena ---
-%         can generally give researchers of sociotechnical systems substantive framing of a research space.
-%   \item To some extent, this can be likened to \textbf{street performance} inasmuch as
-%   \begin{itemize}
-%     \item the public space allowed non--experts to engage in their craft without commitment, formal training, etc\dots
-%     \item entertainers could get more direct feedback from their audience than other avenues could afford them
-%     \item entertainers could (and did) subvert authorities (offline, that was the police; online, that's YouTube's moderator team)
-%   \end{itemize}
-%   \item \textbf{But} there are questions about the politics of (grassroots, potentially subversive) performance art.
-%         \ali{need a clearer \textbf{research question}?}
-%   \item When we look at this dimension of online performance art, the metaphor begins to break down:
-%   \begin{itemize}
-%     \item policies and rules are enacted and enforced opaquely, seemingly arbitrarily on private settings
-%     \item the notion of the public in this instance is broken, as the phenomenon of shared experience doesn't translate online
-%     \item communication between the performer and the audience is carefully mediated
-%           (and literally moderated) by the platform itself
-%     \item online performances are (generally) more permanent than street performances
-%           \ali{technology has thrown a wrench into this lately, with
-%               cameras allowing us to record street performances and
-%               tools making it impossible (or at least difficult) to save online streams, but
-%               \textit{let's not worry about all that}.}
-%   \end{itemize}
-%   \item So while there are compelling parallels between online performances and the street art of busking,
-%         this has only taken us partway in answering important questions about a rapidly growing field.
-% \end{itemize}
-
 \section*{Research Plan}
-\topic{We propose to carry out qualitative research with major online content producers
-on streaming platforms such as Twitch and YouTube, and video sharing sites like YouTube.}
+We propose to carry out qualitative research with major online content producers
+on streaming platforms such as Twitch and YouTube, and video sharing sites like YouTube.
 Much of this work will consist of ethnographic fieldwork, semi--structured interviews, and
 open--ended exploration of the field site as we find parallels and divergences in the domain
 of online performance art from street and other emergent formats of performance and entertainment.
-% With that being said, we can generally frame our agenda in five components
-% ---
-% \begin{inlinelist}
-%   \item Surveying the landscape of online performance platforms,
-%         identifying performers who may be willing to serve as ``informants'', and
-%         recruiting interviewing participants;
-%   \item Investigating the relationships and tensions performers have with \textit{audiences};
-%   \item Exploring the relationships performers have with \textit{other performers};
-%   \item Studying the relationships performers have with \textit{the platforms themselves}; and finally
-%   \item Designing interventions to facilitate creative experimentation in this nascent format,
-%         informed largely by each of the earlier facets of online performance.
-% \end{inlinelist}
-A rough timeline of these phases can be described as such:
+A timeline of these phases is outlined here:
 
-\begin{tabular}{p{2cm}|p{13cm}}
-  \textbf{Term} & \textbf{Plan} \\
+\vspace*{5pt}
+
+\noindent\begin{tabular}{p{.5in}|p{5.5in}}
+  \textbf{Term} & \textbf{Primary Research Focus} \\
 \hline
-Q1  & Identify potential participants and begin recruiting participants;
-      begin interviews and fieldwork.
-      Research specifically focusing on performers' \textit{relationships with audiences}
-      and noting areas of frustration for performers and intervention opportunities \\
+Q1  & Identifying potential participants and recruiting participants;
+      preliminary interviewing and other surveying fieldwork. \\
 \hline
-Q2  & Qualitative fieldwork toward understanding performers' \textit{relationships with other performers},
-      with some attention toward the potential for performer affiliations \\
+Q2  & Performers' \textit{relationships with audiences},
+      noting areas of frustration for performers and intervention opportunities, and
+      investigating parallel or similar situations that affect street performers. \\
 \hline
-Q3  & Fieldwork looking at performers' \textit{relationships with their respective platforms}
-      (for example: YouTube, Twitch) \\
+Q3  & Performers' \textit{relationships with other performers},
+      with an eye toward themes such as affiliations or associations of performers representing performers,
+      as well as informal supporting relationships. \\
 \hline
-Q4  & Exploring and iterating on \textit{design interventions} with YouTubers and streamers
-      to advance values discussed earlier
-      (audience engagement, online performer affiliation, etc\dots)  \\
+Q4  & Performers' \textit{relationships with their respective platforms},
+      with particular attention to the politics of using an \textit{ostensibly} ``public'' resource,
+      and the circumstances that make salient that these platforms are in fact \textit{privately} owned and operated.
 \end{tabular}
 
-\topic{We'll recruit between 10 and 30 YouTube and Twitch content producers whose work is primarily content creation on their respective sites
---- in other words, people who have gone ``full time''.}
-Our initial interviews will be semi--structured in nature, as we'll want to be open to the possibility that 
-% We will use semi--structured interviews
-% to remain open to participants guiding our research agenda toward
-% whatever they consider to be compelling topics.
+\vspace*{5pt}
 
-% \ali{Basic plan:
-% \begin{itemize}
-%   \item contact YouTube channels that have more than 1M subscribers
-%         (and have mentioned YouTube policies at some point
-%           (suggesting maybe passing interest in discussing meta topics)?)
-%   \item Reach out by any contact methods they provide (if none, then skip)
-%   \item Semi--structured interview guiding towards:
-%   \begin{itemize}
-%     \item interaction with platform \& its designers
-%     \item engagement with audience
-%     \item coordination with other YouTubers (if any)
-%   \end{itemize}
-%   \item tentative questions include:
-%   \begin{itemize}
-%     \item platform questions
-%     \begin{enumerate}
-%       \item when did you switch to (streaming/YouTubing) as primary career?
-%       \item what's YouTube's relationship with you?
-%       \item if you were telling a new YouTuber how to get started,
-%             what would you say they should know about YouTube
-%             (the system, the company, etc\dots)
-%             that's not immediately obvious?
-%     \end{enumerate}
-%     \item audience questions
-%     \begin{enumerate}
-%       \item how do you interact with audiences?
-%       \item what sorts of comments do you get?
-%       \item do you reply?
-%       \item do you change your future content based on feedback in the comments?
-%     \end{enumerate}
-%     \item peer questions
-%     \begin{enumerate}
-%       \item what's your sense of the community as a whole?
-%       \item how many other YouTubers do you know
-%             (let's say you've had a chat with them in the last month and
-%              will probably do so again in the next month)?
-%       \item are you all cooperative? competitive? what's the culture like?
-%     \end{enumerate}
-%   \end{itemize}
-% \end{itemize}
-% }
+We'll recruit between 10 and 30 YouTube and Twitch content producers whose work is primarily content creation on their respective sites
+--- in other words, people who have gone ``full time''.
+We'll aim for approximately two--thirds of our participants to be principally active on YouTube and one--third on Twitch, as
+the former is significantly larger (and the community seemingly more diverse), suggesting
+a need to get more varied perspectives from participants.
 
-% \section*{Broader Impact}
-% \topic{Formally recognized art forms have assimilated emergent genres and types of performance art in the past, and
-% we should expect that they will continue to do so.}
-% Jazz was born out of what largely ``\dots was recognized~\dots~as being but one species of the genus, ragtime played by ear by fakers\dots''~\cite{10.2307/779456}.
-% Even further back in history, \nth{17} century street performance in Japan blended ``\dots every imaginable genus and species of popular song and dance\dots'' and
-% kabuki, in its early years,
-% ``would hardly have been recognized or condoned [by traditional performers]''~\cite{groemer2016street}.
+Our interviews will be semi--structured as
+we want to be open to the potential for our participants to take us in different directions than originally planned;
+nevertheless, we have a bank of interview questions that will
+guide the interview along the three major themes we identified earlier:
+\begin{inlinelist}
+  \item questions about the participant's \textit{relationship with their audiences}
+        (e.g. ``do you have personal relationships with other [streamers or YouTubers]?'',
+              ``do you think of other [streamers or YouTubers] as `the competition', or potential collaborators, or as something else (or a mix)?'');
+  \item questions about the participant's \textit{relationship with other performers}
+        (e.g. ``what sorts of comments and feedback do you get?'',
+              ``do you respond to comments? change your format or style?''); and
+  \item questions about the participant's perceived \textit{relationship with the platform}
+        (e.g. ``when did you go `full time'?'',
+              ``what sorts of things get you in trouble on [your platform]?'').
+\end{inlinelist}
 
-% \ali{something like: if this continues, then we should infer that
-%      the future of this type of performance art will bear heavily on
-%      the direction and trajectory of digitally mediated entertainment and performance}
-
-% \section*{Demonstrate viability}
-
-% \section*{Expected outcomes}
-
-% \begin{itemize}
-%   \item We propose to direct our research energy toward answering one question: 
-% \end{itemize}
-
-% We propose to conduct ethnographic research of online performance artists who principally earn their income either from Twitch or YouTube (or both).
-
-% \topic{While our research considered a number of possible futures for gig work in general and gig workers in particular,
-% several important questions remain unresolved.}
-% For example, we pointed to the general question that researchers had been asking for some time ---
-% whether gig work will become a site of complex, rewarding work
-% --- or if it will remain a setting for low quality tasks with little upward mobility.
-% While we offered a framework for answering questions such as this one, the reality is that
-% any researcher or team exploring this area
-% --- especially on the basis of the parallel we drew ---
-% would fundamentally need to be conversant with several deep bodies of research spanning myriad fields.
-
-% We concluded that gig work's potential will be determined by
-% how easily skilled workers can secure good work through these platforms.
-% In order to do that, workers need to be able to communicate rich information about their qualifications to employers,
-% which existing markets have so far struggled to do.
-% \topic{We will build a system that tracks gig workers' professional histories across myriad work platforms,
-% aggregating, consolidating, \& analyzing that data, and
-% allowing workers to curate their professional identities, instantiated by a ``digital hiring hall'' for gig workers.}
-
-
-% \topic{The system we intend to build will serve two roles --- one for workers and one for employers.}
-% Gig workers will share their work histories from platforms such as Amazon Mechanical Turk with our repository,
-% which will allow us to provide the worker with information upon which they can reflect
-% (e.g. detailed analysis of their work trends, approval rates under various circumstances, etc\dots)
-% as well as information in relation to other workers
-% (e.g. offering a percentile ranking overall for approval rates, or within specific types of tasks).
-% In doing so, we hope to find that workers will identify cues and gravitate toward qualities in work
-% in which they identify competitive advantage.
-
-% \topic{The second role that this repository will help employers identify and source the best workers for highly skilled work.}
-% By aggregating the data from work platforms and
-% offering more in--depth analysis of workers' histories, we hope to find that
-% we can direct employers to gig workers whose overall experiences match the employer's given needs.
-% For example, if an employer or a platform queries our platform for
-% workers who are proficient at translating between two specific languages,
-% we can yield a list of workers who would be suitable for the task, determined by
-% the workers' comprehensive histories on Mechanical Turk and, potentially, elsewhere.
-
-% \topic{This approach is similar in some senses to the role that hiring halls played through the \nth{20} century.}
-% By disconnecting workers' data from the platforms themselves, our repository will act as a sort of ``digital hiring hall'',
-% connecting employers with workers whose varied work histories provide them with the expertise necessary to do given tasks.
-% By engaging workers in the management of this repository, we will advance the metaphor in much the same way that
-% labor unions maintained --- and continue to operate --- hiring halls of their workers.
-
-
-% \topic{At a high level, we can study the usefulness of this system using standard experimental approaches.}
-% First, through quantitative methods (for example, comparing workers' earnings over time); and
-% second, through qualitative  methods (for example, through interviews to determine whether workers find and exploit specialty niches as a result of this tool).
-% We can also explore employers perspectives in tangible ways;
-% for example, given concerns about the quality of work~\cite{Ipeirotis:2010:QMA:1837885.1837906,le2010ensuring,Law:2017:CTR:2998181.2998197},
-% we will investigate whether a system that better communicates worker expertise allows employers to rely more confidently on crowdwork.
+% Each stage of research will focus on a specific thematic question for two reasons:
+% first, to incrementally inform our subsequent, potentially more contentious, research questions; and
+% second, to provide us with focused topics which we can scrutinize with the aforementioned historical lens of street performance. 
 
 
 
@@ -410,17 +250,6 @@ Our initial interviews will be semi--structured in nature, as we'll want to be o
 
 
 
-% \section*{Interdisciplinarity}
-% % \topic{This research will call on methods and skills originally from and generally found in disparate fields.}
-% % \topic{The insights and expertise necessary to conduct this research successfully will call on a variety of skills not typically seen together, such as
-% % participant observation, participatory design techniques, and machine learning approaches.}
-% As we showed with our paper examining the relationship between piecework and gig work~\cite{pieceworkCrowdworkGigwork},
-% the lens of a social scientist can inform conversations about digitally mediated work in ways that many computer scientists are not otherwise able to offer.
-% At the same time, the perspectives of computer scientists
-% --- and the challenges digitally mediated spaces bring with them ---
-% offer to reinvigorate deeply theoretically grounded discussion and offer field sites with which to experiment and test these theories.
-% As a Computer Science Ph.D. student originally trained as an Anthropologist, I believe
-% I'm the best candidate to combine these bodies of literature to make this project succeed.
 
 
 
@@ -430,32 +259,6 @@ Our initial interviews will be semi--structured in nature, as we'll want to be o
 
 
 
-
-% \section*{Anticipated Contributions \& Implications}
-% This research is of significant importance given the recent trends in the ``gig economy''.
-% With more and more people joining the workforce in this capacity~\cite{pewSharing,pewSharing24percent},
-% concerns about ``the future of work''~\cite{waterCooler,crowdworkFuture} continue to grow.
-% Our hope is that the artifact produced by this research raises the limit on the complexity of work that can reliably be crowdsourced.
-% More broadly, we expect to offer two major contributions to the Human--Computer Interaction community:
-% first, an existence proof that a gig work market for complex, specialized workers is possible; and
-% second, insights into how best to scaffold and foster ongoing collective governance.
-
-% This project's will speak to the critique that the internet,
-% far from the democratizing force that Barlow predicted it would be,
-% has become an infrastructure facilitating the corporate centralization of power~\cite{barlow2009declaration,jones2011does,EboCybertopia}.
-% The success of this project will therefore not only
-% bring a more nuanced understanding of the shifting climate and culture of labor,
-% but may
-% --- in a small way ---
-% deliver on the promise Barlow made that
-% cyberspace and the Internet would be a tool for democratizing access to information, and with that,
-% empowering more than the tech elite who engineered it.
-
-% \pagebreak
-% \renewcommand\bibname{{\small References}}
-% \setlength\bibitemsep{0pt}
-
-% \renewcommand*{\bibfont}{\tiny}
 \pagebreak
 \printbibliography{}
 \end{document}
