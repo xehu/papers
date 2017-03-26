@@ -1,0 +1,128 @@
+% !TEX program = lualatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor}
+\usepackage[citestyle=author,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
+\bibliography{references}
+\usetheme{metropolis}
+\beamertemplatenavigationsymbolsempty
+\renewcommand\textbullet{\ensuremath{\bullet}}
+\definecolor{stanfordRed}{HTML}{8C1515}
+% \mode<presentation>{
+  % \usetheme{metropolis}
+  \usecolortheme{seagull}
+
+
+\definecolor{Orange}{HTML}{E98125}
+\definecolor{Blue}{HTML}{0645AD}
+\hypersetup{colorlinks,linkcolor=,urlcolor=Blue}
+
+% Theme colors are derived from these two elements
+\setbeamercolor{alerted text}{fg=Orange}
+\setsansfont[BoldFont={Source Sans Pro Semibold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmonofont{Source Code Pro}
+% \setbeamercolor{frametitle}{bg=stanfordRed}
+
+  % \setbeamercolor*{palette tertiary}{use=structure,fg=stanfordRed,bg=stanfordRed}
+% }
+% \metroset{set}
+\setbeamercolor{institute in head/foot}{fg=stanfordRed}
+% \setbeamercolor{progress bar}{fg=stanfordRed}
+% \setbeamercolor{progress bar}{bg=gr}
+% \setsansfont{Source Sans Pro}
+
+\title{Examining Crowd Work and Gig Work Through The Historical Lens of Piecework}
+\metroset{titleformat=smallcaps}
+
+\author{\textbf{Ali Alkhatib},
+                Michael Bernstein,
+                Margaret Levi\\
+\texttt{ \scriptsize{\href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu} ||
+         \href{http://twitter.com/_alialkhatib}{@\_alialkhatib}} }}
+
+\institute[Stanford]{Stanford University}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+% PAPER ROADMAP
+% Open problems in crowdsourcing: complexity, decomposition, relationships
+% Piecework!
+% Wait what's piecework again
+% Some cool case studies: 
+%     airy's computers
+%     domestic/farmhand labor
+%     matchstick girls
+%     industrial workers
+% Okay let's get into this
+% Complexity limits
+%     what did crowdsourcing say?
+%     what did piecework say?
+%     comparisons?
+%     implications?
+% Decomposition limits
+%     what did crowdsourcing say?
+%     what did piecework say?
+%     comparisons?
+%     implications?
+% Worker relationships
+%     what did crowdsourcing say?
+%     what did piecework say?
+%     comparisons?
+%     implications?
+% Discussion
+%     this is a very tricky thing to do, predicting the future
+%     anyway let's predict the future: utopian/dystopian visions
+%     Research agendas! go go gadget contextual analysis
+
+\section{Introduction}
+
+\begin{frame}{Open problems in crowdsourcing}
+\begin{itemize}[<+- | alert@+>]
+  \item Complexity~\cite{suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}
+  \item Decomposition
+  \item Relationships
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Emerging field of on--demand work}
+\begin{itemize}[<+- | alert@+>]
+  \item what's that about??
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Contact}
+
+    % \faTwitter
+    name: {Ali Alkhatib} \\
+    email: \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu} \\
+    twitter: \href{https://twitter.com/_alialkhatib}{@\_alialkhatib} \\
+\end{frame}
+
+
+% \bibliographystyle{SIGCHI-Reference-Format}
+\printbibliography{}
+\end{document} 
