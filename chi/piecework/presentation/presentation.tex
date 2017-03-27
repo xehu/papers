@@ -15,7 +15,7 @@
 \documentclass{beamer}
 
 \usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor}
-\usepackage[citestyle=author,backend=bibtex]{biblatex}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
 \usepackage[en-US]{datetime2}
 \bibliography{references}
@@ -31,6 +31,14 @@
 \definecolor{Orange}{HTML}{E98125}
 \definecolor{Blue}{HTML}{0645AD}
 \hypersetup{colorlinks,linkcolor=,urlcolor=Blue}
+
+\definecolor{PineGreen}{HTML}{008800}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{JokeGreen}{HTML}{00C953}
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+
 
 % Theme colors are derived from these two elements
 \setbeamercolor{alerted text}{fg=Orange}
@@ -67,56 +75,135 @@
 
 
 
-% PAPER ROADMAP
-% Open problems in crowdsourcing: complexity, decomposition, relationships
-% Piecework!
-% Wait what's piecework again
-% Some cool case studies: 
-%     airy's computers
-%     domestic/farmhand labor
-%     matchstick girls
-%     industrial workers
-% Okay let's get into this
-% Complexity limits
-%     what did crowdsourcing say?
-%     what did piecework say?
-%     comparisons?
-%     implications?
-% Decomposition limits
-%     what did crowdsourcing say?
-%     what did piecework say?
-%     comparisons?
-%     implications?
-% Worker relationships
-%     what did crowdsourcing say?
-%     what did piecework say?
-%     comparisons?
-%     implications?
-% Discussion
-%     this is a very tricky thing to do, predicting the future
-%     anyway let's predict the future: utopian/dystopian visions
-%     Research agendas! go go gadget contextual analysis
+% ## Intro [`1 minute`] [`1`]
+% - Open problems in crowdsourcing: complexity, decomposition, relationships [`?`]
+% - Piecework! [`?`]
+% ## Wait what's piecework again [`1 minute`] [`2`]
+% ## Some case studies: [`3 minutes`] [`5`]
+% - airy's computers [`1`]
+% - domestic/farmhand labor [`0.5`]
+% - matchstick girls [`1`]
+% - industrial workers [`0.5`]
+% ## Complexity limits [`3 minutes`] [`8`]
+% - what did crowdsourcing say? [`0.5`]
+% - what did piecework say? [`1`]
+% - comparisons? [`1`]
+% - implications? [`0.5`]
+% ## Decomposition limits [`3 minutes`] [`11`]
+% - what did crowdsourcing say? [`0.5`]
+% - what did piecework say? [`1`]
+% - comparisons? [`1`]
+% - implications? [`0.5`]
+% ## Worker relationships [`3 minutes`] [`14`]
+% - what did crowdsourcing say? [`0.5`]
+% - what did piecework say? [`1`]
+% - comparisons? [`1`]
+% - implications? [`0.5`]
+% ## Discussion [`1 minute`] [`15`]
+% - this is a very tricky thing to do, predicting the future [`?`]
+% - anyway let's predict the future: utopian/dystopian visions [`?`]
+% - Research agendas! go go gadget contextual analysis [`?`]
+
 
 \section{Introduction}
 
-\begin{frame}{Open problems in crowdsourcing}
+\begin{frame}{Open problems in crowdsourcing
+                                                                                [\texttt{1 minute}]
+}
 \begin{itemize}[<+- | alert@+>]
-  \item Complexity~\cite{suzukiAtelier,KimStoria,yuanAlmost,YuEncouragingOutside,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}
+  \item Complexity~\cite{suzukiAtelier,KimStoria,yuanAlmost,
+                         YuEncouragingOutside,
+                         Nebeling:2016:WCW:2858036.2858169,
+                         Hahn:2016:KAB:2858036.2858364}
   \item Decomposition
   \item Relationships
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Emerging field of on--demand work}
-\begin{itemize}[<+- | alert@+>]
-  \item what's that about??
+
+\section{Piecework Primer}
+\begin{frame}{Piecework Review
+                                                                                [\texttt{1 minute}]
+}
+something
+\end{frame}
+
+
+\section{Case Studies}
+\begin{frame}{Airy's Computers
+                                                                                [\texttt{1 minute}]
+    }
+\begin{itemize}
+  \item images of hand--drawn tables
+  \item maybe some illustration of the mathematical work that was being done
+  \item draw to attention that you could break this into pieces
+        (an example of breaking a formula down?)
 \end{itemize}
 \end{frame}
+
+\begin{frame}{Domestic \& Farmhand Labor
+                                                                                [\texttt{0.5 minutes}]
+}
+\end{frame}
+
+
+\begin{frame}{The Match Girls
+                                                                                [\texttt{1 minute}]
+}
+\end{frame}
+
+
+\begin{frame}{Industrial Workers
+                                                                                [\texttt{0.5 minutes}]
+}
+\end{frame}
+
+
+
+\section{Research Threads}
+\begin{frame}{Complexity Limits
+                                                                                [\texttt{3 minutes}]
+}
+\begin{itemize}[<+- | alert@+>]
+  \item Crowdwork's perspective
+  \item Piecework's perspective
+  \item Comparisons
+  \item Implications
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Decomposition Limits
+                                                                                [\texttt{3 minutes}]
+}
+\begin{itemize}[<+- | alert@+>]
+  \item Crowdwork's perspective
+  \item Piecework's perspective
+  \item Comparisons
+  \item Implications
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Worker Relationships
+                                                                                [\texttt{3 minutes}]
+}
+\begin{itemize}[<+- | alert@+>]
+  \item Crowdwork's perspective
+  \item Piecework's perspective
+  \item Comparisons
+  \item Implications
+\end{itemize}
+\end{frame}
+
+\section{Discussion}
+\begin{frame}{Discussion
+                                                                                [\texttt{1 minute}]
+}
+\end{frame}
+
 
 
 \begin{frame}{Contact}
 
-    % \faTwitter
     name: {Ali Alkhatib} \\
     email: \href{mailto:ali.alkhatib@cs.stanford.edu}{ali.alkhatib@cs.stanford.edu} \\
     twitter: \href{https://twitter.com/_alialkhatib}{@\_alialkhatib} \\
