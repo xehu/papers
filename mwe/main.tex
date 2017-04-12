@@ -5,23 +5,28 @@
 % \usepackage{enumitem}
 % \usepackage[tiny,compact]{titlesec}
 
-\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\usepackage[citestyle=authoryear,backend=bibtex8]{biblatex}
 \bibliography{references}
 % \setlength{\parskip}{.4em}
 
-\newcounter{mycounter}
-\setcounter{mycounter}{1}
-% \begin{document}
 
 \usepackage[shortlabels]{enumitem}
-% \setlist[enumerate]{nosep}
 
 \begin{document}
-This is first line and i need to remove space between this line and
-item list below it.
-\begin{enumerate}[-,topsep=0pt]
-\item asdasd
-\item dsfdsf
+\begin{enumerate}
+  \item \textbf{slide 2} \cite{suzukiAtelier,Kim2017,Nebeling:2016:WCW:2858036.2858169} 
+  \item \textbf{slide 2} \cite{Chang:2016:ACC:2858036.2858411}
+  \item \textbf{slide 2} \cite{turkopticon,dynamo,takingAHITMcInnis}
+  \item \textbf{slide 9} \cite{crowdForgeKittur}
+  \item \textbf{slide 10} 
+  \item \textbf{slide 14} \cite{embracingErrorKrishna}
+  \item \textbf{slide 14} \cite{taskSearch,delayAndOrderLasecki}
+  \item \textbf{slide 19} \cite{whyWouldAnyoneBrewer}
+  \item \textbf{slide 19} \cite{MaliciousCrowdworkersGadiraju}
+  \item \textbf{slide 19} \cite{turkopticon}
+  \item \textbf{slide 20} \cite{clark1908cotton}
+  \item \textbf{slide 20} \cite{roy1954efficiency}
+  \item \textbf{slide 20} \cite{hart2016rise}
 \end{enumerate}
 
 % \newlist{Numberlist}{enumerate*}{1}
@@ -30,23 +35,5 @@ item list below it.
 %  label={\Nthwords*,},
 % }
 
-% \begin{inlinelist}
-% \item foo.
-% \item hello.
-% \item ahhh.
-% \end{inlinelist}
-
-% \Nthwords{mycounter}
-% \Nthwords{mycounter}
-% \themycounter
-% \themycounter
-% \themycounter
-
-
-% \setcounter{mycounter}{11}
-% \themycounter
-% \themycounter
-
-% \setcounter{mycounter}{470}
-% \themycounter
+\printbibliography{}
 \end{document}
