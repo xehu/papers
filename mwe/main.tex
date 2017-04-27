@@ -1,40 +1,29 @@
 \documentclass[11pt]{article}
-% \usepackage{balance,graphics,setspace,parskip,times,hyperref}
-% \usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
+\usepackage{balance,graphics,setspace,parskip,times,hyperref}
+\usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
 \usepackage[margin=1in]{geometry}
 % \usepackage{enumitem}
 % \usepackage[tiny,compact]{titlesec}
 
-\usepackage[citestyle=authoryear,backend=bibtex8]{biblatex}
+\usepackage[citestyle=authoryear-ibid,sorting=ynt,backend=bibtex8]{biblatex}
 \bibliography{references}
 % \setlength{\parskip}{.4em}
 
+% \bibliographystyle{chicago}
 
-\usepackage[shortlabels]{enumitem}
+% \usepackage[shortlabels]{enumitem}
 
 \begin{document}
 \begin{enumerate}
-  \item \textbf{slide 2} \cite{suzukiAtelier,Kim2017,Nebeling:2016:WCW:2858036.2858169} 
-  \item \textbf{slide 2} \cite{Chang:2016:ACC:2858036.2858411}
-  \item \textbf{slide 2} \cite{turkopticon,dynamo,takingAHITMcInnis}
-  \item \textbf{slide 5} \cite{bernsteinSoylent}
-  \item \textbf{slide 9} \cite{crowdForgeKittur}
-  \item \textbf{slide 10} 
-  \item \textbf{slide 14} \cite{embracingErrorKrishna}
-  \item \textbf{slide 14} \cite{taskSearch,delayAndOrderLasecki}
-  \item \textbf{slide 19} \cite{whyWouldAnyoneBrewer}
-  \item \textbf{slide 19} \cite{MaliciousCrowdworkersGadiraju}
-  \item \textbf{slide 19} \cite{turkopticon}
-  \item \textbf{slide 20} \cite{clark1908cotton}
-  \item \textbf{slide 20} \cite{roy1954efficiency}
-  \item \textbf{slide 20} \cite{hart2016rise}
+  \item Complexity~\parencite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,
+                         Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}
+  \item Decomposition~\parencite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}
+  \item Relationships~\parencite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis}
+  \item Work--flows~\parencite{crowdForgeKittur,bernsteinSoylent,writingMicroTasks,Nebeling:2016:WCW:2858036.2858169}
+  \item Interdependencies~\parencite{Bigham2014}
+  \item including food labeling~\parencite{noronha2011platemate}
+  \item brainstorming~\parencite{siangliulue2015toward,Yu2016a}
+  \item and accessibility~\parencite{lasecki2013chorus,lasecki2012real,Lasecki2011}
 \end{enumerate}
-
-% \newlist{Numberlist}{enumerate*}{1}
-% \setlist*[Numberlist,1]{%
-%    % label=\alph*),
-%  label={\Nthwords*,},
-% }
-
 \printbibliography{}
 \end{document}

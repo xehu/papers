@@ -14,7 +14,7 @@
 
 \documentclass{beamer}
 
-\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor}
+\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,enumitem}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
 \usepackage[en-US]{datetime2}
@@ -67,155 +67,126 @@
 \institute[Stanford]{Stanford University}
 \date{\today}
 
+
+\hypersetup{
+  colorlinks = true,
+  % linkcolor = blue,
+  citecolor = blue
+}
+
+\def\labelitemi{--}
+
+
+% \let\oldcite=\textcite
+% \renewcommand{\textcite}[1]{\textcolor[rgb]{.2,.2,.9}{[\oldcite{#1}]}}
+
 \begin{document}
 
 \begin{frame}
 \titlepage
 \end{frame}
+% \renewcommand\multicitedelim{\addsemicolon\space}
+
+% \setbeamercovered{transparent}
 
 
+\section*{Introduction}
 
-% ## Intro [`1 minute`] [`1`]
-% - Open problems in crowdsourcing: complexity, decomposition, relationships [`?`]
-% - Piecework! [`?`]
-% ## Wait what's piecework again [`1 minute`] [`2`]
-% ## Some case studies: [`3 minutes`] [`5`]
-% - airy's computers [`1`]
-% - domestic/farmhand labor [`0.5`]
-% - matchstick girls [`1`]
-% - industrial workers [`0.5`]
-% ## Complexity limits [`3 minutes`] [`8`]
-% - what did crowdsourcing say? [`0.5`]
-% - what did piecework say? [`1`]
-% - comparisons? [`1`]
-% - implications? [`0.5`]
-% ## Decomposition limits [`3 minutes`] [`11`]
-% - what did crowdsourcing say? [`0.5`]
-% - what did piecework say? [`1`]
-% - comparisons? [`1`]
-% - implications? [`0.5`]
-% ## Worker relationships [`3 minutes`] [`14`]
-% - what did crowdsourcing say? [`0.5`]
-% - what did piecework say? [`1`]
-% - comparisons? [`1`]
-% - implications? [`0.5`]
-% ## Discussion [`1 minute`] [`15`]
-% - this is a very tricky thing to do, predicting the future [`?`]
-% - anyway let's predict the future: utopian/dystopian visions [`?`]
-% - Research agendas! go go gadget contextual analysis [`?`]
+\begin{frame}{Open problems in crowdsourcing}
+  \begin{itemize}%[<+- | alert@+>]
+    \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
+                           Nebeling:2016:WCW:2858036.2858169,
+                           Hahn:2016:KAB:2858036.2858364}
+    \item \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
+                              Law:2016:CKC:2858036.2858144,
+                              Chang:2016:ACC:2858036.2858411,
+                              Newell:2016:OMA:2858036.2858490}
+    \item \textbf{Relationships}~\textcite{turkopticon,storiesIraniSilberman,crowdcollab,
+                              takingAHITMcInnis}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[standout]{whataatatat}
+    What is the future of work?
 
 
-\section{Introduction}
-
-\begin{frame}{Open problems in crowdsourcing
-                                                                                [\texttt{1 minute}]
-}
-\begin{itemize}[<+- | alert@+>]
-  \item Complexity~\cite{suzukiAtelier,KimStoria,yuanAlmost,
-                         YuEncouragingOutside,
-                         Nebeling:2016:WCW:2858036.2858169,
-                         Hahn:2016:KAB:2858036.2858364}
-  \item Decomposition~\cite{sensitiveTasks,LykourentzouPersonalityMatters,
-                            Law:2016:CKC:2858036.2858144,
-                            Chang:2016:ACC:2858036.2858411,
-                            Newell:2016:OMA:2858036.2858490}
-  \item Relationships~\cite{turkopticon,storiesIraniSilberman,crowdcollab,
-                            takingAHITMcInnis}
-\end{itemize}
 \end{frame}
 
 
-\section{Piecework Primer}
-\begin{frame}{Piecework Review
-                                                                                [\texttt{1 minute}]
-}
-% What is piecework?
-% \begin{figure}
+\begin{frame}{Introduction}
+  We hope to provide:
+      \begin{itemize}
+        \item A useful ontological lens for making sense of crowdsourcing and gig work (which we collectively call ``\textit{on--demand work}'') as a resurgence of \textit{piecework}.
+        \item A method for making sense of contemporary phenomena through \textit{historical analysis}.
+      \end{itemize}
+\end{frame}
 
-  \begin{columns} % [<+- | alert@+>]
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=1\textwidth]{figures/svgs/timecard.png}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=1\textwidth]{figures/svgs/scale.png}
-    \end{column}
+\begin{frame}{A case for comparative historical analysis}
+Historical analysis is nothing new
+    \begin{itemize}
+      \item \textcite{Wyche2006,bodker1993historical}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{A brief glossary}
+    \begin{itemize}
+      \item Crowd work: digitally mediated \textbf{information work}
+      --- for example, work done on Amazon Mechanical Turk~\cite{crowdworkFuture}
+      \item Gig work: digitally mediated --- but often \textbf{physically embodied} --- one--off jobs,
+      such as
+      \textit{driving},
+      \textit{courier services},
+      and \textit{administrative support}~\cite{friedman2014workers,Parigi:2016:GE:3026779.3013496}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Complexity}
+  What kinds of problems do we mean when we talk about complexity?
+  \begin{itemize}
+    \item Can crowds improve existing works?~\cite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986}
+    \item Can crowds critique designs?~\cite{yuanAlmost}
+    \item Can crowds create things from whole cloth?~\cite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{What does the crowdsourcing literature say?}
+    something pretty insightful I bet!
+\end{frame}
+
+\begin{frame}{What does the piecework literature say?}
+    something even more insightful, I'm sure!
+\end{frame}
+
+\begin{frame}[t]\frametitle{Let's compare this stuff}
+\framesubtitle{something else}
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+  % \section*{Piecework}
+     some text here some text here some text here some text here some text here
+
+  \end{column}
+
+  \begin{column}{0.5\textwidth}
+  % \section*{CrowdWork}
+     some text here some text here some text here some text here some text here
+
+  \end{column}
   \end{columns}
-  
-% \end{figure}
 \end{frame}
 
 
+% \section{Piecework Primer}
+% \begin{frame}{Piecework Review
+%                                                                                 [\texttt{1 minute}]
+% }
+% % What is piecework?
+% % \begin{figure}
 
-\section{Case Studies}
-\begin{frame}{Airy's Computers
-                                                                                [\texttt{1 minute}]
-    }
-\begin{itemize}
-  \item images of hand--drawn tables
-  \item maybe some illustration of the mathematical work that was being done
-  \item draw to attention that you could break this into pieces
-        (an example of breaking a formula down?)
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Domestic \& Farmhand Labor
-                                                                                [\texttt{0.5 minutes}]
-}
-\end{frame}
-
-
-\begin{frame}{The Match Girls
-                                                                                [\texttt{1 minute}]
-}
-\end{frame}
-
-
-\begin{frame}{Industrial Workers
-                                                                                [\texttt{0.5 minutes}]
-}
-\end{frame}
-
-
-
-\section{Research Threads}
-\begin{frame}{Complexity Limits
-                                                                                [\texttt{3 minutes}]
-}
-\begin{itemize}[<+- | alert@+>]
-  \item Crowdwork's perspective
-  \item Piecework's perspective
-  \item Comparisons
-  \item Implications
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Decomposition Limits
-                                                                                [\texttt{3 minutes}]
-}
-\begin{itemize}[<+- | alert@+>]
-  \item Crowdwork's perspective
-  \item Piecework's perspective
-  \item Comparisons
-  \item Implications
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Worker Relationships
-                                                                                [\texttt{3 minutes}]
-}
-\begin{itemize}[<+- | alert@+>]
-  \item Crowdwork's perspective
-  \item Piecework's perspective
-  \item Comparisons
-  \item Implications
-\end{itemize}
-\end{frame}
-
-\section{Discussion}
-\begin{frame}{Discussion
-                                                                                [\texttt{1 minute}]
-}
-\end{frame}
+% % \end{figure}
+% \end{frame}
 
 
 
