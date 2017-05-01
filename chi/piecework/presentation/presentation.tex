@@ -14,7 +14,7 @@
 
 \documentclass{beamer}
 
-\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,enumitem}
+\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
 \usepackage[en-US]{datetime2}
@@ -39,7 +39,7 @@
 \newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
 \newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
 
-
+\newenvironment{mystepwiseitemize}{\begin{itemize}[<+-| alert@+>]}{\end{itemize}}
 % Theme colors are derived from these two elements
 \setbeamercolor{alerted text}{fg=Orange}
 \setsansfont[BoldFont={Source Sans Pro Semibold},
@@ -51,6 +51,8 @@
 % }
 % \metroset{set}
 \setbeamercolor{institute in head/foot}{fg=stanfordRed}
+\setbeamercovered{transparent}
+\setbeamercovered{again covered={\opaqueness<1->{15}}}
 % \setbeamercolor{progress bar}{fg=stanfordRed}
 % \setbeamercolor{progress bar}{bg=gr}
 % \setsansfont{Source Sans Pro}
@@ -66,7 +68,7 @@
 
 \institute[Stanford]{Stanford University}
 \date{\today}
-
+\setbeamertemplate{itemize items}{--}
 
 \hypersetup{
   colorlinks = true,
@@ -74,7 +76,7 @@
   citecolor = blue
 }
 
-\def\labelitemi{--}
+% \def\labelitemi{--}
 
 
 % \let\oldcite=\textcite
@@ -92,18 +94,61 @@
 
 \section*{Introduction}
 
-\begin{frame}{Open problems in crowdsourcing}
-  \begin{itemize}%[<+- | alert@+>]
-    \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
+% \begin{frame}[t]{Open problems in crowdsourcing}
+%   \begin{itemize}[<+>]
+%     \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
+%                            Nebeling:2016:WCW:2858036.2858169,
+%                            Hahn:2016:KAB:2858036.2858364}
+%   \end{itemize}
+% \end{frame}
+
+
+% \begin{frame}[t]{Open problems in crowdsourcing}
+%   \begin{itemize}[<+>]
+%     \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
+%                            Nebeling:2016:WCW:2858036.2858169,
+%                            Hahn:2016:KAB:2858036.2858364}
+%     \item \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
+%                               Law:2016:CKC:2858036.2858144,
+%                               Chang:2016:ACC:2858036.2858411,
+%                               Newell:2016:OMA:2858036.2858490}
+%   \end{itemize}
+% \end{frame}
+
+
+\begin{frame}[t]{Open problems in crowdsourcing}
+\begin{columns}
+\begin{column}{0.6\textwidth}
+  \begin{itemize}%[<+>]
+    \item<1,4> \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
                            Nebeling:2016:WCW:2858036.2858169,
                            Hahn:2016:KAB:2858036.2858364}
-    \item \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
+    \item<2> \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
                               Law:2016:CKC:2858036.2858144,
                               Chang:2016:ACC:2858036.2858411,
                               Newell:2016:OMA:2858036.2858490}
-    \item \textbf{Relationships}~\textcite{turkopticon,storiesIraniSilberman,crowdcollab,
+    \item<3> \textbf{Relationships}~\textcite{turkopticon,storiesIraniSilberman,crowdcollab,
                               takingAHITMcInnis}
+
   \end{itemize}
+
+\end{column}
+\begin{column}{0.4\textwidth}
+test
+\end{column}
+\end{columns}
+%   \begin{figure}[htbp]
+%   \centering
+  
+% \end{figure}
+
+  % \begin{figure}
+  % \includesvg{test}
+  % \caption{svg image}
+  % \includegraphics<1>[width=.5\textwidth]{figures/handy.png}
+  % \includegraphics<2>[width=.5\textwidth]{figures/amt.png}
+  % \includegraphics<3>[width=.5\textwidth]{figures/uber.png}
+  % \end{figure}
 \end{frame}
 
 \begin{frame}[standout]{whataatatat}
@@ -153,28 +198,45 @@ Historical analysis is nothing new
 
 
 \begin{frame}{What does the crowdsourcing literature say?}
-    something pretty insightful I bet!
+\begin{columns}[t]
+
+  \begin{column}[t]{0.5\textwidth}
+    \begin{itemize}
+      \item Build complexity into the process
+      \begin{itemize}
+        \item Apply CS methods to people~(\textcite{crowdForgeKittur})
+      \end{itemize}
+    \end{itemize}
+  \end{column}
+  
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    \includegraphics[width=\textwidth]{figures/mapReduce.png}
+    \end{figure}
+  \end{column}
+  
+\end{columns}
 \end{frame}
 
 \begin{frame}{What does the piecework literature say?}
     something even more insightful, I'm sure!
 \end{frame}
 
-\begin{frame}[t]\frametitle{Let's compare this stuff}
-\framesubtitle{something else}
-  \begin{columns}
-  \begin{column}{0.5\textwidth}
-  % \section*{Piecework}
-     some text here some text here some text here some text here some text here
+\begin{frame}{Comparerereer}
+% \framesubtitle{something else}
+%   \begin{columns}
+%   \begin{column}{0.5\textwidth}
+%   % \section*{Piecework}
+%      some text here some text here some text here some text here some text here
 
-  \end{column}
+%   \end{column}
 
-  \begin{column}{0.5\textwidth}
-  % \section*{CrowdWork}
-     some text here some text here some text here some text here some text here
+%   \begin{column}{0.5\textwidth}
+%   % \section*{CrowdWork}
+%      some text here some text here some text here some text here some text here
 
-  \end{column}
-  \end{columns}
+%   \end{column}
+%   \end{columns}
 \end{frame}
 
 
