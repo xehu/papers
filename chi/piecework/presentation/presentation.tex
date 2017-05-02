@@ -14,7 +14,7 @@
 
 \documentclass{beamer}
 
-\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg}
+\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg,subfiles}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
 \usepackage[en-US]{datetime2}
@@ -82,8 +82,11 @@
 % \let\oldcite=\textcite
 % \renewcommand{\textcite}[1]{\textcolor[rgb]{.2,.2,.9}{[\oldcite{#1}]}}
 
-\begin{document}
 
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\begin{document}
+\renewcommand{\onlyinsubfile}[1]{}
 \begin{frame}
 \titlepage
 \end{frame}
@@ -92,80 +95,9 @@
 % \setbeamercovered{transparent}
 
 
-\section*{Introduction}
+% \subfile{intro.tex}
 
-% \begin{frame}[t]{Open problems in crowdsourcing}
-%   \begin{itemize}[<+>]
-%     \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
-%                            Nebeling:2016:WCW:2858036.2858169,
-%                            Hahn:2016:KAB:2858036.2858364}
-%   \end{itemize}
-% \end{frame}
-
-
-% \begin{frame}[t]{Open problems in crowdsourcing}
-%   \begin{itemize}[<+>]
-%     \item \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
-%                            Nebeling:2016:WCW:2858036.2858169,
-%                            Hahn:2016:KAB:2858036.2858364}
-%     \item \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
-%                               Law:2016:CKC:2858036.2858144,
-%                               Chang:2016:ACC:2858036.2858411,
-%                               Newell:2016:OMA:2858036.2858490}
-%   \end{itemize}
-% \end{frame}
-
-
-\begin{frame}{Open problems in crowdsourcing}
-\begin{columns}
-\begin{column}[T]{0.6\textwidth}
-  \begin{itemize}%[<+>]
-    \item<1> \textbf{Complexity}~\textcite{suzukiAtelier,KimStoria,yuanAlmost,
-                           Nebeling:2016:WCW:2858036.2858169,
-                           Hahn:2016:KAB:2858036.2858364}
-    \item<2> \textbf{Decomposition}~\textcite{sensitiveTasks,LykourentzouPersonalityMatters,
-                              Law:2016:CKC:2858036.2858144,
-                              Chang:2016:ACC:2858036.2858411,
-                              Newell:2016:OMA:2858036.2858490}
-    \item<3> \textbf{Relationships}~\textcite{turkopticon,storiesIraniSilberman,crowdcollab,
-                              takingAHITMcInnis}
-
-  \end{itemize}
-
-\end{column}
-
-\begin{column}[T]{0.5\textwidth}
-  \begin{figure}
-    \centering
-    \includegraphics<1>[width=.4\textwidth]{figures/complexity/geodesic.png}
-    \includegraphics<2>[width=.4\textwidth]{figures/complexity/geodesic.png}
-
-    \includegraphics<2>[width=.6\textwidth]{figures/complexity/hexblend.png}
-
-    \includegraphics<3>[width=.4\textwidth]{figures/complexity/geodesic.png}
-
-    \includegraphics<3>[width=.6\textwidth]{figures/complexity/hexblend.png}
-
-    \includegraphics<3>[width=.6\textwidth]{figures/complexity/decompose.png}
-
-  \end{figure}
-\end{column}
-\end{columns}
-%   \begin{figure}[htbp]
-%   \centering
-  
-% \end{figure}
-
-  % \begin{figure}
-  % \includesvg{test}
-  % \caption{svg image}
-  % \includegraphics<1>[width=.5\textwidth]{figures/handy.png}
-  % \includegraphics<2>[width=.5\textwidth]{figures/amt.png}
-  % \includegraphics<3>[width=.5\textwidth]{figures/uber.png}
-  % \end{figure}
-\end{frame}
-
-\begin{frame}[standout]{whataatatat}
+\begin{frame}[standout]
     What is the future of work?
 
 
