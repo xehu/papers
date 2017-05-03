@@ -1,29 +1,33 @@
-\documentclass[11pt]{article}
-\usepackage{balance,graphics,setspace,parskip,times,hyperref}
-\usepackage{moreenum,amsmath,alphalph,xintbinhex,nth}
-\usepackage[margin=1in]{geometry}
-% \usepackage{enumitem}
-% \usepackage[tiny,compact]{titlesec}
-
-\usepackage[citestyle=authoryear-ibid,sorting=ynt,backend=bibtex8]{biblatex}
+% !TEX program = lualatex
+\documentclass{beamer}
+\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg,subfiles}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\usepackage[export]{adjustbox}
+\usepackage[en-US]{datetime2}
 \bibliography{references}
-% \setlength{\parskip}{.4em}
 
-% \bibliographystyle{chicago}
-
-% \usepackage[shortlabels]{enumitem}
-
+\usetheme{metropolis}
 \begin{document}
-\begin{enumerate}
-  \item Complexity~\parencite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,
-                         Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}
-  \item Decomposition~\parencite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}
-  \item Relationships~\parencite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis}
-  \item Work--flows~\parencite{crowdForgeKittur,bernsteinSoylent,writingMicroTasks,Nebeling:2016:WCW:2858036.2858169}
-  \item Interdependencies~\parencite{Bigham2014}
-  \item including food labeling~\parencite{noronha2011platemate}
-  \item brainstorming~\parencite{siangliulue2015toward,Yu2016a}
-  \item and accessibility~\parencite{lasecki2013chorus,lasecki2012real,Lasecki2011}
-\end{enumerate}
-\printbibliography{}
+\begin{frame}
+  hello
+\end{frame}
+\section{who the fuck what's going on here}\label{sec:test2333}
+\begin{frame}[t]\frametitle{title}
+    something
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{title}
+    else
+\end{frame}
+
+
+\begin{frame}[t]\frametitle{title}
+    333
+\end{frame}
+
+\begin{frame}[t]\frametitle{blah}
+    \ref{sec:test2333}~\cite{dynamo}
+
+\end{frame}
 \end{document}
