@@ -1,11 +1,11 @@
 \documentclass[presentation]{subfiles}
+
 \onlyinsubfile{
-  % \bibliographystyle{SIGCHI-Reference-Format}
   % \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-  \bibliography{references}
-  \usepackage{xr-hyper}
-  \usepackage{hyperref}
+  % \bibliography{~/Library/texmf/bibtex/bib/local/references}
+  \beamertemplategridbackground[1mm]
 }
+
 
 \begin{document}
 % \section*{Introduction}
@@ -43,7 +43,7 @@
     \centering
     \vspace{-5mm}
 
-    \visible<2->{\includegraphics[width=.3\textwidth]{figures/complexity/geodesic.png}
+    \visible<2->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}
     }\visible<4->{\includegraphics[width=.33\textwidth]{figures/complexity/paper_resized.png}
                   \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
     }
@@ -76,6 +76,95 @@
 
 \end{column}
 \end{columns}
+\end{frame}
+
+
+\begin{frame}[standout]
+    What is the future of work?
+\end{frame}
+
+\begin{frame}{What is the future of work?}
+    
+\end{frame}
+
+
+
+\begin{frame}{A Timeline of Crowdsourcing}
+\visible<2->{
+\begin{tikzpicture}
+  [
+    chronos={%
+      % timeline width=50mm,
+      timeline width=\textwidth,
+      timeline height=2pt,
+      start date={1880}-01-01,
+      end date={1920}-01-01,
+      events/.append style={font=\tiny},
+      timeline year={font=\scriptsize},
+      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
+      only years,
+      step years=5,
+      timeline years=below,
+      timeline marks,
+    }
+  ]
+
+ \chronosevent {1888}{Match girls' strike~\cite{10.2307/3827491}} % (20pt)
+ \chronosevent {1921}{\textcite{american1921problem}}
+ \chronosevent {1904}{\textcite{richards1904anything}}
+ \chronosevent {1896}{\textcite{taylor1896piece}}
+ % \chronosevent{}
+  \end{tikzpicture}
+  \vspace{20mm}
+  }
+
+\begin{tikzpicture}
+  [
+    chronos={%
+      % timeline width=50mm,
+      timeline width=\textwidth,
+      timeline height=2pt,
+      start date={2006}-01-01,
+      end date={2017}-01-01,
+      events/.append style={font=\tiny},
+      timeline year={font=\scriptsize},
+      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
+      only years,
+      step years=1,
+      timeline years=below,
+      timeline marks,
+    }
+  ]
+
+ % \chronosevent {1888}{Match girls' strike} % (20pt)
+ % \chronosevent{}{\textcite{american1921problem}}
+ % \eventcite{turkitLittle}
+  \chronosevent{2008}{\textcite{Sheng:2008:GLI:1401890.1401965}}
+  \chronosevent {2010}{\textcite{bernsteinSoylent,turkitLittle}}(-40pt)
+  \chronosevent{2011}{\textcite{crowdForgeKittur}}
+  \chronosevent{2013}{\textcite{lasecki2013chorus,chilton2013cascade,crowdworkFuture}}
+ 
+ \chronosevent{2015}{\textcite{uberAlgorithm,dynamo}}(-30pt)
+ % \chronosevent {2015}{\textcite{dynamo}}
+ \chronosevent {2013}{\textcite{turkopticon}}
+  \end{tikzpicture}
+
+
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Introduction}
+  We hope to provide:
+      \begin{itemize}
+        \item A useful ontological lens for making sense of crowdsourcing and gig work (which we collectively call ``\textit{on--demand work}'') as a resurgence of \textit{piecework}.
+        \item A method for making sense of contemporary phenomena through \textit{historical analysis}.
+      \end{itemize}
 \end{frame}
 
 \end{document}

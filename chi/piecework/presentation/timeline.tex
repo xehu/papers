@@ -1,0 +1,68 @@
+\documentclass[presentation]{subfiles}
+
+\begin{document}
+\begin{frame}[b]{A Timeline of \only<1>{Crowdsourcing}\only<2->{\xcancel{Crowdsourcing} On--Demand Work}}
+\visible<2->{
+\begin{tikzpicture}
+  [
+    chronos={%
+      % timeline width=50mm,
+      timeline width=\textwidth,
+      timeline height=2pt,
+      start date={1880}-01-01,
+      end date={1920}-01-01,
+      events/.append style={font=\tiny},
+      timeline year={font=\scriptsize},
+      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
+      only years,
+      step years=5,
+      timeline years=below,
+      timeline no years,
+    }
+  ]
+
+ \chronosevent {1888}{Match girls' strike~\cite{10.2307/3827491}} % (20pt)
+ \chronosevent {1921}{\textcite{american1921problem}}
+ \chronosevent {1904}{\textcite{richards1904anything}}
+ \chronosevent {1896}{\textcite{taylor1896piece}}
+ % \chronosevent{}
+  \end{tikzpicture}
+  \vspace{8mm}
+  }
+
+\begin{tikzpicture}
+  [
+    chronos={%
+      % timeline width=50mm,
+      timeline width=\textwidth,
+      timeline height=2pt,
+      start date={2006}-01-01,
+      end date={2017}-01-01,
+      events/.append style={font=\tiny},
+      timeline year={font=\scriptsize},
+      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
+      only years,
+      step years=1,
+      timeline years=below,
+      timeline no years,
+    }
+  ]
+
+ % \chronosevent {1888}{Match girls' strike} % (20pt)
+ % \chronosevent{}{\textcite{american1921problem}}
+ % \eventcite{turkitLittle}
+  
+  
+  
+  \chronosevent{2015}{\textcite{uberAlgorithm}\\\textcite{dynamo}}(-60pt)
+  \chronosevent{2013}{\textcite{lasecki2013chorus}\\\textcite{chilton2013cascade}\\\textcite{crowdworkFuture}\\\textcite{turkopticon}} % (-30pt)
+  \chronosevent{2011}{\textcite{crowdForgeKittur}\\\textcite{movieSummarizationWu}\\\textcite{incentivesShaw}}(-70pt)
+  \chronosevent{2010}{\textcite{bernsteinSoylent}\\\textcite{turkitLittle}\\\textcite{Ipeirotis:2010:QMA:1837885.1837906}}(-30pt)
+  \chronosevent{2008}{\textcite{Sheng:2008:GLI:1401890.1401965}}
+  \end{tikzpicture}
+
+
+
+\end{frame}
+
+\end{document}
