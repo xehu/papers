@@ -19,6 +19,7 @@
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
 \usepackage[en-US]{datetime2}
+
 \bibliography{references}
 \usetheme{metropolis}
 \beamertemplatenavigationsymbolsempty
@@ -27,6 +28,30 @@
 % \mode<presentation>{
   % \usetheme{metropolis}
   \usecolortheme{seagull}
+
+
+% \setbeamercolor{framesubtitle}{fg=mDarkTeal}
+% \addtobeamert emplate{frametitle}{}{%
+%   \ifx\insertframesubtitle\@empty\else%
+%   \usebeamerfont{framesubtitle}%
+%   \usebeamercolor[fg]{framesubtitle}%
+%   \small{\insertframesubtitle}%
+%   \fi%
+% }
+
+
+\setbeamertemplate{frametitle}
+{\vskip-3pt
+  \leavevmode
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=1ex]{frametitle}%
+    \raggedright\hspace*{2em}\large{\insertframetitle}\\
+    \hspace*{4em}\small{\insertframesubtitle}\hspace*{2em}
+  \end{beamercolorbox}
+  }%
+}
+\setbeamertemplate{caption}{\raggedright\footnotesize{\insertcaption}\par}
+
 
 \usepackage{pgfcalendar}
 \usepackage{datenumber,xparse,fp}
