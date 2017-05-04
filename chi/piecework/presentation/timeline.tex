@@ -1,8 +1,8 @@
 \documentclass[presentation]{subfiles}
 
 \begin{document}
-\begin{frame}[b]{A Timeline of \only<1>{Crowdsourcing}\only<2->{\xcancel{Crowdsourcing} On--Demand Work}}
-\visible<2->{
+\begin{frame}[b]{A Timeline of \only<1>{Piecework}\only<2->{\xcancel{Piecework} On--Demand Work}}
+\visible<1->{
 \begin{tikzpicture}
   [
     chronos={%
@@ -29,7 +29,7 @@
   \end{tikzpicture}
   \vspace{8mm}
   }
-
+\visible<2->{
 \begin{tikzpicture}
   [
     chronos={%
@@ -60,7 +60,7 @@
   \chronosevent{2010}{\textcite{bernsteinSoylent}\\\textcite{turkitLittle}\\\textcite{Ipeirotis:2010:QMA:1837885.1837906}}(-30pt)
   \chronosevent{2008}{\textcite{Sheng:2008:GLI:1401890.1401965}}
   \end{tikzpicture}
-
+}
 
 
 \end{frame}
