@@ -28,6 +28,7 @@
 % \mode<presentation>{
   % \usetheme{metropolis}
   \usecolortheme{seagull}
+  % \usecolortheme{solarized}
 
 
 % \setbeamercolor{framesubtitle}{fg=mDarkTeal}
@@ -46,11 +47,31 @@
   \hbox{%
   \begin{beamercolorbox}[wd=\paperwidth,ht=5.8ex,dp=1ex]{frametitle}%
     \raggedright\hspace*{2em}\large{\insertframetitle}\\
-    \hspace*{4em}\small{\insertframesubtitle}\hspace*{2em}
+    % \begin{figure}
+    % \end{figure}
+    \hspace*{4em}\small{\insertframesubtitle}
+     % \hspace*{2em}
+
+     % \includegraphics[height=10mm,width=40mm]{figures/bgheader.png}
+
   \end{beamercolorbox}
   }%
 }
 \setbeamertemplate{caption}{\raggedright\footnotesize{\insertcaption}\par}
+
+
+\addtobeamertemplate{frametitle}{}{%
+    \begin{textblock*}{100mm}(.7\textwidth,-12.5mm)
+        \includegraphics[height=12mm,width=50mm]{figures/bgheadertr.png}
+    \end{textblock*}}
+
+% \setbeamertemplate{frametitle}{
+% \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+% \includegraphics[height=10mm,width=40mm]{figures/bgheader.png}
+% \end{textblock*}
+% }
+
+
 
 
 \usepackage{pgfcalendar}
