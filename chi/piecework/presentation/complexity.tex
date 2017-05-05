@@ -1,6 +1,7 @@
 \documentclass[presentation]{subfiles}
 
 \onlyinsubfile{
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \bibliography{references}
   % \beamertemplategridbackground[1mm]
 }
@@ -198,9 +199,9 @@
 \only<1>{
     \begin{column}{0.66\textwidth}
       \begin{itemize}
-        \item ``Efficiency experts'' measured how long it would take to do various jobs
-        \item These measurements would be used to assign values for each specific task
-        \item Train engineers performed work more slowly when inspectors were around
+        \item ``Efficiency experts'' measured how long it would take to do various jobs~\cite{doi:10.2307/1883615}
+        \item These measurements would be used to assign values for each specific task~\cite{american1921problem}
+        \item Train engineers instituted ``The Fix'' to correct perceived unfairness~\cite{roy1954efficiency}
       \end{itemize}
     \end{column}
   }
@@ -265,12 +266,15 @@
 
 \begin{frame}{Comparisons}
 \begin{itemize}
-  \item Limited range of tasks > arbitrary changes (building planes is easier than fixing trains)
-  \item Has technology changed this? Yes
+  \item Limited array of tasks versus arbitrarily complex work
   \begin{itemize}
-    \item Technology makes complex tasks relatively trivial
-    \item Measuring workers is easier than ever
+    \item \textit{Building} planes versus \textit{fixing} trains
   \end{itemize}
+  \item \normalsize{Has technology changed this?}
+    \begin{itemize}
+      \item Technology makes complex tasks relatively trivial
+      \item Measuring workers is easier than ever
+    \end{itemize}
 \end{itemize}
 \end{frame}
 

@@ -10,7 +10,22 @@
 \begin{document}
 % \section*{Introduction}
 
-\begin{frame}{Open problems in crowdsourcing}
+% \frame<1-3>[frame1]{
+\begin{frame}<-2>[label=returnable]{A brief glossary}
+      \begin{itemize}
+        \item<1> \textit{Crowd work}: digitally mediated \textbf{information work}
+        (for example, work done on Amazon Mechanical Turk, UpWork, or 99designs)~\cite{crowdworkFuture}
+        \item<2> \textit{Gig work}: digitally mediated (but often \textbf{physically embodied}) one--off jobs,
+        such as
+        \textit{driving},
+        \textit{courier services},
+        and \textit{administrative support}~\cite{friedman2014workers,Parigi:2016:GE:3026779.3013496}
+        \item<3> \textit{Piecework}: Payment for \textit{output} rather than for \textit{time}
+      \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Open problems in on--demand work}
 \begin{columns}
 \begin{column}[T]{0.5\textwidth}
   \begin{itemize}%[<+>]
@@ -35,7 +50,6 @@
     }
 
   \end{itemize}
-
 \end{column}
 
 \begin{column}[T]{0.25\textwidth}
@@ -43,8 +57,8 @@
     \centering
     \vspace{-5mm}
 
-    \visible<2->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}
-    }\visible<4->{\includegraphics[width=.33\textwidth]{figures/complexity/paper_resized.png}
+    \visible<2->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}}%
+    \visible<4->{\includegraphics[width=.33\textwidth]{figures/complexity/paper_resized.png}
                   \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
     }
     
@@ -97,10 +111,37 @@
     How can we \textbf{reach} those limits?
 \end{frame}
 
+% \begin{frame}[label=ndinpi]{Non-determinism in the $\pi$-calculus (or ``global'' choice)}
+%   % \only<2>{\frametitle{Example: a p\^{a}tisserie}}
+%   \centering
+%   \only<1>{
+%   something 1
+%   }\only<2>{
+%   something 2
+%   }
+% \end{frame}
+
+\againframe<3->{returnable}
+
+% \begin{frame}{A brief glossary}
+%     \begin{itemize}
+%       \item \textit{Crowd work}: digitally mediated \textbf{information work}
+%       (for example, work done on Amazon Mechanical Turk, UpWork, or 99designs)~\cite{crowdworkFuture}
+%       \item \textit{Gig work}: digitally mediated (but often \textbf{physically embodied}) one--off jobs,
+%       such as
+%       \textit{driving},
+%       \textit{courier services},
+%       and \textit{administrative support}~\cite{friedman2014workers,Parigi:2016:GE:3026779.3013496}
+%       \item<2> \textit{Piecework}: Payment for \textit{output} rather than for \textit{time}
+%     \end{itemize}
+% \end{frame}
+
+% \againframe<2>{ndinpi}
 
 \notinsubfile{
   \subfile{timeline.tex} % this takes a while to compile...
 }
+
 
 \begin{frame}{Introduction}
   We hope to provide:
@@ -109,5 +150,36 @@
         \item A method for making sense of contemporary phenomena through \textit{historical analysis}.
       \end{itemize}
 \end{frame}
+
+
+\begin{frame}{A case for comparative historical analysis}
+\begin{itemize}
+  \item Historical analysis isn't new
+  \begin{itemize}
+    \item In general
+
+    \scriptsize{
+      \textcite{rosenberg1994exploring,rosenberg1982inside}
+    }
+    \item In HCI
+
+    \scriptsize{
+      \textcite{Wyche2006,bodker1993historical}
+    }
+  \end{itemize}
+  \item Still, it's an underutilized method
+  \begin{itemize}
+    \item Provide some basic framing for ostensibly new phenomena
+    \item Theoretically ground ourselves
+    \item Flesh out \textit{differences} and their implications
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\onlyinsubfile{
+  \printbibliography{}
+}
 
 \end{document}
