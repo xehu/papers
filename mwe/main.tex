@@ -1,33 +1,26 @@
-% !TEX program = lualatex
 \documentclass{beamer}
-\usepackage{tikz,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg,subfiles}
-\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-\usepackage[export]{adjustbox}
-\usepackage[en-US]{datetime2}
-\bibliography{references}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usepackage{textpos}
 
-\usetheme{metropolis}
+\title{The title}
+\author[The author]{\includegraphics[height=1cm,width=2cm]{cat.jpeg}\\The Author}
+\institute[Inst.]{The Institute}
+\date{\today}
+
 \begin{document}
+
 \begin{frame}
-  hello
-\end{frame}
-\section{who the fuck what's going on here}\label{sec:test2333}
-\begin{frame}[t]\frametitle{title}
-    something
+\maketitle
 \end{frame}
 
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.85\textwidth,-1cm)
+\includegraphics[height=1cm,width=2cm]{cat.jpeg}
+\end{textblock*}}
 
-\begin{frame}[t]\frametitle{title}
-    else
+\begin{frame}{Motivation}
+Now the logo is visible
 \end{frame}
 
-
-\begin{frame}[t]\frametitle{title}
-    333
-\end{frame}
-
-\begin{frame}[t]\frametitle{blah}
-    \ref{sec:test2333}~\cite{dynamo}
-
-\end{frame}
 \end{document}
