@@ -1,7 +1,12 @@
 \documentclass[presentation]{subfiles}
 
 \begin{document}
-\begin{frame}[b]{A Timeline of \only<1>{Piecework}\only<2->{\xcancel{Piecework} On--Demand Work}}
+\begin{frame}[b]{%
+\only<2->{\visible<0>{A Timeline of} On--Demand Work\visible<0>{~\\}}%
+\only<2->{\raggedright\hspace*{1em}}A Timeline of \only<1>{Piecework}\only<2->{\xcancel{Piecework}}
+}
+\vspace{10mm}
+
 \visible<1->{
 \begin{tikzpicture}
   [
@@ -21,13 +26,12 @@
     }
   ]
 
- \chronosevent {1888}{Match girls' strike~\cite{10.2307/3827491}} % (20pt)
- \chronosevent {1921}{\textcite{american1921problem}}
- \chronosevent {1904}{\textcite{richards1904anything}}
- \chronosevent {1896}{\textcite{taylor1896piece}}
- % \chronosevent{}
+ \chronosevent {1888}{Match girls' strike\\(\textcite{10.2307/3827491})}(10pt)
+ \chronosevent {1921}{\textcite{american1921problem}}(10pt)
+ \chronosevent {1904}{\textcite{richards1904anything}}(10pt)
+ \chronosevent {1896}{\textcite{taylor1896piece}}(10pt)
   \end{tikzpicture}
-  \vspace{8mm}
+  \vspace{0mm}
   }
 \visible<2->{
 \begin{tikzpicture}
@@ -55,7 +59,7 @@
   
   
   \chronosevent{2015}{\textcite{uberAlgorithm}\\\textcite{dynamo}}(-60pt)
-  \chronosevent{2013}{\textcite{lasecki2013chorus}\\\textcite{chilton2013cascade}\\\textcite{crowdworkFuture}\\\textcite{turkopticon}} % (-30pt)
+  \chronosevent{2013}{\textcite{turkopticon}\\\textcite{lasecki2013chorus}\\\textcite{chilton2013cascade}\\\textcite{crowdworkFuture}} % (-30pt)
   \chronosevent{2011}{\textcite{crowdForgeKittur}\\\textcite{movieSummarizationWu}\\\textcite{incentivesShaw}}(-70pt)
   \chronosevent{2010}{\textcite{bernsteinSoylent}\\\textcite{turkitLittle}\\\textcite{Ipeirotis:2010:QMA:1837885.1837906}}(-30pt)
   \chronosevent{2008}{\textcite{Sheng:2008:GLI:1401890.1401965}}
