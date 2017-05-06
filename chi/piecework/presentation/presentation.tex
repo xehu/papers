@@ -12,9 +12,12 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 
 \usepackage{tikz,pgf,lmodern,textpos,hyperref,graphicx,booktabs,appendixnumberbeamer,nth,xcolor,svg,subfiles,chronosys,cancel}
+\usepackage{pgfcalendar}
+\usepackage{datenumber,xparse,fp}
+
 \usetikzlibrary{arrows,automata}
 \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
 \usepackage[export]{adjustbox}
@@ -23,11 +26,11 @@
 \bibliography{references}
 \usetheme{metropolis}
 \beamertemplatenavigationsymbolsempty
-\renewcommand\textbullet{\ensuremath{\bullet}}
+% \renewcommand\textbullet{\ensuremath{\bullet}}
 \definecolor{stanfordRed}{HTML}{8C1515}
 % \mode<presentation>{
   % \usetheme{metropolis}
-  \usecolortheme{seagull}
+  % \usecolortheme{seagull}
   % \usecolortheme{solarized}
 
 
@@ -39,6 +42,7 @@
 %   \small{\insertframesubtitle}%
 %   \fi%
 % }
+\definecolor{metroBackground}{RGB}{250,250,250}
 
 
 \setbeamertemplate{frametitle}
@@ -61,8 +65,11 @@
 
 
 \addtobeamertemplate{frametitle}{}{%
-    \begin{textblock*}{100mm}(.7\textwidth,-12.5mm)
-        \includegraphics[height=12mm,width=50mm]{figures/bgheadertr.png}
+    \begin{textblock*}{100mm}(\textwidth-18mm,-12mm)
+    \includegraphics[height=10mm]{figures/origami-1.png}
+    \includegraphics[height=10mm]{figures/origami-2.png}
+    \includegraphics[height=8mm]{figures/origami-white.png}
+        % \includegraphics[height=13mm,width=50mm]{figures/bgheaderWhite.png}
     \end{textblock*}}
 
 % \setbeamertemplate{frametitle}{
@@ -74,8 +81,6 @@
 
 
 
-\usepackage{pgfcalendar}
-\usepackage{datenumber,xparse,fp}
 \usetikzlibrary{arrows.meta,backgrounds,fixedpointarithmetic}
 \makeatletter
 \ExplSyntaxOn
@@ -339,7 +344,7 @@
   chronos period date=1851-01-01,
   step years=1,
   timeline years=above,
-  background=white,
+  background=metroBackground,
   timeline border inner colour=black,
   timeline border outer colour=chronos@background,
   step from year=none,
@@ -424,7 +429,7 @@
 
 \institute[Stanford]{Stanford University}
 \date{\today}
-\setbeamertemplate{itemize items}{--}
+% \setbeamertemplate{itemize items}{--}
 % \setbeamertemplate{itemize subitems}{--}
 
 \hypersetup{
@@ -461,5 +466,9 @@
 
 
 % \bibliographystyle{SIGCHI-Reference-Format}
+\begin{frame}[allowframebreaks]{References}
+    
 \printbibliography{}
+
+\end{frame}
 \end{document} 
