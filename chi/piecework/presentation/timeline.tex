@@ -5,20 +5,15 @@
 \only<2->{\visible<0>{A Timeline of} On--Demand Work\visible<0>{~\\}}%
 \only<2->{\raggedright\hspace*{1em}}A Timeline of \only<1>{Piecework}\only<2->{\xcancel{Piecework}}
 }
-\vspace{10mm}
-
-\visible<1->{
 \begin{tikzpicture}
   [
     chronos={%
-      % timeline width=50mm,
       timeline width=\textwidth,
       timeline height=2pt,
-      start date={1880}-01-01,
-      end date={1920}-01-01,
-      events/.append style={font=\tiny},
+      start date={1820}-01-01,
+      end date={1940}-01-01,
+      events/.append style={font=\footnotesize},
       timeline year={font=\scriptsize},
-      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
       only years,
       step years=5,
       timeline years=below,
@@ -26,43 +21,40 @@
     }
   ]
 
- \chronosevent {1888}{Match girls' strike\\(\textcite{10.2307/3827491})}(10pt)
- \chronosevent {1921}{\textcite{american1921problem}}(10pt)
- \chronosevent {1904}{\textcite{richards1904anything}}(10pt)
- \chronosevent {1896}{\textcite{taylor1896piece}}(10pt)
+
+\chronosevent{1930}{Metalworkers}(-6mm)
+\chronosevent{1915}{Assembly line workers}(2mm)
+\chronosevent{1910}{Railroad engineers}(-2mm)
+\chronosevent{1890}{Textile workers}(6mm)
+\chronosevent{1880}{Matchstick Girls}(-2mm)
+\chronosevent{1850}{Farm workers}(-2mm)
+\chronosevent{1835}{Airy's Human Computers}(2mm)
+
   \end{tikzpicture}
-  \vspace{0mm}
-  }
+
 \visible<2->{
 \begin{tikzpicture}
   [
     chronos={%
-      % timeline width=50mm,
       timeline width=\textwidth,
       timeline height=2pt,
-      start date={2006}-01-01,
-      end date={2017}-01-01,
-      events/.append style={font=\tiny},
+      start date={2004}-01-01,
+      end date={2020}-01-01,
+      events/.append style={font=\footnotesize},
       timeline year={font=\scriptsize},
-      % timeline line={blue!40, shorten >=-20mm, -{Triangle Cap[length=20mm]}},
       only years,
       step years=1,
       timeline years=below,
       timeline no years,
     }
   ]
-
- % \chronosevent {1888}{Match girls' strike} % (20pt)
- % \chronosevent{}{\textcite{american1921problem}}
- % \eventcite{turkitLittle}
-  
-  
-  
-  \chronosevent{2015}{\textcite{uberAlgorithm}\\\textcite{dynamo}}(-60pt)
-  \chronosevent{2013}{\textcite{turkopticon}\\\textcite{lasecki2013chorus}\\\textcite{chilton2013cascade}\\\textcite{crowdworkFuture}} % (-30pt)
-  \chronosevent{2011}{\textcite{crowdForgeKittur}\\\textcite{movieSummarizationWu}\\\textcite{incentivesShaw}}(-70pt)
-  \chronosevent{2010}{\textcite{bernsteinSoylent}\\\textcite{turkitLittle}\\\textcite{Ipeirotis:2010:QMA:1837885.1837906}}(-30pt)
-  \chronosevent{2008}{\textcite{Sheng:2008:GLI:1401890.1401965}}
+  \chronosevent{2016}{Knowledge Accelerator}(-2mm)
+  \chronosevent{2014}{Flash Teams}(2mm)
+  \chronosevent{2012}{\textit{HCOMP}\\(inaugural meeting)}(-10mm)
+  \chronosevent{2010}{Crowd Writing}(-2mm)
+  \chronosevent{2009}{Drivers for hire}(2mm)
+  \chronosevent{2011}{CrowdForge}(6mm)
+  \chronosevent{2006}{Mechanical Turk}(-2mm)
   \end{tikzpicture}
 }
 

@@ -1,103 +1,111 @@
 \documentclass[presentation]{subfiles}
-
-\onlyinsubfile{
-  % \usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-  % \bibliography{~/Library/texmf/bibtex/bib/local/references}
-  % \beamertemplategridbackground[1mm]
-}
-
-
+\onlyinsubfile{}
+\setbeamersize{description width=30mm}
 \begin{document}
-% \section*{Introduction}
-
-% \frame<1-3>[frame1]{
 \begin{frame}<-3>[label=returnable]{\only<-3>{Before We Get Started\dots}\only<4->{Old Wine in New Bottles}}
-      \begin{itemize}
-        \item<1-> \alert{Crowd work}: digitally mediated \emph{information work}
-        (for example, work done on Amazon Mechanical Turk, UpWork, or 99designs)\\
-          \scriptsize{\textcite{crowdworkFuture}}
-        \item<2-> \alert{Gig work}: digitally mediated (often \emph{physically embodied}) one--off jobs,
+      \begin{description}
+        \item<1-> [Crowd work] Digitally mediated \alert{information work}
+        (e.g. Amazon Mechanical Turk, UpWork)\\
+          \scriptsize{\textcite{crowdworkFuture}}\normalsize{}
+        \item<2-> [Gig work] Digitally mediated (often \alert{physically embodied}) one--off jobs,
         such as
-        {driving},
-        {courier services},
-        and {administrative support}\\
-          \scriptsize{\textcite{friedman2014workers,Parigi:2016:GE:3026779.3013496}}
-        \item<3-> \alert{On--demand work}: crowd work and gig work, collectively
-        \item<5-> \alert{Piecework}: Payment for \emph{output} rather than for \emph{time}
-      \end{itemize}
+        \emph{driving for hire},
+        \emph{courier services},
+        and \emph{administrative support}\\
+          \scriptsize{\textcite{friedman2014workers,Parigi:2016:GE:3026779.3013496}}\normalsize{}
+        \item<3-> [On--demand~work] Crowd work and gig work, collectively
+        \item<5-> [Piecework] Payment for \emph{output} rather than for \emph{time}
+      \end{description}
 \end{frame}
 
 
-\begin{frame}{Ongoing Threads in Crowdsourcing Research}
-\begin{columns}
-\begin{column}[T]{0.5\textwidth}
-  \begin{enumerate}%[<+>]
-    \item<2,4> \textbf{\large Complexity}\\
-    \scriptsize{
-    \textcite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364}
-    }
-    \vspace{5mm}
-    
-    \item<3> \textbf{\large Decomposition}\\
-    \scriptsize{
-    \textcite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}
-    }
-    \vspace{5mm}
+\begin{frame}[standout]
+On--demand work is a modern instantiation of a much older phenomenon
+--- \alert{piecework}.
 
-    \item<5> \textbf{\large Relationships}\\
-    \scriptsize{
-      \textcite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis,dynamo,uberAlgorithm}
-    }
+{\normalsize The historical arc of piecework
+can shed light on persistent questions
+in this ongoing phenomenon of on--demand work.}
+\end{frame}
 
-  \end{enumerate}
-\end{column}
+\againframe<4->{returnable}
 
-\begin{column}[T]{0.25\textwidth}
-  \begin{figure}
-    \centering
-    % \vspace{-5mm}
-    \vspace{0mm}
-
-    \visible<2->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}}%
-    \visible<4->{\includegraphics[width=.33\textwidth]{figures/complexity/paper_resized.png}
-                  \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
-    }
-    
-    \vspace{4mm}
-    \includegraphics[width=\textwidth]{figures/hexagonflattened.png}
-    \vspace{5mm}
-    
-    \visible<3->{
-    \includegraphics[width=\textwidth]{figures/complexity/decompose.png}
-    }
-
-    \visible<5->{
-      \vspace{5mm}
-      \includegraphics[width=\textwidth]{figures/networkTransparency.png}
-    }
-  \end{figure}
-
-\end{column}
-
-\begin{column}[T]{0.25\textwidth}
+\begin{frame}[t]{What is piecework?}
 \centering
-\vspace{5mm}
+  \emph{Payment for \textbf{output} rather than for \textbf{time}}
+\vspace*{2mm}
+\begin{columns}
+  \begin{column}{0.33\textwidth}
+    \centering
+    Textiles
+    \begin{figure}
+    \begin{overlayarea}{\textwidth}{33mm}
+    \begin{minipage}[c][33mm]{\textwidth}
+      \includegraphics[width=\textwidth]{figures/pieceworkers.jpg}
+    \end{minipage}
+    \end{overlayarea}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.33\textwidth}
+    \centering
+    Automobiles
+    \begin{figure}
+    \begin{overlayarea}{\textwidth}{33mm}
+    \begin{minipage}[c][33mm]{\textwidth}
+      \includegraphics[width=\textwidth]{figures/photo/ford_assembly_line.jpg}
+    \end{minipage}
+    \end{overlayarea}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.33\textwidth}
+    \centering
+    Metalwork
+    \begin{figure}
+    \begin{overlayarea}{\textwidth}{33mm}
+    \begin{minipage}[c][33mm]{\textwidth}
+      \includegraphics[width=\textwidth]{figures/photo/Rosie_the_Riveter_(Vultee)_DS.jpg}
+    \end{minipage}
+    \end{overlayarea}
+    \end{figure}
+  \end{column}
+\end{columns}
 
 \visible<2->{
-  \small{Complexity}
-  \vspace{13mm}
+  \begin{columns}
+  \centering
+    \begin{column}{0.33\textwidth}
+    \centering
+      Crowd work
+    \begin{figure}
+      \begin{overlayarea}{\textwidth}{15mm}
+      \begin{minipage}[c][15mm]{\textwidth}
+        \includegraphics[width=\textwidth]{figures/amt.png}
+      \end{minipage}
+      \end{overlayarea}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.33\textwidth}
+    \centering
+      Gig Work
+    \begin{figure}
+    \begin{overlayarea}{\textwidth}{15mm}
+      \begin{minipage}[c][15mm]{\textwidth}
+        \includegraphics[width=\textwidth]{figures/uber.png}
+      \end{minipage}
+      \end{overlayarea}
+    \end{figure}
+    \end{column}
+  \end{columns}
 }
 
-\small{Tasks}
-
-\visible<3->{
-  \vspace{11mm}
-  \small{Decomposition}
-}
-
-\end{column}
-\end{columns}
 \end{frame}
+
+
+% \begin{frame}{Why Piecework?}
+% What makes on--demand work another instantiation of piecework?
+
+% \ali{piecework }
+% \end{frame}
 
 
 \begin{frame}[standout]
@@ -108,13 +116,11 @@
     How will \alert{technology} affect the complexity of the work that on--demand workers do?
 
     What are the \alert{limits} of complexity in on--demand work?
-
-    How can we \alert{reach} those limits?
 \end{frame}
 
 
 \begin{frame}{Thesis}
-    These questions have all been asked before.
+    This question --- and others like it --- has been asked before.
 
     History can help us answer them today.
 
@@ -124,18 +130,17 @@
     inform answers to questions about the \alert{future} of digital work.
 \end{frame}
 
-\againframe<4->{returnable}
 
 \notinsubfile{
-  \subfile{timeline.tex} % this takes a while to compile...
+  \subfile{timeline.tex}
 }
 
 
 \begin{frame}{Introduction}
   We hope to provide:
       \begin{itemize}
-        \item A useful ontological lens for making sense of on--demand work as a resurgence of \alert{piecework}.
-        \item A method for making sense of contemporary phenomena through \alert{historical analysis}.
+        \item A useful ontological lens for making sense of on--demand work as a resurgence of \alert{piecework}
+        \item A method for making sense of contemporary phenomena through \alert{historical analysis}
       \end{itemize}
 \end{frame}
 
@@ -145,13 +150,9 @@
   \item Historical analysis isn't new
   \begin{itemize}
     \item In general\\
-    \scriptsize{
-      \textcite{rosenberg1994exploring,rosenberg1982inside}
-    }
+    \scriptsize{\textcite{rosenberg1994exploring,rosenberg1982inside}}\normalsize{}
     \item In HCI\\
-    \scriptsize{
-      \textcite{Wyche2006,bodker1993historical}
-    }
+    \scriptsize{\textcite{Wyche2006,bodker1993historical}}\normalsize{}
   \end{itemize}
   \item Still, it's an underutilized method
   \begin{itemize}

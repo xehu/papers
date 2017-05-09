@@ -1,32 +1,60 @@
 \documentclass[presentation]{subfiles}
 
 \onlyinsubfile{
-\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
-\bibliography{references}
-  % \beamertemplategridbackground[1mm]
 }
-
-
 \begin{document}
 
 \section{Complexity}
 
 \begin{frame}{Complexity}
   What do we mean when we talk about complexity?
-  \begin{itemize}
-    \item<1-> Can crowds help you write something?\\
-    \scriptsize{
-      \textcite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986,Nebeling:2016:WCW:2858036.2858169}
-    }
-    \item<2-> Can crowds critique novel designs?\\
-    \scriptsize{
-      \textcite{yuanAlmost,fuge2014analysis}
-    }
-    \item<3-> Can crowds create things from whole cloth?\\
-    \scriptsize{
-      \textcite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}
-    }
-  \end{itemize}
+  % \begin{minipage}[t][25mm][t]{\textwidth}
+  %   \begin{columns}
+  %     \begin{column}[T]{0.8\textwidth}
+        \begin{itemize}
+          \item<1->
+          Can crowds help you write something?\\
+          \scriptsize{\textcite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986,Nebeling:2016:WCW:2858036.2858169}}\normalsize{}
+          \item<2-> Can crowds critique novel designs?\\
+          \scriptsize{\textcite{yuanAlmost,fuge2014analysis}}\normalsize{}
+          \item<3-> Can crowds create things from whole cloth?\\
+          \scriptsize{\textcite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}}\normalsize{}
+        \end{itemize}
+      % \end{column}
+      % \begin{column}[T]{0.2\textwidth}
+      %   \begin{figure}
+    % \centering
+    % \vspace{0mm}
+
+    % \visible<1->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}}%
+    % \visible<3->{
+    % \includegraphics<1->[width=.5\textwidth]{figures/complexity/paper_resized.png}
+    %               % \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
+    % % }
+
+    % \includegraphics<2->[width=.5\textwidth]{figures/complexity/chair_resized.png}
+    
+    % \includegraphics[width=.15\textwidth]{figures/paper-unfolded.png}$\rightarrow$
+    % \includegraphics[width=.15\textwidth]{figures/rhino.png}
+    % \includegraphics[width=.15\textwidth]{figures/fish.png}
+    % \includegraphics[width=.15\textwidth]{figures/origami-1b.png}
+    
+    % \vspace{4mm}
+    % \includegraphics[width=\textwidth]{figures/hexagonflattened.png}
+    % \vspace{5mm}
+    
+    % \visible<2->{
+    % \includegraphics[width=\textwidth]{figures/complexity/decompose.png}
+    % }
+
+    % \visible<4->{
+    %   \vspace{5mm}
+    %   \includegraphics[width=\textwidth]{figures/networkTransparency.png}
+    % }
+  % \end{figure}
+  %     \end{column}
+  %   \end{columns}
+  %   \end{minipage}
 \end{frame}
 
 
@@ -37,13 +65,9 @@
       \item Build complexity into the process
       \begin{itemize}
         \item<1> Apply CS methods to people\\
-        \scriptsize{
-          \textcite{crowdForgeKittur}
-        }
+        \scriptsize{\textcite{crowdForgeKittur}}\normalsize{}
         \item<2> Humans as computational units\\
-        \scriptsize{
-          \textcite{Lasecki:2014:LSR:2661334.2661352}
-        }
+        \scriptsize{\textcite{Lasecki:2014:LSR:2661334.2661352}}\normalsize{}
         \item<3> Crowdsourcing workflows as function state machines\\
         \scriptsize{\textcite{latoza2014microtask}
         }
@@ -90,16 +114,8 @@
 \end{frame}
 
 \begin{frame}{What Does Piecework Say?}
-    % \begin{itemize}
-      % \item
       George Airy (astronomer) used a very similar approach\\
-      \scriptsize{\textcite{grier2013computers}}
-      % \begin{itemize}
-      %   \item Break work up so that individual tasks are simple\\
-      %   Make the process \textit{itself} compile the final product.
-      % \end{itemize}
-    % \end{itemize}
-    % \vspace{0mm}
+      \scriptsize{\textcite{grier2013computers}}\normalsize{}
     \begin{columns}
     \begin{column}{0.6\textwidth}
       \begin{figure}
@@ -111,9 +127,8 @@
       \begin{itemize}
         \item Employed computers
         \item 13--20 years old
-        \item Overworked
-        \item Underpaid
-        \item Could be fired at will
+        \item no particularly strong background in mathematics
+        \item A basic understanding of logarithms, algebra, etc\dots
       \end{itemize}
     \end{column}
     \end{columns}
@@ -122,170 +137,34 @@
 
 
 \begin{frame}{George Airy}
-    Airy built complexity into the process, assigning \textit{human computers} 
-    to compute, verify, and correct the right ascension and declination of stars.
+    Airy built complexity into the process, assigning \emph{human computers} 
+    to calculate \& verify the \emph{right ascension} and \emph{declination} of stars.
 
     \begin{figure}
     \includegraphics[width=\textwidth]{figures/complexity/pw_literature/airy.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Cottage Industry}
-  % First appearances of piecework:
-% \visible<2->{farms}%
-% \visible<3->{, textiles}%
-% \visible<4->{, and matchsticks.}
-  \begin{columns}
-  \visible<1->{
-    \begin{column}{0.33\textwidth}
-    \centering
-    Farms
-    \begin{figure}
-    \includegraphics[width=\textwidth]{figures/idk.png}
-    \end{figure}
-    \end{column}
-    }
-  
-  \visible<2->{
-  \begin{column}{0.33\textwidth}
-  \centering
-    Textiles
-  \begin{figure}
-  \includegraphics[width=\textwidth]{figures/pieceworkers.jpg}
-  \end{figure}
-  \end{column}
-  }
-  
-  \visible<3->{
-  \begin{column}{0.33\textwidth}
-  \centering
-    Matchsticks
-  \begin{figure}
-  \includegraphics[width=\textwidth]{figures/photo/Matchgirl_strikers.PNG}
-  \end{figure}
-  \end{column}
-  }
-  \end{columns}
-\end{frame}
 
-
-
-
-\begin{frame}{Planes, Trains, and Automobiles}
-  \begin{columns}
-  % \vspace{1mm}
-  \only<1,4->{
-  \begin{column}{0.33\textwidth}
-  \centering
-  Trains
-  \begin{figure}
-    \begin{overlayarea}{\textwidth}{4cm}
-    \begin{minipage}[c][4cm]{\textwidth}
-      \includegraphics[width=\textwidth]{figures/photo/train_workers.jpg}
-    \end{minipage}
-    \end{overlayarea}
-    % \caption{i wanna fly the train}
-    \end{figure}
-\end{column}
-
-\only<1>{
-    \begin{column}{0.66\textwidth}
-      \begin{itemize}
-        \item ``Efficiency experts'' measured how long it would take to do various jobs\\
-        \scriptsize{\textcite{doi:10.2307/1883615}}
-        \item These measurements would be used to assign values for each specific task\\
-        \scriptsize{\textcite{american1921problem}}
-        \item Train engineers instituted ``The Fix'' to correct perceived unfairness\\
-        \scriptsize{\textcite{roy1954efficiency}}
-      \end{itemize}
-    \end{column}
-  }
-}
-
-  \only<2,4->{
-    \only<2>{
-      \begin{column}{0.33\textwidth}
-      \begin{itemize}
-        \item Fordism, Taylorism, and Scientific Management in full force
-      \end{itemize}
-      \end{column}
-    }
-
-  \begin{column}{0.33\textwidth}
-    \centering
-      Automobiles
-      \begin{figure}
-        \begin{overlayarea}{\textwidth}{4cm}
-        \begin{minipage}[c][4cm]{\textwidth}
-          \includegraphics[width=\textwidth]{figures/photo/ford_assembly_line.jpg}
-        \end{minipage}
-        \end{overlayarea}
-      \end{figure}
-  \end{column}
-  
-  \only<2>{
-    \begin{column}{0.33\textwidth}
-    \begin{itemize}
-      \item \textit{Manufacturing} proved amenable
-            to assembly line processes.
-    \end{itemize}
-    \end{column}
-  }
-}
-
-  \only<3->{
-    \only<3>{
-      \begin{column}{0.66\textwidth}
-      \begin{itemize}
-        \item Men drafted during World War II
-        \item Factories turned to a new workforce who had neither conventional training nor experience
-        \item Training for individual tasks and correspondingly assigning workers 
-      \end{itemize}
-      \end{column}
-    }
-  \begin{column}{0.33\textwidth}
-    \centering
-      Planes
-      \begin{figure}
-        \begin{overlayarea}{\textwidth}{4cm}
-        \begin{minipage}[c][4cm]{\textwidth}
-            \includegraphics[width=\textwidth]{figures/photo/Rosie_the_Riveter_(Vultee)_DS.jpg}
-      \end{minipage}
-      \end{overlayarea}
-      \end{figure}
-  \end{column}
-  }
-
-  \end{columns}
-
-
-\end{frame}
+\subfile{piecework-simple}
+\subfile{piecework-complex}
 
 
 \begin{frame}{Comparisons}
 \begin{itemize}
   \item Limited array of tasks versus arbitrarily complex work
   \begin{itemize}
-    \item \textit{Building} planes versus \textit{fixing} trains
+    \item \emph{Building} planes versus \emph{fixing} trains
   \end{itemize}
   \item \normalsize{Has technology changed this?}
     \begin{itemize}
-      \item Technology makes complex tasks relatively trivial
+      \item Technology makes \emph{some} complex tasks relatively trivial
       \item Measuring workers is easier than ever
     \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Complexity} % {Cab Drivers}
-% \begin{columns}
-  % \begin{column}{0.20\textwidth}
-    % \begin{itemize}
-    %   \item 
-      % Cab drivers
-    % \end{itemize}
-  % \end{column}
-  
-  % \begin{column}{0.80\textwidth}
   \begin{figure}
   \includegraphics<1>[width=\textwidth]{figures/photo/knowledge-student.jpg}
   \only<2>{
@@ -300,8 +179,6 @@
   }
   \includegraphics<3>[width=\textwidth]{figures/photo/gps-map.jpg}
   \end{figure}
-  % \end{column}
-% \end{columns}
 \end{frame}
 
 \begin{frame}{Complexity} % {Algorithmic Measurement}
