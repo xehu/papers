@@ -43,7 +43,7 @@
 
 \begin{frame}{What Does On--Demand Work Say?}
   \begin{columns}
-    \begin{column}{0.6\textwidth}
+    \begin{column}{0.5\textwidth}
       Build complexity into the process
       \begin{itemize}
         \item<+-> Apply CS methods to people\par
@@ -55,16 +55,16 @@
       \end{itemize}
     \end{column}
     
-    \begin{column}{0.4\textwidth}
+    \begin{column}{0.5\textwidth}
       \only<1>{
-      \includegraphics[max width=\textwidth,max height=\textheight]{figures/complexity/cw_literature/mapReduce.png}
+      \includegraphics[max width=\textwidth,max height=.9\textheight]{figures/complexity/cw_literature/mapReduce.png}
       }
       
       \only<2>{
-        \includegraphics[max width=\textwidth,max height=\textheight]{figures/complexity/cw_literature/scribe.png}
+        \includegraphics[max width=\textwidth,max height=.7\textheight]{figures/complexity/cw_literature/scribe.png}
       }
       \only<3>{
-        \begin{adjustbox}{max totalsize={\textwidth}{\textheight},center}
+        \begin{adjustbox}{max totalsize={\textwidth}{.9\textheight},center}
         \begin{tikzpicture}[->,>=stealth',auto, node distance=4cm,
                             thick,transform shape]
           \node[state,label=above:{Described}]                       (A)                    {};
@@ -164,23 +164,35 @@
   \begin{figure}
   \includegraphics<1>[width=\textwidth]{figures/photo/knowledge-student.jpg}
   \only<2>{
-  \begin{columns}
-  \begin{column}{0.2\textwidth}
-  \includegraphics[width=\textwidth]{figures/photo/knowledge-student.jpg}
-  \end{column}
-  \begin{column}{0.8\textwidth}
-  \includegraphics[width=\textwidth]{figures/complexity/brain_scans.png}
-  \end{column}
-  \end{columns}
+  % \begin{columns}
+  % \begin{column}{0.2\textwidth}
+  % \includegraphics[width=\textwidth]{figures/photo/knowledge-student.jpg}
+  % \end{column}
+  % \begin{column}{0.8\textwidth}
+  \includegraphics[width=\textwidth]{figures/complexity/brain_scansA.png}
+  % \end{column}
+  % \end{columns}
   }
   \includegraphics<3>[width=\textwidth]{figures/photo/gps-map.jpg}
   \end{figure}
 \end{frame}
 
 \begin{frame}{Tracking Work and Workers} % {Algorithmic Measurement}
+\begin{columns}
+\begin{column}{.5\textwidth}
+\includegraphics[max width=\textwidth,max height=.8\textheight,keepaspectratio]{figures/screenshot_odeskteamapp.jpg}
+\end{column}
+\begin{column}{.5\textwidth}
+% \begin{itemize}
+  Upwork has turned to logging workers' keystrokes and taking screenshots automatically every 10 minutes
+% \end{itemize}
+% \includegraphics[max width=\textwidth,max height=.8\textheight,keepaspectratio]{figures/time-tracking-like-odesk-screenshot-monitor1.png}
+\end{column}
+\end{columns}
+
     % notes
     % \begin{itemize}
-      \ali{Upwork's screen recording tool as a way to measure workers}
+      % \ali{Upwork's screen recording tool as a way to measure workers}
       % \item also maybe google analytics and other ways of tracking web--based workers
     % \end{itemize}
 \end{frame}
