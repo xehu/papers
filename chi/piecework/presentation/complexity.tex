@@ -4,122 +4,108 @@
 }
 \begin{document}
 
-\section{Complexity}
+\subfile{threads}
+% \againframe<2>{threads}
 
 \begin{frame}{Complexity}
-  What do we mean when we talk about complexity?
-  % \begin{minipage}[t][25mm][t]{\textwidth}
-  %   \begin{columns}
-  %     \begin{column}[T]{0.8\textwidth}
-        \begin{itemize}
-          \item<1->
-          Can crowds help you write something?\\
-          \scriptsize{\textcite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986,Nebeling:2016:WCW:2858036.2858169}}\normalsize{}
-          \item<2-> Can crowds critique novel designs?\\
-          \scriptsize{\textcite{yuanAlmost,fuge2014analysis}}\normalsize{}
-          \item<3-> Can crowds create things from whole cloth?\\
-          \scriptsize{\textcite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}}\normalsize{}
-        \end{itemize}
-      % \end{column}
-      % \begin{column}[T]{0.2\textwidth}
-      %   \begin{figure}
-    % \centering
-    % \vspace{0mm}
-
-    % \visible<1->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}}%
-    % \visible<3->{
-    % \includegraphics<1->[width=.5\textwidth]{figures/complexity/paper_resized.png}
-    %               % \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
-    % % }
-
-    % \includegraphics<2->[width=.5\textwidth]{figures/complexity/chair_resized.png}
-    
-    % \includegraphics[width=.15\textwidth]{figures/paper-unfolded.png}$\rightarrow$
-    % \includegraphics[width=.15\textwidth]{figures/rhino.png}
-    % \includegraphics[width=.15\textwidth]{figures/fish.png}
-    % \includegraphics[width=.15\textwidth]{figures/origami-1b.png}
-    
-    % \vspace{4mm}
-    % \includegraphics[width=\textwidth]{figures/hexagonflattened.png}
-    % \vspace{5mm}
-    
-    % \visible<2->{
-    % \includegraphics[width=\textwidth]{figures/complexity/decompose.png}
-    % }
-
-    % \visible<4->{
-    %   \vspace{5mm}
-    %   \includegraphics[width=\textwidth]{figures/networkTransparency.png}
-    % }
-  % \end{figure}
-  %     \end{column}
-  %   \end{columns}
-  %   \end{minipage}
+  \begin{columns}
+    \begin{column}{.6\textwidth}
+      \visible<-4>{What do we mean when we say \alert{complexity}?}
+    \end{column}
+    \begin{column}{.4\textwidth}
+      \only<5->{\hfill \dots~In some cases. Sometimes.}
+    \end{column}
+  \end{columns}
+  \begin{columns}
+  \begin{column}{.55\textwidth}
+  \begin{itemize}
+    \item<2-> Can crowds help you \alert{revise} work?\par
+    \scriptsize{\textcite{bernsteinSoylent,Kim:2014:CSI:2556288.2556986,Nebeling:2016:WCW:2858036.2858169}\par}\normalsize{}
+    \item<3-> Can crowds \alert{critique} designs?\par
+    \scriptsize{\textcite{yuanAlmost,fuge2014analysis}\par}\normalsize{}
+    \item<4-> Can crowds create artifacts \alert{de novo}?\par
+    \scriptsize{\textcite{KimStoria,Kim2017,Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}\par}\normalsize{}
+  \end{itemize}
+  \end{column}
+  \begin{column}{.45\textwidth}
+      \begin{itemize}
+        \item[$\Rightarrow$]<6-> \hfill With variable success\par
+        \visible<0>{\scriptsize{\textcite{bernsteinSoylent,Nebeling:2016:WCW:2858036.2858169}\par}\normalsize{}}
+        \item[$\Rightarrow$]<7-> \hfill With careful guidance\par
+        \visible<0>{\scriptsize{\textcite{yuanAlmost,fuge2014analysis}\par}\normalsize{}}
+        \item[$\Rightarrow$]<8-> \hfill Within narrow specifications\par
+        \visible<0>{\scriptsize{\textcite{Hahn:2016:KAB:2858036.2858364,Lasecki:2014:LSR:2661334.2661352}\par}\normalsize{}}
+      \end{itemize}
+  \end{column}
+  \end{columns}
 \end{frame}
 
 
-\begin{frame}{What Does Crowdsourcing Say?}
-\begin{columns}
-  \begin{column}{0.6\textwidth}
-    \begin{itemize}
-      \item Build complexity into the process
+\begin{frame}{What Does On--Demand Work Say?}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      Build complexity into the process
       \begin{itemize}
-        \item<1> Apply CS methods to people\\
-        \scriptsize{\textcite{crowdForgeKittur}}\normalsize{}
-        \item<2> Humans as computational units\\
-        \scriptsize{\textcite{Lasecki:2014:LSR:2661334.2661352}}\normalsize{}
-        \item<3> Crowdsourcing workflows as function state machines\\
-        \scriptsize{\textcite{latoza2014microtask}
-        }
+        \item<+-> Apply CS methods to people\par
+                 \scriptsize{\textcite{crowdForgeKittur}\par}\normalsize{}
+        \item<+-> Humans as computational units\par
+                 \scriptsize{\textcite{Lasecki:2014:LSR:2661334.2661352}\par}\normalsize{}
+        \item<+-> Crowdsourcing workflows as function state machines\par
+                 \scriptsize{\textcite{latoza2014microtask}\par}\normalsize{}
       \end{itemize}
-    \end{itemize}
-  \end{column}
-  
-  \begin{column}{0.4\textwidth}
-    \begin{figure}
-    \only<1>{
-    \includegraphics[width=\textwidth]{figures/complexity/cw_literature/mapReduce.png}
-    }
+    \end{column}
     
-    \only<2>{
-      \includegraphics[width=\textwidth]{figures/complexity/cw_literature/scribe.png}
-    }
-    \only<3>{
-      \begin{adjustbox}{max totalsize={\textwidth}{\textheight},center}
-      \begin{tikzpicture}[->,>=stealth',auto, node distance=4cm,
-                          thick,transform shape]
-        \node[state,label=above:{Described}]                       (A)                    {};
-        \node[state,label=left:{Described written}]                (B) [below of=A]       {};
-        \node[state,label=left:{Run Tests}]                        (D) [below of=B]       {};
-        \node[state,label=below:{Described written buggy}]         (C) [below right of=D] {};
-        \node[state,label=below:{Described written buggy}]         (E) [below left of=D]  {};
+    \begin{column}{0.4\textwidth}
+      \only<1>{
+      \includegraphics[max width=\textwidth,max height=\textheight]{figures/complexity/cw_literature/mapReduce.png}
+      }
+      
+      \only<2>{
+        \includegraphics[max width=\textwidth,max height=\textheight]{figures/complexity/cw_literature/scribe.png}
+      }
+      \only<3>{
+        \begin{adjustbox}{max totalsize={\textwidth}{\textheight},center}
+        \begin{tikzpicture}[->,>=stealth',auto, node distance=4cm,
+                            thick,transform shape]
+          \node[state,label=above:{Described}]                       (A)                    {};
+          \node[state,label=left:{Described written}]                (B) [below of=A]       {};
+          \node[state,label=left:{Run Tests}]                        (D) [below of=B]       {};
+          \node[state,label=below:{Described written buggy}]         (C) [below right of=D] {};
+          \node[state,label=below:{Described written buggy}]         (E) [below left of=D]  {};
 
-        \path[every node/.style={sloped,anchor=south}]
-              (A) edge              node {Write description} (B)
-              (B) edge [loop right] node {Edit code} (B)
-                  edge              node {Edit code} (D)
-              (D) edge              node {} (C)
-                  edge              node {} (E)
-              (C) edge [bend right] node {Debug} (B)
-                  edge [bend right] node {Debug} (D)
-              (E) edge [bend right] node {Edit Code} (D)
-                  edge [bend left]  node {Edit Code} (B);
-        \end{tikzpicture}
-        \end{adjustbox}
-    }
-    \end{figure}
-  \end{column}
-  
-\end{columns}
+          \path[every node/.style={sloped,anchor=south}]
+                (A) edge              node {Write description} (B)
+                (B) edge [loop right] node {Edit code} (B)
+                    edge              node {Edit code} (D)
+                (D) edge              node {} (C)
+                    edge              node {} (E)
+                (C) edge [bend right] node {Debug} (B)
+                    edge [bend right] node {Debug} (D)
+                (E) edge [bend right] node {Edit Code} (D)
+                    edge [bend left]  node {Edit Code} (B);
+          \end{tikzpicture}
+          \end{adjustbox}
+      }
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{What Does Piecework Say?}
-      George Airy (astronomer) used a very similar approach\\
-      \scriptsize{\textcite{grier2013computers}}\normalsize{}
+  What we'll find
+  \begin{itemize}
+    \item<+-> Building complexity into the processes
+    \item<+-> Incremental advances until managers \emph{tracked} and \emph{standardized} workers and work
+    \item<+-> Insights into task specialization
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{What Does Piecework Say?}
+      George Airy (astronomer) used a very similar approach\par
+      \scriptsize{\textcite{grier2013computers}\par}\normalsize{}
     \begin{columns}
     \begin{column}{0.6\textwidth}
       \begin{figure}
-        \includegraphics[width=\textwidth]{figures/photo/Greenwich-Observatory-computing-staff-1902.jpg}
+        \includegraphics[max width=\textwidth, max height=.7\textheight,keepaspectratio]{figures/photo/Greenwich-Observatory-computing-staff-1902.jpg}
       \end{figure}
     \end{column}
     
@@ -151,20 +137,30 @@
 
 
 \begin{frame}{Comparisons}
+
 \begin{itemize}
-  \item Limited array of tasks versus arbitrarily complex work
+    \item<+-> Building complexity into the processes
+    % \item<+-> Incremental advances until managers \emph{tracked} and \emph{standardized} workers and work
+    % \item<+-> Insights into task specialization
+  % \end{itemize}
+% \begin{itemize}
+  \item Challenges dealing with flexibility
   \begin{itemize}
     \item \emph{Building} planes versus \emph{fixing} trains
   \end{itemize}
-  \item \normalsize{Has technology changed this?}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Implications for On--Demand Work}
+  Has technology shifted on--demand work?
     \begin{itemize}
       \item Technology makes \emph{some} complex tasks relatively trivial
       \item Measuring workers is easier than ever
     \end{itemize}
-\end{itemize}
 \end{frame}
 
-\begin{frame}{Complexity} % {Cab Drivers}
+
+\begin{frame}{Enhanced Cognition} % {Cab Drivers}
   \begin{figure}
   \includegraphics<1>[width=\textwidth]{figures/photo/knowledge-student.jpg}
   \only<2>{
@@ -181,15 +177,15 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Complexity} % {Algorithmic Measurement}
-    notes
-    \begin{itemize}
-      \item I'm thinking of pointing to UpWork's screen recording tool as a way to measure workers
-      \item also maybe google analytics and other ways of tracking web--based workers
-    \end{itemize}
+\begin{frame}{Tracking Work and Workers} % {Algorithmic Measurement}
+    % notes
+    % \begin{itemize}
+      \ali{Upwork's screen recording tool as a way to measure workers}
+      % \item also maybe google analytics and other ways of tracking web--based workers
+    % \end{itemize}
 \end{frame}
 
-\begin{frame}{Implications}
+\begin{frame}{Takeaways}
   \begin{itemize}
     \item We make stronger assumptions about workers' abilities thanks to technology
     \item Evaluation remains difficult, but we're trying to find stopgap solutions through decomposition
@@ -197,7 +193,7 @@
   \end{itemize}
 \end{frame}
 
-\onlyinsubfile{
-  \printbibliography{}
-}
+% \onlyinsubfile{
+%   \printbibliography{}
+% }
 \end{document}

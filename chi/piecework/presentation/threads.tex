@@ -1,93 +1,41 @@
 \documentclass[presentation]{subfiles}
 
+% \newenvironment{grayed}{\color{red}}{\ignorespacesafterend}
 \begin{document}
-\begin{frame}[t]{Ongoing Threads in Crowdsourcing Research}
+\begin{frame}<1-2>[t,label=threads]{Ongoing Threads in Crowdsourcing Research}
 
-\begin{minipage}[t][25mm][t]{\textwidth}
-\begin{columns}
-\begin{column}[T]{0.5\textwidth}
-  % \begin{enumerate}
-    % \item<1,3>
-    \begin{block}{\textbf{\large Complexity}}
-    \scriptsize{\textcite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364,crowdForgeKittur}}
-    \end{block}
-  %   \vspace{5mm}
-    \end{column}
+% \begin{minipage}[t][30mm][t]{\textwidth}
+  \begin{columns}
     \begin{column}[T]{0.5\textwidth}
-  %   \item<2>
-  \begin{block}{\textbf{\large Decomposition}}
-    \scriptsize{\textcite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}}
-    \end{block}
-  %   \vspace{5mm}
+      % \begin{grayed}
+      % \textcolor{gray}{
+        % \onslide<1>{
+          \begin{block}
+            {\textbf{\Large Complexity}}
+            \scriptsize{\textcite{suzukiAtelier,KimStoria,yuanAlmost,Yu2016b,Nebeling:2016:WCW:2858036.2858169,Hahn:2016:KAB:2858036.2858364,crowdForgeKittur}\par}\normalsize{}
+          \end{block}
+        % }
+      % \end{grayed}
 
-  %   \item<4> \textbf{\large Relationships}\\
-  %   \scriptsize{%     \textcite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis,dynamo,uberAlgorithm}%   }
+      \onslide<1,3>{
+        \begin{block}
+        {\textbf{\Large Relationships}}
+          \scriptsize{\textcite{turkopticon,storiesIraniSilberman,crowdcollab,takingAHITMcInnis,dynamo,uberAlgorithm}\par}\normalsize{}
+        \end{block}
+      }
+    \end{column}
 
-  % \end{enumerate}
-\end{column}
-
-% \begin{column}[T]{0.25\textwidth}
-%   \begin{figure}
-%     \centering
-%     \vspace{0mm}
-
-%     \visible<1->{\includegraphics[width=.33\textwidth]{figures/complexity/geodesic.png}}%
-%     \visible<3->{\includegraphics[width=.33\textwidth]{figures/complexity/paper_resized.png}
-%                   \includegraphics[width=.33\textwidth]{figures/complexity/chair_resized.png}
-%     }
-    
-%     \vspace{4mm}
-%     \includegraphics[width=\textwidth]{figures/hexagonflattened.png}
-%     \vspace{5mm}
-    
-%     \visible<2->{
-%     \includegraphics[width=\textwidth]{figures/complexity/decompose.png}
-%     }
-
-%     \visible<4->{
-%       \vspace{5mm}
-%       \includegraphics[width=\textwidth]{figures/networkTransparency.png}
-%     }
-%   \end{figure}
-
-% \end{column}
-
-% \begin{column}[T]{0.25\textwidth}
-% \centering
-% \vspace{5mm}
-
-% \visible<1->{
-%   \small{Complexity}
-%   \vspace{13mm}
-% }
-
-% \small{Tasks}
-
-% \visible<2->{
-%   \vspace{11mm}
-%   \small{Decomposition}
-% }
-
-% \end{column}
-\end{columns}
-\end{minipage}
-
-
-% \begin{minipage}[c][25mm][c]{50mm}
-
-% \begin{figure}
-%   \includegraphics[width=30mm]{figures/hexagonflattened.png}
-  
-%   \begin{minipage}[c][10mm][t]{30mm}
-%   \includegraphics[width=10mm]{figures/complexity/geodesic.png}
-
-%   \includegraphics[width=10mm]{figures/triangles.png}
-%   \end{minipage}
-% \end{figure}
-
-
-
+    \begin{column}[T]{0.5\textwidth}
+      \onslide<1,3>{
+        \begin{block}
+          {\textbf{\Large Decomposition}}
+          \scriptsize{\textcite{sensitiveTasks,LykourentzouPersonalityMatters,Law:2016:CKC:2858036.2858144,Chang:2016:ACC:2858036.2858411,Newell:2016:OMA:2858036.2858490}\par}\normalsize{}
+        \end{block}
+      }
+    \end{column}
+  \end{columns}
 % \end{minipage}
+
 \end{frame}
 
 \end{document}
