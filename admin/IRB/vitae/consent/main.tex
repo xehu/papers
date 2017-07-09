@@ -1,0 +1,132 @@
+\documentclass[10pt]{article}
+\usepackage{balance,graphics,setspace,parskip,sourceserifpro,textcomp,titling,nameref,color,fancyhdr,paralist}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in,headheight=14pt]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage[compact]{titlesec}
+
+\setsansfont[BoldFont={Source Sans Pro Bold},
+              Numbers={OldStyle}]{Source Sans Pro}
+\setmainfont[BoldFont={Source Serif Pro Semibold},
+              Numbers={OldStyle}]{Source Serif Pro}
+\setmonofont{Source Code Pro}
+\definecolor{linkColor}{RGB}{6,125,233}
+
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand{\contact}[1]{{\color{red}#1}}
+
+\usepackage[citestyle=numeric,backend=biber]{biblatex}
+\bibliography{references}
+\pagenumbering{gobble}
+
+
+\titlespacing*{\section}{0em}{0.5em}{-0.5em}
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+
+\newenvironment{headerfont}{\color{gray}\fontfamily{ptm}\selectfont}{}
+\pagestyle{fancy}{
+  \lhead{\begin{headerfont}Stanford University\end{headerfont}}
+  \chead{\begin{headerfont}\textbf{\underline{Waiver of Documentation}}\end{headerfont}}
+  \rhead{\textbf{Approval Date}: \underline{Tentative}}
+}
+
+\section*{{\LARGE Managing crowd and gig workers' histories and qualifications}}
+
+\section*{What's this study about?}
+We're trying to learn about
+whether independently--run platforms for tracking workers' histories
+and qualifications
+can better inform whether workers are likely
+to be qualified and suited for complex gig work.
+Some of this research will involve
+the management of workers \textbf{by} other workers.
+
+In this study, we'll be asking workers managed by this system about
+their experiences using the platform (``vitae''), as well as
+interviewing people who manage these qualification groups.
+% the relationships online performers have with each other and
+% with the
+% organizations that run
+% the platforms that they stream and
+% upload to.
+% Some of this touches on things like
+% dealing with inter--personal issues and
+% how the community deals with major events
+% as well as questions about what it's like to
+% make your income from online public performances.
+
+
+\section*{What are my choices?}
+You can choose not to participate in the study at all, or
+you can respond to some questions but not others.
+You can later ask that I not use some or
+any of the information from any previous conversations
+(until that data,
+like an anonymized quotation, 
+is published in a form that I can't change after the fact).
+If you tell me you want to withdraw or
+simply not participate in the first place,
+I'll delete the data you gave
+(if any) and that'll be the end of it.
+
+\section*{Will anyone know I'm in the study?}
+Only if you want ---
+the only people in our research group who will know individual participants' names
+will be people directly involved in the study.
+The only reason other people will know you participated will be if
+you tell them, or you tell me
+to mention you when I email them.
+
+\section*{What else should I know?}
+If you're interested in participating, you should know
+\begin{compactitem}
+  \item Participation is voluntary; if you wish not to participate, it's perfectly all right.
+  \item Participants will not be compensated for their interviewing time.
+  \item If at any point you wish to withdraw from the study,
+        we will accommodate such requests as quickly as reasonably possible.
+  % \item Since it would be too difficult to get a signature from participants,
+  %       (to say nothing of verifying the signature),
+  %       we're using a ``\textbf{waiver of documentation}'',
+  %       so this is purely informational.
+  % \item The first conversation will probably take 30--45 minutes.
+  %       Later conversations (if you're okay with it) would likely be shorter
+  %       (mostly to clarify things or ask follow--up questions).
+  % \item I can't compensate you (or anyone, really) for their time.
+  % \item I plan on recording the audio of our conversation
+  %       so I can transcribe what you said
+  %       (so I don't misremember or misquote anything).
+  %       Once I have a transcript, I'll delete the audio.
+\end{compactitem}
+
+\section*{Who can I talk to about the study?}
+If you have any questions or concerns with the study,
+you can talk to the researchers directly, or
+you can talk to Stanford's Institutional Review Board (IRB),
+who oversee our research and make sure participants are treated ethically.
+
+\textbf{Talk to the researchers}:
+If you have any questions or problems related to the study,
+feel free to contact me, \contact{Ali Alkhatib},
+by phone at \contact{408--348--2720} or
+by email (\contact{\url{ali.alkhatib@cs.stanford.edu}}).
+
+\textbf{Talk to the IRB}:
+If you're not satisfied with how this study is being conducted, or
+if you have any concerns, complaints, or
+questions about the research or
+your rights as a participant, please feel free to contact the
+(IRB) to speak to someone independent of the research team at
+\contact{(650)--723--2480} or
+toll free at \contact{1--866--680--2906}.
+You can also email \url{irb2-manager@lists.stanford.edu} or
+write to:
+
+\begin{center}\contact{Stanford IRB, Stanford University,\\
+         3000 El Camino Real, Five Palo Alto Square, 4th Floor,\\
+         Palo Alto, CA 94306}\end{center}
+
+
+\end{document}
