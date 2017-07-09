@@ -1,6 +1,3 @@
 [submodule "Document-Formats"]
 	path = Document-Formats
 	url = git@github.com:sigchi/Document-Formats.git
-[submodule "acmart"]
-	path = acmart
-	url = ./acmart
