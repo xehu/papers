@@ -1,0 +1,188 @@
+\documentclass[10pt]{article}
+\usepackage{xcolor,enumitem,nth,titlesec,xr-hyper,balance,wrapfig,fancyhdr,fontspec,url,graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[citestyle=numeric,backend=bibtex]{biblatex}
+\usepackage[pdflang={en-US},pdftex]{hyperref}
+\usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage[T1]{fontenc}
+
+\usepackage[en-US]{datetime2}
+% \DTMsettimestyle{default}
+% \DTMsetup{showseconds=true}
+
+\setmainfont{SourceSerifPro}[
+ ItalicFont = SourceSerifPro,
+ ItalicFeatures={FakeSlant=0.2}]
+
+\bibliography{references}
+\usepackage[margin=1in]{geometry}
+\pagestyle{fancy}
+% \titlespacing*{\section}{0.0ex}{2ex plus .3ex}{1ex plus .3ex}
+
+
+\lhead{} % controls the left corner of the header
+% \chead{} % controls the center of the header
+\rhead{} % controls the right corner of the header
+\lfoot{last updated \DTMcurrenttime~\today} % controls the left corner of the footer
+\cfoot{} % controls the center of the footer
+\rfoot{} % controls the right corner of the footer
+\rfoot{Page~\thepage} % controls the right corner of the footer
+% \renewcommand{\headrulewidth}{0.0pt}
+% \renewcommand{\footrulewidth}{0.0pt}
+
+% \AtBeginBibliography{\small}
+\thispagestyle{empty}
+
+\newlist{inlinelist}{enumerate*}{1}
+\setlist*[inlinelist,1]{
+  label=\arabic*),
+}
+
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  {\scshape \Large \textbf{\@title}}
+
+  \vspace{1ex}
+
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+
+
+
+\definecolor{PineGreen}{HTML}{008800}
+\definecolor{Red}{HTML}{FF0000}
+\definecolor{Blue}{HTML}{0000FF}
+\definecolor{Black}{HTML}{000000}
+\definecolor{JokeGreen}{HTML}{00C953}
+\newcommand{\msb}[1]{{\color{PineGreen}[MSB: #1]}}
+\newcommand{\ali}[1]{{\color{Red}[al2: #1]}}
+
+
+\title{Vitae: Aggregated Work Histories for On--Demand Workers}
+\author{Ali Alkhatib \& Michael Bernstein}
+\date{\today}
+
+\urlstyle{same}
+
+\hypersetup{
+  colorlinks,
+  citecolor=Black,
+  urlcolor=Blue}
+
+\definecolor{Blue}{HTML}{0000FF}
+\newcommand{\topic}[1]{{\color{Blue}#1}}
+\renewcommand{\topic}[1]{{#1}}
+\definecolor{Gray}{HTML}{A0A0A0}
+\newcommand{\ugh}[1]{{\color{Gray}#1}}
+\newenvironment{blah}{\par\color{Gray}\itshape}{\par}
+
+
+\renewenvironment{abstract}{%
+\hfill\begin{minipage}{0.95\textwidth}
+\itshape
+}
+{
+\bigskip
+\end{minipage}}
+
+
+\newcommand{\joke}[1]{{\color{JokeGreen}#1}} % if you're in a subfile, make the joke JokeGreen colored so people know I'm being funny!
+
+
+\begin{document}
+  \maketitle
+
+\begin{abstract}
+todo
+\end{abstract}
+
+% \section*{Outline}
+% \begin{enumerate}
+%   \item Frame the problem
+%   \item What are the intuitive solutions
+%   \item Why is that not working?
+%   \item What's our insight?
+%   \item What are we building
+%   \item Why is this important
+%   \item What do we need
+% \end{enumerate}
+
+\section*{State of the world}
+\begin{enumerate}[noitemsep]
+  \item Research is showing that both the \textit{breadth} and \textit{depth} (or \textit{complexity})
+        of on--demand labor will continue to grow
+  \item More people will be doing more kinds of work, transiently moving between myriad platforms
+  \item People's educations are becoming increasingly decomposed;
+  online education platforms make it possible for people to learn and acquire new skills piecemeal,
+  and demonstrate proficiency on ad hoc bases
+\end{enumerate}
+
+\section*{Trouble!}
+\begin{enumerate}[noitemsep]
+  \item The people who enter the workforce in this capacity are increasingly finding that
+        this form of work doesn't facilitate the building of more complex, more rewarding work
+  \item tracking and \textit{bringing together} the histories of these workers is difficult
+  \begin{enumerate}[noitemsep]
+    \item it's hard to trust individual workers
+    \item platforms don't make it any easier to \textit{amalgamate} data
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Intuitive solutions (and why they fail)}
+\begin{enumerate}[noitemsep]
+  \item One solution seems to be to maintain a list of known good workers --- ``whitelisting'' good workers
+  \begin{enumerate}[noitemsep]
+    \item This generally suffices for large--scale requesters; they form a cohort of known good workers, and
+          can (in general) afford to ``explore'' and discover new workers
+    \item This solution doesn't work for smaller scale requesters:
+    \begin{enumerate}[noitemsep]
+      \item Existing requesters don't have much (read: any) incentive to share rosters of good workers
+      \item Platforms themselves don't necessarily facilitate sharing in the first place
+      \item Small scale requesters don't have sufficient traffic to make it worth it to invest in qualifications exams
+      \item Workers who already spend relatively large proportions of their time \textbf{finding tasks}
+            don't want to take qualifying exams to become eligible for one--off tasks
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+\section*{Key insight \joke{or ``Wao Such Insight! Much \dots~Insight''}}
+\begin{enumerate}[noitemsep]
+  \item In our most recent paper, we highlighted some of the common themes between
+        the historical piecework and the contemporary ``gig'' or
+        on--demand work~\cite{pieceworkCrowdworkGigwork}.
+  \item We argued that, while significant differences are to be found throughout the comparisons of
+        contemporary cases of on--demand work and historical counterparts,
+        these parallel cases can still \textit{inform} how we observe the evolution of work going forward
+        and, indeed, how we can shape and design that future.
+  \item In that light, we look to the trajectory of piecework in the \nth{20} century for inspiration and find\dots
+  \item what about \textbf{hiring halls}? What's important about hiring halls?
+  \begin{enumerate}[noitemsep]
+    \item Hiring halls were (/are) communities of workers with various skills who band together
+          to help dispatch qualified workers for various jobs.
+    \item These hiring halls had \textit{de facto} collective bargaining powers.
+    \item This was an important step toward collective action and collective governance
+          (other topics about which we've written~\cite{dynamo}).
+  \end{enumerate}
+\end{enumerate}
+
+\section*{What we're building}
+\begin{enumerate}[noitemsep]
+  \item Building a system that aggregates workers' histories into a single platform
+  \item Same with education
+  \item Through this, workers can demonstrate their proficiency by accumulating work histories from various platforms
+\end{enumerate}
+
+\section*{Why is this hard (or at least not trivial)}
+\begin{enumerate}
+  \item \ali{All of the reasons we've ever said that the internet complicates offline things}
+  \item also, even offline communities of workers are hard to organize;
+        we think we can make some of it easier through technology, but \textit{how} is still an open question
+\end{enumerate}
+
+
+\printbibliography{}
+\end{document}
